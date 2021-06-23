@@ -17,36 +17,25 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import React, { FC } from "react";
-import { Helmet, HelmetProps } from "react-helmet";
-import { useLocation } from "@reach/router";
-
-import { useSiteMetadata } from "../hooks/useSiteMetadata";
+import { useLocation } from '@reach/router'
+import React, { FC } from 'react'
+import { Helmet, HelmetProps } from 'react-helmet'
+import { useSiteMetadata } from '../hooks/useSiteMetadata'
 
 type SEOProps = {
-  lang?: string;
-  title?: string;
-  description?: string;
-  author?: string;
-  image?: string;
-  robots?: string;
-  keywords?: string[];
-  meta?: { name: string; content: string }[];
-  links?: { rel: string; href: string }[];
-} & HelmetProps;
+  lang?: string
+  title?: string
+  description?: string
+  author?: string
+  image?: string
+  robots?: string
+  keywords?: string[]
+  meta?: { name: string; content: string }[]
+  links?: { rel: string; href: string }[]
+} & HelmetProps
 
-const SEO: FC<SEOProps> = ({
-  title,
-  description,
-  image,
-  author,
-  lang,
-  robots,
-  keywords = [],
-  meta = [],
-  links = [],
-}) => {
-  const { pathname } = useLocation();
+const SEO: FC<SEOProps> = ({ title, description, image, author, lang, robots, keywords = [], meta = [], links = [] }) => {
+  const { pathname } = useLocation()
 
   const {
     baseUrl,
@@ -58,14 +47,14 @@ const SEO: FC<SEOProps> = ({
     image: defaultImage,
     social: { twitterUsername, telegramChannel },
     robots: defaultRobots,
-    keywords: defaultKeywords,
-  } = useSiteMetadata();
+    keywords: defaultKeywords
+  } = useSiteMetadata()
 
   const imageUrl = (() => {
-    let url = image || defaultImage;
-    url = url.replace(/^\/+/, "");
-    return url.includes("://") ? url : `${baseUrl}${url}`;
-  })();
+    let url = image || defaultImage
+    url = url.replace(/^\/+/, '')
+    return url.includes('://') ? url : `${baseUrl}${url}`
+  })()
 
   const seo = {
     lang: lang || defaultLang,
@@ -73,89 +62,89 @@ const SEO: FC<SEOProps> = ({
     description: description || defaultDescription,
     author: author || defaultAuthor,
     image: imageUrl,
-    url: pathname === "/" ? `${baseUrl}` : `${baseUrl}${pathname}`,
+    url: pathname === '/' ? `${baseUrl}` : `${baseUrl}${pathname}`,
     keywords: keywords.length ? keywords : defaultKeywords,
-    robots: robots || defaultRobots,
-  };
+    robots: robots || defaultRobots
+  }
 
   return (
     <Helmet
       htmlAttributes={{
-        lang: seo.lang,
+        lang: seo.lang
       }}
       title={seo.title}
       titleTemplate={seo.title === defaultTitle ? seo.title : titleTemplate}
       link={[
         {
-          rel: "canonical",
-          href: seo.url,
-        },
+          rel: 'canonical',
+          href: seo.url
+        }
       ].concat(links)}
       meta={[
         {
-          name: "description",
-          content: seo.description,
+          name: 'description',
+          content: seo.description
         },
         {
-          name: "author",
-          content: seo.author,
+          name: 'author',
+          content: seo.author
         },
         {
-          property: "og:title",
-          content: seo.title,
+          property: 'og:title',
+          content: seo.title
         },
         {
-          property: "og:description",
-          content: seo.description,
+          property: 'og:description',
+          content: seo.description
         },
         {
-          property: "og:image",
-          content: seo.image,
+          property: 'og:image',
+          content: seo.image
         },
         {
-          property: "og:type",
-          content: "website",
+          property: 'og:type',
+          content: 'website'
         },
         {
-          name: "twitter:card",
-          content: "summary_large_image",
+          name: 'twitter:card',
+          content: 'summary_large_image'
         },
         {
-          name: "twitter:creator",
-          content: twitterUsername,
+          name: 'twitter:creator',
+          content: twitterUsername
         },
         {
-          name: "twitter:title",
-          content: seo.title,
+          name: 'twitter:title',
+          content: seo.title
         },
         {
-          name: "twitter:description",
-          content: seo.description,
+          name: 'twitter:description',
+          content: seo.description
         },
         {
-          name: "twitter:image",
-          content: seo.image,
+          name: 'twitter:image',
+          content: seo.image
         },
         {
-          name: "telegram:channel",
-          content: telegramChannel,
+          name: 'telegram:channel',
+          content: telegramChannel
         },
         {
-          name: "robots",
-          content: seo.robots,
-        },
+          name: 'robots',
+          content: seo.robots
+        }
       ]
         .concat(
           seo.keywords.length
             ? {
-                name: "keywords",
-                content: seo.keywords.join(", "),
+                name: 'keywords',
+                content: seo.keywords.join(', ')
               }
-            : [],
+            : []
         )
         .concat(meta)}
     />
-  );
-};
+  )
+}
 
-export default SEO;
+export default SEO

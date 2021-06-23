@@ -17,37 +17,15 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import theme, { Theme } from "@chakra-ui/theme";
-import { mode, Styles } from "@chakra-ui/theme-tools";
+import { extendTheme } from '@chakra-ui/react'
 
-const styles: Styles = {
-  ...theme.styles,
-  global: (props) => ({
-    ...theme.styles.global,
-    fontFamily: "body",
-    fontWeight: "light",
-    color: mode("gray.100", "whiteAlpha.900")(props),
-    bg: mode("gray.700", "gray.900")(props),
-  }),
-};
-
-const customTheme: Theme = {
-  ...theme,
+const customTheme = {
   fonts: {
-    ...theme.fonts,
-    body: `"Source Sans Pro",${theme.fonts.body}`,
-    heading: `"Source Sans Pro",${theme.fonts.heading}`,
+    body: `"Source Sans Pro"`,
+    heading: `"Source Sans Pro"`
   },
   colors: {
-    ...theme.colors,
-    black: "#131217",
-  },
-  config: {
-    ...theme.config,
-    useSystemColorMode: false,
-    initialColorMode: "dark",
-  },
-  styles,
-};
-
-export default customTheme;
+    black: '#131217'
+  }
+}
+export default extendTheme(customTheme)

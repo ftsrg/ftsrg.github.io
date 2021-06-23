@@ -17,29 +17,29 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import dotenv from "dotenv";
+import dotenv from 'dotenv'
 
 dotenv.config({
-  path: `.env.${process.env.NODE_ENV}`,
-});
+  path: `.env.${process.env.NODE_ENV}`
+})
 
 export default {
   siteMetadata: {
-    baseUrl: "https://site.example/",
-    translations: ["id"],
-    lang: "en-US",
-    title: "Sample Title",
-    titleTemplate: "%s | Sample Title",
-    description: "Sample website description.",
-    author: "info@site.example",
-    image: "https://source.unsplash.com/collection/983219/2000x1322",
+    baseUrl: 'https://site.example/',
+    translations: ['id'],
+    lang: 'en-US',
+    title: 'Sample Title',
+    titleTemplate: '%s | Sample Title',
+    description: 'Sample website description.',
+    author: 'info@site.example',
+    image: 'https://source.unsplash.com/collection/983219/2000x1322',
     social: {
-      twitterUsername: "@example",
-      instagramUsername: "@example",
-      telegramChannel: "@example",
+      twitterUsername: '@example',
+      instagramUsername: '@example',
+      telegramChannel: '@example'
     },
-    keywords: ["example", "keywords"],
-    robots: "index, follow",
+    keywords: ['example', 'keywords'],
+    robots: 'index, follow'
   },
-  plugins: ["gatsby-plugin-react-helmet"],
-};
+  plugins: ['gatsby-plugin-react-helmet']
+}

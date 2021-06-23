@@ -1,38 +1,33 @@
-# gatsby-starter-i18n-react-i18next
+# ftsrg-next
 
-> Gatsby starter for internationalized websites.
+Project code copied from [gatsby-starter-i18n-react-i18next](https://code.habd.as/comfusion/gatsby-starter-i18n-react-i18next), special thanks to Josh Habdas.
 
-Build great-looking multilingual websites and apps with [React](https://reactjs.org/) using [Gatsby](https://www.gatsbyjs.org/).
+Introcuding the portfolio and blog of the Critical Systems Research Group - better known as Ftsrg. Production site live at [undefined]().
 
-## Screenshot
-
-![screenshot](<docs/site.example_8080_(iPad).png>)
-
-## Demo
-
-An online demo of this project is available at https://gatsby-starter-i18n-react-i18next.vercel.app
+Project built with
+* [React](https://reactjs.org/)
+* [Gatsby](https://www.gatsbyjs.org/)
+* [React Bootstrap](https://react-bootstrap.github.io/) as UI
 
 ## Included
 
 - Gatsby configuration written in TypeScript.
-- [Chakra UI](https://chakra-ui.com/) component library and design system with persistent light/dark color mode toggle.
 - [Jest](https://jestjs.io/) testing framework using [Testing Library](https://testing-library.com/) with integrated [test-utils](https://testing-library.com/docs/react-testing-library/setup#configuring-jest-with-test-utils) and example tests.
 - Functional [React](https://reactjs.org/) component examples written in [TypeScript](https://www.typescriptlang.org/) (strict) and using [React Hooks](https://reactjs.org/docs/hooks-reference.html) API.
 - Internationalization with [react-i18next](https://react.i18next.com/) and button to toggle between English and Bahasa Indonesia.
 - Automatic, in-browser language detection via integrated [i18next plugin](https://github.com/i18next/i18next-browser-languageDetector).
 - SEO component with Open Graph images, Large Twitter Cards, robots meta, keywords and Canonical URLs.
-- 4K rotating background image using [Unsplash Source](https://source.unsplash.com/) with configurable Collection source.
-- Custom SVG logo icon borrowed from [After Dark](https://habd.as/code/after-dark/) created using Chakra UI.
 
 ## Requirements
 
 - Node
 - TypeScript
 - Yarn
+- VSCode (as recommended text editor)
 
 ## Installation
 
-1. Copy source code to your machine.
+1. Clone this repository to you machine. Recommended text editor is VSCode.
 1. Copy `.env.example` to `.env.development` and `env.production`.
 1. Run `yarn` to install dependencies.
 

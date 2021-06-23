@@ -17,7 +17,9 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-export enum Locale {
-  en = "English",
-  id = "Bahasa Indonesia",
+// eslint-disable-next-line no-shadow
+enum Locale {
+  en = 'English',
+  id = 'Bahasa Indonesia'
 }
+export default Locale

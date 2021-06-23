@@ -17,20 +17,19 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import React from "react";
-import { ChakraProvider, CSSReset } from "@chakra-ui/core";
-import { Global } from "@emotion/core";
+import { ChakraProvider, CSSReset } from '@chakra-ui/react'
+import { Global } from '@emotion/react'
+import React from 'react'
+import { I18nextProvider } from 'react-i18next'
+import i18next from '../src/lib/i18next'
+import { globalStyles } from '../src/utils/styles'
+import theme from '../src/utils/theme'
 
-import { I18nextProvider } from "react-i18next";
-import i18next from "../src/lib/i18next";
-
-import theme from "../src/utils/theme";
-import { globalStyles } from "../src/utils/styles";
-
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export const wrapRootElement = ({ element }) => (
   <ChakraProvider theme={theme}>
     <Global styles={globalStyles} />
     <CSSReset />
     <I18nextProvider i18n={i18next}>{element}</I18nextProvider>
   </ChakraProvider>
-);
+)

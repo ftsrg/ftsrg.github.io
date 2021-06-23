@@ -17,37 +17,30 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import React, { FC } from "react";
-import { IconButton, Tooltip } from "@chakra-ui/core";
-import { MdLanguage } from "react-icons/md";
-
-import { useTranslation } from "react-i18next";
-import { useSiteMetadata } from "../hooks/useSiteMetadata";
-import { Locale } from "../utils/language";
+import { IconButton, Tooltip } from '@chakra-ui/react'
+import React, { FC } from 'react'
+import { useTranslation } from 'react-i18next'
+import { MdLanguage } from 'react-icons/md'
+import { useSiteMetadata } from '../hooks/useSiteMetadata'
+import Locale from '../utils/language'
 
 const LanguageToggle: FC = () => {
   const { translations } = useSiteMetadata() as {
-    translations: Array<keyof typeof Locale>;
-  };
-  const { i18n } = useTranslation();
-  const locale = i18n.language as keyof typeof Locale;
-  const toggleLanguage = () => {
-    locale === "en" ? i18n.changeLanguage("id") : i18n.changeLanguage("en");
-  };
+    translations: Array<keyof typeof Locale>
+  }
+  const { i18n } = useTranslation()
+  const locale = i18n.language as keyof typeof Locale
+  const toggleLanguage = () => (locale === 'en' ? i18n.changeLanguage('id') : i18n.changeLanguage('en'))
 
   return (
     <Tooltip
       hasArrow
       aria-label="Switch languages"
-      label={
-        locale === "en"
-          ? `Switch to ${Locale["id"]}`
-          : `Switch to ${Locale["en"]}`
-      }
+      label={locale === 'en' ? `Switch to ${Locale.id}` : `Switch to ${Locale.en}`}
       placement="left"
     >
       <IconButton
-        disabled={!translations.some((locale) => locale === "id")}
+        disabled={!translations.some((loc) => loc === 'id')}
         color="gray.600"
         aria-label="Toggle language"
         isRound
@@ -57,7 +50,7 @@ const LanguageToggle: FC = () => {
         onClick={toggleLanguage}
       />
     </Tooltip>
-  );
-};
+  )
+}
 
-export default LanguageToggle;
+export default LanguageToggle

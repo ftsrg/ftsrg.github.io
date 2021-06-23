@@ -17,49 +17,45 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import React from "react";
-import { render, screen } from "test-utils";
-import * as Gatsby from "gatsby";
-
-import NavBar from "../NavBar";
+import * as Gatsby from 'gatsby'
+import React from 'react'
+// eslint-disable-next-line import/no-unresolved
+import { render, screen } from 'test-utils'
+import NavBar from '../NavBar'
 
 beforeAll(() => {
-  const useStaticQuery = jest.spyOn(Gatsby, "useStaticQuery");
+  const useStaticQuery = jest.spyOn(Gatsby, 'useStaticQuery')
   useStaticQuery.mockImplementation(() => ({
     site: {
       siteMetadata: {
-        translations: ["id"],
-        lang: "en-US",
-      },
-    },
-  }));
-});
+        translations: ['id'],
+        lang: 'en-US'
+      }
+    }
+  }))
+})
 
-describe("<NavBar />", () => {
-  it("has svg icon hidden to screen readers", () => {
-    render(<NavBar siteTitle="Sample Title" />);
-    expect(screen.getAllByRole("presentation")).toHaveLength(1);
-    expect(screen.getAllByRole("presentation")[0]).toContainHTML("svg");
-  });
+describe('<NavBar />', () => {
+  it('has svg icon hidden to screen readers', () => {
+    render(<NavBar siteTitle="Sample Title" />)
+    expect(screen.getAllByRole('presentation')).toHaveLength(1)
+    expect(screen.getAllByRole('presentation')[0]).toContainHTML('svg')
+  })
 
-  it("displays expected site title in heading", () => {
-    render(<NavBar siteTitle="Sample Title" />);
-    expect(screen.getByText("Sample Title")).toBeTruthy();
-    expect(screen.queryByText("Jmupuri")).toBeNull();
-    expect(screen.getByText("Sample Title")).toContainHTML("h1");
-  });
+  it('displays expected site title in heading', () => {
+    render(<NavBar siteTitle="Sample Title" />)
+    expect(screen.getByText('Sample Title')).toBeTruthy()
+    expect(screen.queryByText('Jmupuri')).toBeNull()
+    expect(screen.getByText('Sample Title')).toContainHTML('h1')
+  })
 
-  it("has button to toggle language", () => {
-    render(<NavBar siteTitle="Sample Title" />);
-    expect(
-      screen.queryByRole("button", { name: "Toggle language" }),
-    ).toBeTruthy();
-  });
+  it('has button to toggle language', () => {
+    render(<NavBar siteTitle="Sample Title" />)
+    expect(screen.queryByRole('button', { name: 'Toggle language' })).toBeTruthy()
+  })
 
-  it("has button to toggle brightness", () => {
-    render(<NavBar siteTitle="Sample Title" />);
-    expect(
-      screen.queryByRole("button", { name: "Toggle brightness" }),
-    ).toBeTruthy();
-  });
-});
+  it('has button to toggle brightness', () => {
+    render(<NavBar siteTitle="Sample Title" />)
+    expect(screen.queryByRole('button', { name: 'Toggle brightness' })).toBeTruthy()
+  })
+})

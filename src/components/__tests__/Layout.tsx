@@ -17,47 +17,47 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import React from "react";
-import { screen, render, queryByRole } from "test-utils";
-import * as Gatsby from "gatsby";
-
-import Layout from "../Layout";
+import * as Gatsby from 'gatsby'
+import React from 'react'
+// eslint-disable-next-line import/no-unresolved
+import { render, screen } from 'test-utils'
+import Layout from '../Layout'
 
 beforeAll(() => {
-  const useStaticQuery = jest.spyOn(Gatsby, "useStaticQuery");
+  const useStaticQuery = jest.spyOn(Gatsby, 'useStaticQuery')
   useStaticQuery.mockImplementation(() => ({
     site: {
       siteMetadata: {
-        baseUrl: "https://site.example/",
-        translations: ["id"],
-        lang: "en-US",
-        title: "Sample Title",
-        titleTemplate: "%s | Sample Title",
-        description: "Sample website description.",
-        author: "info@site.example",
-        image: "https://source.unsplash.com/collection/983219/2000x1322",
+        baseUrl: 'https://site.example/',
+        translations: ['id'],
+        lang: 'en-US',
+        title: 'Sample Title',
+        titleTemplate: '%s | Sample Title',
+        description: 'Sample website description.',
+        author: 'info@site.example',
+        image: 'https://source.unsplash.com/collection/983219/2000x1322',
         social: {
-          twitterUsername: "@example",
-          instagramUsername: "@example",
-          telegramChannel: "@example",
+          twitterUsername: '@example',
+          instagramUsername: '@example',
+          telegramChannel: '@example'
         },
-        keywords: ["example", "keywords"],
-        robots: "index, follow",
-      },
-    },
-  }));
-});
+        keywords: ['example', 'keywords'],
+        robots: 'index, follow'
+      }
+    }
+  }))
+})
 
-describe("<Layout />", () => {
-  it("has accessible page header", () => {
-    render(<Layout />);
-    expect(screen.getAllByRole("banner")).toHaveLength(1);
-    expect(screen.getAllByRole("banner")[0]).toHaveTextContent("Sample Title");
-  });
+describe('<Layout />', () => {
+  it('has accessible page header', () => {
+    render(<Layout />)
+    expect(screen.getAllByRole('banner')).toHaveLength(1)
+    expect(screen.getAllByRole('banner')[0]).toHaveTextContent('Sample Title')
+  })
 
-  it("has accessible page content", () => {
-    render(<Layout />);
-    expect(screen.getAllByRole("main")).toHaveLength(1);
-    expect(screen.getAllByRole("main")[0]).toBeDefined();
-  });
-});
+  it('has accessible page content', () => {
+    render(<Layout />)
+    expect(screen.getAllByRole('main')).toHaveLength(1)
+    expect(screen.getAllByRole('main')[0]).toBeDefined()
+  })
+})

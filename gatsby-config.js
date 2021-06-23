@@ -17,5 +17,6 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-const { generateConfig } = require("gatsby-plugin-ts-config");
-module.exports = generateConfig({ configDir: "config" });
+const { generateConfig } = require('gatsby-plugin-ts-config')
+
+module.exports = generateConfig({ configDir: 'config' })

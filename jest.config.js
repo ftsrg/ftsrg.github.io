@@ -19,21 +19,18 @@
 
 module.exports = {
   transform: {
-    "^.+\\.[jt]sx?$": `<rootDir>/config/jest-preprocess.js`,
+    '^.+\\.[jt]sx?$': `<rootDir>/config/jest-preprocess.js`
   },
   moduleNameMapper: {
-    ".+\\.(css|styl|less|sass|scss)$": `identity-obj-proxy`,
-    ".+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": `<rootDir>/__mocks__/file-mock.js`,
+    '.+\\.(css|styl|less|sass|scss)$': `identity-obj-proxy`,
+    '.+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$': `<rootDir>/__mocks__/file-mock.js`
   },
-  moduleDirectories: ["node_modules", "utils", __dirname],
+  moduleDirectories: ['node_modules', 'utils', __dirname],
   testPathIgnorePatterns: [`node_modules`, `.cache`, `public`],
   transformIgnorePatterns: [`node_modules/(?!(gatsby)/)`],
   globals: {
-    __PATH_PREFIX__: ``,
+    __PATH_PREFIX__: ``
   },
-  setupFiles: [
-    `<rootDir>/config/loadershim.js`,
-    `<rootDir>/config/__mocks__/browser-mocks.js`,
-  ],
-  setupFilesAfterEnv: ["<rootDir>/config/setup-test-env.js"],
-};
+  setupFiles: [`<rootDir>/config/loadershim.js`, `<rootDir>/config/__mocks__/browser-mocks.js`],
+  setupFilesAfterEnv: ['<rootDir>/config/setup-test-env.js']
+}

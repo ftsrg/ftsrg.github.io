@@ -17,60 +17,47 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import React, { FC } from "react";
-import { Link as ReachLink } from "@reach/router";
-import { createIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
-import {
-  Flex,
-  Spacer,
-  Heading,
-  useColorModeValue,
-  useColorMode,
-  IconButton,
-  Tooltip,
-  Stack,
-  Link,
-} from "@chakra-ui/core";
+import { createIcon, MoonIcon, SunIcon } from '@chakra-ui/icons'
+import { Flex, Heading, IconButton, Spacer, Stack, Tooltip, useColorMode, useColorModeValue } from '@chakra-ui/react'
+import { Link as ReachLink } from '@reach/router'
+import React, { FC } from 'react'
+import LanguageToggle from './LanguageToggle'
 
-import LanguageToggle from "./LanguageToggle";
 const LogoIcon = createIcon({
-  displayName: "LogoIcon",
-  viewBox: "0 0 46 45",
-  d: "M.708 45L23 .416 45.292 45H.708zM35 38L23 19 11 38h24z",
-});
+  displayName: 'LogoIcon',
+  viewBox: '0 0 46 45',
+  d: 'M.708 45L23 .416 45.292 45H.708zM35 38L23 19 11 38h24z'
+})
 
 interface NavBarProps {
-  siteTitle: string;
+  siteTitle: string
 }
 
 const NavBar: FC<NavBarProps> = ({ siteTitle }) => {
-  const ButtonIcon = useColorModeValue(MoonIcon, SunIcon);
-  const { colorMode, toggleColorMode } = useColorMode();
+  const ButtonIcon = useColorModeValue(MoonIcon, SunIcon)
+  const { colorMode, toggleColorMode } = useColorMode()
 
   return (
     <Flex align="center" justify="space-between" maxW="960px" margin="0 auto">
-      <Link as={ReachLink} to="/">
+      <ReachLink to="/">
         <Stack direction="row">
           <LogoIcon fontSize="3xl" color="whiteAlpha.900" />
           <Heading as="h1" fontSize="3xl" fontFamily="Crimson Text" ml={4}>
             {siteTitle}
           </Heading>
         </Stack>
-      </Link>
+      </ReachLink>
       <Spacer />
       <Stack spacing={2} direction="row">
         <LanguageToggle />
         <Tooltip
           hasArrow
           aria-label="Activate button to toggle brightness"
-          label={useColorModeValue(
-            "Decrease brightness",
-            "Increase brightness",
-          )}
+          label={useColorModeValue('Decrease brightness', 'Increase brightness')}
           placement="left"
         >
           <IconButton
-            color={useColorModeValue("red.500", "gray.600")}
+            color={useColorModeValue('red.500', 'gray.600')}
             aria-label="Toggle brightness"
             isRound
             variant="ghost"
@@ -81,7 +68,7 @@ const NavBar: FC<NavBarProps> = ({ siteTitle }) => {
         </Tooltip>
       </Stack>
     </Flex>
-  );
-};
+  )
+}
 
-export default NavBar;
+export default NavBar

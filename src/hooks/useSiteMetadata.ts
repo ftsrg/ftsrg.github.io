@@ -17,24 +17,24 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import { useStaticQuery, graphql } from "gatsby";
+import { graphql, useStaticQuery } from 'gatsby'
 
 interface SiteMetadata {
-  baseUrl: string;
-  translations: string[];
-  lang: string;
-  title: string;
-  titleTemplate: string;
-  description: string;
-  author: string;
-  image: string;
+  baseUrl: string
+  translations: string[]
+  lang: string
+  title: string
+  titleTemplate: string
+  description: string
+  author: string
+  image: string
   social: {
-    twitterUsername: string;
-    instagramUsername: string;
-    telegramChannel: string;
-  };
-  robots: string;
-  keywords: string[];
+    twitterUsername: string
+    instagramUsername: string
+    telegramChannel: string
+  }
+  robots: string
+  keywords: string[]
 }
 
 export const useSiteMetadata = (): SiteMetadata => {
@@ -61,7 +61,7 @@ export const useSiteMetadata = (): SiteMetadata => {
           }
         }
       }
-    `,
-  );
-  return site.siteMetadata;
-};
+    `
+  )
+  return site.siteMetadata
+}

@@ -17,23 +17,22 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import React, { FC } from "react";
-import { PageProps } from "gatsby";
-import { useTranslation } from "react-i18next";
-import { Heading, Text } from "@chakra-ui/core";
-
-import Layout from "../components/Layout";
-import SEO from "../components/SEO";
+import { Heading, Text } from '@chakra-ui/react'
+import { PageProps } from 'gatsby'
+import React, { FC } from 'react'
+import { useTranslation } from 'react-i18next'
+import Layout from '../components/Layout'
+import SEO from '../components/SEO'
 
 const NotFoundPage: FC<PageProps> = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
   return (
     <Layout>
-      <SEO title={t("pages.404.title")} robots="noindex, nofollow" />
-      <Heading>{t("pages.404.heading")}</Heading>
-      <Text>{t("pages.404.notFoundText")}</Text>
+      <SEO title={t('pages.404.title')} robots="noindex, nofollow" />
+      <Heading>{t('pages.404.heading')}</Heading>
+      <Text>{t('pages.404.notFoundText')}</Text>
     </Layout>
-  );
-};
+  )
+}
 
-export default NotFoundPage;
+export default NotFoundPage

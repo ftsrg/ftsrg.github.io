@@ -17,20 +17,19 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import React, { FC } from "react";
-import { graphql, PageProps } from "gatsby";
-import { Text, Heading } from "@chakra-ui/core";
-import { useTranslation } from "react-i18next";
-
-import Layout from "../components/Layout";
-import SEO from "../components/SEO";
+import { Heading, Text } from '@chakra-ui/react'
+import { graphql, PageProps } from 'gatsby'
+import React, { FC } from 'react'
+import { useTranslation } from 'react-i18next'
+import Layout from '../components/Layout'
+import SEO from '../components/SEO'
 
 interface IndexPageProps extends PageProps {
   data: {
     siteBuildMetadata: {
-      buildTime: string;
-    };
-  };
+      buildTime: string
+    }
+  }
 }
 
 export const pageQuery = graphql`
@@ -39,18 +38,18 @@ export const pageQuery = graphql`
       buildTime(formatString: "dddd, MMMM Do YYYY, h:mm:ss a")
     }
   }
-`;
+`
 
 const IndexPage: FC<IndexPageProps> = ({ data, path }) => {
-  const { buildTime } = data.siteBuildMetadata;
-  const { t } = useTranslation();
+  const { buildTime } = data.siteBuildMetadata
+  const { t } = useTranslation()
   return (
     <Layout>
       <SEO />
-      <Heading>{t("pages.homepage.heading")}</Heading>
-      <Text>{t("lastUpdated", { buildTime })}</Text>
+      <Heading>{t('pages.homepage.heading')}</Heading>
+      <Text>{t('lastUpdated', { buildTime })}</Text>
     </Layout>
-  );
-};
+  )
+}
 
-export default IndexPage;
+export default IndexPage

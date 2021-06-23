@@ -17,15 +17,13 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import React, { FC, ReactElement } from "react";
-import { render } from "@testing-library/react";
-
-import { LocationProvider } from "@reach/router";
-import { ChakraProvider } from "@chakra-ui/core";
-import theme from "./theme";
-
-import { I18nextProvider } from "react-i18next";
-import i18next from "../lib/i18next";
+import { ChakraProvider } from '@chakra-ui/react'
+import { LocationProvider } from '@reach/router'
+import { render, RenderResult } from '@testing-library/react'
+import React, { FC, ReactElement } from 'react'
+import { I18nextProvider } from 'react-i18next'
+import i18next from '../lib/i18next'
+import theme from './theme'
 
 const Providers: FC = ({ children }) => {
   return (
@@ -34,11 +32,12 @@ const Providers: FC = ({ children }) => {
         <I18nextProvider i18n={i18next}>{children}</I18nextProvider>
       </ChakraProvider>
     </LocationProvider>
-  );
-};
+  )
+}
 
-const customRender = (ui: ReactElement, options: object = {}) =>
-  render(ui, { wrapper: Providers, ...options });
+const customRender = (ui: ReactElement, options: Record<string, unknown> = {}): RenderResult => {
+  return render(ui, { wrapper: Providers, ...options })
+}
 
-export * from "@testing-library/react";
-export { customRender as render };
+export * from '@testing-library/react'
+export { customRender as render }

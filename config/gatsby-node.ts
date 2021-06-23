@@ -17,13 +17,11 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import fs from "fs-extra";
-import path from "path";
+import fs from 'fs-extra'
+import path from 'path'
 
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export const onPostBuild = ({ reporter }) => {
-  reporter.info("copy translation files");
-  fs.copySync(
-    path.join(__dirname, "../src/locales"),
-    path.join(__dirname, "../public/locales"),
-  );
-};
+  reporter.info('copy translation files')
+  fs.copySync(path.join(__dirname, '../src/locales'), path.join(__dirname, '../public/locales'))
+}

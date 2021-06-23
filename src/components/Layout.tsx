@@ -17,15 +17,14 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import React, { FC } from "react";
-import { Box } from "@chakra-ui/core";
-
-import { useSiteMetadata } from "../hooks/useSiteMetadata";
-import NavBar from "./NavBar";
-import SEO from "./SEO";
+import { Box } from '@chakra-ui/react'
+import React, { FC } from 'react'
+import { useSiteMetadata } from '../hooks/useSiteMetadata'
+import NavBar from './NavBar'
+import SEO from './SEO'
 
 const Layout: FC = ({ children }) => {
-  const { title, image } = useSiteMetadata();
+  const { title, image } = useSiteMetadata()
   return (
     <>
       <SEO />
@@ -33,30 +32,24 @@ const Layout: FC = ({ children }) => {
         as="header"
         _before={{
           content: `""`,
-          position: "fixed",
-          width: "100%",
-          height: "100vh",
+          position: 'fixed',
+          width: '100%',
+          height: '100vh',
           opacity: 0.2,
           backgroundImage: `url(${image})`,
-          backgroundSize: "cover",
-          zIndex: -1,
+          backgroundSize: 'cover',
+          zIndex: -1
         }}
       >
-        <Box
-          bg="transparent"
-          color="gray.100"
-          p={4}
-          style={{ backdropFilter: "brightness(0.7) saturate(80%) blur(5px)" }}
-          boxShadow="xl"
-        >
+        <Box bg="transparent" color="gray.100" p={4} style={{ backdropFilter: 'brightness(0.7) saturate(80%) blur(5px)' }} boxShadow="xl">
           <NavBar siteTitle={title} />
         </Box>
       </Box>
-      <Box as="main" mt={6} maxW="960px" marginX={[4, 4, 4, "auto"]}>
+      <Box as="main" mt={6} maxW="960px" marginX={[4, 4, 4, 'auto']}>
         {children}
       </Box>
     </>
-  );
-};
+  )
+}
 
-export default Layout;
+export default Layout

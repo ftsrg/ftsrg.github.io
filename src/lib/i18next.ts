@@ -17,19 +17,17 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import i18next from "i18next";
-import { initReactI18next } from "react-i18next";
-
-import backend from "i18next-http-backend";
-import detector from "i18next-browser-languagedetector";
-
-import en from "../locales/en/translation.json";
-import id from "../locales/id/translation.json";
+import i18next from 'i18next'
+import detector from 'i18next-browser-languagedetector'
+import backend from 'i18next-http-backend'
+import { initReactI18next } from 'react-i18next'
+import en from '../locales/en/translation.json'
+import id from '../locales/id/translation.json'
 
 const resources = {
   en: { translation: { ...en } },
-  id: { translation: { ...id } },
-};
+  id: { translation: { ...id } }
+}
 
 i18next
   /**
@@ -55,18 +53,18 @@ i18next
    */
   .init({
     detection: {
-      lookupQuerystring: "locale",
+      lookupQuerystring: 'locale'
     },
-    fallbackLng: "en",
+    fallbackLng: 'en',
     debug: false,
     keySeparator: false,
     interpolation: {
-      escapeValue: false,
+      escapeValue: false
     },
     react: {
-      useSuspense: false,
+      useSuspense: false
     },
-    resources,
-  });
+    resources
+  })
 
-export default i18next;
+export default i18next
