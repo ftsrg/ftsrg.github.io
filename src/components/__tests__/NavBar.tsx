@@ -36,12 +36,6 @@ beforeAll(() => {
 })
 
 describe('<NavBar />', () => {
-  it('has svg icon hidden to screen readers', () => {
-    render(<NavBar siteTitle="Sample Title" />)
-    expect(screen.getAllByRole('presentation')).toHaveLength(1)
-    expect(screen.getAllByRole('presentation')[0]).toContainHTML('svg')
-  })
-
   it('displays expected site title in heading', () => {
     render(<NavBar siteTitle="Sample Title" />)
     expect(screen.getByText('Sample Title')).toBeTruthy()

@@ -32,5 +32,6 @@ module.exports = {
     __PATH_PREFIX__: ``
   },
   setupFiles: [`<rootDir>/config/loadershim.js`, `<rootDir>/config/__mocks__/browser-mocks.js`],
-  setupFilesAfterEnv: ['<rootDir>/config/setup-test-env.js']
+  setupFilesAfterEnv: ['<rootDir>/config/setup-test-env.js'],
+  testEnvironment: 'jsdom'
 }
