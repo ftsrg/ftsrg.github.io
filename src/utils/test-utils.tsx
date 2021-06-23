@@ -17,20 +17,16 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import { ChakraProvider } from '@chakra-ui/react'
 import { LocationProvider } from '@reach/router'
 import { render, RenderResult } from '@testing-library/react'
 import React, { FC, ReactElement } from 'react'
 import { I18nextProvider } from 'react-i18next'
 import i18next from '../lib/i18next'
-import theme from './theme'
 
 const Providers: FC = ({ children }) => {
   return (
     <LocationProvider>
-      <ChakraProvider theme={theme}>
-        <I18nextProvider i18n={i18next}>{children}</I18nextProvider>
-      </ChakraProvider>
+      <I18nextProvider i18n={i18next}>{children}</I18nextProvider>
     </LocationProvider>
   )
 }

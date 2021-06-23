@@ -17,7 +17,6 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import { Heading, Text } from '@chakra-ui/react'
 import { PageProps } from 'gatsby'
 import React, { FC } from 'react'
 import { useTranslation } from 'react-i18next'
@@ -29,8 +28,8 @@ const NotFoundPage: FC<PageProps> = () => {
   return (
     <Layout>
       <SEO title={t('pages.404.title')} robots="noindex, nofollow" />
-      <Heading>{t('pages.404.heading')}</Heading>
-      <Text>{t('pages.404.notFoundText')}</Text>
+      <div>{t('pages.404.heading')}</div>
+      <div>{t('pages.404.notFoundText')}</div>
     </Layout>
   )
 }
