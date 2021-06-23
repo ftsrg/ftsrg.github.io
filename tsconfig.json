@@ -1,0 +1,19 @@
+{
+  "include": ["./src/**/*", "./typings/**/*"],
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "esnext",
+    "jsx": "react",
+    "lib": ["dom", "dom.iterable", "es2017"],
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "noUnusedLocals": false,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "test-utils": ["src/utils/test-utils"]
+    }
+  }
+}

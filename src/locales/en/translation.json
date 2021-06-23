@@ -1,0 +1,8 @@
+{
+  "lastUpdated": "Site last updated on {{ buildTime }}.",
+  "pages.homepage.title": "Sample Title",
+  "pages.homepage.heading": "Welcome",
+  "pages.404.title": "404: Not found",
+  "pages.404.heading": "NOT FOUND",
+  "pages.404.notFoundText": "You just hit a route that doesn't exist... sadness."
+}

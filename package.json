@@ -1,0 +1,65 @@
+{
+  "name": "gatsby-starter-i18n-react-i18next",
+  "version": "0.1.0",
+  "description": "Gatsby starter for internationalized websites",
+  "author": "Josh Habdas <jhabdas@protonmail.com>",
+  "keywords": [
+    "gatsby",
+    "react",
+    "i18n",
+    "typescript",
+    "jest",
+    "chakra"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://git.habd.as/comfusion/gatsby-starter-i18n-react-i18next.git"
+  },
+  "scripts": {
+    "analyze": "source-map-explorer 'public/*.js'",
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "dev": "gatsby develop",
+    "format": "prettier --write .",
+    "serve": "gatsby serve",
+    "test": "jest",
+    "type-check": "tsc"
+  },
+  "dependencies": {
+    "@chakra-ui/core": "1.0.0-next.4",
+    "@chakra-ui/icons": "1.0.0-next.4",
+    "@chakra-ui/theme": "1.0.0-next.4",
+    "@chakra-ui/theme-tools": "1.0.0-next.4",
+    "@emotion/core": "^10.0.28",
+    "gatsby": "^2.23.23",
+    "gatsby-plugin-react-helmet": "^3.3.10",
+    "i18next": "^19.5.5",
+    "i18next-browser-languagedetector": "^5.0.0",
+    "i18next-http-backend": "^1.0.16",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0",
+    "react-i18next": "^11.7.0",
+    "react-icons": "^3.10.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.0",
+    "@testing-library/react": "^10.4.5",
+    "@testing-library/react-hooks": "^3.3.0",
+    "@types/fs-extra": "^9.0.1",
+    "@types/jest": "^26.0.4",
+    "@types/node": "^14.0.20",
+    "@types/react": "^16.9.41",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-helmet": "^6.0.0",
+    "babel-jest": "^26.1.0",
+    "babel-preset-gatsby": "^0.5.1",
+    "dotenv": "^8.2.0",
+    "gatsby-plugin-ts-config": "^0.2.3",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.1.0",
+    "prettier": "2.0.5",
+    "source-map-explorer": "^2.4.2"
+  },
+  "license": "AGPL-3.0-or-later"
+}
