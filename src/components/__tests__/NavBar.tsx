@@ -19,8 +19,7 @@
 
 import * as Gatsby from 'gatsby'
 import React from 'react'
-// eslint-disable-next-line import/no-unresolved
-import { render, screen } from 'test-utils'
+import { render, screen } from '../../utils/test-utils'
 import NavBar from '../NavBar'
 
 beforeAll(() => {

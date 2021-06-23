@@ -17,7 +17,6 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import { Heading, Text } from '@chakra-ui/react'
 import { graphql, PageProps } from 'gatsby'
 import React, { FC } from 'react'
 import { useTranslation } from 'react-i18next'
@@ -46,8 +45,8 @@ const IndexPage: FC<IndexPageProps> = ({ data, path }) => {
   return (
     <Layout>
       <SEO />
-      <Heading>{t('pages.homepage.heading')}</Heading>
-      <Text>{t('lastUpdated', { buildTime })}</Text>
+      <div>{t('pages.homepage.heading')}</div>
+      <div>{t('lastUpdated', { buildTime })}</div>
     </Layout>
   )
 }

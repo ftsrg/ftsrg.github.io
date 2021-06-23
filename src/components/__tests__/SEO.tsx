@@ -21,8 +21,7 @@
 
 import * as Gatsby from 'gatsby'
 import React from 'react'
-// eslint-disable-next-line import/no-unresolved
-import { render, waitFor } from 'test-utils'
+import { render, waitFor } from '../../utils/test-utils'
 import SEO from '../SEO'
 
 const getMetaTagByName = (metaName: string) => {
