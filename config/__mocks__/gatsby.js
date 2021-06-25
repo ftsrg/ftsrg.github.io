@@ -1,27 +1,18 @@
-import React from "react";
-const gatsby = jest.requireActual("gatsby");
+import React from 'react'
+
+const gatsby = jest.requireActual('gatsby')
 
 module.exports = {
   ...gatsby,
   graphql: jest.fn(),
   Link: jest.fn(
     // these props are invalid for an `a` tag
-    ({
-      activeClassName,
-      activeStyle,
-      getProps,
-      innerRef,
-      partiallyActive,
-      ref,
-      replace,
-      to,
-      ...rest
-    }) =>
-      React.createElement("a", {
+    ({ activeClassName, activeStyle, getProps, innerRef, partiallyActive, ref, replace, to, ...rest }) =>
+      React.createElement('a', {
         ...rest,
-        href: to,
-      }),
+        href: to
+      })
   ),
   StaticQuery: jest.fn(),
-  useStaticQuery: jest.fn(),
-};
+  useStaticQuery: jest.fn()
+}

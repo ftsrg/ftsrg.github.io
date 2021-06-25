@@ -18,6 +18,7 @@
  */
 
 import dotenv from 'dotenv'
+import path from 'path'
 
 dotenv.config({
   path: `.env.${process.env.NODE_ENV}`
@@ -48,13 +49,44 @@ export default {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    /* {
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `project`,
+        path: `${path.join(__dirname, '../src/content/projects')}`
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${path.join(__dirname, '../src/content/images')}`
       }
-    }, */
+    },
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-autolink-headers`,
+            options: {
+              className: `md-headinglink`,
+              isIconAfterHeader: true,
+              elements: [`h1`, `h2`, `h3`, `h4`]
+            }
+          },
+          'gatsby-remark-smartypants',
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 1140,
+              quality: 90,
+              linkImagesToOriginal: false
+            }
+          }
+        ]
+      }
+    },
     `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`
