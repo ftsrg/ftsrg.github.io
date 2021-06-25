@@ -1,0 +1,47 @@
+//
+// Override variables by Colorlib Academics
+// Import bootstrap/variables first
+//
+
+//
+// Color system
+//
+$primary: #960018;
+$secondary: #232b2b;
+$primary-medium: #b24557;
+$secondary-medium: #878b8b;
+$primary-light: #cf8b96;
+$secondary-light: #c3c5c5;
+$success: $green;
+$info: $cyan;
+$warning: $yellow;
+$danger: $red;
+$light: $gray-100;
+$dark: $gray-800;
+
+$theme-colors: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'primary-medium': $primary-medium,
+  'secondary-medium': $secondary-medium,
+  'primary-light': $primary-light,
+  'secondary-light': $secondary-light,
+  'success': $green,
+  'info': $cyan,
+  'warning': $yellow,
+  'danger': $red,
+  'light': $gray-100,
+  'dark': $gray-800
+);
+
+$gray-1: #25262a;
+$gray-2: #5c626e;
+$gray-3: #c4c7ce;
+$gray-4: #edf0f5;
+
+//
+// Fonts
+//
+
+$font-family-sans-serif: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif,
+  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';

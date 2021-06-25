@@ -20,6 +20,6 @@
 // eslint-disable-next-line no-shadow
 enum Locale {
   en = 'English',
-  id = 'Bahasa Indonesia'
+  hu = 'Magyar'
 }
 export default Locale

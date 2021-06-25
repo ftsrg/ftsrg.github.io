@@ -1,0 +1,8 @@
+{
+  "lastUpdated": "Utoljára módosítva {{ buildTime }}.",
+  "pages.homepage.title": "Sample Title",
+  "pages.homepage.heading": "Üdvözöljük!",
+  "pages.404.title": "404: A keresett oldal nem található.",
+  "pages.404.heading": "Hiba!",
+  "pages.404.notFoundText": "Egy olyan elérési útvonalra navigált, amely nem elérhető weboldalunkon."
+}

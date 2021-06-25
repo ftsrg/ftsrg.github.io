@@ -18,18 +18,21 @@
  */
 
 import { PageProps } from 'gatsby'
-import React, { FC } from 'react'
+import React from 'react'
+import { Container } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
-import Layout from '../components/Layout'
 import SEO from '../components/SEO'
+import Layout from '../layout/Layout'
 
-const NotFoundPage: FC<PageProps> = () => {
+const NotFoundPage: React.FC<PageProps> = () => {
   const { t } = useTranslation()
   return (
     <Layout>
       <SEO title={t('pages.404.title')} robots="noindex, nofollow" />
-      <div>{t('pages.404.heading')}</div>
-      <div>{t('pages.404.notFoundText')}</div>
+      <Container className="text-center font-weight-bold my-5">
+        <h1>{t('pages.404.heading')}</h1>
+        <h2>{t('pages.404.notFoundText')}</h2>
+      </Container>
     </Layout>
   )
 }

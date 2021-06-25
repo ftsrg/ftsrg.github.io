@@ -28,10 +28,13 @@ interface SiteMetadata {
   description: string
   author: string
   image: string
+  favicons: {
+    favicon32: string
+    favicon16: string
+  }
   social: {
     twitterUsername: string
-    instagramUsername: string
-    telegramChannel: string
+    facebookPage: string
   }
   robots: string
   keywords: string[]
@@ -51,10 +54,13 @@ export const useSiteMetadata = (): SiteMetadata => {
             description
             author
             image
+            favicons {
+              favicon32
+              favicon16
+            }
             social {
               twitterUsername
-              instagramUsername
-              telegramChannel
+              facebookAppId
             }
             keywords
             robots

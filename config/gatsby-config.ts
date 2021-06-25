@@ -25,21 +25,38 @@ dotenv.config({
 
 export default {
   siteMetadata: {
-    baseUrl: 'https://site.example/',
-    translations: ['id'],
-    lang: 'en-US',
-    title: 'Sample Title',
-    titleTemplate: '%s | Sample Title',
-    description: 'Sample website description.',
-    author: 'info@site.example',
-    image: 'https://source.unsplash.com/collection/983219/2000x1322',
-    social: {
-      twitterUsername: '@example',
-      instagramUsername: '@example',
-      telegramChannel: '@example'
+    baseUrl: 'https://ftsrg.mit.bme.hu/',
+    translations: ['en'],
+    lang: 'hu',
+    title: 'ftsrg — Kritikus Rendszerek Kutatócsoport',
+    titleTemplate: '%s | ftsrg — Kritikus Rendszerek Kutatócsoport',
+    description:
+      'A Kritikus Rendszerek Kutatócsoport célja olyan új módszerek és szoftverek kidolgozása, amiknek a segítségével a' +
+      'mérnökök jobb rendszereket készíthetnek.',
+    author: 'ftsrg',
+    image: '/images/ftsrg-large.png',
+    favicons: {
+      favicon32: '/images/favicons/favicon-32x32.png',
+      favicon16: '/images/favicons/favicon-16x16.png'
     },
-    keywords: ['example', 'keywords'],
+    social: {
+      twitterUsername: '@ftsrg_bme',
+      facebookAppId: 'FB_APP_ID'
+    },
+    keywords: ['research', 'system', 'verification', 'analysis', 'model-based'],
     robots: 'index, follow'
   },
-  plugins: ['gatsby-plugin-react-helmet']
+  plugins: [
+    `gatsby-plugin-react-helmet`,
+    /* {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${path.join(__dirname, '../src/content/images')}`
+      }
+    }, */
+    `gatsby-plugin-sass`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`
+  ]
 }
