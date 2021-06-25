@@ -2,7 +2,7 @@
 
 Project code copied from [gatsby-starter-i18n-react-i18next](https://code.habd.as/comfusion/gatsby-starter-i18n-react-i18next), special thanks to Josh Habdas.
 
-Introcuding the portfolio and blog of the Critical Systems Research Group - better known as Ftsrg. Production site live at [undefined]().
+Introducing the portfolio and blog of the Critical Systems Research Group - better known as Ftsrg. Production site live at [Netlify](https://ftsrg-kir-dev.netlify.app/) for testing preview.
 
 Project built with
 * [React](https://reactjs.org/)
