@@ -1,26 +1,7 @@
-import { graphql, PageProps } from 'gatsby'
-import React, { FC } from 'react'
-import { useTranslation } from 'react-i18next'
+import { PageProps } from 'gatsby'
+import React from 'react'
 
-interface ResearchPageProps extends PageProps {
-  data: {
-    siteBuildMetadata: {
-      buildTime: string
-    }
-  }
-}
-
-export const pageQuery = graphql`
-  query {
-    siteBuildMetadata {
-      buildTime(formatString: "dddd, MMMM Do YYYY, h:mm:ss a")
-    }
-  }
-`
-
-const ResearchPage: FC<ResearchPageProps> = ({ data, path }) => {
-  const { buildTime } = data.siteBuildMetadata
-  const { t } = useTranslation()
+const ResearchPage: React.FC<PageProps> = () => {
   return <div>asd</div>
 }
 

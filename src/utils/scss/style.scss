@@ -1,4 +1,7 @@
-@import '../../../node_modules/bootstrap/scss/bootstrap';
+/* Import function, variable and mixin dependencies */
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+@import '../../../node_modules/bootstrap/scss/mixins';
 
 /* Overrides */
 @import 'overrides';
@@ -8,3 +11,6 @@
 @import 'site-navbar';
 /* Blocks */
 @import 'site-blocks';
+
+/* Import bootstrap altogether as the last one */
+@import '../../../node_modules/bootstrap/scss/bootstrap';

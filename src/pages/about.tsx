@@ -1,27 +1,14 @@
-import { graphql, PageProps } from 'gatsby'
-import React, { FC } from 'react'
+import { PageProps } from 'gatsby'
+import React from 'react'
 import { useTranslation } from 'react-i18next'
 
-interface AboutPageProps extends PageProps {
-  data: {
-    siteBuildMetadata: {
-      buildTime: string
-    }
-  }
-}
-
-export const pageQuery = graphql`
-  query {
-    siteBuildMetadata {
-      buildTime(formatString: "dddd, MMMM Do YYYY, h:mm:ss a")
-    }
-  }
-`
-
-const AboutPage: FC<AboutPageProps> = ({ data, path }) => {
-  const { buildTime } = data.siteBuildMetadata
+const AboutPage: React.FC<PageProps> = () => {
   const { t } = useTranslation()
-  return <div>asd</div>
+  return (
+    <>
+      <div>{t('pages.homepage.heading')}</div>
+    </>
+  )
 }
 
 export default AboutPage
