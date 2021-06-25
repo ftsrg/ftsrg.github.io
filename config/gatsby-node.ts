@@ -1,93 +1,82 @@
 import fs from 'fs-extra'
+import { GatsbyNode } from 'gatsby'
+import { createFilePath } from 'gatsby-source-filesystem'
 import path from 'path'
 
-exports.onCreateNode = ({ node, actions, getNode }) => {
+export const onCreateNode: GatsbyNode['onCreateNode'] = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
-
-  // Sometimes, optional fields tend to get not picked up by the GraphQL
-  // interpreter if not a single content uses it. Therefore, we're putting them
-  // through `createNodeField` so that the fields still exist and GraphQL won't
-  // trip up. An empty string is still required in replacement to `null`.
-
-  switch (node.internal.type) {
-    case 'MarkdownRemark': {
-      const { permalink, layout } = node.frontmatter
-      const { relativePath } = getNode(node.parent)
-
-      let slug = permalink
-
-      if (!slug) {
-        slug = `/${relativePath.replace('.md', '')}/`
-      }
-
-      // Used to generate URL to view this content.
-      createNodeField({
-        node,
-        name: 'slug',
-        value: `/${layout}${slug}` || ''
-      })
-
-      // Used to determine a page layout.
-      createNodeField({
-        node,
-        name: 'layout',
-        value: layout || ''
-      })
-      break
-    }
-    default:
-      break
+  if (node.internal.type === `MarkdownRemark`) {
+    const slug = createFilePath({ node, getNode, basePath: `pages` })
+    createNodeField({
+      node,
+      name: `slug`,
+      value: slug
+    })
+    createNodeField({
+      node,
+      name: `layout`,
+      // eslint-disable-next-line dot-notation
+      value: node['frontmatter']['layout']
+    })
   }
 }
 
 /* Right now we only support page creation for posts, see `fields: { layout: { eq: "post" } }` in query */
-exports.createPages = async ({ graphql, actions, reporter }) => {
+export const createPages: GatsbyNode['createPages'] = ({ graphql, actions }) => {
   const { createPage } = actions
 
-  const allMarkdown = await graphql(`
-    {
-      allMarkdownRemark(filter: { fields: { layout: { eq: "post" } } }, limit: 1000) {
-        edges {
-          node {
-            fields {
-              layout
-              slug
+  // Query for markdown nodes to use in creating pages.
+  // You can query for whatever data you want to create pages for e.g.
+  // products, portfolio items, landing pages, etc.
+  // Variables can be added as the second function parameter
+  return graphql(
+    `
+      query loadPagesQuery($limit: Int!) {
+        allMarkdownRemark(limit: $limit, filter: { fields: { layout: { eq: "post" } } }) {
+          edges {
+            node {
+              fields {
+                slug
+                layout
+              }
             }
           }
         }
       }
+    `,
+    { limit: 1000 }
+  ).then((result) => {
+    if (result.errors) {
+      throw result.errors
     }
-  `)
 
-  if (allMarkdown.errors) {
-    reporter.info(allMarkdown.errors)
-    throw new Error(allMarkdown.errors)
-  }
-
-  allMarkdown.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    const { slug, layout } = node.fields
-
-    createPage({
-      path: slug,
-      // This will automatically resolve the template to a corresponding
-      // `layout` frontmatter in the Markdown.
-      //
-      // Feel free to set any `layout` as you'd like in the frontmatter, as
-      // long as the corresponding template file exists in src/templates.
-      // If no template is set, it will fall back to the default `page`
-      // template.
-      //
-      // Note that the template has to exist first, or else the build will fail.
-      component: path.resolve(`../src/templates/${layout || 'page'}.tsx`),
-      context: {
-        // Data passed to context is available in page queries as GraphQL variables.
-        slug
-      }
+    // Create blog post pages.
+    // eslint-disable-next-line dot-notation
+    result.data['allMarkdownRemark'].edges.forEach((edge) => {
+      const { slug } = edge.node.fields
+      const { layout } = edge.node.fields
+      createPage({
+        path: slug,
+        // This will automatically resolve the template to a corresponding
+        // `layout` frontmatter in the Markdown.
+        //
+        // Feel free to set any `layout` as you'd like in the frontmatter, as
+        // long as the corresponding template file exists in src/templates.
+        // If no template is set, it will fall back to the default `page`
+        // template.
+        //
+        // Note that the template has to exist first, or else the build will fail.
+        component: path.join(__dirname, `../src/templates/${layout || 'page'}.tsx`),
+        context: {
+          // Data passed to context is available in page queries as GraphQL variables.
+          slug
+        }
+      })
     })
   })
 }
 
-export const onPostBuild = ({ reporter }): void => {
+export const onPostBuild: GatsbyNode['onPostBuild'] = ({ reporter }) => {
   reporter.info('copy translation files')
   fs.copySync(path.join(__dirname, '../src/locales'), path.join(__dirname, '../public/locales'))
 }

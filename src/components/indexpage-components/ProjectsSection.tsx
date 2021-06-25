@@ -4,6 +4,9 @@ import ProjectProps from '../../utils/props/project.props'
 
 interface ProjectsSectionProps {
   nodes: {
+    fields: {
+      slug: string
+    }
     html: string
     frontmatter: ProjectProps
   }[]

@@ -9,6 +9,9 @@ interface IndexPageProps extends PageProps {
   data: {
     projects: {
       nodes: {
+        fields: {
+          slug: string
+        }
         html: string
         frontmatter: ProjectProps
       }[]
@@ -35,7 +38,7 @@ export default IndexPage
 
 export const query = graphql`
   query IndexPageQueries {
-    projects: allMarkdownRemark(filter: { fields: { layout: { eq: "project" } } }, limit: 1) {
+    projects: allMarkdownRemark(filter: { fields: { layout: { eq: "project" } } }) {
       nodes {
         fields {
           slug
