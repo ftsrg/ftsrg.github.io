@@ -20,6 +20,7 @@
 import React from 'react'
 import { I18nextProvider } from 'react-i18next'
 import i18next from '../src/lib/i18next'
+import '../src/utils/scss/style.scss'
 
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export const wrapRootElement = ({ element }) => <I18nextProvider i18n={i18next}>{element}</I18nextProvider>

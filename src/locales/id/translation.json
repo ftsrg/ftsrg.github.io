@@ -1,8 +1,0 @@
-{
-  "lastUpdated": "Situs terakhir di perbaharui pada hari {{ buildTime }}.",
-  "pages.homepage.title": "Sample Title",
-  "pages.homepage.heading": "Selamat Datang",
-  "pages.404.title": "404: Tidak Ditemukan",
-  "pages.404.heading": "TIDAK DITEMUKAN",
-  "pages.404.notFoundText": "Anda baru saja menabrak rute yang tidak ada... kesedihan."
-}

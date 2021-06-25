@@ -11,11 +11,11 @@ const LanguageToggle: FC = () => {
   }
   const { i18n } = useTranslation()
   const locale = i18n.language as keyof typeof Locale
-  const toggleLanguage = () => (locale === 'en' ? i18n.changeLanguage('id') : i18n.changeLanguage('en'))
+  const toggleLanguage = () => (locale === 'hu' ? i18n.changeLanguage('en') : i18n.changeLanguage('hu'))
 
   return (
     <Button
-      disabled={!translations.some((loc) => loc === 'id')}
+      disabled={!translations.some((loc) => loc === 'en')}
       color="gray.600"
       aria-label="Toggle language"
       variant="light"

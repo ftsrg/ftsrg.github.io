@@ -28,6 +28,10 @@ type SEOProps = {
   description?: string
   author?: string
   image?: string
+  favicons?: {
+    favicon32: string
+    favicon16: string
+  }
   robots?: string
   keywords?: string[]
   meta?: { name: string; content: string }[]
@@ -45,7 +49,8 @@ const SEO: FC<SEOProps> = ({ title, description, image, author, lang, robots, ke
     author: defaultAuthor,
     description: defaultDescription,
     image: defaultImage,
-    social: { twitterUsername, telegramChannel },
+    favicons,
+    social: { twitterUsername },
     robots: defaultRobots,
     keywords: defaultKeywords
   } = useSiteMetadata()
@@ -78,6 +83,18 @@ const SEO: FC<SEOProps> = ({ title, description, image, author, lang, robots, ke
         {
           rel: 'canonical',
           href: seo.url
+        },
+        {
+          rel: 'icon',
+          type: 'image/png',
+          sizes: '32x32',
+          href: favicons?.favicon32
+        },
+        {
+          rel: 'icon',
+          type: 'image/png',
+          sizes: '16x16',
+          href: favicons?.favicon16
         }
       ].concat(links)}
       meta={[
@@ -124,10 +141,6 @@ const SEO: FC<SEOProps> = ({ title, description, image, author, lang, robots, ke
         {
           name: 'twitter:image',
           content: seo.image
-        },
-        {
-          name: 'telegram:channel',
-          content: telegramChannel
         },
         {
           name: 'robots',
