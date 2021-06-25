@@ -1,27 +1,93 @@
-/*!
- * Copyright (C) 2020  Josh Habdas <jhabdas@protonmail.com>
- *
- * This file is part of gatsby-starter-i18n-react-i18next.
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Affero General Public License as published
- * by the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU Affero General Public License for more details.
- *
- * You should have received a copy of the GNU Affero General Public License
- * along with this program.  If not, see <https://www.gnu.org/licenses/>.
- */
-
 import fs from 'fs-extra'
 import path from 'path'
 
-// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
-export const onPostBuild = ({ reporter }) => {
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions
+
+  // Sometimes, optional fields tend to get not picked up by the GraphQL
+  // interpreter if not a single content uses it. Therefore, we're putting them
+  // through `createNodeField` so that the fields still exist and GraphQL won't
+  // trip up. An empty string is still required in replacement to `null`.
+
+  switch (node.internal.type) {
+    case 'MarkdownRemark': {
+      const { permalink, layout } = node.frontmatter
+      const { relativePath } = getNode(node.parent)
+
+      let slug = permalink
+
+      if (!slug) {
+        slug = `/${relativePath.replace('.md', '')}/`
+      }
+
+      // Used to generate URL to view this content.
+      createNodeField({
+        node,
+        name: 'slug',
+        value: `/${layout}${slug}` || ''
+      })
+
+      // Used to determine a page layout.
+      createNodeField({
+        node,
+        name: 'layout',
+        value: layout || ''
+      })
+      break
+    }
+    default:
+      break
+  }
+}
+
+/* Right now we only support page creation for posts, see `fields: { layout: { eq: "post" } }` in query */
+exports.createPages = async ({ graphql, actions, reporter }) => {
+  const { createPage } = actions
+
+  const allMarkdown = await graphql(`
+    {
+      allMarkdownRemark(filter: { fields: { layout: { eq: "post" } } }, limit: 1000) {
+        edges {
+          node {
+            fields {
+              layout
+              slug
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  if (allMarkdown.errors) {
+    reporter.info(allMarkdown.errors)
+    throw new Error(allMarkdown.errors)
+  }
+
+  allMarkdown.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    const { slug, layout } = node.fields
+
+    createPage({
+      path: slug,
+      // This will automatically resolve the template to a corresponding
+      // `layout` frontmatter in the Markdown.
+      //
+      // Feel free to set any `layout` as you'd like in the frontmatter, as
+      // long as the corresponding template file exists in src/templates.
+      // If no template is set, it will fall back to the default `page`
+      // template.
+      //
+      // Note that the template has to exist first, or else the build will fail.
+      component: path.resolve(`../src/templates/${layout || 'page'}.tsx`),
+      context: {
+        // Data passed to context is available in page queries as GraphQL variables.
+        slug
+      }
+    })
+  })
+}
+
+export const onPostBuild = ({ reporter }): void => {
   reporter.info('copy translation files')
   fs.copySync(path.join(__dirname, '../src/locales'), path.join(__dirname, '../public/locales'))
 }

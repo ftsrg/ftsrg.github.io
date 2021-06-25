@@ -1,12 +1,22 @@
-import { PageProps } from 'gatsby'
+import { graphql, PageProps } from 'gatsby'
 import React, { FC } from 'react'
-import { useTranslation } from 'react-i18next'
 import { About, Banner, Competences, Education, News, Partners, Projects } from '../components/indexpage-components'
 import SEO from '../components/SEO'
 import Layout from '../layout/Layout'
+import ProjectProps from '../utils/props/project.props'
 
-const IndexPage: FC<PageProps> = () => {
-  const { t } = useTranslation()
+interface IndexPageProps extends PageProps {
+  data: {
+    projects: {
+      nodes: {
+        html: string
+        frontmatter: ProjectProps
+      }[]
+    }
+  }
+}
+
+const IndexPage: FC<IndexPageProps> = ({ data }) => {
   return (
     <Layout>
       <SEO />
@@ -14,7 +24,7 @@ const IndexPage: FC<PageProps> = () => {
       <Competences />
       <Education />
       <About />
-      <Projects />
+      <Projects nodes={data.projects.nodes} />
       <Partners />
       <News />
     </Layout>
@@ -22,3 +32,26 @@ const IndexPage: FC<PageProps> = () => {
 }
 
 export default IndexPage
+
+export const query = graphql`
+  query IndexPageQueries {
+    projects: allMarkdownRemark(filter: { fields: { layout: { eq: "project" } } }, limit: 1) {
+      nodes {
+        fields {
+          slug
+        }
+        html
+        frontmatter {
+          title
+          subtitle
+          url
+          featuredImage {
+            childImageSharp {
+              gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+            }
+          }
+        }
+      }
+    }
+  }
+`
