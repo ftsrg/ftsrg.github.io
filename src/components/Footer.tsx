@@ -103,7 +103,7 @@ const Footer: React.FC<FooterProps> = ({ hasContact }) => (
           <div className="col-12">
             <div className="copyright">
               <p>
-                Copyright &copy;2021 All rights reserved | Template is made with <i className="icon-heart" aria-hidden="true" /> by{' '}
+                Copyright &copy; 2021 All rights reserved | Template is made with <i className="icon-heart" aria-hidden="true" /> by{' '}
                 <a href="https://colorlib.com" target="_blank" rel="noopener noreferrer">
                   Colorlib
                 </a>{' '}

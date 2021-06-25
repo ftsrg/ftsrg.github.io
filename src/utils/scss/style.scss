@@ -1,4 +1,4 @@
-/* Import function, variable and mixin dependencies */
+/* Import bootstrap dependencies */
 @import '../../../node_modules/bootstrap/scss/functions';
 @import '../../../node_modules/bootstrap/scss/variables';
 @import '../../../node_modules/bootstrap/scss/mixins';
@@ -12,5 +12,5 @@
 /* Blocks */
 @import 'site-blocks';
 
-/* Import bootstrap altogether as the last one */
+/* Import bootstrap */
 @import '../../../node_modules/bootstrap/scss/bootstrap';

@@ -9,7 +9,7 @@ const Layout: React.FC = ({ children }) => {
       <SEO />
       <div className="d-flex flex-column">
         <NavBar />
-        <main className="flex-1">{children}</main>
+        <main className="flex-grow-1">{children}</main>
         <Footer hasContact />
       </div>
     </>

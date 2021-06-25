@@ -19,6 +19,21 @@ $danger: $red;
 $light: $gray-100;
 $dark: $gray-800;
 
+$theme-colors: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'primary-medium': $primary-medium,
+  'secondary-medium': $secondary-medium,
+  'primary-light': $primary-light,
+  'secondary-light': $secondary-light,
+  'success': $green,
+  'info': $cyan,
+  'warning': $yellow,
+  'danger': $red,
+  'light': $gray-100,
+  'dark': $gray-800
+);
+
 $gray-1: #25262a;
 $gray-2: #5c626e;
 $gray-3: #c4c7ce;
