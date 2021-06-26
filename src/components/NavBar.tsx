@@ -1,5 +1,62 @@
 import { useLocation } from '@reach/router'
 import React from 'react'
+import { Nav, Navbar } from 'react-bootstrap'
+
+interface INavbarItem {
+  title: string
+  href: string
+  children?: Array<{ title: string; href: string }>
+}
+
+const NAVBAR_ITEMS: Array<INavbarItem> = [
+  {
+    title: 'Kezdőlap',
+    href: '/',
+    children: [
+      { title: 'Szakmai kompetenciáink', href: '#competences' },
+      { title: 'Oktatás és tehetséggondozás', href: '#education' },
+      { title: 'A kutatócsoportról', href: '#about' },
+      { title: 'Projektjeink', href: '#projects' },
+      { title: 'Partnereink', href: '#partners' },
+      { title: 'Hírek', href: '#news' }
+    ]
+  },
+  {
+    title: 'Kutatás-fejlesztés',
+    href: '/research',
+    children: [
+      { title: 'K+F+I projektjeink', href: '#projects' },
+      { title: 'Publikációink', href: '#publications' },
+      { title: 'Eszközeink', href: '#tools' },
+      { title: 'Események és díjak', href: '#events' }
+    ]
+  },
+  {
+    title: 'Oktatás',
+    href: '/education',
+    children: [
+      { title: 'Specializációk', href: '#specializations' },
+      { title: 'Tantárgyaink', href: '#courses' },
+      { title: 'Önálló munka', href: '#student-work' },
+      { title: 'Tehetséggondozás', href: '#talentcare' },
+      { title: 'Hallgatóink eredményei', href: '#achievements' }
+    ]
+  },
+  {
+    title: 'Rólunk',
+    href: '/about',
+    children: [
+      { title: 'A kutatócsoportról', href: '#about' },
+      { title: 'A kutatócsoport tagjai', href: '#members' },
+      { title: 'Korábbi munkatársaink', href: '#formermembers' },
+      { title: 'Hallgatóink', href: '#students' }
+    ]
+  },
+  {
+    title: 'Kapcsolat',
+    href: '/contact'
+  }
+]
 
 const NavBar: React.FC = () => {
   const location = useLocation()
@@ -32,86 +89,44 @@ const NavBar: React.FC = () => {
         </div>
       </div>
 
-      <header id="navbar" className="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
-        <div className="container">
-          <div className="d-flex align-items-center">
-            <div className="site-logo">
-              <a href="index.html" className="d-block">
-                <img src="images/ftsrg.png" alt="..." className="img-fluid" style={{ height: '36px !important' }} />
+      <Navbar bg="light" expand="lg">
+        <Navbar.Brand href="/">
+          <img src="/images/ftsrg.png" alt="..." className="img-fluid" style={{ height: '2.5rem' }} />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mr-auto">
+            {NAVBAR_ITEMS.map((item) => (
+              <li key={item.href} className={location.pathname === item.href ? 'active has-children' : ''}>
+                <a href={item.href} className="nav-link text-left">
+                  {item.title}
+                </a>
+                <ul className="dropdown">
+                  {location.pathname === item.href &&
+                    item.children?.map((child) => (
+                      <li key={child.href}>
+                        <a href={child.href}>{child.title}</a>
+                      </li>
+                    ))}
+                </ul>
+              </li>
+            ))}
+          </Nav>
+          <div className="ml-auto">
+            <div className="social-wrap">
+              <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/ftsrg">
+                <span className="icon-facebook" />
+              </a>
+              <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/ftsrg_bme">
+                <span className="icon-twitter" />
+              </a>
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/ftsrg">
+                <span className="icon-github" />
               </a>
             </div>
-            <div className="mr-auto">
-              <nav className="site-navigation position-relative text-right" role="navigation">
-                <ul className="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                  <li className={location.pathname === '/' ? 'active has-children' : ''}>
-                    <a href="index.html" className="nav-link text-left">
-                      Kezdőlap
-                    </a>
-                    <ul className="dropdown">
-                      <li>
-                        <a href="#competences">Szakmai kompetenciáink</a>
-                      </li>
-                      <li>
-                        <a href="#education">Oktatás és tehetséggondozás</a>
-                      </li>
-                      <li>
-                        <a href="#about">A kutatócsoportról</a>
-                      </li>
-                      <li>
-                        <a href="#projects">Projektjeink</a>
-                      </li>
-                      <li>
-                        <a href="#partners">Partnereink</a>
-                      </li>
-                      <li>
-                        <a href="#news">Hírek</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="research.html" className="nav-link text-left">
-                      Kutatás-fejlesztés
-                    </a>
-                  </li>
-                  <li>
-                    <a href="education.html" className="nav-link text-left">
-                      Oktatás
-                    </a>
-                  </li>
-                  <li>
-                    <a href="about.html" className="nav-link text-left">
-                      Rólunk
-                    </a>
-                  </li>
-                  <li>
-                    <a href="contact.html" className="nav-link text-left">
-                      Kapcsolat
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <div className="ml-auto">
-              <div className="social-wrap">
-                <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/ftsrg">
-                  <span className="icon-facebook" />
-                </a>
-                <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/ftsrg_bme">
-                  <span className="icon-twitter" />
-                </a>
-                <a target="_blank" rel="noopener noreferrer" href="https://github.com/ftsrg">
-                  <span className="icon-github" />
-                </a>
-
-                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a href="#" className="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black">
-                  <span className="icon-menu h3" />
-                </a>
-              </div>
-            </div>
           </div>
-        </div>
-      </header>
+        </Navbar.Collapse>
+      </Navbar>
     </>
   )
 }
