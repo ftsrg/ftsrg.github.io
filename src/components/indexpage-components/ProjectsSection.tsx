@@ -27,7 +27,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ nodes }) => (
         {nodes.map((project) => {
           const image = getImage(project.frontmatter.featuredImage)
           return (
-            <div className="ftco-testimonial-1">
+            <div key={project.fields.slug} className="ftco-testimonial-1">
               <div className="ftco-testimonial-vcard d-flex align-items-center mb-4">
                 {image && <GatsbyImage image={image} alt="..." className="img-fluid mr-3" />}
                 <div>
