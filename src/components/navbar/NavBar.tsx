@@ -115,7 +115,11 @@ const NavBar: React.FC = () => {
           <Navbar.Brand className="pr-4" href="/">
             <img src="/images/ftsrg.png" alt="..." className="img-fluid" style={{ height: '3rem' }} />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle aria-controls="basic-navbar-nav">
+            <span className="navbar-toggler-icon" />
+            <span className="navbar-toggler-icon" />
+            <span className="navbar-toggler-icon" />
+          </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto site-menu">
               {NAVBAR_ITEMS.map((item) =>
