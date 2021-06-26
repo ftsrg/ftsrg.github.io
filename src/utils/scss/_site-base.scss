@@ -35,6 +35,12 @@ h5,
   font-family: $font-family-sans-serif;
 }
 
+.site-wrapper {
+  @include media-breakpoint-up(lg) {
+    margin-top: 6rem;
+  }
+}
+
 .border-2 {
   border-width: 2px;
 }

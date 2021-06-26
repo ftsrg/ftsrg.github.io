@@ -963,18 +963,6 @@ iframe.fb_iframe_widget_lift,
   }
 }
 
-#topheader {
-  & a {
-    color: $black;
-    font-weight: 500;
-
-    &:hover {
-      color: $primary;
-      text-decoration: none;
-    }
-  }
-}
-
 .img-rounded {
   border-radius: 50% !important;
 }
