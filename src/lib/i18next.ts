@@ -21,12 +21,14 @@ import i18next from 'i18next'
 import detector from 'i18next-browser-languagedetector'
 import backend from 'i18next-http-backend'
 import { initReactI18next } from 'react-i18next'
+import navEn from '../locales/en/nav.translation.json'
 import en from '../locales/en/translation.json'
+import navHu from '../locales/hu/nav.translation.json'
 import hu from '../locales/hu/translation.json'
 
 const resources = {
-  en: { translation: { ...en } },
-  hu: { translation: { ...hu } }
+  en: { translation: { ...en, ...navEn } },
+  hu: { translation: { ...hu, ...navHu } }
 }
 
 i18next
