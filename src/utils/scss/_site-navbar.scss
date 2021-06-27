@@ -51,31 +51,23 @@
     .navbar-toggler span {
       display: block;
       background-color: $white;
+      background-image: none;
       height: 2px;
       width: 1.5rem;
-      margin-top: 0.3rem;
-      margin-bottom: 0.3rem;
-      -webkit-transform: rotate(0deg);
-      -moz-transform: rotate(0deg);
-      -o-transform: rotate(0deg);
+      margin-top: 0.4rem;
+      margin-bottom: 0.4rem;
       transform: rotate(0deg);
       position: relative;
       opacity: 1;
     }
     .navbar-toggler span:nth-child(1),
     .navbar-toggler span:nth-child(3) {
-      -webkit-transition: transform 0.35s ease-in-out;
-      -moz-transition: transform 0.35s ease-in-out;
-      -o-transition: transform 0.35s ease-in-out;
       transition: transform 0.35s ease-in-out;
     }
     .navbar-toggler:not(.collapsed) span:nth-child(1) {
       position: absolute;
-      top: 32px;
-      -webkit-transform: rotate(135deg);
-      -moz-transform: rotate(135deg);
-      -o-transform: rotate(135deg);
-      transform: rotate(135deg);
+      top: 1.84rem;
+      transform: rotate(-45deg);
       opacity: 0.9;
     }
     .navbar-toggler:not(.collapsed) span:nth-child(2) {
@@ -84,10 +76,7 @@
     }
     .navbar-toggler:not(.collapsed) span:nth-child(3) {
       position: absolute;
-      top: 32px;
-      -webkit-transform: rotate(-135deg);
-      -moz-transform: rotate(-135deg);
-      -o-transform: rotate(-135deg);
+      top: 1.84rem;
       transform: rotate(-135deg);
       opacity: 0.9;
     }
@@ -120,260 +109,5 @@
     @include media-breakpoint-up(lg) {
       margin-left: 0.75rem;
     }
-  }
-}
-
-// mobile menu
-
-.site-mobile-menu {
-  width: 300px;
-  position: fixed;
-  right: 0;
-  z-index: 2000;
-  padding-top: 20px;
-  background: $white;
-  height: calc(100vh);
-
-  transform: translateX(110%);
-  box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
-  transition: 0.3s all ease-in-out;
-
-  .offcanvas-menu & {
-    transform: translateX(0%);
-  }
-
-  .site-mobile-menu-header {
-    width: 100%;
-    float: left;
-    padding-left: 20px;
-    padding-right: 20px;
-
-    .site-mobile-menu-close {
-      float: right;
-      margin-top: 8px;
-      span {
-        font-size: 30px;
-        display: inline-block;
-        padding-left: 10px;
-        padding-right: 0px;
-        line-height: 1;
-        cursor: pointer;
-        transition: 0.3s all ease;
-        &:hover {
-          color: $gray-1;
-        }
-      }
-    }
-    .site-mobile-menu-logo {
-      float: left;
-      margin-top: 10px;
-      margin-left: 0px;
-      a {
-        display: inline-block;
-        text-transform: uppercase;
-        img {
-          max-width: 70px;
-        }
-        &:hover {
-          text-decoration: none;
-        }
-      }
-    }
-  }
-
-  .site-mobile-menu-body {
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-    position: relative;
-    padding: 0 20px 20px 20px;
-
-    height: calc(100vh - 52px);
-    padding-bottom: 150px;
-  }
-  .site-nav-wrap {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    position: relative;
-
-    a {
-      padding: 10px 20px;
-      display: block;
-      position: relative;
-      color: $gray-900;
-      &:hover {
-        color: $primary;
-      }
-    }
-    li {
-      position: relative;
-      display: block;
-      .active {
-        > a {
-          color: $primary;
-        }
-      }
-    }
-    .arrow-collapse {
-      position: absolute;
-      right: 0px;
-      top: 10px;
-      z-index: 20;
-      width: 36px;
-      height: 36px;
-      text-align: center;
-      cursor: pointer;
-      border-radius: 50%;
-      &:hover {
-        background: $gray-100;
-      }
-      &:before {
-        font-size: 12px;
-        z-index: 20;
-        font-family: 'icomoon';
-        content: '\f078';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) rotate(-180deg);
-        transition: 0.3s all ease;
-      }
-      &.collapsed {
-        &:before {
-          transform: translate(-50%, -50%);
-        }
-      }
-    }
-    > li {
-      display: block;
-      position: relative;
-      float: left;
-      width: 100%;
-
-      > a {
-        padding-left: 20px;
-        font-size: 20px;
-      }
-      > ul {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        > li {
-          display: block;
-          > a {
-            padding-left: 40px;
-            font-size: 16px;
-          }
-          > ul {
-            padding: 0;
-            margin: 0;
-            > li {
-              display: block;
-              > a {
-                font-size: 16px;
-                padding-left: 60px;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    &[data-class='social'] {
-      float: left;
-      width: 100%;
-      margin-top: 30px;
-      padding-bottom: 5em;
-      > li {
-        width: auto;
-        &:first-child {
-          a {
-            padding-left: 15px !important;
-          }
-        }
-      }
-    }
-  }
-}
-
-.sticky-wrapper {
-  position: absolute;
-  z-index: 100;
-  width: 100%;
-  background: $white;
-
-  & + .site-blocks-cover {
-    margin-top: 96px;
-  }
-  .site-navbar {
-    transition: 0.3s all ease;
-    background: $white;
-    .site-logo {
-      a {
-        color: $black;
-      }
-    }
-    .site-menu {
-      > li {
-        display: inline-block;
-        > a {
-          &.active {
-            color: $black;
-            position: relative;
-            &:after {
-              height: 2px;
-              background: $white;
-              content: '';
-              position: absolute;
-              bottom: 0;
-              left: 20px;
-              right: 20px;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  &.is-sticky {
-    .site-navbar {
-      background: $white;
-      box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.2);
-      .site-logo {
-        a {
-          color: $black;
-        }
-      }
-      .site-menu {
-        > li {
-          display: inline-block;
-          > a {
-            padding: 5px 20px;
-            color: $black;
-            display: inline-block;
-            text-decoration: none !important;
-
-            &:hover {
-              color: $primary;
-            }
-            &.active {
-              &:after {
-                background: $primary;
-              }
-            }
-          }
-          &.active {
-            > a {
-              color: $primary;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .shrink {
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
   }
 }
