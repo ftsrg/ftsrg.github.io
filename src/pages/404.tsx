@@ -28,7 +28,7 @@ const NotFoundPage: React.FC<PageProps> = () => {
   const { t } = useTranslation()
   return (
     <Layout>
-      <SEO title={t('pages.404.title')} robots="noindex, nofollow" />
+      <SEO robots="noindex, nofollow" />
       <Container className="text-center font-weight-bold my-5">
         <h1>{t('pages.404.heading')}</h1>
         <h2>{t('pages.404.notFoundText')}</h2>

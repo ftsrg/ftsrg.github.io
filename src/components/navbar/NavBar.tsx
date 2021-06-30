@@ -55,7 +55,7 @@ const NavBar: React.FC = () => {
     },
     {
       title: t('nav.research.title'),
-      href: '/research',
+      href: '/research/',
       children: [
         { title: t('nav.research.projects'), href: '#projects' },
         { title: t('nav.research.publications'), href: '#publications' },
@@ -65,7 +65,7 @@ const NavBar: React.FC = () => {
     },
     {
       title: t('nav.education.title'),
-      href: '/education',
+      href: '/education/',
       children: [
         { title: t('nav.education.specializations'), href: '#specializations' },
         { title: t('nav.education.courses'), href: '#courses' },
@@ -76,7 +76,7 @@ const NavBar: React.FC = () => {
     },
     {
       title: t('nav.about.title'),
-      href: '/about',
+      href: '/about/',
       children: [
         { title: t('nav.about.about'), href: '#about' },
         { title: t('nav.about.members'), href: '#members' },
@@ -86,7 +86,7 @@ const NavBar: React.FC = () => {
     },
     {
       title: t('nav.contact.title'),
-      href: '/contact'
+      href: '/contact/'
     }
   ]
 
@@ -122,29 +122,41 @@ const NavBar: React.FC = () => {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto site-menu">
-              {NAVBAR_ITEMS.map((item) =>
-                location.pathname === item.href ? (
-                  <NavDropdown
-                    key={item.href}
-                    title={item.title}
-                    id="basic-nav-dropdown"
-                    className="active"
-                    show={dropdownActive}
-                    onMouseEnter={onHoverEnter}
-                    onMouseLeave={onHoverLeave}
-                  >
-                    {item.children?.map((child) => (
-                      <NavDropdown.Item key={child.href} href={child.href}>
-                        {child.title}
-                      </NavDropdown.Item>
-                    ))}
-                  </NavDropdown>
-                ) : (
+              {NAVBAR_ITEMS.map((item) => {
+                if (location.pathname === item.href) {
+                  if (item.children) {
+                    return (
+                      <NavDropdown
+                        key={item.href}
+                        title={item.title}
+                        id="basic-nav-dropdown"
+                        className="active"
+                        show={dropdownActive}
+                        onMouseEnter={onHoverEnter}
+                        onMouseLeave={onHoverLeave}
+                      >
+                        {item.children?.map((child) => (
+                          <NavDropdown.Item key={child.href} href={child.href}>
+                            {child.title}
+                          </NavDropdown.Item>
+                        ))}
+                      </NavDropdown>
+                    )
+                  }
+
+                  return (
+                    <Nav.Link className="active" key={item.href} href={item.href}>
+                      {item.title}
+                    </Nav.Link>
+                  )
+                }
+
+                return (
                   <Nav.Link key={item.href} href={item.href}>
                     {item.title}
                   </Nav.Link>
                 )
-              )}
+              })}
             </Nav>
             <div className="ml-auto d-flex align-items-center justify-content-end mt-4 mb-2 mt-lg-auto mb-lg-auto">
               <Button
