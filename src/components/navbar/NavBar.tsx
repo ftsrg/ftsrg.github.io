@@ -1,5 +1,6 @@
 import { useLocation } from '@reach/router'
 import React, { useEffect, useState } from 'react'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { Button, Col, Container, Nav, Navbar, NavDropdown, Row } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
 import { FaFacebookF, FaGithub, FaTwitter } from 'react-icons/fa'
@@ -13,20 +14,9 @@ interface INavbarItem {
 
 const NavBar: React.FC = () => {
   const location = useLocation()
-
-  const [dropdownActive, setDropdownActive] = useState(false)
-  const onHoverEnter = () => {
-    setDropdownActive(true)
-  }
-  const onHoverLeave = () => {
-    setDropdownActive(false)
-  }
-
   const socialStyle = { width: '2.5rem', height: '2.5rem' }
-
   const [isShrinked, setShrinked] = useState(false)
   const [fromTop, setFromTop] = useState(0)
-
   const onScroll = () => {
     setFromTop(window.scrollY)
     setShrinked(fromTop > 50)
@@ -126,17 +116,9 @@ const NavBar: React.FC = () => {
                 if (location.pathname === item.href) {
                   if (item.children) {
                     return (
-                      <NavDropdown
-                        key={item.href}
-                        title={item.title}
-                        id="basic-nav-dropdown"
-                        className="active"
-                        show={dropdownActive}
-                        onMouseEnter={onHoverEnter}
-                        onMouseLeave={onHoverLeave}
-                      >
+                      <NavDropdown key={item.href} title={item.title} id="basic-nav-dropdown" className="active" show>
                         {item.children?.map((child) => (
-                          <NavDropdown.Item key={child.href} href={child.href}>
+                          <NavDropdown.Item as={AnchorLink} offset="70" key={child.href} href={child.href}>
                             {child.title}
                           </NavDropdown.Item>
                         ))}
