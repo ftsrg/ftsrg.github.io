@@ -9,7 +9,7 @@ const AboutPage: React.FC<PageProps> = () => {
   return (
     <Layout>
       <SEO />
-      <div>{t('pages.homepage.heading')}</div>
+      {/** TODO */}
     </Layout>
   )
 }

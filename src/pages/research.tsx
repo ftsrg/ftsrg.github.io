@@ -7,7 +7,7 @@ const ResearchPage: React.FC<PageProps> = () => {
   return (
     <Layout>
       <SEO />
-      <div>asd</div>
+      {/** TODO */}
     </Layout>
   )
 }

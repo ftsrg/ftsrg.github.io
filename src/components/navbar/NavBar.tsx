@@ -15,13 +15,14 @@ interface INavbarItem {
 const NavBar: React.FC = () => {
   const location = useLocation()
   const socialStyle = { width: '2.5rem', height: '2.5rem' }
+
   const [isShrinked, setShrinked] = useState(false)
   const [fromTop, setFromTop] = useState(0)
-  const onScroll = () => {
-    setFromTop(window.scrollY)
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const onScroll = (event: any) => {
+    setFromTop(event.target.scrollingElement.scrollTop)
     setShrinked(fromTop > 50)
   }
-
   useEffect(() => {
     window.addEventListener('scroll', onScroll)
     return () => {
