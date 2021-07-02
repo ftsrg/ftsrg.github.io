@@ -12,7 +12,7 @@ const Footer: React.FC<FooterProps> = ({ hasContact }) => (
           <div className="row align-items-center justify-content-center">
             <div className="col-lg-9 d-flex align-items-center">
               <a href="http://mit.bme.hu/~micskeiz" target="_blank" rel="noopener noreferrer">
-                <img src="images/members/micskei-small.png" alt="Micskei Zoltán" width="100px" className="mr-4" />
+                <img src="/images/members/micskei-small.png" alt="Micskei Zoltán" width="100px" className="mr-4" />
               </a>
               <div>
                 <h2>Kérdésed van?</h2>
@@ -33,7 +33,7 @@ const Footer: React.FC<FooterProps> = ({ hasContact }) => (
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-4 text-center footer-column">
-            <img src="images/ftsrg-small-white.png" alt="..." width="120px" className="mb-4" />
+            <img src="/images/ftsrg-small-white.png" alt="..." width="120px" className="mb-4" />
             <p>H-1117 Budapest, Magyar tudósok körútja&nbsp;2., I ép. B szárny, IV. em.</p>
             <p>
               <a href="contact.html">Elérhetőség</a>

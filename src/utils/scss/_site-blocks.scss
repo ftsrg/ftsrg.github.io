@@ -555,11 +555,14 @@
       font-size: 1.3rem;
       color: $black;
     }
+    p > a {
+      color: $primary !important;
+    }
   }
 }
 .person {
   margin-bottom: 50px !important;
-  img {
+  .img-fluid {
     width: 100px;
     height: 100px;
     margin-top: -50px;
