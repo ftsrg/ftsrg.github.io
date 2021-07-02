@@ -4707,6 +4707,11 @@ cosmiconfig@^6.0.0:
     path-type "^4.0.0"
     yaml "^1.7.2"
 
+countup.js@^1.9.3:
+  version "1.9.3"
+  resolved "https://registry.yarnpkg.com/countup.js/-/countup.js-1.9.3.tgz#ce3e50cd7160441e478f07da31895edcc0f1c9dd"
+  integrity sha1-zj5QzXFgRB5HjwfaMYle3MDxyd0=
+
 create-gatsby@^1.8.0:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/create-gatsby/-/create-gatsby-1.8.0.tgz#e1fe86687cd314259c7fc625881bd35dcea32572"
@@ -12917,6 +12922,15 @@ react-bootstrap@^1.6.1:
     react-overlays "^5.0.1"
     react-transition-group "^4.4.1"
     uncontrollable "^7.2.1"
+    warning "^4.0.3"
+
+react-countup@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/react-countup/-/react-countup-4.4.0.tgz#ca5c0a971c442a06a7bc52f3921ad2e66ba65990"
+  integrity sha512-PSSpvRT5FCjCVh3NzPpz/SgeG8b9LnpfCSO1TEMK8K/GhmxI+s8D/KbxGCFsmmeq+Y0cnf2KepUHssPfH/7iyw==
+  dependencies:
+    countup.js "^1.9.3"
+    prop-types "^15.7.2"
     warning "^4.0.3"
 
 react-dev-utils@^11.0.3:

@@ -4,7 +4,6 @@ import CompetencesSection from './CompetencesSection'
 import EducationSection from './EducationSection'
 import NewsSection from './NewsSection'
 import PartnersSection from './PartnersSection'
-import ProjectsSection from './ProjectsSection'
 
 export {
   BannerSection as Banner,
@@ -12,6 +11,5 @@ export {
   EducationSection as Education,
   AboutSection as About,
   NewsSection as News,
-  PartnersSection as Partners,
-  ProjectsSection as Projects
+  PartnersSection as Partners
 }

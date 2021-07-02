@@ -27,7 +27,18 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) => {
       <Competences />
       <Education />
       <About />
-      <Projects nodes={data.projects.nodes} />
+      <div id="projects" className="site-section">
+        <div className="container">
+          <div className="row mb-5">
+            <div className="col-lg-4">
+              <h2 className="section-title-underline">
+                <span>Projektjeink</span>
+              </h2>
+            </div>
+          </div>
+          <ProjectsCarousel nodes={data.projects.nodes} />
+        </div>
+      </div>
       <Partners />
       <News />
     </Layout>
