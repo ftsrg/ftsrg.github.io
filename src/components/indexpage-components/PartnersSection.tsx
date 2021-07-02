@@ -27,7 +27,7 @@ const PartnersSection: React.FC = () => {
           <div className="col-lg-12">
             <div id="partners-container" className="d-flex justify-content-center">
               {logos.map((logo) => (
-                <div className="partner">
+                <div key={logo.toUpperCase()} className="partner">
                   <img src={`/images/partners/${logo}`} className="white-logo" alt="..." />
                 </div>
               ))}

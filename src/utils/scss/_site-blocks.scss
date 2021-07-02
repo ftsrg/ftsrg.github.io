@@ -1,10 +1,14 @@
 #banner {
   position: relative;
   background-color: black;
-  height: calc(100vh - 2 * 8px - 29px - 96px);
+  height: calc(100vh - 4.5rem);
   min-height: 570px;
   width: 100%;
   overflow: hidden;
+
+  @include media-breakpoint-up(lg) {
+    height: calc(100vh - 8.5rem);
+  }
 }
 
 #banner video {
@@ -958,18 +962,6 @@ iframe.fb_iframe_widget_lift,
 
     &:hover {
       color: $primary-light;
-      text-decoration: none;
-    }
-  }
-}
-
-#topheader {
-  & a {
-    color: $black;
-    font-weight: 500;
-
-    &:hover {
-      color: $primary;
       text-decoration: none;
     }
   }
