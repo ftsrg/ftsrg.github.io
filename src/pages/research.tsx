@@ -71,51 +71,36 @@ const ResearchPage: React.FC<ResearchPageProps> = ({ data }) => {
             </div>
           </div>
 
-          <div className="row d-md-flex align-items-center justify-content-center" id="section-counter">
+          <div className="row d-md-flex align-items-center justify-content-center">
             <div className="col-lg-12">
               <div className="row d-md-flex align-items-center">
-                <div className="col-md d-flex justify-content-center counter-wrap ftco-animate">
-                  <div className="block-18">
-                    <div className="icon">
-                      <span className="flaticon-doctor" />
-                    </div>
-                    <div className="text">
-                      {/* EEMCN, FUTEG, HIDE, DECOS, RESIST, Sensoria, Deserec, Diana, Hidenets, SafeDMI, Amber, Genesys, Mogentes,
+                <div className="col-md d-flex justify-content-center">
+                  <div className="text-center w-100 mb-4">
+                    {/* EEMCN, FUTEG, HIDE, DECOS, RESIST, Sensoria, Deserec, Diana, Hidenets, SafeDMI, Amber, Genesys, Mogentes,
                       SecureChange, E-freight, R3-COP, CECRIS, Concerto, MONDO, R5-COP, ADVANCE, Arrowhead Tools, EMBrACE */}
-                      <strong className="number">
-                        <CountUp end={23} />
-                      </strong>
-                      <span>EU-s kutatási projekt</span>
-                    </div>
+                    <h1 className="text-primary">
+                      <CountUp delay={0.5} end={23} className="fw-bolder" />
+                    </h1>
+                    <span>EU-s kutatási projekt</span>
                   </div>
                 </div>
 
-                <div className="col-md d-flex justify-content-center counter-wrap ftco-animate">
-                  <div className="block-18">
-                    <div className="icon">
-                      <span className="flaticon-doctor" />
-                    </div>
-                    <div className="text">
-                      <strong className="number">
-                        <CountUp end={25} />
-                      </strong>
-                      <span>Ipari együttműködés</span>
-                    </div>
+                <div className="col-md d-flex justify-content-center">
+                  <div className="text-center w-100 mb-4">
+                    <h1 className="text-primary">
+                      <CountUp delay={0.5} end={25} className="fw-bold" />
+                    </h1>
+                    <span>Ipari együttműködés</span>
                   </div>
                 </div>
 
-                <div className="col-md d-flex justify-content-center counter-wrap ftco-animate">
-                  <div className="block-18">
-                    <div className="icon">
-                      <span className="flaticon-doctor" />
-                    </div>
-                    <div className="text">
-                      {/* Lendulet, VKE, ERC_HU, OTKA, TéT, DAAD... */}
-                      <strong className="number">
-                        <CountUp end={20} />
-                      </strong>
-                      <span>Hazai és bilaterális projekt</span>
-                    </div>
+                <div className="col-md d-flex justify-content-center">
+                  <div className="text-center w-100 mb-4">
+                    {/* Lendulet, VKE, ERC_HU, OTKA, TéT, DAAD... */}
+                    <h1 className="text-primary">
+                      <CountUp delay={0.5} end={20} className="fw-bold" />
+                    </h1>
+                    <span>Hazai és bilaterális projekt</span>
                   </div>
                 </div>
               </div>

@@ -1,6 +1,7 @@
 import { graphql, PageProps } from 'gatsby'
 import React from 'react'
-import { About, Banner, Competences, Education, News, Partners, Projects } from '../components/indexpage-components'
+import ProjectsCarousel from '../components/common-components/ProjectsCarousel'
+import { About, Banner, Competences, Education, News, Partners } from '../components/indexpage-components'
 import SEO from '../components/SEO'
 import Layout from '../layout/Layout'
 import ProjectProps from '../utils/props/project.props'
