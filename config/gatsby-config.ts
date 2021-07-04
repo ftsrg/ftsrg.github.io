@@ -49,6 +49,7 @@ export default {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-yaml`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -61,6 +62,13 @@ export default {
       options: {
         name: `images`,
         path: `${path.join(__dirname, '../src/content/images')}`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `member`,
+        path: `${path.join(__dirname, '../src/content/members')}`
       }
     },
     {

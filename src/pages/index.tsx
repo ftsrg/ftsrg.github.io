@@ -1,5 +1,5 @@
 import { graphql, PageProps } from 'gatsby'
-import React, { FC } from 'react'
+import React from 'react'
 import { About, Banner, Competences, Education, News, Partners, Projects } from '../components/indexpage-components'
 import SEO from '../components/SEO'
 import Layout from '../layout/Layout'
@@ -19,7 +19,7 @@ interface IndexPageProps extends PageProps {
   }
 }
 
-const IndexPage: FC<IndexPageProps> = ({ data }) => {
+const IndexPage: React.FC<IndexPageProps> = ({ data }) => {
   return (
     <Layout>
       <SEO />
