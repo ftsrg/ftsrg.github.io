@@ -37,7 +37,7 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@testing-library/react-hooks": "^7.0.0",
-    "babel-jest": "^27.0.5",
+    "babel-jest": "^27.0.6",
     "bootstrap": "4.6.0",
     "classnames": "^2.3.1",
     "dotenv": "^10.0.0",
@@ -74,7 +74,7 @@
     "react-helmet": "^6.1.0",
     "react-i18next": "^11.11.0",
     "react-icons": "^4.2.0",
-    "typescript": "^4.2.4"
+    "typescript": "^4.3.5"
   },
   "devDependencies": {
     "@types/fs-extra": "^9.0.11",
@@ -84,7 +84,7 @@
     "@types/react-anchor-link-smooth-scroll": "^1.0.1",
     "@types/react-dom": "^17.0.8",
     "@types/react-helmet": "^6.1.1",
-    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/eslint-plugin": "^4.28.2",
     "@typescript-eslint/parser": "^4.28.1",
     "babel-preset-gatsby": "^1.8.0",
     "eslint": "^7.30.0",
