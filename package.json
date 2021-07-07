@@ -59,7 +59,7 @@
     "gatsby-source-filesystem": "^3.7.1",
     "gatsby-transformer-json": "^3.3.0",
     "gatsby-transformer-remark": "^4.0.0",
-    "gatsby-transformer-sharp": "^3.3.0",
+    "gatsby-transformer-sharp": "^3.9.0",
     "gatsby-transformer-yaml": "^3.8.0",
     "i18next": "^20.3.2",
     "i18next-browser-languagedetector": "^6.1.2",
