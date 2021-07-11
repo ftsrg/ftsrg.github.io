@@ -60,6 +60,13 @@ export default {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `publication`,
+        path: `${path.join(__dirname, '../src/content/publications')}`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `images`,
         path: `${path.join(__dirname, '../src/content/images')}`
       }
