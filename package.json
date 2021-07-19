@@ -85,7 +85,7 @@
     "@types/react-anchor-link-smooth-scroll": "^1.0.2",
     "@types/react-dom": "^17.0.9",
     "@types/react-helmet": "^6.1.2",
-    "@typescript-eslint/eslint-plugin": "^4.28.2",
+    "@typescript-eslint/eslint-plugin": "^4.28.3",
     "@typescript-eslint/parser": "^4.28.3",
     "babel-preset-gatsby": "^1.9.0",
     "eslint": "^7.31.0",
