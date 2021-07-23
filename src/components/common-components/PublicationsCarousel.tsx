@@ -18,7 +18,7 @@ const PublicationsCarousel: React.FC<PublicationsCarouselProps> = ({ nodes }) =>
       const featuredImage = getImage(publication.frontmatter.featuredImage)
       return (
         <div key={publication.fields.slug} className="education-1-item">
-          <figure className="thumnail">
+          <figure className="thumbnail">
             {featuredImage && <GatsbyImage image={featuredImage} alt={publication.frontmatter.title} className="img-fluid" />}
             <div className="category bg-secondary">
               <h3>

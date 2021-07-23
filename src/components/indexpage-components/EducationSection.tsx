@@ -73,7 +73,7 @@ const EducationSection: React.FC = () => (
         <div className="col-12">
           <div className="owl-slide-3 owl-carousel">
             <div className="education-1-item">
-              <figure className="thumnail">
+              <figure className="thumbnail">
                 <img src="images/education.png" alt="..." className="img-fluid" />
                 <div className="category bg-secondary">
                   <h3>Oktatás</h3>
@@ -94,7 +94,7 @@ const EducationSection: React.FC = () => (
             </div>
 
             <div className="education-1-item">
-              <figure className="thumnail">
+              <figure className="thumbnail">
                 <img src="images/student-project.jpg" alt=".." className="img-fluid" />
                 <div className="category bg-secondary">
                   <h3>Tehetséggondozás</h3>
@@ -117,7 +117,7 @@ const EducationSection: React.FC = () => (
             </div>
 
             <div className="education-1-item">
-              <figure className="thumnail">
+              <figure className="thumbnail">
                 <img src="images/awards.jpg" alt="..." className="img-fluid" />
                 <div className="category bg-secondary">
                   <h3>Díjak, pályázatok</h3>
