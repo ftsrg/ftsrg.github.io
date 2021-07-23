@@ -6,4 +6,5 @@ export default interface PublicationProps {
   title: string
   url: string
   featuredImage: ImageDataLike
+  description: string
 }

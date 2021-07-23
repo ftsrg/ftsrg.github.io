@@ -1,0 +1,24 @@
+- journalTitle: IEEE T Software Eng
+  year: 2020
+  title: Automated Generation of Consistent Graph Models with Multiplicity Reasoning
+  url: https://doi.org/10.1109/TSE.2020.3025732
+  featuredImage: ../images/publications/tse2020.png
+  description: Olyan módszereket javasoltunk, amivel gráfok generálása során adott célfüggvény szerinti optimalizációs problémákat tudunk megoldani.
+- journalTitle: Inform Software Tech
+  year: 2020
+  title: Automated Isolation for White-box Test Generation
+  url: https://doi.org/10.1016/j.infsof.2020.106319
+  featuredImage: ../images/publications/ist2020.jpg
+  description: Olyan módszert és eszközt készítettünk, ami forráskód-alapú tesztgenerálás során a tesztelt modul izolációja érdekében automatikusan mock környezeteket generál.
+- journalTitle: IEEE Access
+  year: 2020
+  title: Using Fault Injection to Assess Blockchain Systems in Presence of Faulty Smart Contracts
+  url: https://doi.org/10.1109/ACCESS.2020.3032239
+  featuredImage: ../images/publications/access2020.png
+  description: A Coimbrai Egyetem kutatóival együttműködve olyan módszert javasoltunk, amivel blockchain rendszerek megbízhatósága vizsgálható.
+- journalTitle: J Autom Reasoning
+  year: 2020
+  title: Efficient Strategies for CEGAR-Based Model Checking
+  url: https://doi.org/10.1007%2Fs10817-019-09535-x
+  featuredImage: ../images/publications/jar2020.png
+  description: Hatékony algoritmusokat javasoltunk a CEGAR-alapú modellellenőrzés továbbfejlesztéséhez, amik a mérések alapján beágyazott szoftver és PLC kódok ellenőrzését segítik.

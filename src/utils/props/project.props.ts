@@ -5,4 +5,5 @@ export default interface ProjectProps {
   subtitle: string
   url: string
   featuredImage: ImageDataLike
+  description: string
 }
