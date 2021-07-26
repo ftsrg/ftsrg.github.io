@@ -1,6 +1,7 @@
-import { graphql, PageProps } from 'gatsby'
+import { graphql, Link, PageProps } from 'gatsby'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+import { FaChevronRight } from 'react-icons/fa'
 import FormerMembersSection from '../components/aboutpage-components/FormerMembersSection'
 import IntroSection from '../components/aboutpage-components/IntroSection'
 import MembersSection from '../components/aboutpage-components/MembersSection'
@@ -36,10 +37,12 @@ const AboutPage: React.FC<AboutPageProps> = ({ data }) => {
         </div>
       </div>
 
-      <div className="custom-breadcrumns border-bottom">
+      <div className="custom-breadcrumbs border-bottom">
         <div className="container">
-          <a href="/">Kezdőlap</a>
-          <span className="mx-3 icon-keyboard_arrow_right" />
+          <Link to="/">Kezdőlap</Link>
+          <span className="mx-2">
+            <FaChevronRight size="0.6rem" />
+          </span>
           <span className="current">Rólunk</span>
         </div>
       </div>
