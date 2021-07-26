@@ -1,5 +1,6 @@
-import { graphql, PageProps } from 'gatsby'
+import { graphql, Link, PageProps } from 'gatsby'
 import React from 'react'
+import { FaChevronRight } from 'react-icons/fa'
 import { Achievements, Specializations, StudentWork, Subjects, TalentCare } from '../components/education-components'
 import SEO from '../components/SEO'
 import Layout from '../layout/Layout'
@@ -33,8 +34,10 @@ const EducationPage: React.FC<EducationPageProps> = ({ data }) => {
 
       <div className="custom-breadcrumbs border-bottom">
         <div className="container">
-          <a href="index.html">Kezdőlap</a>
-          <span className="mx-3 icon-keyboard_arrow_right" />
+          <Link to="/">Kezdőlap</Link>
+          <span className="mx-2">
+            <FaChevronRight size="0.6rem" />
+          </span>
           <span className="current">Oktatás</span>
         </div>
       </div>
