@@ -38,6 +38,7 @@
     "@testing-library/react": "12.0.0",
     "@testing-library/react-hooks": "7.0.1",
     "babel-jest": "27.0.6",
+    "@types/react-slick": "^0.23.5",
     "bootstrap": "4.6.0",
     "classnames": "2.3.1",
     "dotenv": "10.0.0",
@@ -76,6 +77,8 @@
     "react-i18next": "11.11.4",
     "react-icons": "4.2.0",
     "typescript": "4.3.5"
+    "slick-carousel": "^1.8.1",
+    "react-slick": "^0.28.1",
   },
   "devDependencies": {
     "@types/fs-extra": "^9.0.12",

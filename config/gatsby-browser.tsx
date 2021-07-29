@@ -20,6 +20,8 @@
 import { Global } from '@emotion/react'
 import React from 'react'
 import { I18nextProvider } from 'react-i18next'
+import 'slick-carousel/slick/slick-theme.css'
+import 'slick-carousel/slick/slick.css'
 import i18next from '../src/lib/i18next'
 import '../src/utils/scss/style.scss'
 import { globalStyles } from '../src/utils/styles'
