@@ -1,6 +1,7 @@
-import { graphql, PageProps } from 'gatsby'
+import { graphql, Link, PageProps } from 'gatsby'
 import React from 'react'
 import CountUp from 'react-countup'
+import { FaChevronRight } from 'react-icons/fa'
 import ProjectsCarousel from '../components/common-components/ProjectsCarousel'
 import PublicationsCarousel from '../components/common-components/PublicationsCarousel'
 import EventsSection from '../components/research-components/EventsSection'
@@ -48,10 +49,12 @@ const ResearchPage: React.FC<ResearchPageProps> = ({ data }) => {
         </div>
       </div>
 
-      <div className="custom-breadcrumns border-bottom">
+      <div className="custom-breadcrumbs border-bottom">
         <div className="container">
-          <a href="index.html">Kezdőlap</a>
-          <span className="mx-3 icon-keyboard_arrow_right" />
+          <Link to="/">Kezdőlap</Link>
+          <span className="mx-2">
+            <FaChevronRight size="0.6rem" />
+          </span>
           <span className="current">Kutatás-fejlesztés</span>
         </div>
       </div>
