@@ -1,7 +1,9 @@
-import { graphql, Link, PageProps } from 'gatsby'
+import { Link, PageProps } from 'gatsby'
 import React from 'react'
 import { FaChevronRight } from 'react-icons/fa'
-import { Achievements, Specializations, StudentWork, Subjects, TalentCare } from '../components/education-components'
+import StudentAchievementsCarousel from 'src/components/carousels/StudentAchievementsCarousel'
+import { SpecializationsCarousel } from '../components/carousels'
+import { StudentWork, Subjects, TalentCare } from '../components/education-components'
 import SEO from '../components/SEO'
 import Layout from '../layout/Layout'
 import SubjectProps from '../utils/props/subject.props'
@@ -42,11 +44,35 @@ const EducationPage: React.FC<EducationPageProps> = ({ data }) => {
         </div>
       </div>
 
-      <Specializations />
+      <div id="specializations" className="site-section">
+        <div className="container">
+          <div className="row mb-5">
+            <div className="col-lg-4">
+              <h2 className="section-title-underline">
+                <span>Specializációk</span>
+              </h2>
+            </div>
+          </div>
+          <SpecializationsCarousel />
+        </div>
+      </div>
+
       <Subjects nodes={data.subjects.nodes} />
       <StudentWork />
       <TalentCare />
-      <Achievements />
+
+      <div id="achievements" className="site-section">
+        <div className="container">
+          <div className="row mb-5">
+            <div className="col-lg-4">
+              <h2 className="section-title-underline">
+                <span>Hallgatóink eredményei</span>
+              </h2>
+            </div>
+          </div>
+          <StudentAchievementsCarousel />
+        </div>
+      </div>
     </Layout>
   )
 }

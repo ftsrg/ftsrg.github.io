@@ -2,7 +2,7 @@ import { Link } from '@reach/router'
 import React from 'react'
 import Slider from 'react-slick'
 
-const cardData = [
+const cardsData = [
   {
     category: 'Oktatás',
     title: 'Képzésünk lefedi a kritikus rendszerek tervezésének, analízisének és üzemeltetésének legfontosabb területeit',
@@ -119,7 +119,7 @@ const EducationSection: React.FC = () => (
           }
         ]}
       >
-        {cardData.map((data) => (
+        {cardsData.map((data) => (
           <div key={data.category} className="p-2">
             <div className="education-1-item">
               <figure className="thumbnail">

@@ -48,7 +48,7 @@ const EventsCarousel: React.FC = () => (
     ]}
   >
     {eventsData.map((data) => (
-      <div className="ftco-testimonial-1">
+      <div key={data.title} className="ftco-testimonial-1">
         <div className="ftco-testimonial-vcard d-flex align-items-center mb-4">
           <img src={data.thumbnail} alt="..." className="img-fluid mr-3" />
           <div>

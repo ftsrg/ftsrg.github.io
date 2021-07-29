@@ -1,4 +1,25 @@
 import React from 'react'
+import Slider from 'react-slick'
+
+const cardsData = [
+  {
+    title: 'Rendszertervezés (BSc)',
+    subTitleLinkText: 'Impulzus 41:2',
+    subTitleLinkUrl: 'http://www.impulzus.com/content/archivum/41/2.pdf',
+    subTitleHelperText: ', 47. oldal',
+    desc: `„Ezt a fajta rendszerben gondolkodást jól tükrözi az oktatás, miközben a tanultak kellően konkrétak, gyakorlatban is
+    hasznosak. Sikerült megtalálnom a kutatómunka örömét is, ugyanis a csoportban különösen figyelnek a hallgatók önálló szakmai
+    tevékenységére.”`
+  },
+  {
+    title: 'Kritikus rendszerek (MSc)',
+    subTitleLinkText: 'Impulzus 42:2',
+    subTitleLinkUrl: 'http://www.impulzus.com/content/archivum/42/2.pdf',
+    subTitleHelperText: ', 51. oldal',
+    desc: `„A BSc ágazat és az MSc szakirány messzemenően felülmúlta a korábbi elképzeléseimet és elvárásaimat. Nem gondoltam volna, hogy
+    ennyi érdekes témával lehet itt foglalkozni.”`
+  }
+]
 
 const StudentWorkSection: React.FC = () => (
   <div id="student-work" className="site-section">
@@ -30,48 +51,45 @@ const StudentWorkSection: React.FC = () => (
           </p>
         </div>
       </div>
-      <div className="row">
-        <div className="col-12 col-sm-6 ftco-testimonial-1">
-          <div className="ftco-testimonial-vcard d-flex align-items-center mb-4">
-            <div>
-              <h3>Rendszertervezés (BSc)</h3>
-              <span>
-                <a href="http://www.impulzus.com/content/archivum/41/2.pdf" target="_blank" rel="noopener noreferrer">
-                  Impulzus 41:2
-                </a>
-                , 47. oldal
-              </span>
-            </div>
-          </div>
-          <div>
-            <p>
-              „Ezt a fajta rendszerben gondolkodást jól tükrözi az oktatás, miközben a tanultak kellően konkrétak, gyakorlatban is
-              hasznosak. Sikerült megtalálnom a kutatómunka örömét is, ugyanis a csoportban különösen figyelnek a hallgatók önálló szakmai
-              tevékenységére.”
-            </p>
-          </div>
-        </div>
 
-        <div className="col-12 col-sm-6 ftco-testimonial-1">
-          <div className="ftco-testimonial-vcard d-flex align-items-center mb-4">
-            <div>
-              <h3>Kritikus rendszerek (MSc)</h3>
-              <span>
-                <a href="http://www.impulzus.com/content/archivum/42/2.pdf" target="_blank" rel="noopener noreferrer">
-                  Impulzus 42:2
-                </a>
-                , 51. oldal
-              </span>
+      <Slider
+        arrows={false}
+        dots
+        slidesToShow={2}
+        slidesToScroll={1}
+        className="py-3"
+        responsive={[
+          {
+            breakpoint: 512,
+            settings: {
+              slidesToShow: 1
+            }
+          }
+        ]}
+        autoplay
+        autoplaySpeed={4000}
+      >
+        {cardsData.map((data) => (
+          <div key={data.title} className="px-3">
+            <div className="ftco-testimonial-1">
+              <div className="ftco-testimonial-vcard d-flex align-items-center mb-4">
+                <div>
+                  <h3>{data.title}</h3>
+                  <span>
+                    <a href={data.subTitleLinkUrl} target="_blank" rel="noopener noreferrer">
+                      {data.subTitleLinkText}
+                    </a>
+                    {data.subTitleHelperText}
+                  </span>
+                </div>
+              </div>
+              <div>
+                <p>{data.desc}</p>
+              </div>
             </div>
           </div>
-          <div>
-            <p>
-              „A BSc ágazat és az MSc szakirány messzemenően felülmúlta a korábbi elképzeléseimet és elvárásaimat. Nem gondoltam volna, hogy
-              ennyi érdekes témával lehet itt foglalkozni.”
-            </p>
-          </div>
-        </div>
-      </div>
+        ))}
+      </Slider>
     </div>
   </div>
 )
