@@ -79,6 +79,13 @@ export default {
       }
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `subject`,
+        path: `${path.join(__dirname, '../src/content/subjects')}`
+      }
+    },
+    {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
