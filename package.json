@@ -51,7 +51,7 @@
     "gatsby-plugin-sass": "^4.10.0",
     "gatsby-plugin-sharp": "^3.10.2",
     "gatsby-plugin-ts-config": "^1.1.5",
-    "gatsby-remark-autolink-headers": "^4.6.0",
+    "gatsby-remark-autolink-headers": "^4.7.0",
     "gatsby-remark-classes": "^1.0.0",
     "gatsby-remark-copy-linked-files": "^4.7.0",
     "gatsby-remark-images": "^5.7.0",
