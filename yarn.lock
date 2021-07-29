@@ -4798,10 +4798,10 @@ cosmiconfig@^6.0.0:
     path-type "^4.0.0"
     yaml "^1.7.2"
 
-countup.js@^1.9.3:
-  version "1.9.3"
-  resolved "https://registry.yarnpkg.com/countup.js/-/countup.js-1.9.3.tgz#ce3e50cd7160441e478f07da31895edcc0f1c9dd"
-  integrity sha1-zj5QzXFgRB5HjwfaMYle3MDxyd0=
+countup.js@^2.0.7:
+  version "2.0.8"
+  resolved "https://registry.yarnpkg.com/countup.js/-/countup.js-2.0.8.tgz#eca0c31c9db3f7769cba494d9315cd52dbaaf1b9"
+  integrity sha512-pW3xwwD+hB+xmtI16xFcuLS0D5hSQqPQWkZOdgpKQyzxCquDNo2VCFPkRw12vmvdpnicXVTcjmYiakG6biwINg==
 
 create-gatsby@^1.10.0:
   version "1.10.0"
@@ -7085,12 +7085,12 @@ gatsby-plugin-canonical-urls@^3.10.0:
   dependencies:
     "@babel/runtime" "^7.14.6"
 
-gatsby-plugin-emotion@^6.9.0:
-  version "6.9.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-emotion/-/gatsby-plugin-emotion-6.9.0.tgz#38381b98c7599eb42cfe5e51add93093c52a39c9"
-  integrity sha512-pWISFtc3tti8cw8okKMLH1sWFVliQYIxaXp5aFGjv3rc8uXF3qKqP1ms1HB2H0KHGTnl6NPQuT/YpM10p6bkbQ==
+gatsby-plugin-emotion@^6.10.0:
+  version "6.10.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-emotion/-/gatsby-plugin-emotion-6.10.0.tgz#13dac3c98f827eb790e5914fa321a90bf2b856c1"
+  integrity sha512-53zUnJlg0zUqSwqSN5tUXON6sBoGwPhAzsiJRNljOSHUya+G0jymD/n6e72kcgOXHw0+HYVw5cXL65+6gDLSbA==
   dependencies:
-    "@babel/runtime" "^7.14.0"
+    "@babel/runtime" "^7.14.6"
     "@emotion/babel-preset-css-prop" "^11.2.0"
 
 gatsby-plugin-image@^1.10.1:
@@ -7126,12 +7126,12 @@ gatsby-plugin-page-creator@^3.10.0:
     globby "^11.0.3"
     lodash "^4.17.21"
 
-gatsby-plugin-react-helmet@^4.9.0:
-  version "4.9.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-4.9.0.tgz#b4ac100a33db68a2a55b85d954f4e23b5c210b03"
-  integrity sha512-x0M2LbY0tkO/EjtgpJwwVv0NHRQV1znoap6tfBOXxhSGCdZHc4zY4/v6fpEXwM4r5YGdT+6MpUQJyy75BWb9Hg==
+gatsby-plugin-react-helmet@^4.10.0:
+  version "4.10.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-4.10.0.tgz#b33f25dd7b2062cdf6040bb4249ab5a3aa2dd4e4"
+  integrity sha512-cmYU2Y0krb6L5Bgb4RoR/LW9ZJw946eDrvVOYk71hoSEjsvIIYkAwAI+kVziApdCGH9Is79y1qMrLKMAG+YKSw==
   dependencies:
-    "@babel/runtime" "^7.14.0"
+    "@babel/runtime" "^7.14.6"
 
 gatsby-plugin-react-svg@^3.0.1:
   version "3.0.1"
@@ -7288,12 +7288,12 @@ gatsby-recipes@^0.21.0:
     xstate "^4.9.1"
     yoga-layout-prebuilt "^1.9.6"
 
-gatsby-remark-autolink-headers@^4.6.0:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-autolink-headers/-/gatsby-remark-autolink-headers-4.6.0.tgz#5abcf636345f97f239081b55afb9ae7e6aa96d27"
-  integrity sha512-r2NFFdF+OHGuSnbhlgfzEnXx8SnbBi4YnlpgyT1RkW3uQHpVfCIuZdT/Gs8ozAQIDhnMDttNA4/J1gW8xZSJYQ==
+gatsby-remark-autolink-headers@^4.7.0:
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-autolink-headers/-/gatsby-remark-autolink-headers-4.7.0.tgz#d9ec2b106d88dfdf350f5019da62c1b8959baacc"
+  integrity sha512-afBTKEoBUBakmS48QKrjSuTWUrmx5KDXGexIbbl3sP8ty3/dsAe2XWs8HJPKSrSqa/KOSF3R6WQ6Iis7l7q5Ew==
   dependencies:
-    "@babel/runtime" "^7.14.0"
+    "@babel/runtime" "^7.14.6"
     github-slugger "^1.3.0"
     lodash "^4.17.21"
     mdast-util-to-string "^2.0.0"
@@ -8546,10 +8546,10 @@ i18next-browser-languagedetector@^6.1.2:
   dependencies:
     "@babel/runtime" "^7.14.6"
 
-i18next-http-backend@^1.2.6:
-  version "1.2.6"
-  resolved "https://registry.yarnpkg.com/i18next-http-backend/-/i18next-http-backend-1.2.6.tgz#80b12e8b207814aebb3b8a74c4487dd156973bee"
-  integrity sha512-NeNNRofj+rR6Cw+/Elf8bCVaCiqWg2Y6F+CrmDvHiPzAW2Dtxxlk8O0na2et/rr1n3ST6rJr4nMXH/QOFuhaeA==
+i18next-http-backend@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/i18next-http-backend/-/i18next-http-backend-1.3.0.tgz#fcafb9583cf2942a9c669bd1868ec84a11410536"
+  integrity sha512-49Sf7Dt6GHeFYlCcCTwD39bkaiw7ld8RlGCXw6ZERabN7SXaLM6qRGnd+XbFdPhJHNMHvt/38XiRtJcEgu5Arg==
   dependencies:
     cross-fetch "3.1.4"
 
@@ -12984,13 +12984,12 @@ react-bootstrap@^1.6.1:
     uncontrollable "^7.2.1"
     warning "^4.0.3"
 
-react-countup@^4.4.0:
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/react-countup/-/react-countup-4.4.0.tgz#ca5c0a971c442a06a7bc52f3921ad2e66ba65990"
-  integrity sha512-PSSpvRT5FCjCVh3NzPpz/SgeG8b9LnpfCSO1TEMK8K/GhmxI+s8D/KbxGCFsmmeq+Y0cnf2KepUHssPfH/7iyw==
+react-countup@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/react-countup/-/react-countup-5.1.0.tgz#23454c397b723f6c9c5bfbe959610ba0d34334ae"
+  integrity sha512-aDVXrnef5ByOqJfUOS0Gm0R8BQSfZagFoqczSbuPXdidTZh52OYZ8JN+cX58oouxvBOYwRvkhwPr0qUVrIpryw==
   dependencies:
-    countup.js "^1.9.3"
-    prop-types "^15.7.2"
+    countup.js "^2.0.7"
     warning "^4.0.3"
 
 react-dev-utils@^11.0.3:
