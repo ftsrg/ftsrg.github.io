@@ -1,4 +1,28 @@
 import React from 'react'
+import { CgPerformance } from 'react-icons/cg'
+import { FaBug } from 'react-icons/fa'
+import { VscRocket } from 'react-icons/vsc'
+
+const compentencesData = [
+  {
+    icon: <VscRocket size="3.75rem" />,
+    title: 'Kritikus rendszerek fejlesztése',
+    desc: `Módszertanok, fejlesztési környezetek, technikák és technológiák a modellalapú kritikus informatikai és kiberfizikai
+    rendszerek és alkalmazások tervezésére.`
+  },
+  {
+    icon: <FaBug size="3.65rem" />,
+    title: 'Ellenőrzés és tesztelés',
+    desc: `Formális módszerek és modellalapú tesztelés alkalmazása funkcionális, megbízhatósági, biztonsági és teljesítmény
+    követelmények ellenőrzése és tanúsítása során.`
+  },
+  {
+    icon: <CgPerformance size="4rem" />,
+    title: 'Empirikus rendszertervezés',
+    desc: `Teljesítmény és megbízhatósági követelmények kísérleti vizsgálata, mérése, analízise, méretezése származtatott modellek
+    alapján, hibamodellezés.`
+  }
+]
 
 const CompetencesSection: React.FC = () => (
   <div id="competences" className="section-bg style-1">
@@ -16,48 +40,17 @@ const CompetencesSection: React.FC = () => (
         </div>
       </div>
       <div className="row">
-        <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
-          <div className="feature-1 border">
-            <div className="icon-wrapper bg-primary">
-              <span className="flaticon-rocket text-white" />
-            </div>
-            <div className="feature-1-content">
-              <h2>Kritikus rendszerek fejlesztése</h2>
-              <p>
-                Módszertanok, fejlesztési környezetek, technikák és technológiák a modellalapú kritikus informatikai és kiberfizikai
-                rendszerek és alkalmazások tervezésére.
-              </p>
+        {compentencesData.map((data) => (
+          <div key={data.title} className="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <div className="feature-1 border">
+              <div className="icon-wrapper bg-primary text-white d-flex align-items-center justify-content-center">{data.icon}</div>
+              <div className="feature-1-content">
+                <h2>{data.title}</h2>
+                <p>{data.desc}</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
-          <div className="feature-1 border">
-            <div className="icon-wrapper bg-primary">
-              <span className="flaticon-test text-white" />
-            </div>
-            <div className="feature-1-content">
-              <h2>Ellenőrzés és tesztelés</h2>
-              <p>
-                Formális módszerek és modellalapú tesztelés alkalmazása funkcionális, megbízhatósági, biztonsági és teljesítmény
-                követelmények ellenőrzése és tanúsítása során.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
-          <div className="feature-1 border">
-            <div className="icon-wrapper bg-primary">
-              <span className="flaticon-bars-chart text-white" />
-            </div>
-            <div className="feature-1-content">
-              <h2>Empirikus rendszertervezés</h2>
-              <p>
-                Teljesítmény és megbízhatósági követelmények kísérleti vizsgálata, mérése, analízise, méretezése származtatott modellek
-                alapján, hibamodellezés.
-              </p>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   </div>
