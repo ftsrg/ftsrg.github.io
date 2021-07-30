@@ -20,6 +20,7 @@
 import { Global } from '@emotion/react'
 import React from 'react'
 import { I18nextProvider } from 'react-i18next'
+import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css'
 import i18next from '../src/lib/i18next'
 import '../src/utils/scss/style.scss'
 import { globalStyles } from '../src/utils/styles'
