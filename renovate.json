@@ -1,0 +1,10 @@
+{
+  "extends": ["config:base", "group:definitelyTyped", ":onlyNpm", "config:js-app", ":automergeMinor"],
+  "reviewers": ["triszt4n"],
+  "labels": ["dependencies"],
+  "dependencyDashboard": true,
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true
+  }
+}
