@@ -9,13 +9,7 @@ import ProjectProps from '../utils/props/project.props'
 interface IndexPageProps extends PageProps {
   data: {
     projects: {
-      nodes: {
-        fields: {
-          slug: string
-        }
-        html: string
-        frontmatter: ProjectProps
-      }[]
+      nodes: Array<ProjectProps>
     }
   }
 }
@@ -50,20 +44,15 @@ export default IndexPage
 
 export const query = graphql`
   query IndexPageQueries {
-    projects: allMarkdownRemark(filter: { fields: { layout: { eq: "project" } } }) {
+    projects: allProjectsYaml {
       nodes {
-        fields {
-          slug
-        }
-        html
-        frontmatter {
-          title
-          subtitle
-          url
-          featuredImage {
-            childImageSharp {
-              gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
-            }
+        title
+        subtitle
+        url
+        description
+        featuredImage {
+          childImageSharp {
+            gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
           }
         }
       }

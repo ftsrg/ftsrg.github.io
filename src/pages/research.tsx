@@ -14,22 +14,10 @@ import PublicationProps from '../utils/props/publication.props'
 interface ResearchPageProps extends PageProps {
   data: {
     projects: {
-      nodes: {
-        fields: {
-          slug: string
-        }
-        html: string
-        frontmatter: ProjectProps
-      }[]
+      nodes: Array<ProjectProps>
     }
     publications: {
-      nodes: {
-        fields: {
-          slug: string
-        }
-        html: string
-        frontmatter: PublicationProps
-      }[]
+      nodes: Array<PublicationProps>
     }
   }
 }
@@ -155,39 +143,29 @@ export default ResearchPage
 
 export const query = graphql`
   query ResearchPageQueries {
-    projects: allMarkdownRemark(filter: { fields: { layout: { eq: "project" } } }) {
+    projects: allProjectsYaml {
       nodes {
-        fields {
-          slug
-        }
-        html
-        frontmatter {
-          title
-          subtitle
-          url
-          featuredImage {
-            childImageSharp {
-              gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
-            }
+        title
+        subtitle
+        url
+        description
+        featuredImage {
+          childImageSharp {
+            gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
           }
         }
       }
     }
-    publications: allMarkdownRemark(filter: { fields: { layout: { eq: "publication" } } }) {
+    publications: allPublicationsYaml {
       nodes {
-        fields {
-          slug
-        }
-        html
-        frontmatter {
-          journalTitle
-          year
-          title
-          url
-          featuredImage {
-            childImageSharp {
-              gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
-            }
+        journalTitle
+        year
+        title
+        url
+        description
+        featuredImage {
+          childImageSharp {
+            gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
           }
         }
       }

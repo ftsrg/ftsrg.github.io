@@ -21,7 +21,9 @@ export const onCreateNode: GatsbyNode['onCreateNode'] = ({ node, getNode, action
   }
 }
 
-/* Right now we only support page creation for posts, see `fields: { layout: { eq: "post" } }` in query */
+/*
+ * UNCOMMENT THIS PART IF BLOG POSTS IN MARKDOWN ARE AVAILABLE
+ *
 export const createPages: GatsbyNode['createPages'] = ({ graphql, actions }) => {
   const { createPage } = actions
 
@@ -32,7 +34,7 @@ export const createPages: GatsbyNode['createPages'] = ({ graphql, actions }) => 
   return graphql(
     `
       query loadPagesQuery($limit: Int!) {
-        allMarkdownRemark(limit: $limit, filter: { fields: { layout: { eq: "post" } } }) {
+        allMarkdownRemark(limit: $limit) {
           edges {
             node {
               fields {
@@ -75,6 +77,7 @@ export const createPages: GatsbyNode['createPages'] = ({ graphql, actions }) => 
     })
   })
 }
+*/
 
 export const onPostBuild: GatsbyNode['onPostBuild'] = ({ reporter }) => {
   reporter.info('copy translation files')
