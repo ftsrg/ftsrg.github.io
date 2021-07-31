@@ -2597,7 +2597,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-slick@^0.23.5":
+"@types/react-slick@0.23.5":
   version "0.23.5"
   resolved "https://registry.yarnpkg.com/@types/react-slick/-/react-slick-0.23.5.tgz#e55fdc79bf19022ef77a6f22e9d64fd0f7463cc4"
   integrity sha512-dQ/HwsLpnWXD5d+52WwXIQTfNCRpgd+0CKb+aA8g2CaIpA9T9COdjVYb9KI40Osb4rIgqR7u2AqtL2/HGbBMpg==
@@ -4358,7 +4358,7 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-classnames@2.3.1, classnames@^2.3.1:
+classnames@2.3.1, classnames@^2.2.5, classnames@^2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.1.tgz#dfcfa3891e306ec1dad105d0e88f4417b8535e8e"
   integrity sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA==
@@ -13128,7 +13128,7 @@ react-side-effect@^2.1.0:
   resolved "https://registry.yarnpkg.com/react-side-effect/-/react-side-effect-2.1.1.tgz#66c5701c3e7560ab4822a4ee2742dee215d72eb3"
   integrity sha512-2FoTQzRNTncBVtnzxFOk2mCpcfxQpenBMbk5kSVBg5UcPqV9fRbgY2zhb7GTWWOlpFmAxhClBDlIq8Rsubz1yQ==
 
-react-slick@^0.28.1:
+react-slick@0.28.1:
   version "0.28.1"
   resolved "https://registry.yarnpkg.com/react-slick/-/react-slick-0.28.1.tgz#12c18d991b59432df9c3757ba540a227b3fb85b9"
   integrity sha512-JwRQXoWGJRbUTE7eZI1rGIHaXX/4YuwX6gn7ulfvUZ4vFDVQAA25HcsHSYaUiRCduTr6rskyIuyPMpuG6bbluw==
@@ -14189,7 +14189,7 @@ slice-ansi@^4.0.0:
     astral-regex "^2.0.0"
     is-fullwidth-code-point "^3.0.0"
 
-slick-carousel@^1.8.1:
+slick-carousel@1.8.1:
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/slick-carousel/-/slick-carousel-1.8.1.tgz#a4bfb29014887bb66ce528b90bd0cda262cc8f8d"
   integrity sha512-XB9Ftrf2EEKfzoQXt3Nitrt/IPbT+f1fgqBdoxO3W/+JYvtEOW6EgxnWfr9GH6nmULv7Y2tPmEX3koxThVmebA==
