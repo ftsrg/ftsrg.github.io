@@ -1,8 +1,11 @@
 import { graphql, Link, PageProps } from 'gatsby'
 import React from 'react'
 import CountUp from 'react-countup'
-import { FaChevronRight } from 'react-icons/fa'
-import { EventsCarousel, ProjectsCarousel, PublicationsCarousel } from '../components/carousels'
+import { FaChevronRight, FaDatabase } from 'react-icons/fa'
+import { MdSchool } from 'react-icons/md'
+import ProjectsCarousel from '../components/common-components/ProjectsCarousel'
+import PublicationsCarousel from '../components/common-components/PublicationsCarousel'
+import EventsSection from '../components/research-components/EventsSection'
 import ToolsSection from '../components/research-components/ToolsSection'
 import SEO from '../components/SEO'
 import Layout from '../layout/Layout'
@@ -45,7 +48,7 @@ const ResearchPage: React.FC<ResearchPageProps> = ({ data }) => {
         </div>
       </div>
 
-      <div id="projects" className="site-section ftco-counter">
+      <div id="projects" className="site-section">
         <div className="container">
           <div className="row mb-3">
             <div className="col-lg-12">
@@ -60,38 +63,30 @@ const ResearchPage: React.FC<ResearchPageProps> = ({ data }) => {
             </div>
           </div>
 
-          <div className="row d-md-flex align-items-center justify-content-center">
-            <div className="col-lg-12">
-              <div className="row d-md-flex align-items-center">
-                <div className="col-md d-flex justify-content-center">
-                  <div className="text-center w-100 mb-4">
-                    {/* EEMCN, FUTEG, HIDE, DECOS, RESIST, Sensoria, Deserec, Diana, Hidenets, SafeDMI, Amber, Genesys, Mogentes,
+          <div>
+            <div className="row">
+              <div className="col-12 col-md-4 text-center mb-4">
+                {/* EEMCN, FUTEG, HIDE, DECOS, RESIST, Sensoria, Deserec, Diana, Hidenets, SafeDMI, Amber, Genesys, Mogentes,
                       SecureChange, E-freight, R3-COP, CECRIS, Concerto, MONDO, R5-COP, ADVANCE, Arrowhead Tools, EMBrACE */}
-                    <h1 className="text-primary">
-                      <CountUp delay={0.5} end={23} className="fw-bolder" />
-                    </h1>
-                    <span>EU-s kutatási projekt</span>
-                  </div>
+                <div>
+                  <CountUp delay={0.5} end={23} duration={3} className="text-primary h1 font-weight-bold" />
                 </div>
+                <div>EU-s kutatási projekt</div>
+              </div>
 
-                <div className="col-md d-flex justify-content-center">
-                  <div className="text-center w-100 mb-4">
-                    <h1 className="text-primary">
-                      <CountUp delay={0.5} end={25} className="fw-bold" />
-                    </h1>
-                    <span>Ipari együttműködés</span>
-                  </div>
+              <div className="col-12 col-md-4 text-center mb-4">
+                <div>
+                  <CountUp delay={0.5} end={25} duration={3} className="text-primary h1 font-weight-bold" />
                 </div>
+                <div>Ipari együttműködés</div>
+              </div>
 
-                <div className="col-md d-flex justify-content-center">
-                  <div className="text-center w-100 mb-4">
-                    {/* Lendulet, VKE, ERC_HU, OTKA, TéT, DAAD... */}
-                    <h1 className="text-primary">
-                      <CountUp delay={0.5} end={20} className="fw-bold" />
-                    </h1>
-                    <span>Hazai és bilaterális projekt</span>
-                  </div>
+              <div className="col-12 col-md-4 text-center mb-4">
+                {/* Lendulet, VKE, ERC_HU, OTKA, TéT, DAAD... */}
+                <div>
+                  <CountUp delay={0.5} end={20} duration={3} className="text-primary h1 font-weight-bold" />
                 </div>
+                <div>Hazai és bilaterális projekt</div>
               </div>
             </div>
           </div>
@@ -107,13 +102,14 @@ const ResearchPage: React.FC<ResearchPageProps> = ({ data }) => {
                 <span>Publikációk</span>
               </h2>
               <p>
-                Teljes publikációs lista&nbsp;
+                <span className="pr-1">Teljes publikációs lista</span>
                 <a target="_blank" rel="noopener noreferrer" href="https://inf.mit.bme.hu/research/publications">
-                  <span className="icon-school" />
+                  <MdSchool />
                 </a>{' '}
-                | Adathalmazok&nbsp;
+                <span className="px-2">|</span>
+                <span className="pr-1">Adathalmazok</span>
                 <a href="https://zenodo.org/communities/ftsrg" target="_blank" rel="noopener noreferrer">
-                  <span className="icon-database" />
+                  <FaDatabase />
                 </a>
               </p>
               <p>
