@@ -2,9 +2,7 @@ import { graphql, Link, PageProps } from 'gatsby'
 import React from 'react'
 import CountUp from 'react-countup'
 import { FaChevronRight } from 'react-icons/fa'
-import ProjectsCarousel from '../components/common-components/ProjectsCarousel'
-import PublicationsCarousel from '../components/common-components/PublicationsCarousel'
-import EventsSection from '../components/research-components/EventsSection'
+import { EventsCarousel, ProjectsCarousel, PublicationsCarousel } from '../components/carousels'
 import ToolsSection from '../components/research-components/ToolsSection'
 import SEO from '../components/SEO'
 import Layout from '../layout/Layout'
@@ -124,17 +122,24 @@ const ResearchPage: React.FC<ResearchPageProps> = ({ data }) => {
               </p>
             </div>
           </div>
-
-          <div className="row">
-            <div className="col-12">
-              <PublicationsCarousel nodes={data.publications.nodes} />
-            </div>
-          </div>
+          <PublicationsCarousel nodes={data.publications.nodes} />
         </div>
       </div>
 
       <ToolsSection />
-      <EventsSection />
+
+      <div id="events" className="site-section">
+        <div className="container">
+          <div className="row mb-5">
+            <div className="col-lg-4">
+              <h2 className="section-title-underline">
+                <span>Események és díjak</span>
+              </h2>
+            </div>
+          </div>
+          <EventsCarousel />
+        </div>
+      </div>
     </Layout>
   )
 }

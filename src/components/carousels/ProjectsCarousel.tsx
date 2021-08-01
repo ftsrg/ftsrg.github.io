@@ -1,5 +1,6 @@
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import React from 'react'
+import Slider from 'react-slick'
 import ProjectProps from '../../utils/props/project.props'
 
 export interface ProjectsCarouselProps {
@@ -7,7 +8,23 @@ export interface ProjectsCarouselProps {
 }
 
 const ProjectsCarousel: React.FC<ProjectsCarouselProps> = ({ nodes }) => (
-  <div className="owl-slide owl-carousel">
+  <Slider
+    arrows={false}
+    dots
+    slidesToShow={2}
+    slidesToScroll={1}
+    className="py-3"
+    responsive={[
+      {
+        breakpoint: 512,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]}
+    autoplay
+    autoplaySpeed={4000}
+  >
     {nodes.map((project) => {
       const image = getImage(project.featuredImage)
       return (
@@ -30,7 +47,7 @@ const ProjectsCarousel: React.FC<ProjectsCarouselProps> = ({ nodes }) => (
         </div>
       )
     })}
-  </div>
+  </Slider>
 )
 
 export default ProjectsCarousel
