@@ -1,16 +1,10 @@
-/* Import bootstrap dependencies */
-@import '../../../node_modules/bootstrap/scss/functions';
-@import '../../../node_modules/bootstrap/scss/variables';
-@import '../../../node_modules/bootstrap/scss/mixins';
-
 /* Overrides */
 @import 'overrides';
+/* Import bootstrap */
+@import '~bootstrap/scss/bootstrap';
 /* Base */
 @import 'site-base';
 /* Navbar */
 @import 'site-navbar';
 /* Blocks */
 @import 'site-blocks';
-
-/* Import bootstrap */
-@import '../../../node_modules/bootstrap/scss/bootstrap';
