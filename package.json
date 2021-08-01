@@ -80,7 +80,7 @@
   "devDependencies": {
     "@types/fs-extra": "^9.0.12",
     "@types/jest": "^26.0.24",
-    "@types/node": "^16.4.5",
+    "@types/node": "^16.4.9",
     "@types/react": "^17.0.15",
     "@types/react-anchor-link-smooth-scroll": "^1.0.2",
     "@types/react-dom": "^17.0.9",
