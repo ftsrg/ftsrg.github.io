@@ -1,6 +1,7 @@
 import { Link } from 'gatsby'
 import React from 'react'
 import CountUp from 'react-countup'
+import Slider from 'react-slick'
 
 const cardsData = [
   {
