@@ -61,7 +61,7 @@ const ResearchPage: React.FC<ResearchPageProps> = ({ data }) => {
             </div>
           </div>
 
-          <div>
+          <div className="my-4 mb-5">
             <div className="row">
               <div className="col-12 col-md-4 text-center mb-4">
                 {/* EEMCN, FUTEG, HIDE, DECOS, RESIST, Sensoria, Deserec, Diana, Hidenets, SafeDMI, Amber, Genesys, Mogentes,

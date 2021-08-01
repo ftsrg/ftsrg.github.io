@@ -41,7 +41,7 @@ const EducationSection: React.FC = () => (
         </div>
       </div>
 
-      <div className="counter">
+      <div className="counter my-3">
         <div className="row">
           <div className="col-12 col-md-4 text-center mb-4">
             <div>
