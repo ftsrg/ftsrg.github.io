@@ -806,33 +806,6 @@ iframe.fb_iframe_widget_lift,
   }
 }
 
-.footer {
-  padding: 4rem 0;
-  background: $secondary;
-  font-size: 14px;
-  color: $white;
-
-  .footer-heading {
-    font-size: 16px;
-    color: $white;
-    margin-bottom: 30px;
-    span {
-      border-bottom: 3px solid $primary;
-    }
-  }
-
-  .copyright {
-    color: $white;
-    padding-top: 7rem;
-    text-align: center;
-  }
-
-  .footer-column {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-}
-
 .ftco-subscribe-1 {
   background-size: cover;
   background-position: center center;
@@ -872,18 +845,6 @@ iframe.fb_iframe_widget_lift,
 .price {
   & a:not(.btn) {
     color: $primary-light;
-    font-weight: 500;
-
-    &:hover {
-      color: $white;
-      text-decoration: underline;
-    }
-  }
-}
-
-.footer {
-  & a {
-    color: $gray-500;
     font-weight: 500;
 
     &:hover {
@@ -1075,5 +1036,19 @@ iframe.fb_iframe_widget_lift,
   to {
     opacity: 1;
     transform: none;
+  }
+}
+
+.footer {
+  font-size: 0.85rem;
+  padding: 4rem 0;
+  & a {
+    color: $gray-500 !important;
+    font-weight: 500;
+
+    &:hover {
+      color: $white !important;
+      text-decoration: underline;
+    }
   }
 }
