@@ -3,6 +3,7 @@ import React from 'react'
 import CountUp from 'react-countup'
 import { FaChevronRight, FaDatabase } from 'react-icons/fa'
 import { MdSchool } from 'react-icons/md'
+import VisibilitySensor from 'react-visibility-sensor'
 import { EventsCarousel, ProjectsCarousel, PublicationsCarousel } from '../components/carousels'
 import ToolsSection from '../components/research-components/ToolsSection'
 import SEO from '../components/SEO'
@@ -22,6 +23,11 @@ interface ResearchPageProps extends PageProps {
 }
 
 const ResearchPage: React.FC<ResearchPageProps> = ({ data }) => {
+  const [showCounter, setShowCounter] = React.useState(false)
+  const reactToScroll = (isVisible: boolean) => {
+    if (!showCounter && isVisible) setShowCounter(true)
+  }
+
   return (
     <Layout>
       <SEO />
@@ -60,34 +66,41 @@ const ResearchPage: React.FC<ResearchPageProps> = ({ data }) => {
               </p>
             </div>
           </div>
-
-          <div className="my-4 mb-5">
-            <div className="row">
-              <div className="col-12 col-md-4 text-center mb-4">
-                {/* EEMCN, FUTEG, HIDE, DECOS, RESIST, Sensoria, Deserec, Diana, Hidenets, SafeDMI, Amber, Genesys, Mogentes,
+          <VisibilitySensor partialVisibility onChange={reactToScroll}>
+            <div className="counter my-4 mb-5">
+              <div className="row">
+                <div className="col-12 col-md-4 text-center mb-4">
+                  {/* EEMCN, FUTEG, HIDE, DECOS, RESIST, Sensoria, Deserec, Diana, Hidenets, SafeDMI, Amber, Genesys, Mogentes,
                       SecureChange, E-freight, R3-COP, CECRIS, Concerto, MONDO, R5-COP, ADVANCE, Arrowhead Tools, EMBrACE */}
-                <div>
-                  <CountUp delay={0.5} end={23} duration={3} className="text-primary h1 font-weight-bold" />
+                  <div className={`${showCounter ? 'counter-animated' : 'counter-unanimated'}`}>
+                    <div>
+                      <CountUp end={23} duration={3} className="text-primary h1 font-weight-bold" />
+                    </div>
+                    <div>EU-s kutatási projekt</div>
+                  </div>
                 </div>
-                <div>EU-s kutatási projekt</div>
-              </div>
 
-              <div className="col-12 col-md-4 text-center mb-4">
-                <div>
-                  <CountUp delay={0.5} end={25} duration={3} className="text-primary h1 font-weight-bold" />
+                <div className="col-12 col-md-4 text-center mb-4">
+                  <div className={`${showCounter ? 'counter-animated' : 'counter-unanimated'}`}>
+                    <div>
+                      <CountUp end={25} duration={3} className="text-primary h1 font-weight-bold" />
+                    </div>
+                    <div>Ipari együttműködés</div>
+                  </div>
                 </div>
-                <div>Ipari együttműködés</div>
-              </div>
 
-              <div className="col-12 col-md-4 text-center mb-4">
-                {/* Lendulet, VKE, ERC_HU, OTKA, TéT, DAAD... */}
-                <div>
-                  <CountUp delay={0.5} end={20} duration={3} className="text-primary h1 font-weight-bold" />
+                <div className="col-12 col-md-4 text-center mb-4">
+                  <div className={`${showCounter ? 'counter-animated' : 'counter-unanimated'}`}>
+                    {/* Lendulet, VKE, ERC_HU, OTKA, TéT, DAAD... */}
+                    <div>
+                      <CountUp end={20} duration={3} className="text-primary h1 font-weight-bold" />
+                    </div>
+                    <div>Hazai és bilaterális projekt</div>
+                  </div>
                 </div>
-                <div>Hazai és bilaterális projekt</div>
               </div>
             </div>
-          </div>
+          </VisibilitySensor>
           <ProjectsCarousel nodes={data.projects.nodes} />
         </div>
       </div>

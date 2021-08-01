@@ -75,9 +75,10 @@
     "react-helmet": "6.1.0",
     "react-i18next": "11.11.4",
     "react-icons": "4.2.0",
-    "typescript": "4.3.5",
+    "react-slick": "0.28.1",
+    "react-visibility-sensor": "5.1.1",
     "slick-carousel": "1.8.1",
-    "react-slick": "0.28.1"
+    "typescript": "4.3.5"
   },
   "devDependencies": {
     "@types/fs-extra": "9.0.12",
