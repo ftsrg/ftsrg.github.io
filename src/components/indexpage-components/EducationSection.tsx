@@ -1,6 +1,6 @@
-import { Link } from '@reach/router'
+import { Link } from 'gatsby'
 import React from 'react'
-import Slider from 'react-slick'
+import CountUp from 'react-countup'
 
 const cardsData = [
   {
@@ -30,7 +30,7 @@ const cardsData = [
 ]
 
 const EducationSection: React.FC = () => (
-  <div id="education" className="site-section ftco-counter">
+  <div id="education" className="site-section">
     <div className="container">
       <div className="row mb-3 justify-content-center text-center">
         <div className="col-lg-6 mb-3">
@@ -40,60 +40,31 @@ const EducationSection: React.FC = () => (
         </div>
       </div>
 
-      <div className="row d-md-flex align-items-center justify-content-center">
-        <div className="col-lg-12">
-          <div className="row d-md-flex align-items-center" id="section-counter">
-            <div className="col-md d-flex justify-content-center counter-wrap ftco-animate">
-              <div className="block-18">
-                <div className="icon">
-                  <span className="flaticon-doctor" />
-                </div>
-                <div className="text">
-                  <strong className="number" data-number="450">
-                    0
-                  </strong>
-                  <span>
-                    <a target="_blank" rel="noopener noreferrer" href="https://diplomaterv.vik.bme.hu/hu/Browse.aspx?d=MIT">
-                      Szakdolgozat és diplomaterv
-                    </a>
-                  </span>
-                </div>
-              </div>
+      <div className="counter">
+        <div className="row">
+          <div className="col-12 col-md-4 text-center mb-4">
+            <div>
+              <CountUp delay={0.5} end={450} duration={3} className="text-primary h1 font-weight-bold" />
             </div>
+            <a target="_blank" rel="noopener noreferrer" href="https://diplomaterv.vik.bme.hu/hu/Browse.aspx?d=MIT">
+              Szakdolgozat és diplomaterv
+            </a>
+          </div>
 
-            <div className="col-md d-flex justify-content-center counter-wrap ftco-animate">
-              <div className="block-18">
-                <div className="icon">
-                  <span className="flaticon-doctor" />
-                </div>
-                <div className="text">
-                  <strong className="number" data-number="109">
-                    0
-                  </strong>
-                  <span>
-                    <a target="_blank" rel="noopener noreferrer" href="http://tdk.bme.hu/Browse/Papers?f=VIK&d=MIT">
-                      TDK és OTDK dolgozat
-                    </a>
-                  </span>
-                </div>
-              </div>
+          <div className="col-12 col-md-4 text-center mb-4">
+            <div>
+              <CountUp delay={0.5} end={109} duration={3} className="text-primary h1 font-weight-bold" />
             </div>
+            <a target="_blank" rel="noopener noreferrer" href="http://tdk.bme.hu/Browse/Papers?f=VIK&d=MIT">
+              TDK és OTDK dolgozat
+            </a>
+          </div>
 
-            <div className="col-md d-flex justify-content-center counter-wrap ftco-animate">
-              <div className="block-18">
-                <div className="icon">
-                  <span className="flaticon-doctor" />
-                </div>
-                <div className="text">
-                  <strong className="number" data-number="69">
-                    0
-                  </strong>
-                  <span>
-                    <a href="education.html#achievements">Hallgatói díj és kitüntetés</a>
-                  </span>
-                </div>
-              </div>
+          <div className="col-12 col-md-4 text-center mb-4">
+            <div>
+              <CountUp delay={0.5} end={69} duration={3} className="text-primary h1 font-weight-bold" />
             </div>
+            <Link to="/education#achievements">Hallgatói díj és kitüntetés</Link>
           </div>
         </div>
       </div>

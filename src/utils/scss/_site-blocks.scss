@@ -1048,3 +1048,10 @@ iframe.fb_iframe_widget_lift,
 .slick-arrow:before {
   color: $black;
 }
+
+.counter a {
+  color: $black;
+  &:hover {
+    color: $primary;
+  }
+}

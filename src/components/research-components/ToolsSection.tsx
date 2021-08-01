@@ -12,7 +12,6 @@ const ToolsSection: React.FC = () => (
       </div>
       <div className="row">
         <div className="col-lg-4 col-md-6 mb-5 mb-lg-0">
-          <span className="icon flaticon-mortarboard" />
           <h3>A Gamma állapotgép-kompozíciós keretrendszer</h3>
           <p>
             A Gamma modellezőeszköz reaktív rendszerek komponensalapú tervezését, formális ellenőrzését, illetve implementációjának
@@ -25,7 +24,6 @@ const ToolsSection: React.FC = () => (
           </p>
         </div>
         <div className="col-lg-4 col-md-6 mb-5 mb-lg-0">
-          <span className="icon flaticon-school-material" />
           <h3>A Theta modellellenőrző keretrendszer</h3>
           <p>
             A Theta modellellenőrző keretrendszer absztrakció-finomítás alapú, korszerű algoritmusok kollekciója, amelyek kombinálhatóságuk
@@ -38,7 +36,6 @@ const ToolsSection: React.FC = () => (
           </p>
         </div>
         <div className="col-lg-4 col-md-6 mb-5 mb-lg-0">
-          <span className="icon flaticon-library" />
           <h3>A VIATRA Solver gráfgenerátor keretrendszer</h3>
           <p>
             A VIATRA Solver egy keretrendszer, amely szakterület-specifikus nyelvek jólformált és változatos példánymodelljeinek automatikus
