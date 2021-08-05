@@ -2,13 +2,10 @@ import { graphql, Link, PageProps } from 'gatsby'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { FaChevronRight } from 'react-icons/fa'
-import FormerMembersSection from '../components/aboutpage-components/FormerMembersSection'
-import IntroSection from '../components/aboutpage-components/IntroSection'
-import MembersSection from '../components/aboutpage-components/MembersSection'
-import StudentsSection from '../components/aboutpage-components/StudentsSection'
-import SEO from '../components/SEO'
-import Layout from '../layout/Layout'
-import MemberProps from '../utils/props/member.props'
+import { FormerMembers, Intro, Members, Students } from '~components/aboutpage-components'
+import SEO from '~components/SEO'
+import Layout from '~layout/Layout'
+import MemberProps from '~props/member.props'
 
 interface AboutPageProps extends PageProps {
   data: {
@@ -47,10 +44,10 @@ const AboutPage: React.FC<AboutPageProps> = ({ data }) => {
         </div>
       </div>
 
-      <IntroSection />
-      <MembersSection nodes={data.members.nodes} />
-      <FormerMembersSection nodes={data.formermembers.nodes} />
-      <StudentsSection />
+      <Intro />
+      <Members nodes={data.members.nodes} />
+      <FormerMembers nodes={data.formermembers.nodes} />
+      <Students />
     </Layout>
   )
 }

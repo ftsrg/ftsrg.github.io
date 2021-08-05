@@ -4,12 +4,12 @@ import CountUp from 'react-countup'
 import { FaChevronRight, FaDatabase } from 'react-icons/fa'
 import { MdSchool } from 'react-icons/md'
 import VisibilitySensor from 'react-visibility-sensor'
-import { EventsCarousel, ProjectsCarousel, PublicationsCarousel } from '../components/carousels'
-import ToolsSection from '../components/research-components/ToolsSection'
-import SEO from '../components/SEO'
-import Layout from '../layout/Layout'
-import ProjectProps from '../utils/props/project.props'
-import PublicationProps from '../utils/props/publication.props'
+import { EventsCarousel, ProjectsCarousel, PublicationsCarousel } from '~components/carousels'
+import ToolsSection from '~components/research-components/ToolsSection'
+import SEO from '~components/SEO'
+import Layout from '~layout/Layout'
+import ProjectProps from '~props/project.props'
+import PublicationProps from '~props/publication.props'
 
 interface ResearchPageProps extends PageProps {
   data: {

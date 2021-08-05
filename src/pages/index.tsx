@@ -1,10 +1,10 @@
 import { graphql, PageProps } from 'gatsby'
 import React from 'react'
-import { ProjectsCarousel } from '../components/carousels'
-import { About, Banner, Competences, Education, News, Partners } from '../components/indexpage-components'
-import SEO from '../components/SEO'
-import Layout from '../layout/Layout'
-import ProjectProps from '../utils/props/project.props'
+import { ProjectsCarousel } from '~components/carousels'
+import { About, Banner, Competences, Education, News, Partners } from '~components/indexpage-components'
+import SEO from '~components/SEO'
+import Layout from '~layout/Layout'
+import ProjectProps from '~props/project.props'
 
 interface IndexPageProps extends PageProps {
   data: {

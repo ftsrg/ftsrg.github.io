@@ -1,8 +1,8 @@
 import React, { FC } from 'react'
 import { Button } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
-import { useSiteMetadata } from '../hooks/useSiteMetadata'
-import Locale from '../utils/language'
+import { useSiteMetadata } from '~hooks/useSiteMetadata'
+import Locale from '~utils/language'
 
 const LanguageToggle: FC = () => {
   const { translations } = useSiteMetadata() as {

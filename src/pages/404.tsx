@@ -21,8 +21,8 @@ import { PageProps } from 'gatsby'
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
-import SEO from '../components/SEO'
-import Layout from '../layout/Layout'
+import SEO from '~components/SEO'
+import Layout from '~layout/Layout'
 
 const NotFoundPage: React.FC<PageProps> = () => {
   const { t } = useTranslation()
