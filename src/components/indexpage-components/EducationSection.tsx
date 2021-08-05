@@ -1,6 +1,8 @@
-import { Link } from '@reach/router'
+import { Link } from 'gatsby'
 import React from 'react'
+import CountUp from 'react-countup'
 import Slider from 'react-slick'
+import VisibilitySensor from 'react-visibility-sensor'
 
 const cardsData = [
   {
@@ -29,118 +31,98 @@ const cardsData = [
   }
 ]
 
-const EducationSection: React.FC = () => (
-  <div id="education" className="site-section ftco-counter">
-    <div className="container">
-      <div className="row mb-3 justify-content-center text-center">
-        <div className="col-lg-6 mb-3">
-          <h2 className="section-title-underline mb-3">
-            <span>Oktatás és tehetséggondozás</span>
-          </h2>
+const EducationSection: React.FC = () => {
+  const [showCounter, setShowCounter] = React.useState(false)
+  const reactToScroll = (isVisible: boolean) => {
+    if (!showCounter && isVisible) setShowCounter(true)
+  }
+
+  return (
+    <div id="education" className="site-section">
+      <div className="container">
+        <div className="row mb-3 justify-content-center text-center">
+          <div className="col-lg-6 mb-3">
+            <h2 className="section-title-underline mb-3">
+              <span>Oktatás és tehetséggondozás</span>
+            </h2>
+          </div>
         </div>
-      </div>
 
-      <div className="row d-md-flex align-items-center justify-content-center">
-        <div className="col-lg-12">
-          <div className="row d-md-flex align-items-center" id="section-counter">
-            <div className="col-md d-flex justify-content-center counter-wrap ftco-animate">
-              <div className="block-18">
-                <div className="icon">
-                  <span className="flaticon-doctor" />
-                </div>
-                <div className="text">
-                  <strong className="number" data-number="450">
-                    0
-                  </strong>
-                  <span>
-                    <a target="_blank" rel="noopener noreferrer" href="https://diplomaterv.vik.bme.hu/hu/Browse.aspx?d=MIT">
-                      Szakdolgozat és diplomaterv
-                    </a>
-                  </span>
+        <VisibilitySensor partialVisibility onChange={reactToScroll}>
+          <div className="counter my-3">
+            <div className="row">
+              <div className="col-12 col-md-4 text-center mb-4">
+                <div className={`${showCounter ? 'counter-animated' : 'counter-unanimated'}`}>
+                  <div>{showCounter && <CountUp end={450} duration={3} className="text-primary h1 font-weight-bold" />}</div>
+                  <a target="_blank" rel="noopener noreferrer" href="https://diplomaterv.vik.bme.hu/hu/Browse.aspx?d=MIT">
+                    Szakdolgozat és diplomaterv
+                  </a>
                 </div>
               </div>
-            </div>
 
-            <div className="col-md d-flex justify-content-center counter-wrap ftco-animate">
-              <div className="block-18">
-                <div className="icon">
-                  <span className="flaticon-doctor" />
-                </div>
-                <div className="text">
-                  <strong className="number" data-number="109">
-                    0
-                  </strong>
-                  <span>
-                    <a target="_blank" rel="noopener noreferrer" href="http://tdk.bme.hu/Browse/Papers?f=VIK&d=MIT">
-                      TDK és OTDK dolgozat
-                    </a>
-                  </span>
+              <div className="col-12 col-md-4 text-center mb-4">
+                <div className={`${showCounter ? 'counter-animated' : 'counter-unanimated'}`}>
+                  <div>{showCounter && <CountUp end={109} duration={3} className="text-primary h1 font-weight-bold" />}</div>
+                  <a target="_blank" rel="noopener noreferrer" href="http://tdk.bme.hu/Browse/Papers?f=VIK&d=MIT">
+                    TDK és OTDK dolgozat
+                  </a>
                 </div>
               </div>
-            </div>
 
-            <div className="col-md d-flex justify-content-center counter-wrap ftco-animate">
-              <div className="block-18">
-                <div className="icon">
-                  <span className="flaticon-doctor" />
-                </div>
-                <div className="text">
-                  <strong className="number" data-number="69">
-                    0
-                  </strong>
-                  <span>
-                    <a href="education.html#achievements">Hallgatói díj és kitüntetés</a>
-                  </span>
+              <div className="col-12 col-md-4 text-center mb-4">
+                <div className={`${showCounter ? 'counter-animated' : 'counter-unanimated'}`}>
+                  <div>{showCounter && <CountUp end={69} duration={3} className="text-primary h1 font-weight-bold" />}</div>
+                  <Link to="/education#achievements">Hallgatói díj és kitüntetés</Link>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </VisibilitySensor>
 
-      <Slider
-        arrows={false}
-        dots
-        slidesToShow={3}
-        slidesToScroll={1}
-        className="py-3"
-        responsive={[
-          {
-            breakpoint: 990,
-            settings: {
-              slidesToShow: 2
+        <Slider
+          arrows={false}
+          dots
+          slidesToShow={3}
+          slidesToScroll={1}
+          className="py-3"
+          responsive={[
+            {
+              breakpoint: 990,
+              settings: {
+                slidesToShow: 2
+              }
+            },
+            {
+              breakpoint: 512,
+              settings: {
+                slidesToShow: 1
+              }
             }
-          },
-          {
-            breakpoint: 512,
-            settings: {
-              slidesToShow: 1
-            }
-          }
-        ]}
-      >
-        {cardsData.map((data) => (
-          <div key={data.category} className="p-2">
-            <div className="education-1-item">
-              <figure className="thumbnail">
-                <img src={data.thumbnail} alt="..." className="img-fluid" />
-                <div className="category bg-secondary">
-                  <h3>{data.category}</h3>
+          ]}
+        >
+          {cardsData.map((data) => (
+            <div key={data.category} className="p-2">
+              <div className="education-1-item">
+                <figure className="thumbnail">
+                  <img src={data.thumbnail} alt="..." className="img-fluid" />
+                  <div className="category bg-secondary">
+                    <h3>{data.category}</h3>
+                  </div>
+                </figure>
+                <div className="education-1-content pb-4">
+                  <h2>{data.title}</h2>
+                  <p className="desc mb-4">{data.desc}</p>
+                  <Link to={data.path} className="btn btn-primary rounded-0 px-4">
+                    Bővebben
+                  </Link>
                 </div>
-              </figure>
-              <div className="education-1-content pb-4">
-                <h2>{data.title}</h2>
-                <p className="desc mb-4">{data.desc}</p>
-                <Link to={data.path} className="btn btn-primary rounded-0 px-4">
-                  Bővebben
-                </Link>
               </div>
             </div>
-          </div>
-        ))}
-      </Slider>
+          ))}
+        </Slider>
+      </div>
     </div>
-  </div>
-)
+  )
+}
 
 export default EducationSection

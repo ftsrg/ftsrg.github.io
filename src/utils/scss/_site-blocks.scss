@@ -1048,3 +1048,32 @@ iframe.fb_iframe_widget_lift,
 .slick-arrow:before {
   color: $black;
 }
+
+.counter {
+  .counter-unanimated {
+    opacity: 0;
+  }
+  .counter-animated {
+    opacity: 1;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation: fade-in-up 1s ease-in-out;
+  }
+  a {
+    color: $black;
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
