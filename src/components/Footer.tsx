@@ -52,7 +52,7 @@ const Footer: React.FC<FooterProps> = ({ hasContact }) => {
 
           <div className="pt-5 text-center">
             <p>
-              Copyright &copy; 2021 All rights reserved | Template is made with <i className="icon-heart" aria-hidden="true" /> by{' '}
+              Copyright &copy; 2021 All rights reserved | Template by{' '}
               <a href="https://colorlib.com" target="_blank" rel="noopener noreferrer">
                 Colorlib
               </a>{' '}

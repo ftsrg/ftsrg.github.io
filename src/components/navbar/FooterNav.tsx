@@ -13,7 +13,7 @@ const FooterNav: React.FC = () => {
     <>
       {FOOTER_ITEMS.map((item) => {
         return (
-          <div key={item.id} className="col-lg-2 px-5 px-lg-4 py-3 py-lg-0">
+          <div key={item.id} className="col-md-4 col-lg-2 px-5 px-lg-4 py-3 py-md-5 py-lg-0">
             <h3 className="text-white h6 mb-3">
               <span className="border-bottom border-primary">{t(item.shortTitle)}</span>
             </h3>
