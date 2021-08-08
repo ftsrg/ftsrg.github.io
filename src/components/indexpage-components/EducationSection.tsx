@@ -1,8 +1,9 @@
 import { Link } from 'gatsby'
 import React from 'react'
-import CountUp from 'react-countup'
+import { Container } from 'react-bootstrap'
+import { useTranslation } from 'react-i18next'
 import Slider from 'react-slick'
-import VisibilitySensor from 'react-visibility-sensor'
+import EducationCounters from './EducationCounters'
 
 const cardsData = [
   {
@@ -32,53 +33,17 @@ const cardsData = [
 ]
 
 const EducationSection: React.FC = () => {
-  const [showCounter, setShowCounter] = React.useState(false)
-  const reactToScroll = (isVisible: boolean) => {
-    if (!showCounter && isVisible) setShowCounter(true)
-  }
+  const { t } = useTranslation()
 
   return (
     <div id="education" className="site-section">
-      <div className="container">
-        <div className="row mb-3 justify-content-center text-center">
-          <div className="col-lg-6 mb-3">
-            <h2 className="section-title-underline mb-3">
-              <span>Oktatás és tehetséggondozás</span>
-            </h2>
-          </div>
+      <Container>
+        <div className="mb-5 text-center">
+          <h2 className="section-title-underline">
+            <span>Oktatás és tehetséggondozás</span>
+          </h2>
         </div>
-
-        <VisibilitySensor partialVisibility onChange={reactToScroll}>
-          <div className="counter my-3">
-            <div className="row">
-              <div className="col-12 col-md-4 text-center mb-4">
-                <div className={`${showCounter ? 'counter-animated' : 'counter-unanimated'}`}>
-                  <div>{showCounter && <CountUp end={450} duration={3} className="text-primary h1 font-weight-bold" />}</div>
-                  <a target="_blank" rel="noopener noreferrer" href="https://diplomaterv.vik.bme.hu/hu/Browse.aspx?d=MIT">
-                    Szakdolgozat és diplomaterv
-                  </a>
-                </div>
-              </div>
-
-              <div className="col-12 col-md-4 text-center mb-4">
-                <div className={`${showCounter ? 'counter-animated' : 'counter-unanimated'}`}>
-                  <div>{showCounter && <CountUp end={109} duration={3} className="text-primary h1 font-weight-bold" />}</div>
-                  <a target="_blank" rel="noopener noreferrer" href="http://tdk.bme.hu/Browse/Papers?f=VIK&d=MIT">
-                    TDK és OTDK dolgozat
-                  </a>
-                </div>
-              </div>
-
-              <div className="col-12 col-md-4 text-center mb-4">
-                <div className={`${showCounter ? 'counter-animated' : 'counter-unanimated'}`}>
-                  <div>{showCounter && <CountUp end={69} duration={3} className="text-primary h1 font-weight-bold" />}</div>
-                  <Link to="/education#achievements">Hallgatói díj és kitüntetés</Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </VisibilitySensor>
-
+        <EducationCounters />
         <Slider
           arrows={false}
           dots
@@ -106,12 +71,12 @@ const EducationSection: React.FC = () => {
                 <figure className="thumbnail">
                   <img src={data.thumbnail} alt="..." className="img-fluid" />
                   <div className="category bg-secondary">
-                    <h3>{data.category}</h3>
+                    <h3>{t(data.category)}</h3>
                   </div>
                 </figure>
                 <div className="education-1-content pb-4">
-                  <h2>{data.title}</h2>
-                  <p className="desc mb-4">{data.desc}</p>
+                  <h2>{t(data.title)}</h2>
+                  <p className="desc mb-4">{t(data.desc)}</p>
                   <Link to={data.path} className="btn btn-primary rounded-0 px-4">
                     Bővebben
                   </Link>
@@ -120,7 +85,7 @@ const EducationSection: React.FC = () => {
             </div>
           ))}
         </Slider>
-      </div>
+      </Container>
     </div>
   )
 }
