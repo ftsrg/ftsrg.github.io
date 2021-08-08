@@ -3,11 +3,11 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { SubjectProps } from '~utils/props'
 
-interface SubjectsSectionProps {
+type Props = {
   nodes: Array<SubjectProps>
 }
 
-const SubjectsSection: React.FC<SubjectsSectionProps> = ({ nodes }) => (
+const SubjectsSection: React.FC<Props> = ({ nodes }) => (
   <div id="courses" className="section-bg style-1">
     <Container>
       <Row className="text-center mb-5">

@@ -1,10 +1,10 @@
-import React, { FC } from 'react'
+import React from 'react'
 import { Button } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
 import { useSiteMetadata } from '~hooks/useSiteMetadata'
 import Locale from '~utils/language'
 
-const LanguageToggle: FC = () => {
+const LanguageToggle: React.FC = () => {
   const { translations } = useSiteMetadata() as {
     translations: Array<keyof typeof Locale>
   }

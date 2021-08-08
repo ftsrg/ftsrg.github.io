@@ -4,11 +4,11 @@ import { Container } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
 import { FaChevronRight } from 'react-icons/fa'
 
-interface BreadcrumbsProps {
+type Props = {
   title: string
 }
 
-const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ title }) => {
+const Breadcrumbs: React.FC<Props> = ({ title }) => {
   const { t } = useTranslation()
 
   return (

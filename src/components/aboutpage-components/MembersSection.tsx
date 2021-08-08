@@ -4,11 +4,11 @@ import { Col, Container, Row } from 'react-bootstrap'
 import { FaGithub, FaGraduationCap, FaHome, FaLinkedin } from 'react-icons/fa'
 import { MemberProps } from '~utils/props'
 
-interface MembersSectionProps {
+type Props = {
   nodes: Array<MemberProps>
 }
 
-const MembersSection: React.FC<MembersSectionProps> = ({ nodes }) => (
+const MembersSection: React.FC<Props> = ({ nodes }) => (
   <div id="members" className="site-section">
     <Container>
       <div className="pb-5">

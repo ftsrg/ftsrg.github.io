@@ -4,11 +4,11 @@ import { useTranslation } from 'react-i18next'
 import Slider from 'react-slick'
 import { ProjectProps } from '~utils/props'
 
-export interface ProjectsCarouselProps {
+type Props = {
   nodes: Array<ProjectProps>
 }
 
-const ProjectsCarousel: React.FC<ProjectsCarouselProps> = ({ nodes }) => {
+const ProjectsCarousel: React.FC<Props> = ({ nodes }) => {
   const { t } = useTranslation()
 
   return (

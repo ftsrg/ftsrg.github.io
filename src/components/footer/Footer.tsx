@@ -4,11 +4,11 @@ import { Col, Container, Row } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
 import FooterNav from './FooterNav'
 
-interface FooterProps {
+type Props = {
   hasContact?: boolean
 }
 
-const Footer: React.FC<FooterProps> = ({ hasContact }) => {
+const Footer: React.FC<Props> = ({ hasContact }) => {
   const { t } = useTranslation()
 
   return (

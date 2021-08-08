@@ -3,11 +3,11 @@ import { FaLinkedin } from 'react-icons/fa'
 import Hero from '~components/Hero'
 import { MemberProps } from '~utils/props'
 
-interface FormerMembersSectionProps {
+type Props = {
   nodes: Array<MemberProps>
 }
 
-const FormerMembersSection: React.FC<FormerMembersSectionProps> = ({ nodes }) => (
+const FormerMembersSection: React.FC<Props> = ({ nodes }) => (
   <Hero id="formermembers" bgImageUrl="/images/panorama.jpg" heroTitle="Korábbi munkatársaink">
     <div className="card-columns alumni-list">
       {nodes.map((formermember) => (
