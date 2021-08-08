@@ -1,15 +1,15 @@
 import { PageProps } from 'gatsby'
 import React from 'react'
 import Breadcrumbs from '~components/Breadcrumbs'
-import PageHero from '~components/PageHero'
 import SEO from '~components/SEO'
+import TopHero from '~components/TopHero'
 import Layout from '~layout/Layout'
 
 const ContactPage: React.FC<PageProps> = () => {
   return (
     <Layout>
       <SEO />
-      <PageHero heroTitle="pages.contact.heroTitle" heroDesc="pages.contact.heroDesc" bgImageUrl="/images/bg_3.jpg" />
+      <TopHero heroTitle="pages.contact.heroTitle" heroDesc="pages.contact.heroDesc" bgImageUrl="/images/bg_3.jpg" />
       <Breadcrumbs title="nav.contact.title" />
       <div className="site-section">
         <div className="container">

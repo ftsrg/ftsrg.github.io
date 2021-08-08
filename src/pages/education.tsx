@@ -1,10 +1,12 @@
 import { graphql, PageProps } from 'gatsby'
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import Breadcrumbs from '~components/Breadcrumbs'
 import { SpecializationsCarousel, StudentAchievementsCarousel } from '~components/carousels'
-import { StudentWork, Subjects, TalentCare } from '~components/education-components'
-import PageHero from '~components/PageHero'
+import { StudentWork, Subjects } from '~components/education-components'
+import Hero from '~components/Hero'
 import SEO from '~components/SEO'
+import TopHero from '~components/TopHero'
 import Layout from '~layout/Layout'
 import SubjectProps from '~props/subject.props'
 
@@ -17,10 +19,12 @@ interface EducationPageProps extends PageProps {
 }
 
 const EducationPage: React.FC<EducationPageProps> = ({ data }) => {
+  const { t } = useTranslation()
+
   return (
     <Layout>
       <SEO />
-      <PageHero heroTitle="pages.education.heroTitle" heroDesc="pages.education.heroDesc" bgImageUrl="/images/bg_1.jpg" />
+      <TopHero heroTitle="pages.education.heroTitle" heroDesc="pages.education.heroDesc" bgImageUrl="/images/bg_1.jpg" />
       <Breadcrumbs title="nav.education.title" />
       <div id="specializations" className="site-section">
         <div className="container">
@@ -37,7 +41,10 @@ const EducationPage: React.FC<EducationPageProps> = ({ data }) => {
 
       <Subjects nodes={data.subjects.nodes} />
       <StudentWork />
-      <TalentCare />
+      <Hero id="talentcare" heroTitle="education.talentcare.title">
+        <p>{t('education.talentcare.p1')}</p>
+        <p>{t('education.talentcare.p2')}</p>
+      </Hero>
 
       <div id="achievements" className="site-section">
         <div className="container">

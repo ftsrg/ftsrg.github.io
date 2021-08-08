@@ -6,9 +6,9 @@ import { MdSchool } from 'react-icons/md'
 import VisibilitySensor from 'react-visibility-sensor'
 import Breadcrumbs from '~components/Breadcrumbs'
 import { EventsCarousel, ProjectsCarousel, PublicationsCarousel } from '~components/carousels'
-import PageHero from '~components/PageHero'
 import ToolsSection from '~components/research-components/ToolsSection'
 import SEO from '~components/SEO'
+import TopHero from '~components/TopHero'
 import Layout from '~layout/Layout'
 import ProjectProps from '~props/project.props'
 import PublicationProps from '~props/publication.props'
@@ -33,7 +33,7 @@ const ResearchPage: React.FC<ResearchPageProps> = ({ data }) => {
   return (
     <Layout>
       <SEO />
-      <PageHero heroTitle="pages.research.heroTitle" heroDesc="pages.research.heroDesc" bgImageUrl="/images/bg_5.jpg" />
+      <TopHero heroTitle="pages.research.heroTitle" heroDesc="pages.research.heroDesc" bgImageUrl="/images/bg_5.jpg" />
       <Breadcrumbs title="nav.research.title" />
       <div id="projects" className="site-section">
         <div className="container">

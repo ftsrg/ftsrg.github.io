@@ -1,7 +1,9 @@
 import React from 'react'
+import { Col, Row } from 'react-bootstrap'
 import { CgPerformance } from 'react-icons/cg'
 import { FaBug } from 'react-icons/fa'
 import { VscRocket } from 'react-icons/vsc'
+import Hero from '~components/Hero'
 
 const compentencesData = [
   {
@@ -25,35 +27,30 @@ const compentencesData = [
 ]
 
 const CompetencesSection: React.FC = () => (
-  <div id="competences" className="section-bg style-1">
-    <div className="container">
-      <div className="row mb-5 justify-content-center text-center">
-        <div className="col-lg-7 mb-5">
-          <h2 className="section-title-underline style-2 mb-5">
-            <span>Szakmai kompetenciáink</span>
-          </h2>
-          <p className="text-center mb-0">
-            Fő területünk a kritikus informatikai rendszerek, folyamatok és platformok szolgáltatásbiztonságra tervezése, ideértve a
-            kiberfizikai és informatikai infrastruktúrákat, alkalmazásokat. Alapvető metodikánk a modellalapú tervezés, analízis és
-            helyességbizonyítás.
-          </p>
-        </div>
-      </div>
-      <div className="row">
-        {compentencesData.map((data) => (
-          <div key={data.title} className="col-lg-4 col-md-6 mb-4 mb-lg-0">
-            <div className="feature-1 border">
-              <div className="icon-wrapper bg-primary text-white d-flex align-items-center justify-content-center">{data.icon}</div>
-              <div className="feature-1-content">
-                <h2>{data.title}</h2>
-                <p>{data.desc}</p>
-              </div>
+  <Hero id="competences" heroTitle="Szakmai kompetenciáink" isHeroTitleCentered>
+    <Row className="justify-content-center mb-5">
+      <Col lg={7}>
+        <p className="text-center mb-5">
+          Fő területünk a kritikus informatikai rendszerek, folyamatok és platformok szolgáltatásbiztonságra tervezése, ideértve a
+          kiberfizikai és informatikai infrastruktúrákat, alkalmazásokat. Alapvető metodikánk a modellalapú tervezés, analízis és
+          helyességbizonyítás.
+        </p>
+      </Col>
+    </Row>
+    <Row>
+      {compentencesData.map((data) => (
+        <Col key={data.title} lg={4} md={6} className="mb-4 mb-lg-0">
+          <div className="feature-1 border">
+            <div className="icon-wrapper bg-primary text-white d-flex align-items-center justify-content-center">{data.icon}</div>
+            <div className="feature-1-content">
+              <h2>{data.title}</h2>
+              <p>{data.desc}</p>
             </div>
           </div>
-        ))}
-      </div>
-    </div>
-  </div>
+        </Col>
+      ))}
+    </Row>
+  </Hero>
 )
 
 export default CompetencesSection
