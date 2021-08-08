@@ -1,0 +1,20 @@
+.slick-arrow:before {
+  color: $black;
+}
+
+.custom-breadcrumbs {
+  font-size: 0.85rem;
+
+  a {
+    display: inline-block;
+    color: $gray-500;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.mb-6 {
+  margin-bottom: 10rem;
+}

@@ -1,41 +1,25 @@
-import { Link, PageProps } from 'gatsby'
+import { PageProps } from 'gatsby'
 import React from 'react'
-import { FaChevronRight } from 'react-icons/fa'
+import { Col, Container, Row } from 'react-bootstrap'
+import Breadcrumbs from '~components/Breadcrumbs'
 import SEO from '~components/SEO'
+import TopHero from '~components/TopHero'
 import Layout from '~layout/Layout'
 
 const ContactPage: React.FC<PageProps> = () => {
   return (
     <Layout>
       <SEO />
-      <div className="site-section ftco-subscribe-1 site-blocks-cover pb-4" style={{ backgroundImage: `url('/images/bg_3.jpg')` }}>
-        <div className="container">
-          <div className="row align-items-end">
-            <div className="col-lg-7">
-              <h2 className="mb-0">Kapcsolat</h2>
-              <p>Elérhetőség, térkép és fényképek</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="custom-breadcrumbs border-bottom">
-        <div className="container">
-          <Link to="/">Kezdőlap</Link>
-          <span className="mx-2">
-            <FaChevronRight size="0.6rem" />
-          </span>
-          <span className="current">Kapcsolat</span>
-        </div>
-      </div>
+      <TopHero heroTitle="pages.contact.heroTitle" heroDesc="pages.contact.heroDesc" bgImageUrl="/images/bg_3.jpg" />
+      <Breadcrumbs title="nav.contact.title" />
 
       <div className="site-section">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
+        <Container>
+          <Row className="mb-6">
+            <Col lg={6} className="order-1 order-lg-2 mb-4 mb-lg-0">
               <img src="/images/bme-i-building.jpg" alt="..." className="img-fluid" />
-            </div>
-            <div className="col-lg-5 mr-auto align-self-center order-2 order-lg-1">
+            </Col>
+            <Col lg={5} className="mr-auto align-self-center order-2 order-lg-1">
               <h2 className="section-title-underline mb-5">
                 <span>Megközelítés</span>
               </h2>
@@ -56,35 +40,25 @@ const ContactPage: React.FC<PageProps> = () => {
                   N47.4724731, E19.0594159
                 </a>
               </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="site-section">
-        <div className="container">
-          <div className="row mb-3">
-            <div className="col-lg-6 mb-lg-0 mb-4">
+            </Col>
+          </Row>
+          <Row className="mb-6">
+            <Col lg={6} className="mb-lg-0 mb-4">
               <img src="/images/ftsrg-rooms.jpg" alt="..." className="img-fluid" />
-            </div>
-            <div className="col-lg-5 ml-auto align-self-center">
+            </Col>
+            <Col lg={5} className="ml-auto align-self-center">
               <h2 className="section-title-underline mb-5">
                 <span>Az épületen belül</span>
               </h2>
               <p>Az épületbe belépve bal kéz felé a portával szemközti liftekkel fel a 4. emeletre.</p>
               <p>A liftből kilépve jobbra, majd balra belépve az üvegajtón található a kutatócsoport.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="site-section">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={5} className="order-1 order-lg-2 mb-4 mb-lg-0">
               <img src="/images/ftsrg-4th-floor.jpg" alt="Hallgatói folyosó" className="img-fluid" />
-            </div>
-            <div className="col-lg-5 mr-auto align-self-center order-2 order-lg-1">
+            </Col>
+            <Col lg={5} className="mr-auto align-self-center order-2 order-lg-1">
               <h2 className="section-title-underline mb-5">
                 <span>Hallgatói folyosó</span>
               </h2>
@@ -97,9 +71,9 @@ const ContactPage: React.FC<PageProps> = () => {
                 </a>
                 .
               </p>
-            </div>
-          </div>
-        </div>
+            </Col>
+          </Row>
+        </Container>
       </div>
     </Layout>
   )

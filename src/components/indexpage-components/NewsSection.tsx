@@ -1,18 +1,15 @@
 import React from 'react'
+import { Col, Container, Row } from 'react-bootstrap'
 
 const NewsSection: React.FC = () => (
   <div id="news" className="news-updates">
-    <div className="container">
-      <div className="row mb-3 justify-content-center text-center">
-        <div className="col-lg-6 mb-3">
-          <h2 className="section-title-underline mb-3">
-            <span>Hírek és események</span>
-          </h2>
-        </div>
-      </div>
+    <Container>
+      <h2 className="section-title-underline text-center mb-5">
+        <span>Hírek és események</span>
+      </h2>
 
-      <div className="row justify-content-center text-center mb-5">
-        <div className="social-media-container col-lg-6">
+      <Row className="justify-content-center text-center mb-5">
+        <Col lg={6} className="social-media-container">
           <h2>ftsrg a Twitteren</h2>
           <hr />
           <a
@@ -24,8 +21,8 @@ const NewsSection: React.FC = () => (
           >
             Tweets by ftsrg_bme
           </a>
-        </div>
-        <div className="social-media-container col-lg-6">
+        </Col>
+        <Col lg={6} className="social-media-container">
           <h2>ftsrg a Facebookon</h2>
           <hr />
           <div
@@ -43,11 +40,9 @@ const NewsSection: React.FC = () => (
               <a href="https://www.facebook.com/ftsrg/">Hibatűrő Rendszerek Kutatócsoport</a>
             </blockquote>
           </div>
-        </div>
-      </div>
-
-      <div className="row justify-content-center text-center" />
-    </div>
+        </Col>
+      </Row>
+    </Container>
   </div>
 )
 

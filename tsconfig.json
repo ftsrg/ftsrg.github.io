@@ -21,7 +21,6 @@
       "~components/*": ["src/components/*"],
       "~utils/*": ["src/utils/*"],
       "~hooks/*": ["src/hooks/*"],
-      "~props/*": ["src/utils/props/*"],
       "~lib/*": ["src/lib/*"],
       "~layout/*": ["src/layout/*"]
     }

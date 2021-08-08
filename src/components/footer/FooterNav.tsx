@@ -1,7 +1,8 @@
 import { Link } from 'gatsby'
 import React from 'react'
+import { Col } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
-import NAVBAR_ITEMS from './navbar-items'
+import NAVBAR_ITEMS from '../navbar/navbar-items'
 
 const columnIds = ['research', 'education', 'about']
 const FOOTER_ITEMS = NAVBAR_ITEMS.filter((i) => columnIds.includes(i.id))
@@ -13,7 +14,7 @@ const FooterNav: React.FC = () => {
     <>
       {FOOTER_ITEMS.map((item) => {
         return (
-          <div key={item.id} className="col-md-4 col-lg-2 px-5 px-lg-4 py-3 py-md-5 py-lg-0">
+          <Col key={item.id} md={4} lg={2} className="px-5 px-lg-4 py-3 py-md-5 py-lg-0">
             <h3 className="text-white h6 mb-3">
               <span className="border-bottom border-primary">{t(item.shortTitle)}</span>
             </h3>
@@ -25,7 +26,7 @@ const FooterNav: React.FC = () => {
                   </li>
                 ))}
             </ul>
-          </div>
+          </Col>
         )
       })}
     </>

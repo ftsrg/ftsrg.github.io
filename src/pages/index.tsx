@@ -1,10 +1,11 @@
 import { graphql, PageProps } from 'gatsby'
 import React from 'react'
+import { Col, Container, Row } from 'react-bootstrap'
 import { ProjectsCarousel } from '~components/carousels'
 import { About, Banner, Competences, Education, News, Partners } from '~components/indexpage-components'
 import SEO from '~components/SEO'
 import Layout from '~layout/Layout'
-import ProjectProps from '~props/project.props'
+import { ProjectProps } from '~utils/props'
 
 interface IndexPageProps extends PageProps {
   data: {
@@ -23,16 +24,16 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) => {
       <Education />
       <About />
       <div id="projects" className="site-section">
-        <div className="container">
-          <div className="row mb-5">
-            <div className="col-lg-4">
+        <Container>
+          <Row className="mb-5">
+            <Col xs={12}>
               <h2 className="section-title-underline">
                 <span>Projektjeink</span>
               </h2>
-            </div>
-          </div>
+            </Col>
+          </Row>
           <ProjectsCarousel nodes={data.projects.nodes} />
-        </div>
+        </Container>
       </div>
       <Partners />
       <News />

@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import Slider from 'react-slick'
 
 const eventsData = [
@@ -31,42 +32,48 @@ const eventsData = [
   }
 ]
 
-const EventsCarousel: React.FC = () => (
-  <Slider
-    arrows={false}
-    dots
-    slidesToShow={2}
-    slidesToScroll={1}
-    className="py-3"
-    responsive={[
-      {
-        breakpoint: 512,
-        settings: {
-          slidesToShow: 1
+const EventsCarousel: React.FC = () => {
+  const { t } = useTranslation()
+
+  return (
+    <Slider
+      arrows={false}
+      dots
+      slidesToShow={2}
+      slidesToScroll={1}
+      className="py-3"
+      responsive={[
+        {
+          breakpoint: 512,
+          settings: {
+            slidesToShow: 1
+          }
         }
-      }
-    ]}
-  >
-    {eventsData.map((data) => (
-      <div key={data.title} className="ftco-testimonial-1">
-        <div className="ftco-testimonial-vcard d-flex align-items-center mb-4">
-          <img src={data.thumbnail} alt="..." className="img-fluid mr-3" />
-          <div>
-            <h3>{data.title}</h3>
-            <span>{data.subtitle}</span>
+      ]}
+    >
+      {eventsData.map((data) => (
+        <div key={data.title} className="px-3">
+          <div key={data.title} className="ftco-testimonial-1">
+            <div className="ftco-testimonial-vcard d-flex align-items-center mb-4">
+              <img src={data.thumbnail} alt="..." className="img-fluid mr-3" />
+              <div>
+                <h3>{t(data.title)}</h3>
+                <span>{t(data.subtitle)}</span>
+              </div>
+            </div>
+            <div>
+              <p>{t(data.desc)}</p>
+              <p>
+                <a target="_blank" rel="noopener noreferrer" href={data.url}>
+                  {t('commons.readMore')}
+                </a>
+              </p>
+            </div>
           </div>
         </div>
-        <div>
-          <p>{data.desc}</p>
-          <p>
-            <a target="_blank" rel="noopener noreferrer" href={data.url}>
-              Bővebben
-            </a>
-          </p>
-        </div>
-      </div>
-    ))}
-  </Slider>
-)
+      ))}
+    </Slider>
+  )
+}
 
 export default EventsCarousel

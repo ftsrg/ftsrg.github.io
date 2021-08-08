@@ -1,28 +1,26 @@
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import React from 'react'
+import { Col, Container, Row } from 'react-bootstrap'
 import { FaGithub, FaGraduationCap, FaHome, FaLinkedin } from 'react-icons/fa'
-import MemberProps from '~props/member.props'
+import { MemberProps } from '~utils/props'
 
-interface MembersSectionProps {
+type Props = {
   nodes: Array<MemberProps>
 }
 
-const MembersSection: React.FC<MembersSectionProps> = ({ nodes }) => (
+const MembersSection: React.FC<Props> = ({ nodes }) => (
   <div id="members" className="site-section">
-    <div className="container">
-      <div className="row mb-5 justify-content-center text-center">
-        <div className="col-lg-4 mb-5">
-          <h2 className="section-title-underline mb-5">
-            <span>A kutatócsoport tagjai</span>
-          </h2>
-        </div>
+    <Container>
+      <div className="pb-5">
+        <h2 className="section-title-underline pb-5 text-center">
+          <span>A kutatócsoport tagjai</span>
+        </h2>
       </div>
-
-      <div className="row">
+      <Row className="mt-5">
         {nodes.map((member) => {
           const avatar = member.avatar ? getImage(member.avatar) : null
           return (
-            <div key={member.name} className="col-lg-3 col-md-4 mb-5 mb-lg-5">
+            <Col lg={3} md={4} key={member.name} className="mb-5 mb-lg-5">
               <div className="feature-1 border person text-center">
                 {avatar && <GatsbyImage image={avatar} className="img-fluid" alt={member.name} />}
                 <div className="feature-1-content">
@@ -55,11 +53,11 @@ const MembersSection: React.FC<MembersSectionProps> = ({ nodes }) => (
                   </p>
                 </div>
               </div>
-            </div>
+            </Col>
           )
         })}
-      </div>
-    </div>
+      </Row>
+    </Container>
   </div>
 )
 

@@ -1,54 +1,30 @@
 import React from 'react'
+import { Col, Container, Row } from 'react-bootstrap'
+import { useTranslation } from 'react-i18next'
 
-const BannerSection: React.FC = () => (
-  <div id="banner" className="site-blocks-cover">
-    <div className="overlay" />
-    <video playsInline autoPlay muted loop>
-      <source src="images/drone-banner.mp4" type="video/mp4" />
-    </video>
+const BannerSection: React.FC = () => {
+  const { t } = useTranslation()
 
-    <div className="hero-slide owl-carousel">
+  return (
+    <div id="banner">
+      <div className="overlay" />
+      <video playsInline autoPlay muted loop>
+        <source src="/images/drone-banner.mp4" type="video/mp4" />
+      </video>
       <div className="intro intro-section background-4">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-12 mx-auto text-center" data-aos="fade-up">
-              <img
-                src="images/ftsrg-large-white.png"
-                className="img-responsive"
-                style={{ width: '400px !important', margin: '0 auto' }}
-                alt="..."
-              />
-              <h1>Kritikus Rendszerek Kutatócsoport</h1>
+        <Container>
+          <Row className="align-items-center">
+            <Col lg="12" className="mx-auto text-center">
+              <img src="/images/ftsrg-large-white.png" className="intro-img mx-auto" alt="..." />
+              <h1>{t('pages.home.heroTitle')}</h1>
               <hr className="ml-5 mr-5" />
-              <h2>
-                <i>„Átültetjük az elméletet&nbsp;a&nbsp;gyakorlatba”</i>
-              </h2>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="intro intro-section-alt background-3">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-12 mx-auto text-center" data-aos="fade-up">
-              <img
-                src="images/ftsrg-large.png"
-                className="img-responsive"
-                style={{ width: '400px !important', margin: '0 auto' }}
-                alt="..."
-              />
-              <h1>Critical&nbsp;Systems Research&nbsp;Group</h1>
-              <hr className="ml-5 mr-5" />
-              <h2>
-                <i>“Forging&nbsp;technology from&nbsp;science”</i>
-              </h2>
-            </div>
-          </div>
-        </div>
+              <h2 className="font-italic">{t('pages.home.heroDesc')}</h2>
+            </Col>
+          </Row>
+        </Container>
       </div>
     </div>
-  </div>
-)
+  )
+}
 
 export default BannerSection

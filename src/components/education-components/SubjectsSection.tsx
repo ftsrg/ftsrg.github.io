@@ -1,26 +1,27 @@
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import React from 'react'
-import SubjectProps from '~props/subject.props'
+import { Col, Container, Row } from 'react-bootstrap'
+import { SubjectProps } from '~utils/props'
 
-interface SubjectsSectionProps {
+type Props = {
   nodes: Array<SubjectProps>
 }
 
-const SubjectsSection: React.FC<SubjectsSectionProps> = ({ nodes }) => (
+const SubjectsSection: React.FC<Props> = ({ nodes }) => (
   <div id="courses" className="section-bg style-1">
-    <div className="container">
-      <div className="row justify-content-center mb-4">
-        <div className="col-lg-7 text-center mb-4">
+    <Container>
+      <Row className="text-center mb-5">
+        <Col xs={12}>
           <h2 className="section-title-underline style-2">
             <span>Tantárgyaink</span>
           </h2>
-        </div>
-      </div>
-      <div className="row">
+        </Col>
+      </Row>
+      <Row>
         {nodes.map((subject) => {
           const featuredImage = subject.featuredImage ? getImage(subject.featuredImage) : null
           return (
-            <div key={subject.title} className="col-lg-4 col-md-6 mb-4 course-1-container">
+            <Col lg={4} md={6} key={subject.title} className="mb-4 course-1-container">
               <div className="course-1-item">
                 <div>
                   <figure className="thumbnail">
@@ -44,11 +45,11 @@ const SubjectsSection: React.FC<SubjectsSectionProps> = ({ nodes }) => (
                   </a>
                 </div>
               </div>
-            </div>
+            </Col>
           )
         })}
-      </div>
-    </div>
+      </Row>
+    </Container>
   </div>
 )
 

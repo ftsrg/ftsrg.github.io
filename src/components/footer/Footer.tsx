@@ -1,22 +1,23 @@
 import { Link } from 'gatsby'
 import React from 'react'
+import { Col, Container, Row } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
-import FooterNav from './navbar/FooterNav'
+import FooterNav from './FooterNav'
 
-interface FooterProps {
+type Props = {
   hasContact?: boolean
 }
 
-const Footer: React.FC<FooterProps> = ({ hasContact }) => {
+const Footer: React.FC<Props> = ({ hasContact }) => {
   const { t } = useTranslation()
 
   return (
     <>
       {hasContact && (
-        <div className="site-section ftco-subscribe-1" style={{ backgroundImage: `url('/images/bg_2.png')` }}>
-          <div className="container">
-            <div className="row align-items-center justify-content-center">
-              <div className="col-lg-9 d-flex align-items-center">
+        <div className="site-section pagehero" style={{ backgroundImage: `url('/images/bg_2.png')` }}>
+          <Container>
+            <div className="d-flex align-items-center justify-content-center">
+              <div className="d-flex align-items-center">
                 <a href="http://mit.bme.hu/~micskeiz" target="_blank" rel="noopener noreferrer">
                   <img src="/images/members/micskei-small.png" alt="Micskei Zoltán" width="100px" className="mr-4" />
                 </a>
@@ -32,23 +33,23 @@ const Footer: React.FC<FooterProps> = ({ hasContact }) => {
                 </div>
               </div>
             </div>
-          </div>
+          </Container>
         </div>
       )}
       <div className="footer text-white bg-secondary">
-        <div className="container">
-          <div className="row justify-content-center pb-5">
-            <div className="col-lg-4 text-center px-5">
+        <Container>
+          <Row className="justify-content-center pb-5">
+            <Col lg={4} className="text-center px-5">
               <img src="/images/ftsrg-small-white.png" alt="..." width="120px" className="mb-4" />
               <p>H-1117 Budapest, Magyar tudósok körútja&nbsp;2., I ép. B szárny, IV. em.</p>
               <p>
                 <Link to="/contact">{t('nav.contact.title')}</Link>
               </p>
-            </div>
+            </Col>
             {/* Column left here intentionally as spacer */}
-            <div className="col-lg-2" />
+            <Col lg={2} />
             <FooterNav />
-          </div>
+          </Row>
 
           <div className="pt-5 text-center">
             <p>
@@ -79,7 +80,7 @@ const Footer: React.FC<FooterProps> = ({ hasContact }) => {
               .
             </p>
           </div>
-        </div>
+        </Container>
       </div>
     </>
   )
