@@ -16,8 +16,8 @@ const Footer: React.FC<FooterProps> = ({ hasContact }) => {
       {hasContact && (
         <div className="site-section pagehero" style={{ backgroundImage: `url('/images/bg_2.png')` }}>
           <Container>
-            <Row className="align-items-center justify-content-center">
-              <Col lg={9} className="d-flex align-items-center">
+            <div className="d-flex align-items-center justify-content-center">
+              <div className="d-flex align-items-center">
                 <a href="http://mit.bme.hu/~micskeiz" target="_blank" rel="noopener noreferrer">
                   <img src="/images/members/micskei-small.png" alt="Micskei Zoltán" width="100px" className="mr-4" />
                 </a>
@@ -31,8 +31,8 @@ const Footer: React.FC<FooterProps> = ({ hasContact }) => {
                     !
                   </p>
                 </div>
-              </Col>
-            </Row>
+              </div>
+            </div>
           </Container>
         </div>
       )}
