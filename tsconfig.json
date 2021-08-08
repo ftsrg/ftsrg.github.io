@@ -1,5 +1,5 @@
 {
-  "include": ["./src/**/*", "./typings/**/*"],
+  "include": ["./src/**/*", "./typings/**/*", "./config/*"],
   "compilerOptions": {
     "module": "commonjs",
     "target": "esnext",
@@ -17,7 +17,13 @@
     "preserveConstEnums": true,
     "baseUrl": ".",
     "paths": {
-      "test-utils": ["src/utils/test-utils"]
+      "test-utils": ["src/utils/test-utils"],
+      "~components/*": ["src/components/*"],
+      "~utils/*": ["src/utils/*"],
+      "~hooks/*": ["src/hooks/*"],
+      "~props/*": ["src/utils/props/*"],
+      "~lib/*": ["src/lib/*"],
+      "~layout/*": ["src/layout/*"]
     }
   }
 }

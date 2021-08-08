@@ -1,7 +1,7 @@
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import React from 'react'
 import Slider from 'react-slick'
-import PublicationProps from '../../utils/props/publication.props'
+import PublicationProps from '~props/publication.props'
 
 export interface PublicationsCarouselProps {
   nodes: Array<PublicationProps>

@@ -1,7 +1,7 @@
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import React from 'react'
 import { FaGithub, FaGraduationCap, FaHome, FaLinkedin } from 'react-icons/fa'
-import MemberProps from '../../utils/props/member.props'
+import MemberProps from '~props/member.props'
 
 interface MembersSectionProps {
   nodes: Array<MemberProps>

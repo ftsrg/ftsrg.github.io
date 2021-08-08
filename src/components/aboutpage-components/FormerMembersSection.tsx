@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaLinkedin } from 'react-icons/fa'
-import MemberProps from '../../utils/props/member.props'
+import MemberProps from '~props/member.props'
 
 interface FormerMembersSectionProps {
   nodes: Array<MemberProps>

@@ -1,7 +1,7 @@
 import React from 'react'
-import Footer from '../components/Footer'
-import NavBar from '../components/navbar/NavBar'
-import SEO from '../components/SEO'
+import Footer from '~components/Footer'
+import NavBar from '~components/navbar/NavBar'
+import SEO from '~components/SEO'
 
 const Layout: React.FC = ({ children }) => {
   return (

@@ -1,11 +1,11 @@
 import { graphql, Link, PageProps } from 'gatsby'
 import React from 'react'
 import { FaChevronRight } from 'react-icons/fa'
-import { SpecializationsCarousel, StudentAchievementsCarousel } from '../components/carousels'
-import { StudentWork, Subjects, TalentCare } from '../components/education-components'
-import SEO from '../components/SEO'
-import Layout from '../layout/Layout'
-import SubjectProps from '../utils/props/subject.props'
+import { SpecializationsCarousel, StudentAchievementsCarousel } from '~components/carousels'
+import { StudentWork, Subjects, TalentCare } from '~components/education-components'
+import SEO from '~components/SEO'
+import Layout from '~layout/Layout'
+import SubjectProps from '~props/subject.props'
 
 interface EducationPageProps extends PageProps {
   data: {

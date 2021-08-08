@@ -4,7 +4,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { Button, Col, Container, Nav, Navbar, NavDropdown, Row } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
 import { FaFacebookF, FaGithub, FaTwitter } from 'react-icons/fa'
-import LanguageToggle from '../LanguageToggle'
+import LanguageToggle from './LanguageToggle'
 
 interface INavbarItem {
   title: string

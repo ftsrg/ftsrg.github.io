@@ -20,7 +20,7 @@
 import { useLocation } from '@reach/router'
 import React, { FC } from 'react'
 import { Helmet, HelmetProps } from 'react-helmet'
-import { useSiteMetadata } from '../hooks/useSiteMetadata'
+import { useSiteMetadata } from '~hooks/useSiteMetadata'
 
 type SEOProps = {
   lang?: string

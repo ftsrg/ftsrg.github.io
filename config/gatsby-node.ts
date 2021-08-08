@@ -7,6 +7,7 @@ export const onCreateNode: GatsbyNode['onCreateNode'] = ({ node, getNode, action
   const { createNodeField } = actions
   if (node.internal.type === `MarkdownRemark`) {
     const slug = createFilePath({ node, getNode, basePath: `pages` })
+    const frontmatter = node.frontmatter as { layout: string }
     createNodeField({
       node,
       name: `slug`,
@@ -15,8 +16,7 @@ export const onCreateNode: GatsbyNode['onCreateNode'] = ({ node, getNode, action
     createNodeField({
       node,
       name: `layout`,
-      // eslint-disable-next-line dot-notation
-      value: node['frontmatter']['layout']
+      value: frontmatter.layout
     })
   }
 }

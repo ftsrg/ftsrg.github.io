@@ -1,8 +1,8 @@
 import { Link, PageProps } from 'gatsby'
 import React from 'react'
 import { FaChevronRight } from 'react-icons/fa'
-import SEO from '../components/SEO'
-import Layout from '../layout/Layout'
+import SEO from '~components/SEO'
+import Layout from '~layout/Layout'
 
 const ContactPage: React.FC<PageProps> = () => {
   return (

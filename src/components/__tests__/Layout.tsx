@@ -19,8 +19,8 @@
 
 import * as Gatsby from 'gatsby'
 import React from 'react'
-import Layout from '../../layout/Layout'
-import { render, screen } from '../../utils/test-utils'
+import Layout from '~layout/Layout'
+import { render, screen } from '~utils/test-utils'
 
 beforeAll(() => {
   const useStaticQuery = jest.spyOn(Gatsby, 'useStaticQuery')

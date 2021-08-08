@@ -1,6 +1,6 @@
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import React from 'react'
-import SubjectProps from '../../utils/props/subject.props'
+import SubjectProps from '~props/subject.props'
 
 interface SubjectsSectionProps {
   nodes: Array<SubjectProps>

@@ -19,8 +19,8 @@
 
 import * as Gatsby from 'gatsby'
 import React from 'react'
-import { render, screen } from '../../utils/test-utils'
-import NavBar from '../NavBar'
+import NavBar from '~components/navbar/NavBar'
+import { render, screen } from '~utils/test-utils'
 
 beforeAll(() => {
   const useStaticQuery = jest.spyOn(Gatsby, 'useStaticQuery')
@@ -36,19 +36,19 @@ beforeAll(() => {
 
 describe('<NavBar />', () => {
   it('displays expected site title in heading', () => {
-    render(<NavBar siteTitle="Sample Title" />)
+    render(<NavBar />)
     expect(screen.getByText('Sample Title')).toBeTruthy()
     expect(screen.queryByText('Jmupuri')).toBeNull()
     expect(screen.getByText('Sample Title')).toContainHTML('h1')
   })
 
   it('has button to toggle language', () => {
-    render(<NavBar siteTitle="Sample Title" />)
+    render(<NavBar />)
     expect(screen.queryByRole('button', { name: 'Toggle language' })).toBeTruthy()
   })
 
   it('has button to toggle brightness', () => {
-    render(<NavBar siteTitle="Sample Title" />)
+    render(<NavBar />)
     expect(screen.queryByRole('button', { name: 'Toggle brightness' })).toBeTruthy()
   })
 })
