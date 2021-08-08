@@ -50,7 +50,7 @@ const StudentAchievementsCarousel: React.FC = () => (
     ]}
   >
     {achievementsData.map((data) => (
-      <div key={data.category} className="p-3">
+      <div key={data.category} className="px-3">
         <div className="education-1-item">
           <figure className="thumbnail">
             <img src={data.thumbnail} alt={data.category} className="img-fluid" />

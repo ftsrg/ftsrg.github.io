@@ -31,7 +31,7 @@ const PublicationsCarousel: React.FC<PublicationsCarouselProps> = ({ nodes }) =>
     {nodes.map((publication) => {
       const featuredImage = getImage(publication.featuredImage)
       return (
-        <div key={publication.title} className="p-2">
+        <div key={publication.title} className="px-2">
           <div className="education-1-item">
             <figure className="thumbnail">
               {featuredImage && <GatsbyImage image={featuredImage} alt={publication.title} className="img-fluid" />}

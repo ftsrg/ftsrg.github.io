@@ -28,21 +28,23 @@ const ProjectsCarousel: React.FC<ProjectsCarouselProps> = ({ nodes }) => (
     {nodes.map((project) => {
       const image = getImage(project.featuredImage)
       return (
-        <div key={project.title} className="ftco-testimonial-1">
-          <div className="ftco-testimonial-vcard d-flex align-items-center mb-4">
-            {image && <GatsbyImage image={image} alt="..." className="img-fluid mr-3" />}
-            <div>
-              <h3>{project.title}</h3>
-              <span>{project.subtitle}</span>
+        <div key={project.title} className="px-3">
+          <div className="ftco-testimonial-1">
+            <div className="ftco-testimonial-vcard d-flex align-items-center mb-4">
+              {image && <GatsbyImage image={image} alt="..." className="img-fluid mr-3" />}
+              <div>
+                <h3>{project.title}</h3>
+                <span>{project.subtitle}</span>
+              </div>
             </div>
-          </div>
-          <div>
-            <p>{project.description}</p>
-            <p>
-              <a target="_blank" rel="noopener noreferrer" href={project.url}>
-                Bővebben
-              </a>
-            </p>
+            <div>
+              <p>{project.description}</p>
+              <p>
+                <a target="_blank" rel="noopener noreferrer" href={project.url}>
+                  Bővebben
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       )
