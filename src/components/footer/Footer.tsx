@@ -2,7 +2,7 @@ import { Link } from 'gatsby'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
-import FooterNav from './navbar/FooterNav'
+import FooterNav from './FooterNav'
 
 interface FooterProps {
   hasContact?: boolean

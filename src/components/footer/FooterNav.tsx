@@ -2,7 +2,7 @@ import { Link } from 'gatsby'
 import React from 'react'
 import { Col } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
-import NAVBAR_ITEMS from './navbar-items'
+import NAVBAR_ITEMS from '../navbar/navbar-items'
 
 const columnIds = ['research', 'education', 'about']
 const FOOTER_ITEMS = NAVBAR_ITEMS.filter((i) => columnIds.includes(i.id))
