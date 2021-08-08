@@ -1,4 +1,5 @@
 import React from 'react'
+import { Col, Row } from 'react-bootstrap'
 import CountUp from 'react-countup'
 import { useTranslation } from 'react-i18next'
 import VisibilitySensor from 'react-visibility-sensor'
@@ -31,18 +32,18 @@ const ProjectCounters: React.FC = () => {
   return (
     <VisibilitySensor partialVisibility onChange={reactToScroll}>
       <div className="counter my-4 mb-5">
-        <div className="row">
+        <Row>
           {counterData.map((data) => (
-            <div className="col-12 col-md-4 text-center mb-4">
+            <Col xs={12} md={4} key={data.title} className="text-center mb-4">
               <div className={`${showCounter ? 'counter-animated' : 'counter-unanimated'}`}>
                 <div>
                   <CountUp end={data.count} duration={3} className="text-primary h1 font-weight-bold" />
                 </div>
                 <div>{t(data.title)}</div>
               </div>
-            </div>
+            </Col>
           ))}
-        </div>
+        </Row>
       </div>
     </VisibilitySensor>
   )

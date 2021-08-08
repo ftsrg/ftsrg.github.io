@@ -10,9 +10,13 @@ interface SubjectsSectionProps {
 const SubjectsSection: React.FC<SubjectsSectionProps> = ({ nodes }) => (
   <div id="courses" className="section-bg style-1">
     <Container>
-      <h2 className="section-title-underline style-2 mb-5">
-        <span>Tantárgyaink</span>
-      </h2>
+      <Row className="text-center mb-5">
+        <Col xs={12}>
+          <h2 className="section-title-underline style-2">
+            <span>Tantárgyaink</span>
+          </h2>
+        </Col>
+      </Row>
       <Row>
         {nodes.map((subject) => {
           const featuredImage = subject.featuredImage ? getImage(subject.featuredImage) : null

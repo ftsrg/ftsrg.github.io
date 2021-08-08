@@ -1,0 +1,133 @@
+#banner {
+  position: relative;
+  background-color: black;
+  height: calc(100vh - 4.5rem);
+  min-height: 570px;
+  width: 100%;
+  overflow: hidden;
+
+  @include media-breakpoint-up(lg) {
+    height: calc(100vh - 8.5rem);
+  }
+}
+
+#banner video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#banner .container {
+  position: relative;
+  z-index: 2;
+}
+
+#banner .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  #banner video {
+    display: none;
+  }
+}
+
+@media (pointer: coarse) and (hover: none) {
+  .intro.background-1 {
+    background-image: url('/images/background_1.jpg');
+  }
+  .intro.background-2 {
+    background-image: url('/images/background_2.jpg');
+  }
+  .intro.background-3 {
+    background-image: url('/images/background_3.jpg');
+  }
+  .intro.background-4 {
+    background-image: url('/images/background_4.jpg');
+  }
+}
+
+.intro-section {
+  color: $white;
+  position: relative;
+  &,
+  .container .row {
+    height: calc(100vh - 4.5rem);
+    min-height: 570px;
+
+    @include media-breakpoint-up(lg) {
+      height: calc(100vh - 8.5rem);
+    }
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #222;
+    opacity: 0.5;
+    border-bottom-right-radius: 0px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
+  }
+  h1 {
+    /* Extra small devices (phones, less than 768px) */
+    font-size: 2rem;
+    font-weight: 900;
+    color: $white;
+
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) {
+      font-size: 2.5rem;
+    }
+
+    /* Large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) {
+      font-size: 3rem;
+    }
+  }
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $white;
+
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) {
+      font-size: 1.75rem;
+    }
+
+    /* Large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) {
+      font-size: 2rem;
+    }
+  }
+  hr {
+    border: 1px solid $white;
+  }
+  p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.1rem;
+    max-width: 400px;
+  }
+  .intro-img {
+    width: 400px !important;
+  }
+}

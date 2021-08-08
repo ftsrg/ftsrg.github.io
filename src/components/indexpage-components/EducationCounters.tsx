@@ -38,7 +38,7 @@ const EducationCounters: React.FC = () => {
       <div className="counter my-3">
         <Row>
           {counterData.map((data) => (
-            <Col xs={12} md={4} className="text-center mb-4">
+            <Col key={data.title} xs={12} md={4} className="text-center mb-4">
               <div className={`${showCounter ? 'counter-animated' : 'counter-unanimated'}`}>
                 <div>{showCounter && <CountUp end={data.count} duration={3} className="text-primary h1 font-weight-bold" />}</div>
                 {data.isGatsbyLink ? (
