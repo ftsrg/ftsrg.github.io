@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import Slider from 'react-slick'
 
 const specsData = [
@@ -50,48 +51,52 @@ const specsData = [
   }
 ]
 
-const SpecializationsCarousel: React.FC = () => (
-  <Slider
-    arrows={false}
-    dots
-    slidesToShow={2}
-    slidesToScroll={1}
-    className="py-3"
-    responsive={[
-      {
-        breakpoint: 512,
-        settings: {
-          slidesToShow: 1
+const SpecializationsCarousel: React.FC = () => {
+  const { t } = useTranslation()
+
+  return (
+    <Slider
+      arrows={false}
+      dots
+      slidesToShow={2}
+      slidesToScroll={1}
+      className="py-3"
+      responsive={[
+        {
+          breakpoint: 512,
+          settings: {
+            slidesToShow: 1
+          }
         }
-      }
-    ]}
-    autoplay
-    autoplaySpeed={4000}
-  >
-    {specsData.map((data) => (
-      <div key={data.title} className="px-3">
-        <div className="ftco-testimonial-1">
-          <div className="ftco-testimonial-vcard d-flex align-items-center mb-4">
-            <img src={data.thumbnail} alt="Rendszertervezés" className="img-fluid img-rounded mr-3" />
+      ]}
+      autoplay
+      autoplaySpeed={4000}
+    >
+      {specsData.map((data) => (
+        <div key={data.title} className="px-3">
+          <div className="ftco-testimonial-1">
+            <div className="ftco-testimonial-vcard d-flex align-items-center mb-4">
+              <img src={data.thumbnail} alt="Rendszertervezés" className="img-fluid img-rounded mr-3" />
+              <div>
+                <h3>{t(data.title)}</h3>
+                <span>{t(data.subtitle)}</span>
+              </div>
+            </div>
             <div>
-              <h3>{data.title}</h3>
-              <span>{data.subtitle}</span>
+              {data.paragraphs.map((pText) => (
+                <p key={pText.slice(0, 20)}>{t(pText)}</p>
+              ))}
+              <p>
+                <a target="_blank" rel="noopener noreferrer" href={data.url}>
+                  {t('commons.readMore')}
+                </a>
+              </p>
             </div>
           </div>
-          <div>
-            {data.paragraphs.map((pText) => (
-              <p key={pText.slice(0, 20)}>{pText}</p>
-            ))}
-            <p>
-              <a target="_blank" rel="noopener noreferrer" href={data.url}>
-                Bővebben
-              </a>
-            </p>
-          </div>
         </div>
-      </div>
-    ))}
-  </Slider>
-)
+      ))}
+    </Slider>
+  )
+}
 
 export default SpecializationsCarousel

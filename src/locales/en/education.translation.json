@@ -1,5 +1,6 @@
 {
   "education.talentcare.title": "Tehetséggondozás",
   "education.talentcare.p1": "Tehetséges hallgatóink már a BSc képzés során rendszeresen bekapcsolódnak nemzetközi kutatási és ipari projektjeinkbe, nyílt forráskódú szoftverfejlesztéseinkbe.",
-  "education.talentcare.p2": "Számukra tehetséggondozó programot és kiemelt konzultációs hátteret biztosítunk."
+  "education.talentcare.p2": "Számukra tehetséggondozó programot és kiemelt konzultációs hátteret biztosítunk.",
+  "education.studentwork.pageNumber": "page {{pageNumber}}"
 }

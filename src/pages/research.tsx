@@ -1,16 +1,15 @@
 import { graphql, PageProps } from 'gatsby'
 import React from 'react'
+import { Col, Container, Row } from 'react-bootstrap'
 import { FaDatabase } from 'react-icons/fa'
 import { MdSchool } from 'react-icons/md'
 import Breadcrumbs from '~components/Breadcrumbs'
 import { EventsCarousel, ProjectsCarousel, PublicationsCarousel } from '~components/carousels'
-import ProjectCounters from '~components/research-components/ProjectCounters'
-import ToolsSection from '~components/research-components/ToolsSection'
+import { ProjectCounters, Tools } from '~components/research-components'
 import SEO from '~components/SEO'
 import TopHero from '~components/TopHero'
 import Layout from '~layout/Layout'
-import ProjectProps from '~props/project.props'
-import PublicationProps from '~props/publication.props'
+import { ProjectProps, PublicationProps } from '~utils/props'
 
 interface ResearchPageProps extends PageProps {
   data: {
@@ -29,10 +28,11 @@ const ResearchPage: React.FC<ResearchPageProps> = ({ data }) => {
       <SEO />
       <TopHero heroTitle="pages.research.heroTitle" heroDesc="pages.research.heroDesc" bgImageUrl="/images/bg_5.jpg" />
       <Breadcrumbs title="nav.research.title" />
+
       <div id="projects" className="site-section">
-        <div className="container">
-          <div className="row mb-3">
-            <div className="col-lg-12">
+        <Container>
+          <Row className="mb-3">
+            <Col lg={12}>
               <h2 className="section-title-underline">
                 <span>K+F+I projektjeink</span>
               </h2>
@@ -41,17 +41,17 @@ const ResearchPage: React.FC<ResearchPageProps> = ({ data }) => {
                 ipari együttműködésben vett részt. Kutatás-fejlesztési projektjeinkben olyan új, innovatív szoftveralapú megoldásokat hozunk
                 létre, amelyek jelentősen megkönnyítik a mérnökök munkáját.
               </p>
-            </div>
-          </div>
+            </Col>
+          </Row>
           <ProjectCounters />
           <ProjectsCarousel nodes={data.projects.nodes} />
-        </div>
+        </Container>
       </div>
 
       <div id="publications" className="site-section">
-        <div className="container">
-          <div className="row mb-3 justify-content-center text-center">
-            <div className="col-lg-12 mb-3">
+        <Container>
+          <Row className="mb-3 justify-content-center text-center">
+            <Col lg={12} className="mb-3">
               <h2 className="section-title-underline mb-3">
                 <span>Publikációk</span>
               </h2>
@@ -70,25 +70,25 @@ const ResearchPage: React.FC<ResearchPageProps> = ({ data }) => {
                 Kutatócsoportunk rendszeresen publikál a szoftvertechnológia (TSE, IST, STTT), modellalapú fejlesztés (MODELS, SoSyM), a
                 formális verifikáció (TACAS, JAR) és a szoftvertesztelés (ICST, STVR) vezető konferenciáin és folyóirataiban.
               </p>
-            </div>
-          </div>
+            </Col>
+          </Row>
           <PublicationsCarousel nodes={data.publications.nodes} />
-        </div>
+        </Container>
       </div>
 
-      <ToolsSection />
+      <Tools />
 
       <div id="events" className="site-section">
-        <div className="container">
-          <div className="row mb-5">
-            <div className="col-lg-4">
+        <Container>
+          <Row className="mb-5">
+            <Col lg={4}>
               <h2 className="section-title-underline">
                 <span>Események és díjak</span>
               </h2>
-            </div>
-          </div>
+            </Col>
+          </Row>
           <EventsCarousel />
-        </div>
+        </Container>
       </div>
     </Layout>
   )

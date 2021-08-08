@@ -1,5 +1,6 @@
 import { graphql, PageProps } from 'gatsby'
 import React from 'react'
+import { Col, Container, Row } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
 import Breadcrumbs from '~components/Breadcrumbs'
 import { SpecializationsCarousel, StudentAchievementsCarousel } from '~components/carousels'
@@ -8,7 +9,7 @@ import Hero from '~components/Hero'
 import SEO from '~components/SEO'
 import TopHero from '~components/TopHero'
 import Layout from '~layout/Layout'
-import SubjectProps from '~props/subject.props'
+import { SubjectProps } from '~utils/props'
 
 interface EducationPageProps extends PageProps {
   data: {
@@ -26,37 +27,39 @@ const EducationPage: React.FC<EducationPageProps> = ({ data }) => {
       <SEO />
       <TopHero heroTitle="pages.education.heroTitle" heroDesc="pages.education.heroDesc" bgImageUrl="/images/bg_1.jpg" />
       <Breadcrumbs title="nav.education.title" />
+
       <div id="specializations" className="site-section">
-        <div className="container">
-          <div className="row mb-5">
-            <div className="col-lg-4">
+        <Container>
+          <Row className="mb-5">
+            <Col xs={12}>
               <h2 className="section-title-underline">
                 <span>Specializációk</span>
               </h2>
-            </div>
-          </div>
+            </Col>
+          </Row>
           <SpecializationsCarousel />
-        </div>
+        </Container>
       </div>
 
       <Subjects nodes={data.subjects.nodes} />
       <StudentWork />
+
       <Hero id="talentcare" heroTitle="education.talentcare.title">
         <p>{t('education.talentcare.p1')}</p>
         <p>{t('education.talentcare.p2')}</p>
       </Hero>
 
       <div id="achievements" className="site-section">
-        <div className="container">
-          <div className="row mb-5">
-            <div className="col-lg-4">
+        <Container>
+          <Row className="mb-5">
+            <Col xs={12}>
               <h2 className="section-title-underline">
                 <span>Hallgatóink eredményei</span>
               </h2>
-            </div>
-          </div>
+            </Col>
+          </Row>
           <StudentAchievementsCarousel />
-        </div>
+        </Container>
       </div>
     </Layout>
   )

@@ -5,7 +5,7 @@ import Breadcrumbs from '~components/Breadcrumbs'
 import SEO from '~components/SEO'
 import TopHero from '~components/TopHero'
 import Layout from '~layout/Layout'
-import MemberProps from '~props/member.props'
+import { MemberProps } from '~utils/props'
 
 interface AboutPageProps extends PageProps {
   data: {

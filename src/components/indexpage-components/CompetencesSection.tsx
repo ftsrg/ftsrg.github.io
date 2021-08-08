@@ -1,5 +1,6 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
+import { useTranslation } from 'react-i18next'
 import { CgPerformance } from 'react-icons/cg'
 import { FaBug } from 'react-icons/fa'
 import { VscRocket } from 'react-icons/vsc'
@@ -26,31 +27,35 @@ const compentencesData = [
   }
 ]
 
-const CompetencesSection: React.FC = () => (
-  <Hero id="competences" heroTitle="Szakmai kompetenciáink" isHeroTitleCentered>
-    <Row className="justify-content-center mb-5">
-      <Col lg={7}>
-        <p className="text-center mb-5">
-          Fő területünk a kritikus informatikai rendszerek, folyamatok és platformok szolgáltatásbiztonságra tervezése, ideértve a
-          kiberfizikai és informatikai infrastruktúrákat, alkalmazásokat. Alapvető metodikánk a modellalapú tervezés, analízis és
-          helyességbizonyítás.
-        </p>
-      </Col>
-    </Row>
-    <Row>
-      {compentencesData.map((data) => (
-        <Col key={data.title} lg={4} md={6} className="mb-4 mb-lg-0">
-          <div className="feature-1 border">
-            <div className="icon-wrapper bg-primary text-white d-flex align-items-center justify-content-center">{data.icon}</div>
-            <div className="feature-1-content">
-              <h2>{data.title}</h2>
-              <p>{data.desc}</p>
-            </div>
-          </div>
+const CompetencesSection: React.FC = () => {
+  const { t } = useTranslation()
+
+  return (
+    <Hero id="competences" heroTitle="Szakmai kompetenciáink" isHeroTitleCentered>
+      <Row className="justify-content-center mb-5">
+        <Col lg={7}>
+          <p className="text-center mb-5">
+            Fő területünk a kritikus informatikai rendszerek, folyamatok és platformok szolgáltatásbiztonságra tervezése, ideértve a
+            kiberfizikai és informatikai infrastruktúrákat, alkalmazásokat. Alapvető metodikánk a modellalapú tervezés, analízis és
+            helyességbizonyítás.
+          </p>
         </Col>
-      ))}
-    </Row>
-  </Hero>
-)
+      </Row>
+      <Row>
+        {compentencesData.map((data) => (
+          <Col key={data.title} lg={4} md={6} className="mb-4 mb-lg-0">
+            <div className="feature-1 border">
+              <div className="icon-wrapper bg-primary text-white d-flex align-items-center justify-content-center">{data.icon}</div>
+              <div className="feature-1-content">
+                <h2>{t(data.title)}</h2>
+                <p>{t(data.desc)}</p>
+              </div>
+            </div>
+          </Col>
+        ))}
+      </Row>
+    </Hero>
+  )
+}
 
 export default CompetencesSection
