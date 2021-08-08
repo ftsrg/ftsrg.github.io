@@ -1,10 +1,12 @@
-import { graphql, Link, PageProps } from 'gatsby'
+import { graphql, PageProps } from 'gatsby'
 import React from 'react'
 import CountUp from 'react-countup'
-import { FaChevronRight, FaDatabase } from 'react-icons/fa'
+import { FaDatabase } from 'react-icons/fa'
 import { MdSchool } from 'react-icons/md'
 import VisibilitySensor from 'react-visibility-sensor'
+import Breadcrumbs from '~components/Breadcrumbs'
 import { EventsCarousel, ProjectsCarousel, PublicationsCarousel } from '~components/carousels'
+import PageHero from '~components/PageHero'
 import ToolsSection from '~components/research-components/ToolsSection'
 import SEO from '~components/SEO'
 import Layout from '~layout/Layout'
@@ -31,27 +33,8 @@ const ResearchPage: React.FC<ResearchPageProps> = ({ data }) => {
   return (
     <Layout>
       <SEO />
-      <div className="site-section ftco-subscribe-1 site-blocks-cover pb-4" style={{ backgroundImage: `url('/images/bg_5.jpg')` }}>
-        <div className="container">
-          <div className="row align-items-end">
-            <div className="col-lg-7">
-              <h2 className="mb-0">Kutatás-fejlesztés</h2>
-              <p>Út az alap és alkalmazott kutatáson át az innovációig</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="custom-breadcrumbs border-bottom">
-        <div className="container">
-          <Link to="/">Kezdőlap</Link>
-          <span className="mx-2">
-            <FaChevronRight size="0.6rem" />
-          </span>
-          <span className="current">Kutatás-fejlesztés</span>
-        </div>
-      </div>
-
+      <PageHero heroTitle="pages.research.heroTitle" heroDesc="pages.research.heroDesc" bgImageUrl="/images/bg_5.jpg" />
+      <Breadcrumbs title="nav.research.title" />
       <div id="projects" className="site-section">
         <div className="container">
           <div className="row mb-3">

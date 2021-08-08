@@ -1,8 +1,9 @@
-import { graphql, Link, PageProps } from 'gatsby'
+import { graphql, PageProps } from 'gatsby'
 import React from 'react'
-import { FaChevronRight } from 'react-icons/fa'
+import Breadcrumbs from '~components/Breadcrumbs'
 import { SpecializationsCarousel, StudentAchievementsCarousel } from '~components/carousels'
 import { StudentWork, Subjects, TalentCare } from '~components/education-components'
+import PageHero from '~components/PageHero'
 import SEO from '~components/SEO'
 import Layout from '~layout/Layout'
 import SubjectProps from '~props/subject.props'
@@ -19,30 +20,8 @@ const EducationPage: React.FC<EducationPageProps> = ({ data }) => {
   return (
     <Layout>
       <SEO />
-      <div className="site-section ftco-subscribe-1 site-blocks-cover pb-4" style={{ backgroundImage: `url('/images/bg_1.jpg')` }}>
-        <div className="container">
-          <div className="row align-items-end">
-            <div className="col-lg-7">
-              <h2 className="mb-0">Oktatás és tehetséggondozás</h2>
-              <p>
-                A csoport a mérnökinformatikus BSc, MSc és PhD képzésben is jelen van, választható tárgyaink pedig izgalmas és naprakész
-                tudást adnak hallgatóinknak.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="custom-breadcrumbs border-bottom">
-        <div className="container">
-          <Link to="/">Kezdőlap</Link>
-          <span className="mx-2">
-            <FaChevronRight size="0.6rem" />
-          </span>
-          <span className="current">Oktatás</span>
-        </div>
-      </div>
-
+      <PageHero heroTitle="pages.education.heroTitle" heroDesc="pages.education.heroDesc" bgImageUrl="/images/bg_1.jpg" />
+      <Breadcrumbs title="nav.education.title" />
       <div id="specializations" className="site-section">
         <div className="container">
           <div className="row mb-5">

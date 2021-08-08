@@ -1,6 +1,7 @@
-import { Link, PageProps } from 'gatsby'
+import { PageProps } from 'gatsby'
 import React from 'react'
-import { FaChevronRight } from 'react-icons/fa'
+import Breadcrumbs from '~components/Breadcrumbs'
+import PageHero from '~components/PageHero'
 import SEO from '~components/SEO'
 import Layout from '~layout/Layout'
 
@@ -8,27 +9,8 @@ const ContactPage: React.FC<PageProps> = () => {
   return (
     <Layout>
       <SEO />
-      <div className="site-section ftco-subscribe-1 site-blocks-cover pb-4" style={{ backgroundImage: `url('/images/bg_3.jpg')` }}>
-        <div className="container">
-          <div className="row align-items-end">
-            <div className="col-lg-7">
-              <h2 className="mb-0">Kapcsolat</h2>
-              <p>Elérhetőség, térkép és fényképek</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="custom-breadcrumbs border-bottom">
-        <div className="container">
-          <Link to="/">Kezdőlap</Link>
-          <span className="mx-2">
-            <FaChevronRight size="0.6rem" />
-          </span>
-          <span className="current">Kapcsolat</span>
-        </div>
-      </div>
-
+      <PageHero heroTitle="pages.contact.heroTitle" heroDesc="pages.contact.heroDesc" bgImageUrl="/images/bg_3.jpg" />
+      <Breadcrumbs title="nav.contact.title" />
       <div className="site-section">
         <div className="container">
           <div className="row">
