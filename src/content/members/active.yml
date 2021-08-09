@@ -1,20 +1,23 @@
-- name: Pataricza András
+- firstName: András
+  lastName: Pataricza
   title: DSc
-  position: egyetemi tanár
+  position: about.members.position.prof
   avatar: ../images/members/pataricza.jpg
   linkedInPage: https://hu.linkedin.com/in/andras-pataricza-6651345
   homePage: https://inf.mit.bme.hu/members/pataric
   scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10004524
-- name: Varró Dániel
+- firstName: Dániel
+  lastName: Varró
   title: DSc
-  position: egyetemi tanár
+  position: about.members.position.prof
   avatar: ../images/members/varro.jpg
   linkedInPage: https://www.linkedin.com/in/daniel-varro-3854bb49/
   homePage: https://varrodan.github.io/
   scholarPage: https://scholar.google.ca/citations?hl=en&user=4Ya6dVoAAAAJ
-- name: Molnár Vince
+- firstName: Vince
+  lastName: Molnár
   title: PhD
-  position: egyetemi adjunktus
+  position: about.members.position.assocProf
   avatar: ../images/members/molnar.jpg
   linkedInPage: https://www.linkedin.com/in/molnarv
   homePage: https://inf.mit.bme.hu/members/molnarv

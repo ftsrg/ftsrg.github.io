@@ -38,7 +38,8 @@ export const query = graphql`
   query AboutPageQueries {
     members: allActiveYaml {
       nodes {
-        name
+        firstName
+        lastName
         title
         position
         linkedInPage
@@ -54,7 +55,8 @@ export const query = graphql`
     }
     formermembers: allInactiveYaml {
       nodes {
-        name
+        firstName
+        lastName
         title
         linkedInPage
       }

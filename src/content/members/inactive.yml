@@ -1,6 +1,8 @@
-- name: Balogh András
+- firstName: András
+  lastName: Balogh
   title: PhD
   linkedInPage: https://hu.linkedin.com/in/andr%C3%A1s-balogh-0758b562
-- name: Bartha Tamás
+- firstName: Tamás
+  lastName: Bartha
   title: PhD
   linkedInPage: https://hu.linkedin.com/in/tam%C3%A1s-bartha-75325a87
