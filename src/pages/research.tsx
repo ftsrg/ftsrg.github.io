@@ -1,6 +1,7 @@
 import { graphql, PageProps } from 'gatsby'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
+import { useTranslation } from 'react-i18next'
 import { FaDatabase } from 'react-icons/fa'
 import { MdSchool } from 'react-icons/md'
 import Breadcrumbs from '~components/Breadcrumbs'
@@ -26,6 +27,8 @@ interface ResearchPageProps extends PageProps {
 }
 
 const ResearchPage: React.FC<ResearchPageProps> = ({ data }) => {
+  const { t } = useTranslation()
+
   return (
     <Layout>
       <SEO />
@@ -37,13 +40,9 @@ const ResearchPage: React.FC<ResearchPageProps> = ({ data }) => {
           <Row className="mb-3">
             <Col lg={12}>
               <h2 className="section-title-underline">
-                <span>K+F+I projektjeink</span>
+                <span>{t('research.projects.title')}</span>
               </h2>
-              <p>
-                A kutatócsoport az elmúlt 25 évben több mint húsz nagy EU-s kutatási projektben (FP4-H2020) és 25-nél is több közvetlen
-                ipari együttműködésben vett részt. Kutatás-fejlesztési projektjeinkben olyan új, innovatív szoftveralapú megoldásokat hozunk
-                létre, amelyek jelentősen megkönnyítik a mérnökök munkáját.
-              </p>
+              <p>{t('research.projects.description')}</p>
             </Col>
           </Row>
           <ProjectCounters />
@@ -56,23 +55,20 @@ const ResearchPage: React.FC<ResearchPageProps> = ({ data }) => {
           <Row className="mb-3 justify-content-center text-center">
             <Col lg={12} className="mb-3">
               <h2 className="section-title-underline mb-3">
-                <span>Publikációk</span>
+                <span>{t('research.publications.title')}</span>
               </h2>
               <p>
-                <span className="pr-1">Teljes publikációs lista</span>
+                <span className="pr-1">{t('research.publications.fullPubList')}</span>
                 <a target="_blank" rel="noopener noreferrer" href="https://inf.mit.bme.hu/research/publications">
                   <MdSchool />
                 </a>{' '}
                 <span className="px-2">|</span>
-                <span className="pr-1">Adathalmazok</span>
+                <span className="pr-1">{t('research.publications.dataSets')}</span>
                 <a href="https://zenodo.org/communities/ftsrg" target="_blank" rel="noopener noreferrer">
                   <FaDatabase />
                 </a>
               </p>
-              <p>
-                Kutatócsoportunk rendszeresen publikál a szoftvertechnológia (TSE, IST, STTT), modellalapú fejlesztés (MODELS, SoSyM), a
-                formális verifikáció (TACAS, JAR) és a szoftvertesztelés (ICST, STVR) vezető konferenciáin és folyóirataiban.
-              </p>
+              <p>{t('research.publications.description')}</p>
             </Col>
           </Row>
           <PublicationsCarousel nodes={data.publications.nodes} />
@@ -83,13 +79,9 @@ const ResearchPage: React.FC<ResearchPageProps> = ({ data }) => {
 
       <div id="events" className="site-section">
         <Container>
-          <Row className="mb-5">
-            <Col lg={4}>
-              <h2 className="section-title-underline">
-                <span>Események és díjak</span>
-              </h2>
-            </Col>
-          </Row>
+          <h2 className="section-title-underline mb-5">
+            <span>{t('research.events.title')}</span>
+          </h2>
           <EventsCarousel nodes={data.events.nodes} />
         </Container>
       </div>
