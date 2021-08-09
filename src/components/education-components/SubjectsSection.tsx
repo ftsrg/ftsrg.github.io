@@ -25,19 +25,19 @@ const SubjectsSection: React.FC<Props> = ({ nodes }) => {
           {nodes.map((subject) => {
             const featuredImage = subject.featuredImage ? getImage(subject.featuredImage) : null
             return (
-              <Col lg={4} md={6} key={subject.title} className="mb-4 course-1-container">
+              <Col lg={4} md={6} key={subject.translationPrefix} className="mb-4 course-1-container">
                 <div className="course-1-item">
                   <div>
                     <figure className="thumbnail">
-                      {featuredImage && <GatsbyImage image={featuredImage} className="img-fluid" alt={subject.title} />}
-                      <div className="price">{subject.type}</div>
+                      {featuredImage && <GatsbyImage image={featuredImage} className="img-fluid" alt={subject.translationPrefix} />}
+                      <div className="price">{t(subject.type)}</div>
                       <div className="category">
-                        <h3>{t(subject.title)}</h3>
+                        <h3>{t(`${subject.translationPrefix}.title`)}</h3>
                       </div>
                     </figure>
                     <div className="course-1-content">
-                      <h2>{t(subject.heading)}</h2>
-                      <p className="desc mb-4">{t(subject.description)}</p>
+                      <h2>{t(`${subject.translationPrefix}.heading`)}</h2>
+                      <p className="desc mb-4">{t(`${subject.translationPrefix}.desc`)}</p>
                     </div>
                   </div>
                   <div className="course-1-footer px-5">

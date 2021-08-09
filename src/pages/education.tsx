@@ -77,10 +77,8 @@ export const query = graphql`
   query EducationPageQueries {
     subjects: allSubjectsYaml {
       nodes {
-        title
+        translationPrefix
         type
-        heading
-        description
         portalPage
         webPage
         featuredImage {
