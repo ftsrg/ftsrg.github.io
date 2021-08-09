@@ -1,12 +1,15 @@
 import { PageProps } from 'gatsby'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
+import { Trans, useTranslation } from 'react-i18next'
 import Breadcrumbs from '~components/Breadcrumbs'
 import SEO from '~components/SEO'
 import TopHero from '~components/TopHero'
 import Layout from '~layout/Layout'
 
 const ContactPage: React.FC<PageProps> = () => {
+  const tr = useTranslation() // somehow destructuring didn't work
+
   return (
     <Layout>
       <SEO />
@@ -21,17 +24,17 @@ const ContactPage: React.FC<PageProps> = () => {
             </Col>
             <Col lg={5} className="mr-auto align-self-center order-2 order-lg-1">
               <h2 className="section-title-underline mb-5">
-                <span>Megközelítés</span>
+                <span>{tr.t('contact.address.title')}</span>
               </h2>
               <p>
-                BME I épület, B szárny 4. emelet
+                {tr.t('contact.address.line1')}
                 <br />
-                Magyar tudósok körútja 2.
+                {tr.t('contact.address.line2')}
                 <br />
-                1117 Budapest, Magyarország
+                {tr.t('contact.address.line3')}
               </p>
               <p>
-                GPS-koordináták:{' '}
+                {tr.t('contact.address.gpsCoord')}
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
@@ -48,10 +51,10 @@ const ContactPage: React.FC<PageProps> = () => {
             </Col>
             <Col lg={5} className="ml-auto align-self-center">
               <h2 className="section-title-underline mb-5">
-                <span>Az épületen belül</span>
+                <span>{tr.t('contact.inBuilding.title')}</span>
               </h2>
-              <p>Az épületbe belépve bal kéz felé a portával szemközti liftekkel fel a 4. emeletre.</p>
-              <p>A liftből kilépve jobbra, majd balra belépve az üvegajtón található a kutatócsoport.</p>
+              <p>{tr.t('contact.inBuilding.p1')}</p>
+              <p>{tr.t('contact.inBuilding.p2')}</p>
             </Col>
           </Row>
           <Row>
@@ -60,16 +63,19 @@ const ContactPage: React.FC<PageProps> = () => {
             </Col>
             <Col lg={5} className="mr-auto align-self-center order-2 order-lg-1">
               <h2 className="section-title-underline mb-5">
-                <span>Hallgatói folyosó</span>
+                <span>{tr.t('contact.studentFloor.title')}</span>
               </h2>
-              <p>Hallgatóinkat várjuk a 4. emeleti folyosón, a kutatócsoport szobáinál kihelyezett asztalokhoz.</p>
-              <p>Itt tanulhatnak, dolgozhatnak az önálló munkájukon vagy pedig konzultálhatnak velünk.</p>
+              <p>{tr.t('contact.studentFloor.p1')}</p>
+              <p>{tr.t('contact.studentFloor.p2')}</p>
               <p>
-                A bútorokért köszönet a{' '}
-                <a href="https://www.mit.bme.hu/general/alapitvany" target="_blank" rel="noopener noreferrer">
-                  Schnell Alapítványnak
-                </a>
-                .
+                <Trans
+                  i18nKey="contact.studentFloor.p3"
+                  components={[
+                    <a href="https://www.mit.bme.hu/general/alapitvany" target="_blank" rel="noopener noreferrer">
+                      Schnell Alapítványnak
+                    </a>
+                  ]}
+                />
               </p>
             </Col>
           </Row>
