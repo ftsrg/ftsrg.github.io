@@ -39,7 +39,7 @@ const EducationPage: React.FC<EducationPageProps> = ({ data }) => {
           <Row className="mb-5">
             <Col xs={12}>
               <h2 className="section-title-underline">
-                <span>Specializációk</span>
+                <span>{t('education.specializations.title')}</span>
               </h2>
             </Col>
           </Row>
@@ -60,7 +60,7 @@ const EducationPage: React.FC<EducationPageProps> = ({ data }) => {
           <Row className="mb-5">
             <Col xs={12}>
               <h2 className="section-title-underline">
-                <span>Hallgatóink eredményei</span>
+                <span>{t('education.studentAchievements.title')}</span>
               </h2>
             </Col>
           </Row>
