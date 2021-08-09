@@ -7,19 +7,19 @@ import VisibilitySensor from 'react-visibility-sensor'
 
 const counterData = [
   {
-    title: 'Szakdolgozat és diplomaterv',
+    title: 'home.counters.c1.title',
     isGatsbyLink: false,
     url: 'https://diplomaterv.vik.bme.hu/hu/Browse.aspx?d=MIT',
     count: 450
   },
   {
-    title: 'TDK és OTDK dolgozat',
+    title: 'home.counters.c2.title',
     isGatsbyLink: false,
     url: 'http://tdk.bme.hu/Browse/Papers?f=VIK&d=MIT',
     count: 109
   },
   {
-    title: 'Hallgatói díj és kitüntetés',
+    title: 'home.counters.c3.title',
     isGatsbyLink: true,
     url: '/education#achievements',
     count: 69
