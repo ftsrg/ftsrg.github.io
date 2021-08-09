@@ -9,12 +9,18 @@ import Hero from '~components/Hero'
 import SEO from '~components/SEO'
 import TopHero from '~components/TopHero'
 import Layout from '~layout/Layout'
-import { SubjectProps } from '~utils/props'
+import { SpecializationProps, StudentAchievementProps, SubjectProps } from '~utils/props'
 
 interface EducationPageProps extends PageProps {
   data: {
     subjects: {
       nodes: Array<SubjectProps>
+    }
+    specializations: {
+      nodes: Array<SpecializationProps>
+    }
+    studentAchievements: {
+      nodes: Array<StudentAchievementProps>
     }
   }
 }
@@ -33,11 +39,11 @@ const EducationPage: React.FC<EducationPageProps> = ({ data }) => {
           <Row className="mb-5">
             <Col xs={12}>
               <h2 className="section-title-underline">
-                <span>Specializációk</span>
+                <span>{t('education.specializations.title')}</span>
               </h2>
             </Col>
           </Row>
-          <SpecializationsCarousel />
+          <SpecializationsCarousel nodes={data.specializations.nodes} />
         </Container>
       </div>
 
@@ -54,11 +60,11 @@ const EducationPage: React.FC<EducationPageProps> = ({ data }) => {
           <Row className="mb-5">
             <Col xs={12}>
               <h2 className="section-title-underline">
-                <span>Hallgatóink eredményei</span>
+                <span>{t('education.studentAchievements.title')}</span>
               </h2>
             </Col>
           </Row>
-          <StudentAchievementsCarousel />
+          <StudentAchievementsCarousel nodes={data.studentAchievements.nodes} />
         </Container>
       </div>
     </Layout>
@@ -77,6 +83,30 @@ export const query = graphql`
         description
         portalPage
         webPage
+        featuredImage {
+          childImageSharp {
+            gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+          }
+        }
+      }
+    }
+    specializations: allSpecializationsYaml {
+      nodes {
+        title
+        subtitle
+        paragraphs
+        url
+        featuredImage {
+          childImageSharp {
+            gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+          }
+        }
+      }
+    }
+    studentAchievements: allStudentAchievementsYaml {
+      nodes {
+        category
+        descHtmlRaw
         featuredImage {
           childImageSharp {
             gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])

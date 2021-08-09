@@ -8,7 +8,7 @@ type Props = {
 }
 
 const FormerMembersSection: React.FC<Props> = ({ nodes }) => (
-  <Hero id="formermembers" bgImageUrl="/images/panorama.jpg" heroTitle="Korábbi munkatársaink">
+  <Hero id="formermembers" bgImageUrl="/images/panorama.jpg" heroTitle="about.formermembers.heroTitle">
     <div className="card-columns alumni-list">
       {nodes.map((formermember) => (
         <div key={formermember.name} className="alumni">

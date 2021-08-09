@@ -1,45 +1,43 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
+import { Trans, useTranslation } from 'react-i18next'
 import Hero from '~components/Hero'
 
-const AboutSection: React.FC = () => (
-  <Hero id="about" bgImageUrl="/images/hero_3.png">
-    <Row>
-      <Col lg={4}>
-        <h2 className="section-title-underline style-2">
-          <span>A kutatócsoportról</span>
-        </h2>
-      </Col>
-      <Col lg={8}>
-        <p className="lead">
-          Fő területünk a kritikus informatikai rendszerek, folyamatok és platformok tervezése, ellenőrzése és üzemeltetésének támogatása. A
-          magas színvonalat nemcsak a tervezett rendszerekkel szemben várjuk el, hanem a kutatás és oktatás területén is magunkénak valljuk.
-        </p>
-        <p>
-          A BME VIK Méréstechnika és Információs Rendszerek Tanszékén működő Hibatűrő Rendszerek Kutatócsoportot (ftsrg) 1994-ben alapította
-          Prof. Pataricza András a hibatűrő számítástechnika kutatására és oktatására. A csoport az azóta eltelt években a
-          rendszermodellezés, &#8209;tervezés és &#8209;ellenőrzés nemzetközileg jegyzett kutatócsoportjává vált, harmincnál is több európai
-          kutatási és ipari együttműködésben kamatoztatva tudását. 2019-től megújult arculattal, Kritikus Rendszerek Kutatócsoport (Critical
-          Systems Research Group) néven, de a jól bevált „ftsrg” rövidítéssel és mentalitással folytatjuk az első 25 év hagyományait.
-        </p>
-        <p>
-          Bővebben a kutatócsoportról a{' '}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.bme.hu/hirek/20191219/Megszallottan_torodunk_a_tehetseges_hallgatokkal"
-          >
-            BME
-          </a>{' '}
-          és az{' '}
-          <a target="_blank" rel="noopener noreferrer" href="http://www.impulzus.com/content/archivum/47/2.pdf">
-            Impulzus
-          </a>{' '}
-          interjújában olvasható.
-        </p>
-      </Col>
-    </Row>
-  </Hero>
-)
+const AboutSection: React.FC = () => {
+  const { t } = useTranslation()
+
+  return (
+    <Hero id="about" bgImageUrl="/images/hero_3.png">
+      <Row>
+        <Col lg={4}>
+          <h2 className="section-title-underline style-2">
+            <span>{t('home.about.title')}</span>
+          </h2>
+        </Col>
+        <Col lg={8}>
+          <p className="lead">{t('home.about.p1')}</p>
+          <p>{t('home.about.p2')}</p>
+          <p>
+            <Trans
+              i18nKey="home.about.p3"
+              components={[
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.bme.hu/hirek/20191219/Megszallottan_torodunk_a_tehetseges_hallgatokkal"
+                >
+                  BME
+                </a>,
+                <a target="_blank" rel="noopener noreferrer" href="http://www.impulzus.com/content/archivum/47/2.pdf">
+                  Impulzus
+                </a>
+              ]}
+            />
+          </p>
+        </Col>
+      </Row>
+    </Hero>
+  )
+}
 
 export default AboutSection

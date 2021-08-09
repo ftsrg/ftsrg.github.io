@@ -1,6 +1,17 @@
 {
-  "education.talentcare.title": "Tehetséggondozás",
-  "education.talentcare.p1": "Tehetséges hallgatóink már a BSc képzés során rendszeresen bekapcsolódnak nemzetközi kutatási és ipari projektjeinkbe, nyílt forráskódú szoftverfejlesztéseinkbe.",
-  "education.talentcare.p2": "Számukra tehetséggondozó programot és kiemelt konzultációs hátteret biztosítunk.",
-  "education.studentwork.pageNumber": "page {{pageNumber}}"
+  "education.talentcare.title": "TODO Tehetséggondozás",
+  "education.talentcare.p1": "TODO Tehetséges hallgatóink már a BSc képzés során rendszeresen bekapcsolódnak nemzetközi kutatási és ipari projektjeinkbe, nyílt forráskódú szoftverfejlesztéseinkbe.",
+  "education.talentcare.p2": "TODO Számukra tehetséggondozó programot és kiemelt konzultációs hátteret biztosítunk.",
+  "education.studentwork.title": "TODO Önálló munka",
+  "education.studentwork.description": "TODO Hallgatóink változatos témákon dolgozhatnak már a <0>témalabortól</0> kezdődően: az ipari partnereink által inspirált gyakorlati fejlesztési feladatoktól kezdve az elméleti jellegű kutatási témákig széles spektrumon biztosítunk konzultációt. Célunk, hogy hallgatóink olyan témákat találjanak, amikben elmélyülnek és szakmailag fejlődnek.",
+  "education.studentwork.pageNumber": "page {{pageNumber}}",
+  "education.studentwork.cardOne.title": "TODO Rendszertervezés (BSc)",
+  "education.studentwork.cardOne.desc": "TODO „Ezt a fajta rendszerben gondolkodást jól tükrözi az oktatás, miközben a tanultak kellően konkrétak, gyakorlatban is hasznosak. Sikerült megtalálnom a kutatómunka örömét is, ugyanis a csoportban különösen figyelnek a hallgatók önálló szakmai tevékenységére.”",
+  "education.studentwork.cardTwo.title": "TODO Kritikus rendszerek (MSc)",
+  "education.studentwork.cardTwo.desc": "TODO „A BSc ágazat és az MSc szakirány messzemenően felülmúlta a korábbi elképzeléseimet és elvárásaimat. Nem gondoltam volna, hogy ennyi érdekes témával lehet itt foglalkozni.”",
+  "education.studentAchievements.title": "TODO Hallgatóink eredményei",
+  "education.specializations.title": "TODO Specializációk",
+  "education.subjects.title": "TODO Tantárgyaink",
+  "education.subjects.webPage": "TODO Web",
+  "education.subjects.portalPage": "TODO Adatlap"
 }

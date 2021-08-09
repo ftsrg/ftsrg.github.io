@@ -8,16 +8,16 @@ const counterData = [
   {
     /* EEMCN, FUTEG, HIDE, DECOS, RESIST, Sensoria, Deserec, Diana, Hidenets, SafeDMI, Amber, Genesys, Mogentes,
       SecureChange, E-freight, R3-COP, CECRIS, Concerto, MONDO, R5-COP, ADVANCE, Arrowhead Tools, EMBrACE */
-    title: 'EU-s kutatási projekt',
+    title: 'research.projects.counter1.title',
     count: 23
   },
   {
-    title: 'Ipari együttműködés',
+    title: 'research.projects.counter2.title',
     count: 25
   },
   {
     // Lendulet, VKE, ERC_HU, OTKA, TéT, DAAD...
-    title: 'Hazai és bilaterális projekt',
+    title: 'research.projects.counter3.title',
     count: 20
   }
 ]
