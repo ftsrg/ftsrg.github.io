@@ -57,5 +57,18 @@
   "education.subjects.devops.desc": "TODO",
   "education.subjects.maviz.title": "Mérési adatok vizuális elemzése",
   "education.subjects.maviz.heading": "TODO",
-  "education.subjects.maviz.desc": "TODO"
+  "education.subjects.maviz.desc": "TODO",
+
+  "education.specializations.rete.title": "Rendszertervezés (BSc)",
+  "education.specializations.rete.subtitle": "Tervezés és integráció a szoftveren innen és túl",
+  "education.specializations.rete.p1": "Egy modern kiber-fizikai rendszer olyan megbízható és intelligens komponensekbol és szolgáltatásokból álló, döntően szoftveralapú nyílt rendszer, amely az Interneten keresztül közvetlen összeköttetésben áll a különféle mobil- és okoseszközökkel, a külvilágot érzékelő szenzorokkal és beavatkozókkal, a szinte korlátlan kapacitású számítási felhővel – és azokkal a kritikus alrendszerekkel is, amelyek helyes működésén életek múlnak.",
+  "education.specializations.rete.p2": "A specializáció célja olyan rendszermérnökök képzése, akik képesek e modern rendszerek specifikálására, tervezésére, integrációjára, ellenőrzésére és megvalósítására egy felülről lefelé történő, modellcentrikus megközelítéssel, amely már napjainkban is domináns a kritikus rendszerek számos területén (pl. autó, repülőgép, gyógyászati berendezések, bioinformatika).",
+  "education.specializations.swdev.title": "Szoftverfejlesztés (BSc)",
+  "education.specializations.swdev.subtitle": "Programozni bárki megtanulhat, de jól csinálni nehéz",
+  "education.specializations.swdev.p1": "A specializáció célja megismertetni a hallgatókat azokkal a kurrens szoftvertechnikákkal és eszközökkel, amelyek informatikai rendszerek megvalósításához, teszteléséhez, karbantartásához és dokumentálásához szükségesek.",
+  "education.specializations.swdev.p2": "A specializáció kiemelt hangsúlyt fektet a legfrissebb szoftverirányzatok teljes spektrumának lefedésére, különös tekintettel a kliens oldalra és az informatikai háttérrendszerek fejlesztésére, a vonatkozó megvalósítási technikákra, heterogén platformok rendszerintegrációs elveire, olyan igényes grafikai információmegjelenítési és felhasználói interfész kialakítási módszerekre és fejlesztési technológiákra, amelyek követik a felhasználói igényeket, valamint a korszerű rendszerfejlesztési koncepcióknak való megfelelés követelményeire.",
+  "education.specializations.critsys.title": "Kritikus rendszerek (MSc)",
+  "education.specializations.critsys.subtitle": "A nagy felelősség minőségi munkát igényel",
+  "education.specializations.critsys.p1": "A biztonság szempontjából kritikus rendszerekkel találkozunk például gépjárművek, vasutak és repülők fedélzeti rendszerei esetén, de ugyanilyen kiemelt jelentőségűek az üzletileg kritikus szolgáltatások és számítógépes infrastruktúrák is. Napjainkban e kritikus rendszerek 70-80%-át szoftver alkalmazások teszik ki. A kritikus rendszerek és szoftverek fejlesztése jelentősen eltér a hagyományos webes és mobil alkalmazásokétól.",
+  "education.specializations.critsys.p2": "A Kritikus rendszerek MSc főspecializáció missziója, hogy olyan elit mérnökinformatikusokat képezzen ki, akik jártasak a kritikus rendszerek tervezésében, fejlesztésében, ellenőrzésében és üzemeltetésében, és bármilyen európai munkahelyen megállják a helyüket."
 }

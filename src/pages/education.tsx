@@ -90,9 +90,7 @@ export const query = graphql`
     }
     specializations: allSpecializationsYaml {
       nodes {
-        title
-        subtitle
-        paragraphs
+        translationPrefix
         url
         featuredImage {
           childImageSharp {
