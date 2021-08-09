@@ -2,16 +2,24 @@ import i18next from 'i18next'
 import detector from 'i18next-browser-languagedetector'
 import backend from 'i18next-http-backend'
 import { initReactI18next } from 'react-i18next'
-import eduEn from '../locales/en/education.translation.json'
+import aboutEn from '../locales/en/about.translation.json'
+import contactEn from '../locales/en/contact.translation.json'
+import educationEn from '../locales/en/education.translation.json'
+import indexEn from '../locales/en/index.translation.json'
 import navEn from '../locales/en/nav.translation.json'
+import researchEn from '../locales/en/research.translation.json'
 import en from '../locales/en/translation.json'
-import eduHu from '../locales/hu/education.translation.json'
+import aboutHu from '../locales/hu/about.translation.json'
+import contactHu from '../locales/hu/contact.translation.json'
+import educationHu from '../locales/hu/education.translation.json'
+import indexHu from '../locales/hu/index.translation.json'
 import navHu from '../locales/hu/nav.translation.json'
+import researchHu from '../locales/hu/research.translation.json'
 import hu from '../locales/hu/translation.json'
 
 const resources = {
-  en: { translation: { ...en, ...navEn, ...eduEn } },
-  hu: { translation: { ...hu, ...navHu, ...eduHu } }
+  en: { translation: { ...en, ...navEn, ...educationEn, ...aboutEn, ...contactEn, ...indexEn, ...researchEn } },
+  hu: { translation: { ...hu, ...navHu, ...educationHu, ...aboutHu, ...contactHu, ...indexHu, ...researchHu } }
 }
 
 i18next

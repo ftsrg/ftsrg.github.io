@@ -12,5 +12,8 @@
   "pages.research.heroDesc": "Út az alap és alkalmazott kutatáson át az innovációig",
   "pages.home.heroTitle": "Kritikus Rendszerek Kutatócsoport",
   "pages.home.heroDesc": "„Átültetjük az elméletet a gyakorlatba”",
-  "commons.readMore": "Bővebben"
+  "commons.readMore": "Bővebben",
+  "footer.contactHero.haveQuestion": "Kérdésed van?",
+  "footer.contactHero.askMe": "A kutatócsoporttal kapcsolatos kérdésekkel keresd <0>Dr. {{lastName}} {{firstName}}t</0>!",
+  "footer.officeAddress": "H-1117 Budapest, Magyar tudósok körútja 2., I ép. B szárny, IV. em."
 }
