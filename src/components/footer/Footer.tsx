@@ -45,7 +45,7 @@ const Footer: React.FC<Props> = ({ hasContact }) => {
           <Row className="justify-content-center pb-5">
             <Col lg={4} className="text-center px-5">
               <img src="/images/ftsrg-small-white.png" alt="..." width="120px" className="mb-4" />
-              <p>H-1117 Budapest, Magyar tudósok körútja&nbsp;2., I ép. B szárny, IV. em.</p>
+              <p>{t('footer.officeAddress')}</p>
               <p>
                 <Link to="/contact">{t('nav.contact.title')}</Link>
               </p>
