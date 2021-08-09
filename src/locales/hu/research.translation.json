@@ -15,5 +15,10 @@
   "research.tools.tool2.title": "A Theta modellellenőrző keretrendszer",
   "research.tools.tool2.desc": "A Theta modellellenőrző keretrendszer absztrakció-finomítás alapú, korszerű algoritmusok kollekciója, amelyek kombinálhatóságuk révén mindig az adott problémához szabhatók.",
   "research.tools.tool3.title": "A VIATRA Solver gráfgenerátor keretrendszer",
-  "research.tools.tool3.desc": "A VIATRA Solver egy keretrendszer, amely szakterület-specifikus nyelvek jólformált és változatos példánymodelljeinek automatikus és skálázódó generálására szolgál."
+  "research.tools.tool3.desc": "A VIATRA Solver egy keretrendszer, amely szakterület-specifikus nyelvek jólformált és változatos példánymodelljeinek automatikus és skálázódó generálására szolgál.",
+
+  "research.publications.autoGenGraphModel": "Olyan módszereket javasoltunk, amivel gráfok generálása során adott célfüggvény szerinti optimalizációs problémákat tudunk megoldani.",
+  "research.publications.autoIsoWhitebox": "Olyan módszert és eszközt készítettünk, ami forráskód-alapú tesztgenerálás során a tesztelt modul izolációja érdekében automatikusan mock környezeteket generál.",
+  "research.publications.faultInjectBlockchain": "A Coimbrai Egyetem kutatóival együttműködve olyan módszert javasoltunk, amivel blockchain rendszerek megbízhatósága vizsgálható.",
+  "research.publications.stratForCEGAR": "Hatékony algoritmusokat javasoltunk a CEGAR-alapú modellellenőrzés továbbfejlesztéséhez, amik a mérések alapján beágyazott szoftver és PLC kódok ellenőrzését segítik."
 }
