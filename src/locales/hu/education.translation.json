@@ -70,5 +70,12 @@
   "education.specializations.critsys.title": "Kritikus rendszerek (MSc)",
   "education.specializations.critsys.subtitle": "A nagy felelősség minőségi munkát igényel",
   "education.specializations.critsys.p1": "A biztonság szempontjából kritikus rendszerekkel találkozunk például gépjárművek, vasutak és repülők fedélzeti rendszerei esetén, de ugyanilyen kiemelt jelentőségűek az üzletileg kritikus szolgáltatások és számítógépes infrastruktúrák is. Napjainkban e kritikus rendszerek 70-80%-át szoftver alkalmazások teszik ki. A kritikus rendszerek és szoftverek fejlesztése jelentősen eltér a hagyományos webes és mobil alkalmazásokétól.",
-  "education.specializations.critsys.p2": "A Kritikus rendszerek MSc főspecializáció missziója, hogy olyan elit mérnökinformatikusokat képezzen ki, akik jártasak a kritikus rendszerek tervezésében, fejlesztésében, ellenőrzésében és üzemeltetésében, és bármilyen európai munkahelyen megállják a helyüket."
+  "education.specializations.critsys.p2": "A Kritikus rendszerek MSc főspecializáció missziója, hogy olyan elit mérnökinformatikusokat képezzen ki, akik jártasak a kritikus rendszerek tervezésében, fejlesztésében, ellenőrzésében és üzemeltetésében, és bármilyen európai munkahelyen megállják a helyüket.",
+
+  "education.studentAchievements.publications.title": "Tudományos cikkek",
+  "education.studentAchievements.publications.desc": "Hallgatóinkkal elért közös eredményeink rangos tudományos publikációkban jelennek meg. Az elmúlt években például az <0>EMSOFT</0> konferencián (New York) vagy az <1>STTT</1> és <2>STVR</2> vezető folyóiratokban jelent meg hallgatókkal közösen írt cikkünk.",
+  "education.studentAchievements.workplaces.title": "Jellemző munkahelyek",
+  "education.studentAchievements.workplaces.desc": "Hallgatóinknak nem esik nehezükre elhelyezkedni a végzés után: start-up cégeknél, multinacionális cégek hazai vagy akár nemzetközi fejlesztőközpontjaiban mind-mind megtalálhatók volt hallgatóink, nem ritkán senior pozícióban.",
+  "education.studentAchievements.scholarships.title": "Pályázatok és ösztöndíjak",
+  "education.studentAchievements.scholarships.desc": "A <0>TDK</0> és <1>OTDK</1> versenyeken, <2>ÚNKP</2>, <3>NFÖD</3> és KBME pályázatokon hallgatóink minden évben kiemelkedően teljesítenek. Tanulmányaik alatt sokan külföldi ösztöndíjprogramokon és tanulmányutakon vesznek részt (pl. Svájc, Németország, Írország)."
 }

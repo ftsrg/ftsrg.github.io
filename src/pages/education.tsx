@@ -101,8 +101,8 @@ export const query = graphql`
     }
     studentAchievements: allStudentAchievementsYaml {
       nodes {
-        category
-        descHtmlRaw
+        translationPrefix
+        links
         featuredImage {
           childImageSharp {
             gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])

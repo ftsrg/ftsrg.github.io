@@ -1,6 +1,6 @@
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import React from 'react'
-import { useTranslation } from 'react-i18next'
+import { Trans, useTranslation } from 'react-i18next'
 import Slider from 'react-slick'
 import { StudentAchievementProps } from '~utils/props'
 
@@ -35,17 +35,25 @@ const StudentAchievementsCarousel: React.FC<Props> = ({ nodes }) => {
       {nodes.map((achievement) => {
         const image = getImage(achievement.featuredImage)
         return (
-          <div key={achievement.category} className="px-3 py-3">
+          <div key={achievement.translationPrefix} className="px-3 py-3">
             <div className="education-1-item">
               <figure className="thumbnail">
-                {image && <GatsbyImage image={image} alt={achievement.category} className="img-fluid" />}
+                {image && <GatsbyImage image={image} alt={achievement.translationPrefix} className="img-fluid" />}
                 <div className="category bg-secondary">
-                  <h3>{t(achievement.category)}</h3>
+                  <h3>{t(`${achievement.translationPrefix}.title`)}</h3>
                 </div>
               </figure>
               <div className="education-1-content pb-4">
-                {/* eslint-disable-next-line react/no-danger */}
-                <p className="desc mb-4" dangerouslySetInnerHTML={{ __html: achievement.descHtmlRaw }} />
+                <p className="desc mb-4">
+                  <Trans
+                    i18nKey={`${achievement.translationPrefix}.desc`}
+                    components={achievement.links?.map((link) => (
+                      <a href={link} target="_blank" rel="noopener noreferrer">
+                        link
+                      </a>
+                    ))}
+                  />
+                </p>
               </div>
             </div>
           </div>
