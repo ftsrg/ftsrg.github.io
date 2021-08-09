@@ -2,5 +2,16 @@
   "education.talentcare.title": "Tehetséggondozás",
   "education.talentcare.p1": "Tehetséges hallgatóink már a BSc képzés során rendszeresen bekapcsolódnak nemzetközi kutatási és ipari projektjeinkbe, nyílt forráskódú szoftverfejlesztéseinkbe.",
   "education.talentcare.p2": "Számukra tehetséggondozó programot és kiemelt konzultációs hátteret biztosítunk.",
-  "education.studentwork.pageNumber": "{{pageNumber}}. oldal"
+  "education.studentwork.pageNumber": "{{pageNumber}}. oldal",
+  "education.studentwork.title": "Önálló munka",
+  "education.studentwork.description": "Hallgatóink változatos témákon dolgozhatnak már a <0>témalabortól</0> kezdődően: az ipari partnereink által inspirált gyakorlati fejlesztési feladatoktól kezdve az elméleti jellegű kutatási témákig széles spektrumon biztosítunk konzultációt. Célunk, hogy hallgatóink olyan témákat találjanak, amikben elmélyülnek és szakmailag fejlődnek.",
+  "education.studentwork.cardOne.title": "Rendszertervezés (BSc)",
+  "education.studentwork.cardOne.desc": "„Ezt a fajta rendszerben gondolkodást jól tükrözi az oktatás, miközben a tanultak kellően konkrétak, gyakorlatban is hasznosak. Sikerült megtalálnom a kutatómunka örömét is, ugyanis a csoportban különösen figyelnek a hallgatók önálló szakmai tevékenységére.”",
+  "education.studentwork.cardTwo.title": "Kritikus rendszerek (MSc)",
+  "education.studentwork.cardTwo.desc": "„A BSc ágazat és az MSc szakirány messzemenően felülmúlta a korábbi elképzeléseimet és elvárásaimat. Nem gondoltam volna, hogy ennyi érdekes témával lehet itt foglalkozni.”",
+  "education.studentAchievements.title": "Hallgatóink eredményei",
+  "education.specializations.title": "Specializációk",
+  "education.subjects.title": "Tantárgyaink",
+  "education.subjects.webPage": "Web",
+  "education.subjects.portalPage": "Adatlap"
 }
