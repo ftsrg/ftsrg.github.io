@@ -1,6 +1,7 @@
 import { graphql, PageProps } from 'gatsby'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
+import { useTranslation } from 'react-i18next'
 import { ProjectsCarousel } from '~components/carousels'
 import { About, Banner, Competences, Education, News, Partners } from '~components/indexpage-components'
 import SEO from '~components/SEO'
@@ -16,6 +17,8 @@ interface IndexPageProps extends PageProps {
 }
 
 const IndexPage: React.FC<IndexPageProps> = ({ data }) => {
+  const { t } = useTranslation()
+
   return (
     <Layout>
       <SEO />
@@ -28,7 +31,7 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) => {
           <Row className="mb-5">
             <Col xs={12}>
               <h2 className="section-title-underline">
-                <span>Projektjeink</span>
+                <span>{t('home.projects.title')}</span>
               </h2>
             </Col>
           </Row>

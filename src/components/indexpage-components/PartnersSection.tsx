@@ -15,7 +15,7 @@ const logos = [
 ]
 
 const PartnersSection: React.FC = () => (
-  <Hero id="partners" bgImageUrl="/images/hero_1.jpg" heroTitle="Partnereink" isHeroTitleCentered>
+  <Hero id="partners" bgImageUrl="/images/hero_1.jpg" heroTitle="home.partners.title" isHeroTitleCentered>
     <div id="partners-container" className="d-flex justify-content-center">
       {logos.map((logo) => (
         <div key={logo.toUpperCase()} className="partner">

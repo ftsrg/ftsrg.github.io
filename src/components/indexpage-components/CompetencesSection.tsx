@@ -9,21 +9,18 @@ import Hero from '~components/Hero'
 const compentencesData = [
   {
     icon: <VscRocket size="3.75rem" />,
-    title: 'Kritikus rendszerek fejlesztése',
-    desc: `Módszertanok, fejlesztési környezetek, technikák és technológiák a modellalapú kritikus informatikai és kiberfizikai
-    rendszerek és alkalmazások tervezésére.`
+    title: 'home.competences.c1.title',
+    desc: 'home.competences.c1.desc'
   },
   {
     icon: <FaBug size="3.65rem" />,
-    title: 'Ellenőrzés és tesztelés',
-    desc: `Formális módszerek és modellalapú tesztelés alkalmazása funkcionális, megbízhatósági, biztonsági és teljesítmény
-    követelmények ellenőrzése és tanúsítása során.`
+    title: 'home.competences.c2.title',
+    desc: 'home.competences.c2.desc'
   },
   {
     icon: <CgPerformance size="4rem" />,
-    title: 'Empirikus rendszertervezés',
-    desc: `Teljesítmény és megbízhatósági követelmények kísérleti vizsgálata, mérése, analízise, méretezése származtatott modellek
-    alapján, hibamodellezés.`
+    title: 'home.competences.c3.title',
+    desc: 'home.competences.c3.desc'
   }
 ]
 
@@ -31,14 +28,10 @@ const CompetencesSection: React.FC = () => {
   const { t } = useTranslation()
 
   return (
-    <Hero id="competences" heroTitle="Szakmai kompetenciáink" isHeroTitleCentered>
+    <Hero id="competences" heroTitle="home.competences.title" isHeroTitleCentered>
       <Row className="justify-content-center mb-5">
         <Col lg={7}>
-          <p className="text-center mb-5">
-            Fő területünk a kritikus informatikai rendszerek, folyamatok és platformok szolgáltatásbiztonságra tervezése, ideértve a
-            kiberfizikai és informatikai infrastruktúrákat, alkalmazásokat. Alapvető metodikánk a modellalapú tervezés, analízis és
-            helyességbizonyítás.
-          </p>
+          <p className="text-center mb-5">{t('home.competences.description')}</p>
         </Col>
       </Row>
       <Row>
