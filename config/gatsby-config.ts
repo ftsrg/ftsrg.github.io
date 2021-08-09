@@ -67,6 +67,27 @@ export default {
       }
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `event`,
+        path: `${path.join(__dirname, '../src/content/events')}`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `specialization`,
+        path: `${path.join(__dirname, '../src/content/specializations')}`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `student-achievement`,
+        path: `${path.join(__dirname, '../src/content/student-achievements')}`
+      }
+    },
+    {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [

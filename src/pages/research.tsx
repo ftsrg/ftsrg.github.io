@@ -9,7 +9,7 @@ import { ProjectCounters, Tools } from '~components/research-components'
 import SEO from '~components/SEO'
 import TopHero from '~components/TopHero'
 import Layout from '~layout/Layout'
-import { ProjectProps, PublicationProps } from '~utils/props'
+import { EventProps, ProjectProps, PublicationProps } from '~utils/props'
 
 interface ResearchPageProps extends PageProps {
   data: {
@@ -18,6 +18,9 @@ interface ResearchPageProps extends PageProps {
     }
     publications: {
       nodes: Array<PublicationProps>
+    }
+    events: {
+      nodes: Array<EventProps>
     }
   }
 }
@@ -87,7 +90,7 @@ const ResearchPage: React.FC<ResearchPageProps> = ({ data }) => {
               </h2>
             </Col>
           </Row>
-          <EventsCarousel />
+          <EventsCarousel nodes={data.events.nodes} />
         </Container>
       </div>
     </Layout>
@@ -118,6 +121,19 @@ export const query = graphql`
         title
         url
         description
+        featuredImage {
+          childImageSharp {
+            gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+          }
+        }
+      }
+    }
+    events: allEventsYaml {
+      nodes {
+        title
+        subtitle
+        url
+        desc
         featuredImage {
           childImageSharp {
             gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
