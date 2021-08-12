@@ -83,7 +83,7 @@
   },
   "devDependencies": {
     "@types/fs-extra": "9.0.12",
-    "@types/jest": "26.0.24",
+    "@types/jest": "27.0.0",
     "@types/node": "16.4.5",
     "@types/react": "17.0.17",
     "@types/react-anchor-link-smooth-scroll": "1.0.2",
