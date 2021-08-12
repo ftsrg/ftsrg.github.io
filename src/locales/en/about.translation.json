@@ -6,11 +6,6 @@
   "about.members.title": "$t(nav.about.members)",
   "about.students.title": "$t(nav.about.students)",
   "about.intro.description": "TODO A kutatócsoportnak jelenleg 20 tagja van, akik közül 14-en rendelkeznek PhD fokozattal. A csoport ezen kívül minden évben 30 tehetséges hallgatóval dolgozik együtt, akik bekapcsolódnak a csoport mindennapi életébe.",
-<<<<<<< Updated upstream
-  "about.students.paragraph": "TODO Rengeteg tehetséges hallgatóval dolgozunk együtt. Ők demonstrátorként bekapcsolódnak az általunk oktatott tárgyainkba, a kutatási projektjeinkben pedig saját módszerek és eszközök fejlesztésében vesznek részt."
-=======
-  "about.members.title": "TODO A kutatócsoport tagjai",
-  "about.students.title": "TODO Hallgatóink",
   "about.students.paragraph": "TODO Rengeteg tehetséges hallgatóval dolgozunk együtt. Ők demonstrátorként bekapcsolódnak az általunk oktatott tárgyainkba, a kutatási projektjeinkben pedig saját módszerek és eszközök fejlesztésében vesznek részt.",
 
   "about.members.position.prof": "TODO professor",
@@ -22,5 +17,4 @@
   "about.members.position.assistResFellow": "TODO assistant research fellow",
   "about.members.position.phdStudent": "TODO Ph. D. student",
   "about.members.name": "{{firstName}} {{lastName}}"
->>>>>>> Stashed changes
 }

@@ -10,30 +10,23 @@
   "education.talentcare.p2": "TODO Számukra tehetséggondozó programot és kiemelt konzultációs hátteret biztosítunk.",
   "education.studentwork.description": "TODO Hallgatóink változatos témákon dolgozhatnak már a <0>témalabortól</0> kezdődően: az ipari partnereink által inspirált gyakorlati fejlesztési feladatoktól kezdve az elméleti jellegű kutatási témákig széles spektrumon biztosítunk konzultációt. Célunk, hogy hallgatóink olyan témákat találjanak, amikben elmélyülnek és szakmailag fejlődnek.",
   "education.studentwork.pageNumber": "page {{pageNumber}}",
-<<<<<<< Updated upstream
   "education.studentwork.card1.title": "TODO Rendszertervezés (BSc)",
   "education.studentwork.card1.desc": "TODO „Ezt a fajta rendszerben gondolkodást jól tükrözi az oktatás, miközben a tanultak kellően konkrétak, gyakorlatban is hasznosak. Sikerült megtalálnom a kutatómunka örömét is, ugyanis a csoportban különösen figyelnek a hallgatók önálló szakmai tevékenységére.”",
   "education.studentwork.card2.title": "TODO Kritikus rendszerek (MSc)",
   "education.studentwork.card2.desc": "TODO „A BSc ágazat és az MSc szakirány messzemenően felülmúlta a korábbi elképzeléseimet és elvárásaimat. Nem gondoltam volna, hogy ennyi érdekes témával lehet itt foglalkozni.”",
-  "education.subjects.webPage": "Web",
-  "education.subjects.portalPage": "TODO Adatlap"
-=======
   "education.studentwork.cardOne.title": "TODO Rendszertervezés (BSc)",
   "education.studentwork.cardOne.desc": "TODO „Ezt a fajta rendszerben gondolkodást jól tükrözi az oktatás, miközben a tanultak kellően konkrétak, gyakorlatban is hasznosak. Sikerült megtalálnom a kutatómunka örömét is, ugyanis a csoportban különösen figyelnek a hallgatók önálló szakmai tevékenységére.”",
   "education.studentwork.cardTwo.title": "TODO Kritikus rendszerek (MSc)",
   "education.studentwork.cardTwo.desc": "TODO „A BSc ágazat és az MSc szakirány messzemenően felülmúlta a korábbi elképzeléseimet és elvárásaimat. Nem gondoltam volna, hogy ennyi érdekes témával lehet itt foglalkozni.”",
-  "education.studentAchievements.title": "TODO Hallgatóink eredményei",
-  "education.specializations.title": "TODO Specializációk",
-  "education.subjects.title": "TODO Tantárgyaink",
-  "education.subjects.webPage": "TODO Web",
-  "education.subjects.portalPage": "TODO Adatlap",
 
   "education.subjects.types.bsc": "BSc",
   "education.subjects.types.bscSpec": "TODO BSc szakirány",
   "education.subjects.types.msc": "MSc",
   "education.subjects.types.mscSpec": "TODO MSc szakirány",
   "education.subjects.types.elective": "Elective",
-  "education.subjects.types.phd": "Ph. D.",
+  "education.subjects.types.phd": "PhD",
+  "education.subjects.webPage": "Web",
+  "education.subjects.portalPage": "TODO Adatlap",
 
   "education.subjects.remo.title": "TODO Rendszermodellezés",
   "education.subjects.remo.heading": "TODO Az informatikai rendszerek tervezési folyamatának modellalapú megközelítései",
@@ -85,11 +78,10 @@
   "education.specializations.critsys.p1": "TODO A biztonság szempontjából kritikus rendszerekkel találkozunk például gépjárművek, vasutak és repülők fedélzeti rendszerei esetén, de ugyanilyen kiemelt jelentőségűek az üzletileg kritikus szolgáltatások és számítógépes infrastruktúrák is. Napjainkban e kritikus rendszerek 70-80%-át szoftver alkalmazások teszik ki. A kritikus rendszerek és szoftverek fejlesztése jelentősen eltér a hagyományos webes és mobil alkalmazásokétól.",
   "education.specializations.critsys.p2": "TODO A Kritikus rendszerek MSc főspecializáció missziója, hogy olyan elit mérnökinformatikusokat képezzen ki, akik jártasak a kritikus rendszerek tervezésében, fejlesztésében, ellenőrzésében és üzemeltetésében, és bármilyen európai munkahelyen megállják a helyüket.",
 
-  "education.studentAchievements.publications.title": "TODO Tudományos cikkek",
-  "education.studentAchievements.publications.desc": "TODO Hallgatóinkkal elért közös eredményeink rangos tudományos publikációkban jelennek meg. Az elmúlt években például az <0>EMSOFT</0> konferencián (New York) vagy az <1>STTT</1> és <2>STVR</2> vezető folyóiratokban jelent meg hallgatókkal közösen írt cikkünk.",
-  "education.studentAchievements.workplaces.title": "TODO Jellemző munkahelyek",
-  "education.studentAchievements.workplaces.desc": "TODO Hallgatóinknak nem esik nehezükre elhelyezkedni a végzés után: start-up cégeknél, multinacionális cégek hazai vagy akár nemzetközi fejlesztőközpontjaiban mind-mind megtalálhatók volt hallgatóink, nem ritkán senior pozícióban.",
-  "education.studentAchievements.scholarships.title": "TODO Pályázatok és ösztöndíjak",
-  "education.studentAchievements.scholarships.desc": "TODO A <0>TDK</0> és <1>OTDK</1> versenyeken, <2>ÚNKP</2>, <3>NFÖD</3> és KBME pályázatokon hallgatóink minden évben kiemelkedően teljesítenek. Tanulmányaik alatt sokan külföldi ösztöndíjprogramokon és tanulmányutakon vesznek részt (pl. Svájc, Németország, Írország)."
->>>>>>> Stashed changes
+  "education.achievements.publications.title": "TODO Tudományos cikkek",
+  "education.achievements.publications.desc": "TODO Hallgatóinkkal elért közös eredményeink rangos tudományos publikációkban jelennek meg. Az elmúlt években például az <0>EMSOFT</0> konferencián (New York) vagy az <1>STTT</1> és <2>STVR</2> vezető folyóiratokban jelent meg hallgatókkal közösen írt cikkünk.",
+  "education.achievements.workplaces.title": "TODO Jellemző munkahelyek",
+  "education.achievements.workplaces.desc": "TODO Hallgatóinknak nem esik nehezükre elhelyezkedni a végzés után: start-up cégeknél, multinacionális cégek hazai vagy akár nemzetközi fejlesztőközpontjaiban mind-mind megtalálhatók volt hallgatóink, nem ritkán senior pozícióban.",
+  "education.achievements.scholarships.title": "TODO Pályázatok és ösztöndíjak",
+  "education.achievements.scholarships.desc": "TODO A <0>TDK</0> és <1>OTDK</1> versenyeken, <2>ÚNKP</2>, <3>NFÖD</3> és KBME pályázatokon hallgatóink minden évben kiemelkedően teljesítenek. Tanulmányaik alatt sokan külföldi ösztöndíjprogramokon és tanulmányutakon vesznek részt (pl. Svájc, Németország, Írország)."
 }
