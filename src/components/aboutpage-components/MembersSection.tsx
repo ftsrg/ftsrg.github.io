@@ -24,15 +24,15 @@ const MembersSection: React.FC<Props> = ({ nodes }) => {
           {nodes.map((member) => {
             const avatar = member.avatar ? getImage(member.avatar) : null
             return (
-              <Col lg={3} md={4} key={member.name} className="mb-5 mb-lg-5">
+              <Col lg={3} md={4} key={member.firstName + member.lastName} className="mb-5 mb-lg-5">
                 <div className="feature-1 border person text-center">
-                  {avatar && <GatsbyImage image={avatar} className="img-fluid" alt={member.name} />}
+                  {avatar && <GatsbyImage image={avatar} className="img-fluid" alt={member.firstName + member.lastName} />}
                   <div className="feature-1-content">
                     <h2>
-                      {member.name}
+                      {t('about.members.name', { firstName: member.firstName, lastName: member.lastName })}
                       {member.title && `, ${member.title}`}
                     </h2>
-                    <span className="position mb-3 d-block">{member.position}</span>
+                    <span className="position mb-3 d-block">{member.position && t(member.position)}</span>
                     <p>
                       {member.homePage && (
                         <a target="_blank" rel="noopener noreferrer" href={member.homePage}>
