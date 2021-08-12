@@ -77,10 +77,8 @@ export const query = graphql`
   query EducationPageQueries {
     subjects: allSubjectsYaml {
       nodes {
-        title
+        translationPrefix
         type
-        heading
-        description
         portalPage
         webPage
         featuredImage {
@@ -92,9 +90,7 @@ export const query = graphql`
     }
     specializations: allSpecializationsYaml {
       nodes {
-        title
-        subtitle
-        paragraphs
+        translationPrefix
         url
         featuredImage {
           childImageSharp {
@@ -105,8 +101,8 @@ export const query = graphql`
     }
     achievements: allAchievementsYaml {
       nodes {
-        category
-        descHtmlRaw
+        translationPrefix
+        links
         featuredImage {
           childImageSharp {
             gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])

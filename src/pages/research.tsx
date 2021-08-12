@@ -122,10 +122,8 @@ export const query = graphql`
     }
     events: allEventsYaml {
       nodes {
-        title
-        subtitle
+        translationPrefix
         url
-        desc
         featuredImage {
           childImageSharp {
             gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])

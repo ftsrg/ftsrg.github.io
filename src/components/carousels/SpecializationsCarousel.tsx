@@ -32,19 +32,18 @@ const SpecializationsCarousel: React.FC<Props> = ({ nodes }) => {
       {nodes.map((spec) => {
         const image = getImage(spec.featuredImage)
         return (
-          <div key={spec.title} className="px-3">
+          <div key={spec.translationPrefix} className="px-3">
             <div className="ftco-testimonial-1">
               <div className="ftco-testimonial-vcard d-flex align-items-center mb-4">
-                {image && <GatsbyImage image={image} alt={spec.title} className="img-fluid img-rounded mr-3" />}
+                {image && <GatsbyImage image={image} alt={spec.translationPrefix} className="img-fluid img-rounded mr-3" />}
                 <div>
-                  <h3>{t(spec.title)}</h3>
-                  <span>{t(spec.subtitle)}</span>
+                  <h3>{t(`${spec.translationPrefix}.title`)}</h3>
+                  <span>{t(`${spec.translationPrefix}.subtitle`)}</span>
                 </div>
               </div>
               <div>
-                {spec.paragraphs.map((p) => (
-                  <p key={p}>{t(p)}</p>
-                ))}
+                <p>{t(`${spec.translationPrefix}.p1`)}</p>
+                <p>{t(`${spec.translationPrefix}.p2`)}</p>
                 <p>
                   <a target="_blank" rel="noopener noreferrer" href={spec.url}>
                     {t('commons.readMore')}
