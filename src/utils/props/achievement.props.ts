@@ -1,9 +1,9 @@
 import { ImageDataLike } from 'gatsby-plugin-image'
 
-interface StudentAchievementProps {
+interface AchievementProps {
   category: string
   descHtmlRaw: string
   featuredImage: ImageDataLike
 }
 
-export default StudentAchievementProps
+export default AchievementProps

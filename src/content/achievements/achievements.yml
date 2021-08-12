@@ -1,5 +1,5 @@
 - category: Tudományos cikkek
-  featuredImage: ../images/student-achievements/emsoft-new-york.jpg
+  featuredImage: ../images/achievements/emsoft-new-york.jpg
   descHtmlRaw: >-
     Hallgatóinkkal elért közös eredményeink rangos tudományos publikációkban
     jelennek meg. Az elmúlt években például az
@@ -7,13 +7,13 @@
     <a href="https://inf.mit.bme.hu/research/publications/distributed-graph-queries-over-modelsruntime-runtime-monitoring-cyber-physical">STTT</a>
     és <a href="https://doi.org/10.1002/stvr.1627">STVR</a> vezető folyóiratokban jelent meg hallgatókkal közösen írt cikkünk.
 - category: Jellemző munkahelyek
-  featuredImage: ../images/student-achievements/workplaces.png
+  featuredImage: ../images/achievements/workplaces.png
   descHtmlRaw: >-
     Hallgatóinknak nem esik nehezükre elhelyezkedni a végzés után: start-up
     cégeknél, multinacionális cégek hazai vagy akár
     nemzetközi fejlesztőközpontjaiban mind-mind megtalálhatók volt hallgatóink, nem ritkán senior pozícióban.
 - category: Pályázatok és ösztöndíjak
-  featuredImage: ../images/student-achievements/tdk-awards.png
+  featuredImage: ../images/achievements/tdk-awards.png
   descHtmlRaw: >-
     A <a href="https://www.mit.bme.hu/events/2020/11/12/magas-tanszeki-reszvetel-es-kiemelkedo-eredmenyek-az-idei-tdk-konferencian"
     target="_blank" rel="noopener noreferrer">TDK</a>

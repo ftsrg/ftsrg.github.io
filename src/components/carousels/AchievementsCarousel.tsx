@@ -2,13 +2,13 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import Slider from 'react-slick'
-import { StudentAchievementProps } from '~utils/props'
+import { AchievementProps } from '~utils/props'
 
 type Props = {
-  nodes: Array<StudentAchievementProps>
+  nodes: Array<AchievementProps>
 }
 
-const StudentAchievementsCarousel: React.FC<Props> = ({ nodes }) => {
+const AchievementsCarousel: React.FC<Props> = ({ nodes }) => {
   const { t } = useTranslation()
 
   return (
@@ -55,4 +55,4 @@ const StudentAchievementsCarousel: React.FC<Props> = ({ nodes }) => {
   )
 }
 
-export default StudentAchievementsCarousel
+export default AchievementsCarousel

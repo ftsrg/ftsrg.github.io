@@ -83,8 +83,8 @@ export default {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `student-achievement`,
-        path: `${path.join(__dirname, '../src/content/student-achievements')}`
+        name: `achievement`,
+        path: `${path.join(__dirname, '../src/content/achievements')}`
       }
     },
     {
