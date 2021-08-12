@@ -1,4 +1,5 @@
 import { useLocation } from '@reach/router'
+import { Link } from 'gatsby'
 import React, { useEffect, useState } from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { Button, Col, Container, Nav, Navbar, NavDropdown, Row } from 'react-bootstrap'
@@ -48,8 +49,10 @@ const NavBar: React.FC = () => {
 
       <Navbar id="navbar" bg="light" className="fixed-top site-navbar" expand="lg">
         <Container className={`site-navcontainer align-items-center ${isShrinked ? 'shrinked' : ''}`}>
-          <Navbar.Brand className="pr-4" href="/">
-            <img src="/images/ftsrg.png" alt="..." className="img-fluid" style={{ height: '3rem' }} />
+          <Navbar.Brand className="pr-4" as="div">
+            <Link to="/">
+              <img src="/images/ftsrg.png" alt="..." className="img-fluid" style={{ height: '3rem' }} />
+            </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon" />
@@ -73,15 +76,15 @@ const NavBar: React.FC = () => {
                   }
 
                   return (
-                    <Nav.Link className="active" key={item.id} href={item.href}>
-                      {t(item.title)}
+                    <Nav.Link className="active" key={item.id} as="div">
+                      <Link to={item.href}>{t(item.title)}</Link>
                     </Nav.Link>
                   )
                 }
 
                 return (
-                  <Nav.Link key={item.id} href={item.href}>
-                    {t(item.title)}
+                  <Nav.Link key={item.id} as="div">
+                    <Link to={item.href}>{t(item.title)}</Link>
                   </Nav.Link>
                 )
               })}
