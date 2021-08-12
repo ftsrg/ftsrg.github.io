@@ -1,4 +1,6 @@
 {
+  "contact.heroTitle": "$t(nav.contact.title)",
+  "contact.heroDesc": "TODO Elérhetőség, térkép és fényképek",
   "contact.address.title": "TODO Megközelítés",
   "contact.address.line1": "TODO BME I épület, B szárny 4. emelet",
   "contact.address.line2": "TODO Magyar tudósok körútja 2.",

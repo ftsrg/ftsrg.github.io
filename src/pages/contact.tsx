@@ -13,7 +13,7 @@ const ContactPage: React.FC<PageProps> = () => {
   return (
     <Layout>
       <SEO />
-      <TopHero heroTitle="pages.contact.heroTitle" heroDesc="pages.contact.heroDesc" bgImageUrl="/images/bg_3.jpg" />
+      <TopHero heroTitle="contact.heroTitle" heroDesc="contact.heroDesc" bgImageUrl="/images/bg_3.jpg" />
       <Breadcrumbs title="nav.contact.title" />
 
       <div className="site-section">

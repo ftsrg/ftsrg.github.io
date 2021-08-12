@@ -5,18 +5,18 @@ import Slider from 'react-slick'
 
 const cardsData = [
   {
-    title: 'education.studentwork.cardOne.title',
+    title: 'education.studentwork.card1.title',
     subTitleLinkText: 'Impulzus 41:2',
     subTitleLinkUrl: 'http://www.impulzus.com/content/archivum/41/2.pdf',
     page: 47,
-    desc: 'education.studentwork.cardOne.desc'
+    desc: 'education.studentwork.card1.desc'
   },
   {
-    title: 'education.studentwork.cardTwo.title',
+    title: 'education.studentwork.card2.title',
     subTitleLinkText: 'Impulzus 42:2',
     subTitleLinkUrl: 'http://www.impulzus.com/content/archivum/42/2.pdf',
     page: 51,
-    desc: 'education.studentwork.cardTwo.desc'
+    desc: 'education.studentwork.card2.desc'
   }
 ]
 

@@ -32,7 +32,7 @@ const ResearchPage: React.FC<ResearchPageProps> = ({ data }) => {
   return (
     <Layout>
       <SEO />
-      <TopHero heroTitle="pages.research.heroTitle" heroDesc="pages.research.heroDesc" bgImageUrl="/images/bg_5.jpg" />
+      <TopHero heroTitle="research.heroTitle" heroDesc="research.heroDesc" bgImageUrl="/images/bg_5.jpg" />
       <Breadcrumbs title="nav.research.title" />
 
       <div id="projects" className="site-section">

@@ -22,7 +22,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ data }) => {
   return (
     <Layout>
       <SEO />
-      <TopHero heroTitle="pages.about.heroTitle" heroDesc="pages.about.heroDesc" bgImageUrl="/images/bg_6.jpg" />
+      <TopHero heroTitle="about.heroTitle" heroDesc="about.heroDesc" bgImageUrl="/images/bg_6.jpg" />
       <Breadcrumbs title="nav.about.title" />
       <Intro />
       <Members nodes={data.members.nodes} />

@@ -11,8 +11,8 @@ const NotFoundPage: React.FC<PageProps> = () => {
     <Layout>
       <SEO robots="noindex, nofollow" />
       <Container className="text-center font-weight-bold my-5">
-        <h1>{t('pages.404.title')}</h1>
-        <h2>{t('pages.404.notFoundText')}</h2>
+        <h1>{t('commons.404.title')}</h1>
+        <h2>{t('commons.404.notFoundText')}</h2>
       </Container>
     </Layout>
   )
