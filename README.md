@@ -1,58 +1,38 @@
 # ftsrg-next
 
-Project code copied from [gatsby-starter-i18n-react-i18next](https://code.habd.as/comfusion/gatsby-starter-i18n-react-i18next), special thanks to Josh Habdas.
+Base code copied from [gatsby-starter-i18n-react-i18next](https://code.habd.as/comfusion/gatsby-starter-i18n-react-i18next), special thanks to Josh Habdas.
 
-Introducing the portfolio and blog of the Critical Systems Research Group - better known as Ftsrg. Production site live at [Netlify](https://ftsrg-kir-dev.netlify.app/) for testing preview.
+Introducing the portfolio and blog of the Critical Systems Research Group - better known as Ftsrg.
 
-Project built with
-* [React](https://reactjs.org/)
-* [Gatsby](https://www.gatsbyjs.org/)
-* [React Bootstrap](https://react-bootstrap.github.io/) as UI
+Table of contents:
 
-## Included
+- [Contributing](#contributing)
+- [Tech Stack](#readmes)
+- [Good to know](#good-to-know)
+- [License](#license)
 
-- Gatsby configuration written in TypeScript.
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md). It's written in Hungarian.
+
+## Tech Stack
+
+- [Gatsby](https://www.gatsbyjs.org/) - Gatsby configuration written in TypeScript
 - [Jest](https://jestjs.io/) testing framework using [Testing Library](https://testing-library.com/) with integrated [test-utils](https://testing-library.com/docs/react-testing-library/setup#configuring-jest-with-test-utils) and example tests.
+  - No test written yet, this is optional for the project.
 - Functional [React](https://reactjs.org/) component examples written in [TypeScript](https://www.typescriptlang.org/) (strict) and using [React Hooks](https://reactjs.org/docs/hooks-reference.html) API.
-- Internationalization with [react-i18next](https://react.i18next.com/) and button to toggle between English and Bahasa Indonesia.
+- UI provided by bootstrap, using the [React Bootstrap](https://react-bootstrap.github.io/) components.
+- Internationalization with [react-i18next](https://react.i18next.com/) and button to toggle between English and Hungarian.
 - Automatic, in-browser language detection via integrated [i18next plugin](https://github.com/i18next/i18next-browser-languageDetector).
-- SEO component with Open Graph images, Large Twitter Cards, robots meta, keywords and Canonical URLs.
+- SEO component with Open Graph images, robots meta, keywords and Canonical URLs.
 
-## Requirements
+## Good to know
 
-- Node
-- TypeScript
-- Yarn
-- VSCode (as recommended text editor)
-
-## Installation
-
-1. Clone this repository to you machine. Recommended text editor is VSCode.
-1. Copy `.env.example` to `.env.development` and `env.production`.
-1. Run `yarn` to install dependencies.
-
-## Usage
-
-- Run `yarn dev` to start development server.
-- Run `yarn test` to run unit tests. Add `--watch` to watch for changes.
-- Run `yarn type-check` to run type checker.
-- Run `yarn analyze` to inspect JS bundle sizes.
-- Run `yarn build` to build site for production.
-- Run `yarn serve` to view production build.
-- Run `yarn clean` to clear cached files.
-- Run `yarn format` to prettify code.
-
-## Language
-
-This starter assumes you don't want to generate a new page for every language but instead want to translate the interface only. If you're looking to generate new pages for each language, this may not be the starter you're looking for.
-
-To deep link to a page in Bahasa Indonesia add `?locale=id` to the end of the URL. For English replace `id` with `en`. Modify the query string key used along with other language settings in `src/lib/i18next.ts`.
-
-## Browsers
+### Browsers
 
 [By default](https://www.gatsbyjs.org/docs/browser-support/) Gatsby supports [these browsers](https://browserl.ist/?q=%22%3E0.25%25%22%2C+%22not+dead%22). This starter customizes the Gatsby defaults and uses [the defaults](https://browserl.ist/?q=defaults) provided by [Browserslist](https://github.com/browserslist/browserslist) instead. Remove `.browsersrc` if you wish to restore the default Gatsby settings. Note this will affect the size of your bundled JavaScipt files. See [Performance](#performance) for more information on bundle sizes.
 
-## Performance
+### Performance
 
 Gatsby uses server-side rendering to generate static HTML files during its build process. In addition to HTML files Gatsby will also generate a number of JavaScript bundles loaded at runtime to perform [Hijax](https://domscripting.com/blog/display/41). As more code is added to your site it may become bloated which can impede performance and damage search rankings. Here are some tips to help keep your site running fast:
 
@@ -65,7 +45,7 @@ Gatsby uses server-side rendering to generate static HTML files during its build
 
 Don't optimize too early or you may end up optimizing things you decide you don't need later on.
 
-## SEO
+### SEO
 
 Unlike most starters a `keywords` field is provided in the `siteMetadata.keywords` object in `config/gatsby-config.ts`. While some search engines may not utilize this field to curb keyword stuffing it's metadata and you may find other uses for it. Keywords may be overridden on a page-by-page basis if desired. To do so pass the `keywords` prop to the `SEO` component in your TSX files like:
 
@@ -77,13 +57,13 @@ const PageSpecificKeywords = () => (
 
 To instruct search engines and other spiders not to crawl the website add `noindex, nofollow` to `siteMetadata.robots` in `config/gatsby-config.ts`. You may wish to do this if, for instance, you're testing your production deployment and do yet wish to appear in search engines. Like `keywords` this may be set on a page-by-page basis. Use it to prevent legal pages and other low-value pages from appearing in search engines.
 
-## Environment
+### Environment
 
 An empty `.env.example` file has been left in this project. This is where environment variables keys and sample values can be documented and checked in along with the source code. Add actual key names used inside but either leave their values blank or use phony values those keys. **Do not place actual key values in this file.** Those should be kept outside of source control.
 
 See [Environment Variables](https://www.gatsbyjs.org/docs/environment-variables/) in the Gatsby docs for more information.
 
-## Rights
+## License
 
 Copyright © 2020 Josh Habdas <jhabdas@protonmail.com>
 
