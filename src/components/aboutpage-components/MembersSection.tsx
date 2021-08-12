@@ -2,7 +2,7 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
-import { FaGithub, FaGraduationCap, FaHome, FaLinkedin } from 'react-icons/fa'
+import { FaGithub, FaGraduationCap, FaHome, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import { MemberProps } from '~utils/props'
 
 type Props = {
@@ -42,6 +42,11 @@ const MembersSection: React.FC<Props> = ({ nodes }) => {
                       {member.githubPage && (
                         <a target="_blank" rel="noopener noreferrer" href={member.githubPage}>
                           <FaGithub style={{ marginRight: '0.25rem' }} size="1.25rem" />
+                        </a>
+                      )}
+                      {member.twitterPage && (
+                        <a target="_blank" rel="noopener noreferrer" href={member.twitterPage}>
+                          <FaTwitter style={{ marginRight: '0.25rem' }} size="1.25rem" />
                         </a>
                       )}
                       {member.linkedInPage && (

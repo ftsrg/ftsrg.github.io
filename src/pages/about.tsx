@@ -46,6 +46,7 @@ export const query = graphql`
         homePage
         scholarPage
         githubPage
+        twitterPage
         avatar {
           childImageSharp {
             gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
