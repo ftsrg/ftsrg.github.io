@@ -5,21 +5,18 @@ import Hero from '~components/Hero'
 
 const toolsData = [
   {
-    title: 'A Gamma állapotgép-kompozíciós keretrendszer',
-    desc: `A Gamma modellezőeszköz reaktív rendszerek komponensalapú tervezését, formális ellenőrzését, illetve implementációjának
-    automatikus előállítását teszi lehetővé.`,
+    title: 'research.tools.tool1.title',
+    desc: 'research.tools.tool1.desc',
     url: 'https://github.com/ftsrg/Gamma'
   },
   {
-    title: 'A Theta modellellenőrző keretrendszer',
-    desc: `A Theta modellellenőrző keretrendszer absztrakció-finomítás alapú, korszerű algoritmusok kollekciója, amelyek kombinálhatóságuk
-    révén mindig az adott problémához szabhatók.`,
+    title: 'research.tools.tool2.title',
+    desc: 'research.tools.tool2.desc',
     url: 'https://github.com/ftsrg/Theta'
   },
   {
-    title: 'A VIATRA Solver gráfgenerátor keretrendszer',
-    desc: `A VIATRA Solver egy keretrendszer, amely szakterület-specifikus nyelvek jólformált és változatos példánymodelljeinek automatikus
-    és skálázódó generálására szolgál.`,
+    title: 'research.tools.tool3.title',
+    desc: 'research.tools.tool3.desc',
     url: 'https://github.com/viatra/VIATRA-Generator'
   }
 ]
@@ -28,15 +25,15 @@ const ToolsSection: React.FC = () => {
   const { t } = useTranslation()
 
   return (
-    <Hero id="tools" bgImageUrl="/images/bg_4.jpg" heroTitle="Eszközeink" isHeroTitleCentered>
+    <Hero id="tools" bgImageUrl="/images/bg_4.jpg" heroTitle="research.tools.title" isHeroTitleCentered>
       <Row>
         {toolsData.map((data) => (
-          <Col lg={4} md={6} className="mb-5 mb-lg-0">
+          <Col key={data.title} lg={4} md={6} className="mb-5 mb-lg-0">
             <h3>{t(data.title)}</h3>
             <p>{t(data.desc)}</p>
             <p>
               <a target="_blank" rel="noopener noreferrer" href={data.url}>
-                Bővebben
+                {t('commons.readMore')}
               </a>
             </p>
           </Col>

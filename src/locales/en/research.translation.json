@@ -1,1 +1,21 @@
-{}
+{
+  "research.heroTitle": "$t(nav.research.title)",
+  "research.heroDesc": "TODO Út az alap és alkalmazott kutatáson át az innovációig",
+  "research.projects.title": "$t(nav.research.projects)",
+  "research.events.title": "$t(nav.research.events)",
+  "research.publications.title": "$t(nav.research.publications)",
+  "research.tools.title": "$t(nav.research.tools)",
+  "research.projects.description": "TODO A kutatócsoport az elmúlt 25 évben több mint húsz nagy EU-s kutatási projektben (FP4-H2020) és 25-nél is több közvetlen ipari együttműködésben vett részt. Kutatás-fejlesztési projektjeinkben olyan új, innovatív szoftveralapú megoldásokat hozunk létre, amelyek jelentősen megkönnyítik a mérnökök munkáját.",
+  "research.projects.counter1.title": "TODO EU-s kutatási projekt",
+  "research.projects.counter2.title": "TODO Ipari együttműködés",
+  "research.projects.counter3.title": "TODO Hazai és bilaterális projekt",
+  "research.publications.fullPubList": "TODO Teljes publikációs lista",
+  "research.publications.dataSets": "TODO Adathalmazok",
+  "research.publications.description": "TODO Kutatócsoportunk rendszeresen publikál a szoftvertechnológia (TSE, IST, STTT), modellalapú fejlesztés (MODELS, SoSyM), a formális verifikáció (TACAS, JAR) és a szoftvertesztelés (ICST, STVR) vezető konferenciáin és folyóirataiban.",
+  "research.tools.tool1.title": "TODO A Gamma állapotgép-kompozíciós keretrendszer",
+  "research.tools.tool1.desc": "TODO A Gamma modellezőeszköz reaktív rendszerek komponensalapú tervezését, formális ellenőrzését, illetve implementációjának automatikus előállítását teszi lehetővé.",
+  "research.tools.tool2.title": "TODO A Theta modellellenőrző keretrendszer",
+  "research.tools.tool2.desc": "TODO A Theta modellellenőrző keretrendszer absztrakció-finomítás alapú, korszerű algoritmusok kollekciója, amelyek kombinálhatóságuk révén mindig az adott problémához szabhatók.",
+  "research.tools.tool3.title": "TODO A VIATRA Solver gráfgenerátor keretrendszer",
+  "research.tools.tool3.desc": "TODO A VIATRA Solver egy keretrendszer, amely szakterület-specifikus nyelvek jólformált és változatos példánymodelljeinek automatikus és skálázódó generálására szolgál."
+}

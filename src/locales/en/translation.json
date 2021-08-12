@@ -1,16 +1,9 @@
 {
-  "pages.404.title": "404: Not found",
-  "pages.404.heading": "NOT FOUND",
-  "pages.404.notFoundText": "You just hit a route that doesn't exist...",
-  "pages.about.heroTitle": "A kutatócsoport",
-  "pages.about.heroDesc": "Munkatársaink és hallgatóink bemutatása",
-  "pages.contact.heroTitle": "Kapcsolat",
-  "pages.contact.heroDesc": "Elérhetőség, térkép és fényképek",
-  "pages.education.heroTitle": "Oktatás és tehetséggondozás",
-  "pages.education.heroDesc": "A csoport a mérnökinformatikus BSc, MSc és PhD képzésben is jelen van, választható tárgyaink pedig izgalmas és naprakész tudást adnak hallgatóinknak.",
-  "pages.research.heroTitle": "Kutatás-fejlesztés",
-  "pages.research.heroDesc": "Út az alap és alkalmazott kutatáson át az innovációig",
-  "pages.home.heroTitle": "Critical Systems Research Group",
-  "pages.home.heroDesc": "„Forging technology from science”",
-  "commons.readMore": "Read more"
+  "commons.404.title": "404: Not found",
+  "commons.404.notFoundText": "You just hit a route that doesn't exist...",
+  "commons.ftsrgFullName": "Critical Systems Research Group",
+  "commons.ftsrgQuote": "„Forging technology from science”",
+  "commons.readMore": "Read more",
+  "footer.contactHero.haveQuestion": "Questions not answered?",
+  "footer.contactHero.askMe": "Contact <0>{{firstName}} {{lastName}}, PhD</0> with questions related to our research group"
 }

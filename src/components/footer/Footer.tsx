@@ -1,7 +1,7 @@
 import { Link } from 'gatsby'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import { useTranslation } from 'react-i18next'
+import { Trans, useTranslation } from 'react-i18next'
 import FooterNav from './FooterNav'
 
 type Props = {
@@ -22,13 +22,17 @@ const Footer: React.FC<Props> = ({ hasContact }) => {
                   <img src="/images/members/micskei-small.png" alt="Micskei Zoltán" width="100px" className="mr-4" />
                 </a>
                 <div>
-                  <h2>Kérdésed van?</h2>
+                  <h2>{t('footer.contactHero.haveQuestion')}</h2>
                   <p className="mb-0">
-                    A kutatócsoporttal kapcsolatos kérdésekkel keresd{' '}
-                    <a href="http://mit.bme.hu/~micskeiz" target="_blank" rel="noopener noreferrer">
-                      Dr. Micskei Zoltánt
-                    </a>
-                    !
+                    <Trans
+                      i18nKey="footer.contactHero.askMe"
+                      values={{ firstName: 'Zoltán', lastName: 'Micskei' }}
+                      components={[
+                        <a href="http://mit.bme.hu/~micskeiz" target="_blank" rel="noopener noreferrer">
+                          Dr. Micskei Zoltán
+                        </a>
+                      ]}
+                    />
                   </p>
                 </div>
               </div>
@@ -41,7 +45,13 @@ const Footer: React.FC<Props> = ({ hasContact }) => {
           <Row className="justify-content-center pb-5">
             <Col lg={4} className="text-center px-5">
               <img src="/images/ftsrg-small-white.png" alt="..." width="120px" className="mb-4" />
-              <p>H-1117 Budapest, Magyar tudósok körútja&nbsp;2., I ép. B szárny, IV. em.</p>
+              <p>
+                {t('contact.address.line1')}
+                <br />
+                {t('contact.address.line2')}
+                <br />
+                {t('contact.address.line3')}
+              </p>
               <p>
                 <Link to="/contact">{t('nav.contact.title')}</Link>
               </p>

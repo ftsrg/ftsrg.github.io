@@ -1,25 +1,22 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import { useTranslation } from 'react-i18next'
+import { Trans, useTranslation } from 'react-i18next'
 import Slider from 'react-slick'
 
 const cardsData = [
   {
-    title: 'Rendszertervezés (BSc)',
+    title: 'education.studentwork.card1.title',
     subTitleLinkText: 'Impulzus 41:2',
     subTitleLinkUrl: 'http://www.impulzus.com/content/archivum/41/2.pdf',
     page: 47,
-    desc: `„Ezt a fajta rendszerben gondolkodást jól tükrözi az oktatás, miközben a tanultak kellően konkrétak, gyakorlatban is
-    hasznosak. Sikerült megtalálnom a kutatómunka örömét is, ugyanis a csoportban különösen figyelnek a hallgatók önálló szakmai
-    tevékenységére.”`
+    desc: 'education.studentwork.card1.desc'
   },
   {
-    title: 'Kritikus rendszerek (MSc)',
+    title: 'education.studentwork.card2.title',
     subTitleLinkText: 'Impulzus 42:2',
     subTitleLinkUrl: 'http://www.impulzus.com/content/archivum/42/2.pdf',
     page: 51,
-    desc: `„A BSc ágazat és az MSc szakirány messzemenően felülmúlta a korábbi elképzeléseimet és elvárásaimat. Nem gondoltam volna, hogy
-    ennyi érdekes témával lehet itt foglalkozni.”`
+    desc: 'education.studentwork.card2.desc'
   }
 ]
 
@@ -30,18 +27,19 @@ const StudentWorkSection: React.FC = () => {
     <div id="student-work" className="site-section">
       <Container>
         <h2 className="section-title-underline mb-5">
-          <span>Önálló munka</span>
+          <span>{t('education.studentwork.title')}</span>
         </h2>
         <Row className="justify-content-center">
           <Col xs={12}>
             <p>
-              Hallgatóink változatos témákon dolgozhatnak már a{' '}
-              <a href="https://inf.mit.bme.hu/edu/individual/taskgroups" target="_blank" rel="noopener noreferrer">
-                témalabortól
-              </a>{' '}
-              kezdődően: az ipari partnereink által inspirált gyakorlati fejlesztési feladatoktól kezdve az elméleti jellegű kutatási
-              témákig széles spektrumon biztosítunk konzultációt. Célunk, hogy hallgatóink olyan témákat találjanak, amikben elmélyülnek és
-              szakmailag fejlődnek.
+              <Trans
+                i18nKey="education.studentwork.description"
+                components={[
+                  <a href="https://inf.mit.bme.hu/edu/individual/taskgroups" target="_blank" rel="noopener noreferrer">
+                    témalabortól
+                  </a>
+                ]}
+              />
             </p>
           </Col>
           <Col md={9}>

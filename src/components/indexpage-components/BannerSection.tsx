@@ -16,9 +16,9 @@ const BannerSection: React.FC = () => {
           <Row className="align-items-center">
             <Col lg="12" className="mx-auto text-center">
               <img src="/images/ftsrg-large-white.png" className="intro-img mx-auto" alt="..." />
-              <h1>{t('pages.home.heroTitle')}</h1>
+              <h1>{t('commons.ftsrgFullName')}</h1>
               <hr className="ml-5 mr-5" />
-              <h2 className="font-italic">{t('pages.home.heroDesc')}</h2>
+              <h2 className="font-italic">{t('commons.ftsrgQuote')}</h2>
             </Col>
           </Row>
         </Container>

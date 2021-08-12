@@ -7,26 +7,23 @@ import EducationCounters from './EducationCounters'
 
 const cardsData = [
   {
-    category: 'Oktatás',
-    title: 'Képzésünk lefedi a kritikus rendszerek tervezésének, analízisének és üzemeltetésének legfontosabb területeit',
-    desc: `Három szakiránnyal (Rendszertervezés és Szoftverfejlesztés BSc-n, Kritikus rendszerek MSc-n) és több mint 12 tárggyal
-    várjuk az érdeklődő hallgatókat.`,
+    category: 'home.education.card1.category',
+    title: 'home.education.card1.title',
+    desc: 'home.education.card1.desc',
     path: '/education',
     thumbnail: '/images/education.png'
   },
   {
-    category: 'Tehetséggondozás',
-    title: 'Kiemelt figyelmet fordítunk a tehetséggondozásra, hallgatóink előkelő helyezéseket szereznek a kari és országos TDK-n',
-    desc: `Hallgatóink számos innovatív projekten dolgoznak, amelyek nemritkán önálló tudományos eredményekhez és ipari
-    együttműködésekhez vezetnek.`,
+    category: 'home.education.card2.category',
+    title: 'home.education.card2.title',
+    desc: 'home.education.card2.desc',
     path: '/education#talentcare',
     thumbnail: '/images/student-project.jpg'
   },
   {
-    category: 'Díjak, pályázatok',
-    title: 'Hallgatóink minden évben kiválóan szerepelnek a tanulmányi és kutatói pályázatokon, ösztöndíjakon',
-    desc: `Külföldi tanulmányutak, Rektori Különdíj, Új Nemzeti Kiválóság Program, Nemzeti Felsőoktatási Ösztöndíj, Kari és Egyetemi
-    BME Ösztöndíjak...`,
+    category: 'home.education.card3.category',
+    title: 'home.education.card3.title',
+    desc: 'home.education.card3.desc',
     path: '/education#achievements',
     thumbnail: '/images/awards.jpg'
   }
@@ -40,7 +37,7 @@ const EducationSection: React.FC = () => {
       <Container>
         <div className="mb-5 text-center">
           <h2 className="section-title-underline">
-            <span>Oktatás és tehetséggondozás</span>
+            <span>{t('home.education.title')}</span>
           </h2>
         </div>
         <EducationCounters />
@@ -78,7 +75,7 @@ const EducationSection: React.FC = () => {
                   <h2>{t(data.title)}</h2>
                   <p className="desc mb-4">{t(data.desc)}</p>
                   <Link to={data.path} className="btn btn-primary rounded-0 px-4">
-                    Bővebben
+                    {t('commons.readMore')}
                   </Link>
                 </div>
               </div>
