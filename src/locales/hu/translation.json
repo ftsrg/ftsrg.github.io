@@ -1,19 +1,17 @@
 {
-  "pages.404.title": "404: Not found",
-  "pages.404.heading": "NOT FOUND",
-  "pages.404.notFoundText": "You just hit a route that doesn't exist...",
-  "pages.about.heroTitle": "A kutatócsoport",
+  "pages.404.title": "404: Nem található az oldal",
+  "pages.404.notFoundText": "A keresett oldal nem található a webhelyen...",
+  "pages.about.heroTitle": "$t(nav.about.about)",
   "pages.about.heroDesc": "Munkatársaink és hallgatóink bemutatása",
-  "pages.contact.heroTitle": "Kapcsolat",
+  "pages.contact.heroTitle": "$t(nav.contact.title)",
   "pages.contact.heroDesc": "Elérhetőség, térkép és fényképek",
   "pages.education.heroTitle": "Oktatás és tehetséggondozás",
   "pages.education.heroDesc": "A csoport a mérnökinformatikus BSc, MSc és PhD képzésben is jelen van, választható tárgyaink pedig izgalmas és naprakész tudást adnak hallgatóinknak.",
-  "pages.research.heroTitle": "Kutatás-fejlesztés",
+  "pages.research.heroTitle": "$t(nav.research.title)",
   "pages.research.heroDesc": "Út az alap és alkalmazott kutatáson át az innovációig",
-  "pages.home.heroTitle": "Kritikus Rendszerek Kutatócsoport",
-  "pages.home.heroDesc": "„Átültetjük az elméletet a gyakorlatba”",
+  "commons.ftsrgFullName": "Kritikus Rendszerek Kutatócsoport",
+  "commons.ftsrgQuote": "„Átültetjük az elméletet a gyakorlatba”",
   "commons.readMore": "Bővebben",
   "footer.contactHero.haveQuestion": "Kérdésed van?",
-  "footer.contactHero.askMe": "A kutatócsoporttal kapcsolatos kérdésekkel keresd <0>Dr. {{lastName}} {{firstName}}t</0>!",
-  "footer.officeAddress": "H-1117 Budapest, Magyar tudósok körútja 2., I ép. B szárny, IV. em."
+  "footer.contactHero.askMe": "A kutatócsoporttal kapcsolatos kérdésekkel keresd <0>Dr. {{lastName}} {{firstName}}t</0>!"
 }

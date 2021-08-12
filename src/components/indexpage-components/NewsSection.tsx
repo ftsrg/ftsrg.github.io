@@ -20,7 +20,7 @@ const NewsSection: React.FC = () => {
         <Row className="justify-content-center text-center mb-5">
           <Col lg={6} className="social-media-container mb-5 mb-lg-0">
             <a className="twitter-timeline" data-width="400" data-height="500" href="https://twitter.com/ftsrg_bme?ref_src=twsrc%5Etfw">
-              {t('pages.home.heroTitle')} on Twitter
+              {t('commons.ftsrgFullName')} on Twitter
             </a>
           </Col>
           <Col lg={6} className="social-media-container">
@@ -36,7 +36,7 @@ const NewsSection: React.FC = () => {
               data-show-facepile="true"
             >
               <blockquote cite="https://www.facebook.com/ftsrg/" className="fb-xfbml-parse-ignore">
-                <a href="https://www.facebook.com/ftsrg/">{t('pages.home.heroTitle')} on Facebook</a>
+                <a href="https://www.facebook.com/ftsrg/">{t('commons.ftsrgFullName')} on Facebook</a>
               </blockquote>
             </div>
           </Col>

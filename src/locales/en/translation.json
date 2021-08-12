@@ -1,19 +1,17 @@
 {
   "pages.404.title": "404: Not found",
-  "pages.404.heading": "NOT FOUND",
   "pages.404.notFoundText": "You just hit a route that doesn't exist...",
-  "pages.about.heroTitle": "TODO A kutatócsoport",
+  "pages.about.heroTitle": "$t(nav.about.about)",
   "pages.about.heroDesc": "TODO Munkatársaink és hallgatóink bemutatása",
-  "pages.contact.heroTitle": "TODO Kapcsolat",
+  "pages.contact.heroTitle": "$t(nav.contact.title)",
   "pages.contact.heroDesc": "TODO Elérhetőség, térkép és fényképek",
   "pages.education.heroTitle": "TODO Oktatás és tehetséggondozás",
   "pages.education.heroDesc": "TODO A csoport a mérnökinformatikus BSc, MSc és PhD képzésben is jelen van, választható tárgyaink pedig izgalmas és naprakész tudást adnak hallgatóinknak.",
-  "pages.research.heroTitle": "TODO Kutatás-fejlesztés",
+  "pages.research.heroTitle": "$t(nav.research.title)",
   "pages.research.heroDesc": "TODO Út az alap és alkalmazott kutatáson át az innovációig",
-  "pages.home.heroTitle": "Critical Systems Research Group",
-  "pages.home.heroDesc": "„Forging technology from science”",
+  "commons.ftsrgFullName": "Critical Systems Research Group",
+  "commons.ftsrgQuote": "„Forging technology from science”",
   "commons.readMore": "Read more",
-  "footer.contactHero.haveQuestion": "Do you have questions?",
-  "footer.contactHero.askMe": "Contact <0>{{firstName}} {{lastName}}, Ph. D.</0> with questions related to our research group",
-  "footer.officeAddress": "TODO H-1117 Budapest, Magyar tudósok körútja 2., I ép. B szárny, IV. em."
+  "footer.contactHero.haveQuestion": "Questions not answered?",
+  "footer.contactHero.askMe": "Contact <0>{{firstName}} {{lastName}}, PhD</0> with questions related to our research group"
 }

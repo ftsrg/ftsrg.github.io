@@ -28,7 +28,7 @@ const ToolsSection: React.FC = () => {
     <Hero id="tools" bgImageUrl="/images/bg_4.jpg" heroTitle="research.tools.title" isHeroTitleCentered>
       <Row>
         {toolsData.map((data) => (
-          <Col lg={4} md={6} className="mb-5 mb-lg-0">
+          <Col key={data.title} lg={4} md={6} className="mb-5 mb-lg-0">
             <h3>{t(data.title)}</h3>
             <p>{t(data.desc)}</p>
             <p>
