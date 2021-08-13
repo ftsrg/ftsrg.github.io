@@ -1,9 +1,7 @@
 import { ImageDataLike } from 'gatsby-plugin-image'
 
 interface SpecializationProps {
-  title: string
-  subtitle: string
-  paragraphs: string[]
+  translationPrefix: string
   url: string
   featuredImage: ImageDataLike
 }

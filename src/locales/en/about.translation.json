@@ -6,5 +6,15 @@
   "about.members.title": "$t(nav.about.members)",
   "about.students.title": "$t(nav.about.students)",
   "about.intro.description": "TODO A kutatócsoportnak jelenleg 20 tagja van, akik közül 14-en rendelkeznek PhD fokozattal. A csoport ezen kívül minden évben 30 tehetséges hallgatóval dolgozik együtt, akik bekapcsolódnak a csoport mindennapi életébe.",
-  "about.students.paragraph": "TODO Rengeteg tehetséges hallgatóval dolgozunk együtt. Ők demonstrátorként bekapcsolódnak az általunk oktatott tárgyainkba, a kutatási projektjeinkben pedig saját módszerek és eszközök fejlesztésében vesznek részt."
+  "about.students.paragraph": "TODO Rengeteg tehetséges hallgatóval dolgozunk együtt. Ők demonstrátorként bekapcsolódnak az általunk oktatott tárgyainkba, a kutatási projektjeinkben pedig saját módszerek és eszközök fejlesztésében vesznek részt.",
+
+  "about.members.position.prof": "professor",
+  "about.members.position.assocProf": "associate professor",
+  "about.members.position.assocProfHabil": "associate professor habil.",
+  "about.members.position.seniorLecturer": "senior lecturer",
+  "about.members.position.resFellow": "research fellow",
+  "about.members.position.profMaster": "professor master",
+  "about.members.position.assistResFellow": "assistant research fellow",
+  "about.members.position.phdStudent": "PhD student",
+  "about.members.name": "{{firstName}} {{lastName}}"
 }

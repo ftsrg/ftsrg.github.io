@@ -231,7 +231,7 @@
   }
 
   .feature-1-content {
-    padding: 50px 20px 20px 20px;
+    padding: 2rem 1rem 1rem 1rem;
     text-align: center;
     h2 {
       font-size: 1.3rem;
@@ -286,11 +286,13 @@
       }
     }
 
+    // This class is very fragile
+    // If the image in course-item has bigger height, this class breaks the look and feel
     .price {
       position: absolute;
-      bottom: 0;
+      top: 0;
       right: 0;
-      transform: translatey(-100%);
+      transform: translatey(375%);
       padding: 10px 20px;
       background: $secondary;
       color: $white;

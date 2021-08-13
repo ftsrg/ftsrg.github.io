@@ -30,17 +30,17 @@ const EventsCarousel: React.FC<Props> = ({ nodes }) => {
       {nodes.map((event) => {
         const image = getImage(event.featuredImage)
         return (
-          <div key={event.title} className="px-3">
-            <div key={event.title} className="ftco-testimonial-1">
+          <div key={event.translationPrefix} className="px-3">
+            <div className="ftco-testimonial-1">
               <div className="ftco-testimonial-vcard d-flex align-items-center mb-4">
                 {image && <GatsbyImage image={image} alt="..." className="img-fluid mr-3" />}
                 <div>
-                  <h3>{t(event.title)}</h3>
-                  <span>{t(event.subtitle)}</span>
+                  <h3>{t(`${event.translationPrefix}.title`)}</h3>
+                  <span>{t(`${event.translationPrefix}.subtitle`)}</span>
                 </div>
               </div>
               <div>
-                <p>{t(event.desc)}</p>
+                <p>{t(`${event.translationPrefix}.desc`)}</p>
                 <p>
                   <a target="_blank" rel="noopener noreferrer" href={event.url}>
                     {t('commons.readMore')}

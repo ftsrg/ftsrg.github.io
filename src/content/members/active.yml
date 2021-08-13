@@ -1,22 +1,144 @@
-- name: Pataricza András
+- firstName: András
+  lastName: Pataricza
   title: DSc
-  position: egyetemi tanár
+  position: about.members.position.prof
   avatar: ../images/members/pataricza.jpg
   linkedInPage: https://hu.linkedin.com/in/andras-pataricza-6651345
   homePage: https://inf.mit.bme.hu/members/pataric
   scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10004524
-- name: Varró Dániel
+- firstName: Dániel
+  lastName: Varró
   title: DSc
-  position: egyetemi tanár
+  position: about.members.position.prof
   avatar: ../images/members/varro.jpg
   linkedInPage: https://www.linkedin.com/in/daniel-varro-3854bb49/
   homePage: https://varrodan.github.io/
   scholarPage: https://scholar.google.ca/citations?hl=en&user=4Ya6dVoAAAAJ
-- name: Molnár Vince
+- firstName: István
+  lastName: Majzik
   title: PhD
-  position: egyetemi adjunktus
+  position: about.members.position.assocProfHabil
+  avatar: ../images/members/majzik.jpg
+  linkedInPage: https://hu.linkedin.com/in/istvan-majzik-a2033387
+  homePage: https://inf.mit.bme.hu/members/majzik
+  scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10001448
+- firstName: Zoltán
+  lastName: Micskei
+  title: PhD
+  position: about.members.position.assocProf
+  avatar: ../images/members/micskei.jpg
+  linkedInPage: https://www.linkedin.com/in/zoltanmicskei
+  homePage: http://mit.bme.hu/~micskeiz
+  scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10041151
+  twitterPage: https://twitter.com/micskeiz
+- firstName: András
+  lastName: Vörös
+  title: PhD
+  position: about.members.position.assocProf
+  avatar: ../images/members/voros.jpg
+  homePage: https://inf.mit.bme.hu/members/vorosa
+  scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10042280
+- firstName: Gábor
+  lastName: Bergmann
+  title: PhD
+  position: about.members.position.seniorLecturer
+  avatar: ../images/members/bergmann.jpg
+  homePage: https://inf.mit.bme.hu/members/bergmann
+  scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10030431
+- firstName: László
+  lastName: Gönczy
+  title: PhD
+  position: about.members.position.seniorLecturer
+  avatar: ../images/members/gonczy.jpg
+  homePage: https://inf.mit.bme.hu/members/gonczy
+  scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10041117
+- firstName: Ákos
+  lastName: Horváth
+  title: PhD
+  position: about.members.position.seniorLecturer
+  avatar: ../images/members/horvath.jpg
+  homePage: https://inf.mit.bme.hu/members/ahorvath
+  scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10030432
+- firstName: Imre
+  lastName: Kocsis
+  title: PhD
+  position: about.members.position.seniorLecturer
+  avatar: ../images/members/kocsis.png
+  homePage: https://inf.mit.bme.hu/members/ikocsis
+  scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10040986
+- firstName: Vince
+  lastName: Molnár
+  title: PhD
+  position: about.members.position.seniorLecturer
   avatar: ../images/members/molnar.jpg
   linkedInPage: https://www.linkedin.com/in/molnarv
   homePage: https://inf.mit.bme.hu/members/molnarv
   scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10049620
   githubPage: https://github.com/vincemolnar
+- firstName: István
+  lastName: Ráth
+  title: PhD
+  position: about.members.position.seniorLecturer
+  avatar: ../images/members/rath.jpg
+  homePage: https://inf.mit.bme.hu/members/rath
+  scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10030433
+- firstName: Oszkár
+  lastName: Semeráth
+  title: PhD
+  position: about.members.position.resFellow
+  avatar: ../images/members/semerath.jpg
+  homePage: https://inf.mit.bme.hu/members/semeratho
+  scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10045161
+- firstName: Zoltán
+  lastName: Szatmári
+  title: PhD
+  position: about.members.position.seniorLecturer
+  avatar: ../images/members/szatmari.jpg
+  homePage: https://inf.mit.bme.hu/members/szatmari
+  scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10041937
+- firstName: Gábor
+  lastName: Huszerl
+  position: about.members.position.profMaster
+  avatar: ../images/members/huszerl.jpg
+  linkedInPage: https://www.linkedin.com/in/huszerl
+  homePage: https://www.mit.bme.hu/~huszerl
+  scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10041041
+- firstName: Attila
+  lastName: Klenik
+  position: about.members.position.assistResFellow
+  avatar: ../images/members/klenik.jpg
+  homePage: https://inf.mit.bme.hu/members/klenika
+  scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10056599
+- firstName: Márton
+  lastName: Elekes
+  position: about.members.position.phdStudent
+  avatar: ../images/members/elekes.jpg
+  homePage: https://inf.mit.bme.hu/members/elekesm
+  scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10071424
+  githubPage: https://github.com/marci543
+- firstName: Rebeka
+  lastName: Farkas
+  position: about.members.position.phdStudent
+  avatar: ../images/members/farkas.jpg
+  homePage: https://inf.mit.bme.hu/members/farkasr
+  scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10058544
+- firstName: András
+  lastName: Földvári
+  position: about.members.position.phdStudent
+  avatar: ../images/members/foldvari.png
+  homePage: null
+  scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10068408
+- firstName: Bence
+  lastName: Graics
+  position: about.members.position.phdStudent
+  avatar: ../images/members/graics.jpg
+  linkedInPage: https://www.linkedin.com/in/bence-graics-9085a6125/
+  homePage: https://inf.mit.bme.hu/members/graicsb
+  scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10068239
+  githubPage: https://github.com/grbeni
+- firstName: Kristóf
+  lastName: Marussy
+  position: about.members.position.phdStudent
+  avatar: ../images/members/marussy.jpg
+  homePage: https://inf.mit.bme.hu/members/marussyk
+  scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10062709

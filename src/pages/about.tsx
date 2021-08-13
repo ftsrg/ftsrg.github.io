@@ -38,13 +38,15 @@ export const query = graphql`
   query AboutPageQueries {
     members: allActiveYaml {
       nodes {
-        name
+        firstName
+        lastName
         title
         position
         linkedInPage
         homePage
         scholarPage
         githubPage
+        twitterPage
         avatar {
           childImageSharp {
             gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
@@ -54,7 +56,8 @@ export const query = graphql`
     }
     formermembers: allInactiveYaml {
       nodes {
-        name
+        firstName
+        lastName
         title
         linkedInPage
       }

@@ -1,8 +1,8 @@
 import { ImageDataLike } from 'gatsby-plugin-image'
 
 interface AchievementProps {
-  category: string
-  descHtmlRaw: string
+  translationPrefix: string
+  links?: string[]
   featuredImage: ImageDataLike
 }
 

@@ -1,7 +1,8 @@
 import { ImageDataLike } from 'gatsby-plugin-image'
 
 export default interface MemberProps {
-  name: string
+  firstName: string
+  lastName: string
   title?: string
   position?: string
   avatar?: ImageDataLike
@@ -9,4 +10,5 @@ export default interface MemberProps {
   homePage?: string
   scholarPage?: string
   githubPage?: string
+  twitterPage?: string
 }
