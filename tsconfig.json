@@ -1,5 +1,5 @@
 {
-  "include": ["./src/**/*", "./typings/**/*", "./config/*"],
+  "include": ["./src/**/*", "./typings/**/*", "./config/*", "./*"],
   "compilerOptions": {
     "module": "commonjs",
     "target": "esnext",
