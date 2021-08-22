@@ -61,35 +61,49 @@ const Footer: React.FC<Props> = ({ hasContact }) => {
             <FooterNav />
           </Row>
 
-          <div className="pt-5 text-center">
-            <p>
-              Copyright &copy; 2021 All rights reserved | Template by{' '}
-              <a href="https://colorlib.com" target="_blank" rel="noopener noreferrer">
-                Colorlib
-              </a>{' '}
-              | Photos taken by{' '}
-              <a href="https://www.instagram.com/photosbyakos/" target="_blank" rel="noopener noreferrer">
-                Ákos Hajdu
-              </a>
-              ,{' '}
-              <a href="https://www.pexels.com/" target="_blank" rel="noopener noreferrer">
-                Pexels
-              </a>
-              ,{' '}
-              <a href="https://pixabay.com/" target="_blank" rel="noopener noreferrer">
-                Pixabay
-              </a>
-              ,{' '}
-              <a href="https://spot.sch.bme.hu/" target="_blank" rel="noopener noreferrer">
-                SPOT
-              </a>{' '}
-              and{' '}
-              <a href="https://home.cern/resources?type=59" target="_blank" rel="noopener noreferrer">
-                CERN
-              </a>
-              .
-            </p>
-          </div>
+          <Row className="pt-5 justify-content-center">
+            <Col xs="auto">
+              <img src="/images/logos/kirdev.png" alt="Kir-Dev" height="46" />
+            </Col>
+            <Col xs="auto">
+              <Trans
+                i18nKey="footer.collabWithKirdev"
+                components={[
+                  <br />,
+                  <a href="https://kir-dev.sch.bme.hu/" target="_blank" rel="noopener noreferrer">
+                    Kir-Dev
+                  </a>
+                ]}
+              />
+            </Col>
+            <Col xs={12} md className="text-center text-md-right mt-4 mt-md-0">
+              Copyright &copy; {new Date().getFullYear()}{' '}
+              <Trans
+                i18nKey="footer.rightsAndSources"
+                components={[
+                  <a href="https://colorlib.com" target="_blank" rel="noopener noreferrer">
+                    Colorlib
+                  </a>,
+                  <br />,
+                  <a href="https://www.instagram.com/photosbyakos/" target="_blank" rel="noopener noreferrer">
+                    Ákos Hajdu
+                  </a>,
+                  <a href="https://www.pexels.com/" target="_blank" rel="noopener noreferrer">
+                    Pexels
+                  </a>,
+                  <a href="https://pixabay.com/" target="_blank" rel="noopener noreferrer">
+                    Pixabay
+                  </a>,
+                  <a href="https://spot.sch.bme.hu/" target="_blank" rel="noopener noreferrer">
+                    SPOT
+                  </a>,
+                  <a href="https://home.cern/resources?type=59" target="_blank" rel="noopener noreferrer">
+                    CERN
+                  </a>
+                ]}
+              />
+            </Col>
+          </Row>
         </Container>
       </div>
     </>

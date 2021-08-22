@@ -1,17 +1,11 @@
 {
   "commons.404.title": "404: Nem található az oldal",
   "commons.404.notFoundText": "A keresett oldal nem található a webhelyen...",
-  "about.heroTitle": "$t(nav.about.about)",
-  "about.heroDesc": "Munkatársaink és hallgatóink bemutatása",
-  "contact.heroTitle": "$t(nav.contact.title)",
-  "contact.heroDesc": "Elérhetőség, térkép és fényképek",
-  "education.heroTitle": "Oktatás és tehetséggondozás",
-  "education.heroDesc": "A csoport a mérnökinformatikus BSc, MSc és PhD képzésben is jelen van, választható tárgyaink pedig izgalmas és naprakész tudást adnak hallgatóinknak.",
-  "research.heroTitle": "$t(nav.research.title)",
-  "research.heroDesc": "Út az alap és alkalmazott kutatáson át az innovációig",
   "commons.ftsrgFullName": "Kritikus Rendszerek Kutatócsoport",
   "commons.ftsrgQuote": "„Átültetjük az elméletet a gyakorlatba”",
   "commons.readMore": "Bővebben",
   "footer.contactHero.haveQuestion": "Kérdésed van?",
-  "footer.contactHero.askMe": "A kutatócsoporttal kapcsolatos kérdésekkel keresd <0>Dr. {{lastName}} {{firstName}}t</0>!"
+  "footer.contactHero.askMe": "A kutatócsoporttal kapcsolatos kérdésekkel keresd <0>Dr. {{lastName}} {{firstName}}t</0>!",
+  "footer.collabWithKirdev": "A weboldal a <1>Kir-Dev</1><0 />együttműködésével készült.",
+  "footer.rightsAndSources": "Minden jog fenntartva | Sablont a <0>Colorlib</0> biztosítja<1 />Fotók forrásai: <2>Hajdu Ákos</2>, <3>Pexels</3>, <4>Pixabay</4>, <5>SPOT</5> és <6>CERN</6>."
 }
