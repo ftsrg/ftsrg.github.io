@@ -6,6 +6,6 @@
   "commons.readMore": "Bővebben",
   "footer.contactHero.haveQuestion": "Kérdésed van?",
   "footer.contactHero.askMe": "A kutatócsoporttal kapcsolatos kérdésekkel keresd <0>Dr. {{lastName}} {{firstName}}t</0>!",
-  "footer.collabWithKirdev": "A weboldal készült a<0 /><1>Kir-Dev</1> együttműködésével.",
+  "footer.collabWithKirdev": "A weboldal a <1>Kir-Dev</1><0 />együttműködésével készült.",
   "footer.rightsAndSources": "Minden jog fenntartva | Sablont a <0>Colorlib</0> biztosítja<1 />Fotók forrásai: <2>Hajdu Ákos</2>, <3>Pexels</3>, <4>Pixabay</4>, <5>SPOT</5> és <6>CERN</6>."
 }
