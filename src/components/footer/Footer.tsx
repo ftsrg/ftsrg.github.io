@@ -61,13 +61,21 @@ const Footer: React.FC<Props> = ({ hasContact }) => {
             <FooterNav />
           </Row>
 
-          <div className="pt-5 text-center">
-            <p>
+          <Row className="pt-5 justify-content-center">
+            <Col xs="auto">
+              <img src="/images/logos/kirdev.png" alt="Kir-Dev" height="46" />
+            </Col>
+            <Col xs="auto">
+              Website developed in <br />
+              collaboration with <a href="https://kir-dev.sch.bme.hu/">Kir-Dev</a>
+            </Col>
+            <Col xs={12} md className="text-center text-md-right mt-4 mt-md-0">
               Copyright &copy; 2021 All rights reserved | Template by{' '}
               <a href="https://colorlib.com" target="_blank" rel="noopener noreferrer">
                 Colorlib
               </a>{' '}
-              | Photos taken by{' '}
+              <br />
+              Photos taken by{' '}
               <a href="https://www.instagram.com/photosbyakos/" target="_blank" rel="noopener noreferrer">
                 Ákos Hajdu
               </a>
@@ -88,8 +96,8 @@ const Footer: React.FC<Props> = ({ hasContact }) => {
                 CERN
               </a>
               .
-            </p>
-          </div>
+            </Col>
+          </Row>
         </Container>
       </div>
     </>
