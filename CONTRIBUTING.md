@@ -4,10 +4,10 @@ Ez a dokumentáció _nagyrészt_ magyarul íródik tekintettel a fejlesztők kö
 
 # TOC
 
-- [Szoftveres követelmények](#szoftveres-kovetelmenyek)
+- [Szoftveres követelmények](#szoftveres-követelmények)
 - [Github pages](#github-pages)
-- [A kódbázis](#a-kodbazis)
-- [Funkcionalitások](#funkcionalitasok)
+- [A kódbázis](#a-kódbázis)
+- [Funkcionalitások](#funkcionalitások)
 
 ## Szoftveres követelmények
 
