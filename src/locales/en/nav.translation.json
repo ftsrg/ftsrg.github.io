@@ -1,9 +1,9 @@
 {
   "nav.home.title": "Home",
   "nav.home.shortTitle": "$t(nav.home.title)",
-  "nav.home.competences": "Professional compentences",
+  "nav.home.competences": "Professional compentencies",
   "nav.home.education": "Education and talent care",
-  "nav.home.about": "About the research group",
+  "nav.home.about": "About the group",
   "nav.home.projects": "Projects",
   "nav.home.partners": "Partners",
   "nav.home.news": "News",

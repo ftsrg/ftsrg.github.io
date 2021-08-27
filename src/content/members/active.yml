@@ -41,35 +41,35 @@
 - firstName: Gábor
   lastName: Bergmann
   title: PhD
-  position: about.members.position.seniorLecturer
+  position: about.members.position.assistProf
   avatar: ../images/members/bergmann.jpg
   homePage: https://inf.mit.bme.hu/members/bergmann
   scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10030431
 - firstName: László
   lastName: Gönczy
   title: PhD
-  position: about.members.position.seniorLecturer
+  position: about.members.position.assistProf
   avatar: ../images/members/gonczy.jpg
   homePage: https://inf.mit.bme.hu/members/gonczy
   scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10041117
 - firstName: Ákos
   lastName: Horváth
   title: PhD
-  position: about.members.position.seniorLecturer
+  position: about.members.position.assistProf
   avatar: ../images/members/horvath.jpg
   homePage: https://inf.mit.bme.hu/members/ahorvath
   scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10030432
 - firstName: Imre
   lastName: Kocsis
   title: PhD
-  position: about.members.position.seniorLecturer
+  position: about.members.position.assistProf
   avatar: ../images/members/kocsis.png
   homePage: https://inf.mit.bme.hu/members/ikocsis
   scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10040986
 - firstName: Vince
   lastName: Molnár
   title: PhD
-  position: about.members.position.seniorLecturer
+  position: about.members.position.assistProf
   avatar: ../images/members/molnar.jpg
   linkedInPage: https://www.linkedin.com/in/molnarv
   homePage: https://inf.mit.bme.hu/members/molnarv
@@ -78,7 +78,7 @@
 - firstName: István
   lastName: Ráth
   title: PhD
-  position: about.members.position.seniorLecturer
+  position: about.members.position.assistProf
   avatar: ../images/members/rath.jpg
   homePage: https://inf.mit.bme.hu/members/rath
   scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10030433
@@ -92,13 +92,13 @@
 - firstName: Zoltán
   lastName: Szatmári
   title: PhD
-  position: about.members.position.seniorLecturer
+  position: about.members.position.assistProf
   avatar: ../images/members/szatmari.jpg
   homePage: https://inf.mit.bme.hu/members/szatmari
   scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10041937
 - firstName: Gábor
   lastName: Huszerl
-  position: about.members.position.profMaster
+  position: about.members.position.masterLecturer
   avatar: ../images/members/huszerl.jpg
   linkedInPage: https://www.linkedin.com/in/huszerl
   homePage: https://www.mit.bme.hu/~huszerl
