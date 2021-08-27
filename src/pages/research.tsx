@@ -59,7 +59,11 @@ const ResearchPage: React.FC<ResearchPageProps> = ({ data }) => {
               </h2>
               <p>
                 <span className="pr-1">{t('research.publications.fullPubList')}</span>
-                <a target="_blank" rel="noopener noreferrer" href="https://inf.mit.bme.hu/research/publications">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://m2.mtmt.hu/gui2/?type=institutes&mode=browse&sel=institutes22230"
+                >
                   <MdSchool />
                 </a>{' '}
                 <span className="px-2">|</span>
