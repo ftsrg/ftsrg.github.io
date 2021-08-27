@@ -1,10 +1,5 @@
-# This is a basic gh-pages deploy workflow that is triggered on new commits on development branch
 name: Gatsby Publish
-
-on:
-  push:
-    branches:
-      - master
+on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
@@ -19,3 +14,4 @@ jobs:
           access-token: x-access-token:${{ secrets.GITHUB_TOKEN }}
           deploy-branch: gh-pages
           gatsby-args: --prefix-paths
+          skip-publish: ${{ !(github.event_name == 'push' && github.ref == 'refs/heads/master') }}
