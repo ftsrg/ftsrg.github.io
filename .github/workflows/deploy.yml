@@ -11,6 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Log current commit hash
+        run: echo $GITHUB_SHA > static/version.txt
       - uses: enriikke/gatsby-gh-pages-action@v2
         with:
           access-token: x-access-token:${{ secrets.GITHUB_TOKEN }}
