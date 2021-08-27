@@ -1,5 +1,5 @@
 {
-  "extends": ["config:base", "group:definitelyTyped", ":onlyNpm", "config:js-app", ":automergeMinor"],
+  "extends": ["config:base", "group:definitelyTyped", ":onlyNpm", "config:js-app", ":automergeMinor", "helpers:pinGitHubActionDigests"],
   "reviewers": ["micskeiz", "marci543"],
   "labels": ["dependencies"],
   "dependencyDashboard": true,
