@@ -11,6 +11,7 @@ const Layout: React.FC = ({ children }) => {
         <NavBar />
         <main className="flex-grow-1 site-wrapper">{children}</main>
         <Footer hasContact />
+        <div className="d-none">GITHUB_COMMIT_HASH</div>
       </div>
     </>
   )
