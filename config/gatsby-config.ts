@@ -14,7 +14,7 @@ export default {
     title: 'ftsrg — Kritikus Rendszerek Kutatócsoport',
     titleTemplate: '%s | ftsrg — Kritikus Rendszerek Kutatócsoport',
     description:
-      'A Kritikus Rendszerek Kutatócsoport célja olyan új módszerek és szoftverek kidolgozása, amiknek a segítségével a' +
+      'A Kritikus Rendszerek Kutatócsoport célja olyan új módszerek és szoftverek kidolgozása, amiknek a segítségével a ' +
       'mérnökök jobb rendszereket készíthetnek.',
     author: 'ftsrg',
     image: '/images/ftsrg-large.png',
