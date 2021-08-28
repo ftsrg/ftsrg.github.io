@@ -26,7 +26,7 @@ const NAVBAR_ITEMS: Array<INavbarItem> = [
     id: 'research',
     title: 'nav.research.title',
     shortTitle: 'nav.research.shortTitle',
-    href: '/research/',
+    href: '/research',
     children: [
       { title: 'nav.research.projects', href: '#projects' },
       { title: 'nav.research.publications', href: '#publications' },
@@ -38,7 +38,7 @@ const NAVBAR_ITEMS: Array<INavbarItem> = [
     id: 'education',
     title: 'nav.education.title',
     shortTitle: 'nav.education.shortTitle',
-    href: '/education/',
+    href: '/education',
     children: [
       { title: 'nav.education.specializations', href: '#specializations' },
       { title: 'nav.education.courses', href: '#courses' },
@@ -51,7 +51,7 @@ const NAVBAR_ITEMS: Array<INavbarItem> = [
     id: 'about',
     title: 'nav.about.title',
     shortTitle: 'nav.about.shortTitle',
-    href: '/about/',
+    href: '/about',
     children: [
       { title: 'nav.about.about', href: '#about' },
       { title: 'nav.about.members', href: '#members' },
@@ -63,7 +63,7 @@ const NAVBAR_ITEMS: Array<INavbarItem> = [
     id: 'contact',
     title: 'nav.contact.title',
     shortTitle: 'nav.contact.shortTitle',
-    href: '/contact/'
+    href: '/contact'
   }
 ]
 

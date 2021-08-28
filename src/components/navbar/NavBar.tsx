@@ -62,7 +62,9 @@ const NavBar: React.FC = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto site-menu">
               {NAVBAR_ITEMS.map((item) => {
-                if (location.pathname === item.href) {
+                const lastSegmentExtracted = location.pathname.match(/([^/]*)\/*$/) ?? ['', '']
+                const lastSegment = `/${lastSegmentExtracted[1]}`
+                if (lastSegment === item.href) {
                   if (item.children) {
                     return (
                       <NavDropdown key={item.id} title={t(item.title)} id="basic-nav-dropdown" className="active" show>
