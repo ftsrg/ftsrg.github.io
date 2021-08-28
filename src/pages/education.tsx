@@ -6,7 +6,6 @@ import Breadcrumbs from '~components/Breadcrumbs'
 import { AchievementsCarousel, SpecializationsCarousel } from '~components/carousels'
 import { StudentWork, Subjects } from '~components/education-components'
 import Hero from '~components/Hero'
-import SEO from '~components/SEO'
 import TopHero from '~components/TopHero'
 import Layout from '~layout/Layout'
 import { AchievementProps, SpecializationProps, SubjectProps } from '~utils/props'
@@ -29,8 +28,7 @@ const EducationPage: React.FC<EducationPageProps> = ({ data }) => {
   const { t } = useTranslation()
 
   return (
-    <Layout>
-      <SEO />
+    <Layout href="/education">
       <TopHero heroTitle="education.heroTitle" heroDesc="education.heroDesc" bgImageUrl="/images/bg_1.jpg" />
       <Breadcrumbs title="nav.education.title" />
 

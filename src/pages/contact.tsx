@@ -3,7 +3,6 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { Trans, useTranslation } from 'react-i18next'
 import Breadcrumbs from '~components/Breadcrumbs'
-import SEO from '~components/SEO'
 import TopHero from '~components/TopHero'
 import Layout from '~layout/Layout'
 
@@ -11,8 +10,7 @@ const ContactPage: React.FC<PageProps> = () => {
   const tr = useTranslation() // somehow destructuring didn't work
 
   return (
-    <Layout>
-      <SEO />
+    <Layout href="/contact">
       <TopHero heroTitle="contact.heroTitle" heroDesc="contact.heroDesc" bgImageUrl="/images/bg_3.jpg" />
       <Breadcrumbs title="nav.contact.title" />
 

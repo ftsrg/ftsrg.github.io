@@ -2,7 +2,6 @@ import { graphql, PageProps } from 'gatsby'
 import React from 'react'
 import { FormerMembers, Intro, Members, Students } from '~components/aboutpage-components'
 import Breadcrumbs from '~components/Breadcrumbs'
-import SEO from '~components/SEO'
 import TopHero from '~components/TopHero'
 import Layout from '~layout/Layout'
 import { MemberProps } from '~utils/props'
@@ -20,8 +19,7 @@ interface AboutPageProps extends PageProps {
 
 const AboutPage: React.FC<AboutPageProps> = ({ data }) => {
   return (
-    <Layout>
-      <SEO />
+    <Layout href="/about">
       <TopHero heroTitle="about.heroTitle" heroDesc="about.heroDesc" bgImageUrl="/images/bg_6.jpg" />
       <Breadcrumbs title="nav.about.title" />
       <Intro />

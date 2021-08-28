@@ -7,7 +7,6 @@ import { MdSchool } from 'react-icons/md'
 import Breadcrumbs from '~components/Breadcrumbs'
 import { EventsCarousel, ProjectsCarousel, PublicationsCarousel } from '~components/carousels'
 import { ProjectCounters, Tools } from '~components/research-components'
-import SEO from '~components/SEO'
 import TopHero from '~components/TopHero'
 import Layout from '~layout/Layout'
 import { EventProps, ProjectProps, PublicationProps } from '~utils/props'
@@ -30,8 +29,7 @@ const ResearchPage: React.FC<ResearchPageProps> = ({ data }) => {
   const { t } = useTranslation()
 
   return (
-    <Layout>
-      <SEO />
+    <Layout href="/research">
       <TopHero heroTitle="research.heroTitle" heroDesc="research.heroDesc" bgImageUrl="/images/bg_5.jpg" />
       <Breadcrumbs title="nav.research.title" />
 

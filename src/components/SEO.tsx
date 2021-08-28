@@ -1,23 +1,8 @@
 import { useLocation } from '@reach/router'
 import React, { FC } from 'react'
-import { Helmet, HelmetProps } from 'react-helmet'
+import { Helmet } from 'react-helmet'
 import { useSiteMetadata } from '~hooks/useSiteMetadata'
-
-type SEOProps = {
-  lang?: string
-  title?: string
-  description?: string
-  author?: string
-  image?: string
-  favicons?: {
-    favicon32: string
-    favicon16: string
-  }
-  robots?: string
-  keywords?: string[]
-  meta?: { name: string; content: string }[]
-  links?: { rel: string; href: string }[]
-} & HelmetProps
+import { SEOProps } from '~utils/props'
 
 const SEO: FC<SEOProps> = ({ title, description, image, author, lang, robots, keywords = [], meta = [], links = [] }) => {
   const { pathname } = useLocation()
