@@ -1,4 +1,3 @@
-import { useLocation } from '@reach/router'
 import { Link } from 'gatsby'
 import React, { useEffect, useState } from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
@@ -8,8 +7,11 @@ import { FaFacebookF, FaGithub, FaTwitter } from 'react-icons/fa'
 import LanguageToggle from './LanguageToggle'
 import NAVBAR_ITEMS from './navbar-items'
 
-const NavBar: React.FC = () => {
-  const location = useLocation()
+type Props = {
+  href: string
+}
+
+const NavBar: React.FC<Props> = ({ href }) => {
   const { t } = useTranslation()
   const socialStyle = { width: '2.5rem', height: '2.5rem' }
 
@@ -62,7 +64,7 @@ const NavBar: React.FC = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto site-menu">
               {NAVBAR_ITEMS.map((item) => {
-                if (location.pathname === item.href) {
+                if (href === item.href) {
                   if (item.children) {
                     return (
                       <NavDropdown key={item.id} title={t(item.title)} id="basic-nav-dropdown" className="active" show>

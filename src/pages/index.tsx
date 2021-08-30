@@ -4,7 +4,6 @@ import { Col, Container, Row } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
 import { ProjectsCarousel } from '~components/carousels'
 import { About, Banner, Competences, Education, News, Partners } from '~components/indexpage-components'
-import SEO from '~components/SEO'
 import Layout from '~layout/Layout'
 import { ProjectProps } from '~utils/props'
 
@@ -20,8 +19,7 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) => {
   const { t } = useTranslation()
 
   return (
-    <Layout>
-      <SEO />
+    <Layout href="/">
       <Banner />
       <Competences />
       <Education />
