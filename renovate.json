@@ -1,4 +1,5 @@
 {
+  "schedule": ["before 5am on the first day of the month"],
   "extends": ["config:base", "group:definitelyTyped", ":onlyNpm", "config:js-app", ":automergeMinor", "helpers:pinGitHubActionDigests"],
   "reviewers": ["micskeiz", "marci543"],
   "labels": ["dependencies"],
@@ -8,9 +9,6 @@
     "automerge": true
   },
   "packageRules": [
-    {
-      "schedule": ["before 5am on the first day of the month"]
-    },
     {
       "matchDepTypes": [
         "action"
