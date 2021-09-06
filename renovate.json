@@ -6,7 +6,8 @@
   "dependencyDashboard": true,
   "lockFileMaintenance": {
     "enabled": true,
-    "automerge": true
+    "automerge": true,
+    "schedule": ["before 5am on the first day of the month"]
   },
   "packageRules": [
     {
