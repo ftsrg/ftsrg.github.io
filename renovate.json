@@ -1,6 +1,6 @@
 {
   "schedule": ["before 5am on the first day of the month"],
-  "extends": ["config:base", "group:definitelyTyped", ":onlyNpm", "config:js-app", ":automergeMinor", "helpers:pinGitHubActionDigests"],
+  "extends": ["config:base", "group:allNonMajor", ":onlyNpm", "config:js-app", ":automergeMinor", "helpers:pinGitHubActionDigests"],
   "reviewers": ["micskeiz", "marci543"],
   "labels": ["dependencies"],
   "dependencyDashboard": true,
