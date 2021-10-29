@@ -7,12 +7,12 @@ const toolsData = [
   {
     title: 'research.tools.tool1.title',
     desc: 'research.tools.tool1.desc',
-    url: 'https://github.com/ftsrg/Gamma'
+    url: 'https://github.com/ftsrg/gamma'
   },
   {
     title: 'research.tools.tool2.title',
     desc: 'research.tools.tool2.desc',
-    url: 'https://github.com/ftsrg/Theta'
+    url: 'https://github.com/ftsrg/theta'
   },
   {
     title: 'research.tools.tool3.title',
