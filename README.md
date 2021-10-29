@@ -1,8 +1,6 @@
-# ftsrg-next
+# Website of the Critical Systems Research Group (ftsrg)
 
 Base code copied from [gatsby-starter-i18n-react-i18next](https://code.habd.as/comfusion/gatsby-starter-i18n-react-i18next), special thanks to Josh Habdas.
-
-Introducing the portfolio and blog of the Critical Systems Research Group - better known as Ftsrg.
 
 Table of contents:
 
