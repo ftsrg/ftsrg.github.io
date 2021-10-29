@@ -1,10 +1,10 @@
 - title: ADVANCE
-  subtitle: Addressing Verification and Validation Challenges in Future Cyber-Physical Systems
+  subtitle: Addressing V&V Challenges in Future CPS
   url: http://advance-rise.eu/
   featuredImage: ../images/projects/advance.png
   description: research.projects.ADVANCE
 - title: Arrowhead Tools
-  subtitle: European investment for Digitalisation and Automation Leadership
+  subtitle: European investment for Digitalisation Leadership
   url: https://www.arrowhead.eu/arrowheadtools
   featuredImage: ../images/projects/arrowhead-tools.png
   description: research.projects.arrowheadtools
@@ -14,7 +14,7 @@
   featuredImage: ../images/projects/eit-digital.png
   description: research.projects.blockchain
 - title: EMBrACE
-  subtitle: Environment for model-based rigorous adaptive co-design and operation of CPS
+  subtitle: Environment for model-based co-design of CPS
   url: https://itea3.org/project/embrace.html
   featuredImage: ../images/projects/embrace.png
   description: research.projects.EMBrACE
