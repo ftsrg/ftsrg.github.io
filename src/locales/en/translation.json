@@ -5,7 +5,7 @@
   "commons.ftsrgQuote": "„Forging technology from science”",
   "commons.readMore": "Read more",
   "footer.contactHero.haveQuestion": "Questions not answered?",
-  "footer.contactHero.askMe": "Contact <0>{{firstName}} {{lastName}}, PhD</0> with questions related to our research group",
+  "footer.contactHero.askMe": "Contact <0>{{firstName}} {{lastName}}</0> with questions related to our research group",
   "footer.collabWithKirdev": "Website developed in<0 />collaboration with <1>Kir-Dev</1>.",
   "footer.rightsAndSources": "All rights reserved | Template by <0>Colorlib</0><1 />Photos taken by <2>Ákos Hajdu</2>, <3>Pexels</3>, <4>Pixabay</4>, <5>SPOT</5> and <6>CERN</6>."
 }
