@@ -38,16 +38,16 @@
   type: education.subjects.types.phd
   portalPage: https://portal.vik.bme.hu/kepzes/targyak/VIMIDV01
   webPage: null
-- translationPrefix: education.subjects.bigdata
-  featuredImage: ../images/subjects/course_9.jpg
-  type: education.subjects.types.elective
-  portalPage: https://portal.vik.bme.hu/kepzes/targyak/VIMIAV02
-  webPage: https://inf.mit.bme.hu/edu/courses/bigdata
 - translationPrefix: education.subjects.blockchain
   featuredImage: ../images/subjects/course_10.jpg
   type: education.subjects.types.elective
   portalPage: https://portal.vik.bme.hu/kepzes/targyak/VIMIAV17
   webPage: https://inf.mit.bme.hu/edu/courses/blockchain
+- translationPrefix: education.subjects.bigdata
+  featuredImage: ../images/subjects/course_9.jpg
+  type: education.subjects.types.elective
+  portalPage: https://portal.vik.bme.hu/kepzes/targyak/VIMIAV02
+  webPage: https://inf.mit.bme.hu/edu/courses/bigdata
 - translationPrefix: education.subjects.devops
   featuredImage: ../images/subjects/course_11.jpg
   type: education.subjects.types.elective

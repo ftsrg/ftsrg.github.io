@@ -1,8 +1,8 @@
 - translationPrefix: education.achievements.publications
   featuredImage: ../images/achievements/emsoft-new-york.jpg
   links:
-    - https://dl.acm.org/doi/10.1145/3358238
-    - https://inf.mit.bme.hu/research/publications/distributed-graph-queries-over-modelsruntime-runtime-monitoring-cyber-physical
+    - https://doi.org/10.1145/3358238
+    - https://doi.org/10.1007/s10009-019-00531-5
     - https://doi.org/10.1002/stvr.1627
 - translationPrefix: education.achievements.workplaces
   featuredImage: ../images/achievements/workplaces.png
