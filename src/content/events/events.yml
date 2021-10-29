@@ -1,9 +1,12 @@
-- translationPrefix: research.events.disc2019
-  url: http://www.disc-conference.org/wp/disc2019/
-  featuredImage: ../images/events/disc2019.png
+- translationPrefix: research.events.sosym2021
+  url: https://www.sosym.org/awards/
+  featuredImage: ../images/events/sosym2021.png
 - translationPrefix: research.events.acadAwardPataricza
   url: https://mta.hu/mta_hirei/akademiai-elismeresek-nyilvanos-a-dijazottak-nevsora-110628
   featuredImage: ../images/events/mta-price.jpg
 - translationPrefix: research.events.models2020
   url: http://www.vik.bme.hu/hir/2665/
   featuredImage: ../images/events/models-mip-award-2020.png
+- translationPrefix: research.events.disc2019
+  url: http://www.disc-conference.org/wp/disc2019/
+  featuredImage: ../images/events/disc2019.png

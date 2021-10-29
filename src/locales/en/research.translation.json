@@ -38,7 +38,10 @@
   "research.events.acadAwardPataricza.title": "Award of the Hungarian Academy",
   "research.events.acadAwardPataricza.subtitle": "MTA Award for András Pataricza",
   "research.events.acadAwardPataricza.desc": "The award cited the outstanding work on the theoretical foundations, design and development of critical IT infrastructure and cyber-physical systems; founding an internationally recognized group in the fault-tolerant community; and the achievements in talent care.",
-  "research.events.models2020.title": "Most influential paper",
+  "research.events.models2020.title": "MODELS Most influential paper",
   "research.events.models2020.subtitle": "10-year most influential paper at MODELS 2020",
-  "research.events.models2020.desc": "Our current and former colleagues received the „Most influential Paper” award at MODELS, the leading conference on model-based software and systems engineering, for their paper „Incremental Evaluation of Model Queries over EMF Models” published at MODELS 2010."
+  "research.events.models2020.desc": "Our current and former colleagues received the „10-Year Most Influential Paper” award at MODELS, the leading conference on model-based software and systems engineering, for their paper „Incremental Evaluation of Model Queries over EMF Models” published at MODELS 2010.",
+  "research.events.sosym2021.title": "SoSyM Most influential paper",
+  "research.events.sosym2021.subtitle": "10-year most influential paper in SoSyM journal",
+  "research.events.sosym2021.desc": "Zoltán Micskei and Hélène Waeselynck received the „10-Year Most Influential Paper” award for their paper „The many meanings of UML 2 Sequence Diagrams: a survey”, published ten years ago in SoSyM, the leading journal on model-based software and systems engineering."
 }
