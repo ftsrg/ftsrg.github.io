@@ -38,13 +38,6 @@
   avatar: ../images/members/voros.jpg
   homePage: https://inf.mit.bme.hu/members/vorosa
   scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10042280
-- firstName: Gábor
-  lastName: Bergmann
-  title: PhD
-  position: about.members.position.assistProf
-  avatar: ../images/members/bergmann.jpg
-  homePage: https://inf.mit.bme.hu/members/bergmann
-  scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10030431
 - firstName: László
   lastName: Gönczy
   title: PhD
