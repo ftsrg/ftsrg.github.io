@@ -7,9 +7,9 @@ import VisibilitySensor from 'react-visibility-sensor'
 const counterData = [
   {
     /* EEMCN, FUTEG, HIDE, DECOS, RESIST, Sensoria, Deserec, Diana, Hidenets, SafeDMI, Amber, Genesys, Mogentes,
-      SecureChange, E-freight, R3-COP, CECRIS, Concerto, MONDO, R5-COP, ADVANCE, Arrowhead Tools, EMBrACE */
+      SecureChange, E-freight, R3-COP, CECRIS, Concerto, MONDO, R5-COP, ADVANCE, Arrowhead Tools, EMBrACE, ProtectME */
     title: 'research.projects.counter1.title',
-    count: 23
+    count: 24
   },
   {
     title: 'research.projects.counter2.title',
