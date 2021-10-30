@@ -129,6 +129,11 @@
   homePage: https://inf.mit.bme.hu/members/graicsb
   scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10068239
   githubPage: https://github.com/grbeni
+- firstName: András
+  lastName: Kövi
+  position: about.members.position.phdStudent
+  avatar: ../images/members/kovi.jpg
+  linkedInPage: https://hu.linkedin.com/in/andr%C3%A1s-k%C3%B6vi-89a9bb3
 - firstName: Kristóf
   lastName: Marussy
   position: about.members.position.phdStudent
