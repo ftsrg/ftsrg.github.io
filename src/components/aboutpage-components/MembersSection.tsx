@@ -39,6 +39,16 @@ const MembersSection: React.FC<Props> = ({ nodes }) => {
                           <FaHome style={{ marginRight: '0.5rem' }} size="1.25rem" />
                         </a>
                       )}
+                      {member.cvPage && (
+                        <a target="_blank" rel="noopener noreferrer" href={member.cvPage}>
+                          <FaFileAlt style={{ marginRight: '0.5rem' }} size="1.25rem" />
+                        </a>
+                      )}
+                      {member.scholarPage && (
+                        <a target="_blank" rel="noopener noreferrer" href={member.scholarPage}>
+                          <FaGraduationCap style={{ marginRight: '0.5rem' }} size="1.25rem" />
+                        </a>
+                      )}
                       {member.githubPage && (
                         <a target="_blank" rel="noopener noreferrer" href={member.githubPage}>
                           <FaGithub style={{ marginRight: '0.5rem' }} size="1.25rem" />
@@ -52,16 +62,6 @@ const MembersSection: React.FC<Props> = ({ nodes }) => {
                       {member.linkedInPage && (
                         <a target="_blank" rel="noopener noreferrer" href={member.linkedInPage}>
                           <FaLinkedin style={{ marginRight: '0.5rem' }} size="1.25rem" />
-                        </a>
-                      )}
-                      {member.scholarPage && (
-                        <a target="_blank" rel="noopener noreferrer" href={member.scholarPage}>
-                          <FaGraduationCap style={{ marginRight: '0.5rem' }} size="1.25rem" />
-                        </a>
-                      )}
-                      {member.cvPage && (
-                        <a target="_blank" rel="noopener noreferrer" href={member.cvPage}>
-                          <FaFileAlt style={{ marginRight: '0.5rem' }} size="1.25rem" />
                         </a>
                       )}
                     </p>
