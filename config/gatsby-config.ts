@@ -6,7 +6,6 @@ dotenv.config({
 })
 
 export default {
-  pathPrefix: `/ftsrg-next`,
   siteMetadata: {
     baseUrl: 'https://ftsrg.mit.bme.hu/',
     translations: ['en'],

@@ -13,5 +13,4 @@ jobs:
         with:
           access-token: x-access-token:${{ secrets.GITHUB_TOKEN }}
           deploy-branch: gh-pages
-          gatsby-args: --prefix-paths
           skip-publish: ${{ !(github.event_name == 'push' && github.ref == 'refs/heads/master') }}
