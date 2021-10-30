@@ -11,4 +11,5 @@ export default interface MemberProps {
   scholarPage?: string
   githubPage?: string
   twitterPage?: string
+  cvPage?: string
 }
