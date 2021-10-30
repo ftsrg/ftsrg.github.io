@@ -36,32 +36,32 @@ const MembersSection: React.FC<Props> = ({ nodes }) => {
                     <p>
                       {member.homePage && (
                         <a target="_blank" rel="noopener noreferrer" href={member.homePage}>
-                          <FaHome style={{ marginRight: '0.25rem' }} size="1.25rem" />
+                          <FaHome style={{ marginRight: '0.5rem' }} size="1.25rem" />
                         </a>
                       )}
                       {member.githubPage && (
                         <a target="_blank" rel="noopener noreferrer" href={member.githubPage}>
-                          <FaGithub style={{ marginRight: '0.25rem' }} size="1.25rem" />
+                          <FaGithub style={{ marginRight: '0.5rem' }} size="1.25rem" />
                         </a>
                       )}
                       {member.twitterPage && (
                         <a target="_blank" rel="noopener noreferrer" href={member.twitterPage}>
-                          <FaTwitter style={{ marginRight: '0.25rem' }} size="1.25rem" />
+                          <FaTwitter style={{ marginRight: '0.5rem' }} size="1.25rem" />
                         </a>
                       )}
                       {member.linkedInPage && (
                         <a target="_blank" rel="noopener noreferrer" href={member.linkedInPage}>
-                          <FaLinkedin style={{ marginRight: '0.25rem' }} size="1.25rem" />
+                          <FaLinkedin style={{ marginRight: '0.5rem' }} size="1.25rem" />
                         </a>
                       )}
                       {member.scholarPage && (
                         <a target="_blank" rel="noopener noreferrer" href={member.scholarPage}>
-                          <FaGraduationCap style={{ marginRight: '0.25rem' }} size="1.25rem" />
+                          <FaGraduationCap style={{ marginRight: '0.5rem' }} size="1.25rem" />
                         </a>
                       )}
                       {member.cvPage && (
                         <a target="_blank" rel="noopener noreferrer" href={member.cvPage}>
-                          <FaFileAlt style={{ marginRight: '0.25rem' }} size="1.25rem" />
+                          <FaFileAlt style={{ marginRight: '0.5rem' }} size="1.25rem" />
                         </a>
                       )}
                     </p>
