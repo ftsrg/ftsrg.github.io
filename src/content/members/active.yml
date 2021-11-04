@@ -6,6 +6,7 @@
   linkedInPage: https://hu.linkedin.com/in/andras-pataricza-6651345
   homePage: https://inf.mit.bme.hu/members/pataric
   scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10004524
+  cvPage: https://drive.google.com/file/d/0BwMh_IMLEYWRSVBENVdkSUc0SEE/edit?usp=sharing
 - firstName: Dániel
   lastName: Varró
   title: DSc
@@ -53,6 +54,7 @@
   avatar: ../images/members/horvath.jpg
   homePage: https://inf.mit.bme.hu/members/ahorvath
   scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10030432
+  linkedInPage: https://www.linkedin.com/in/akoshorvathincquerylabs/
 - firstName: Imre
   lastName: Kocsis
   title: PhD
@@ -76,6 +78,7 @@
   avatar: ../images/members/rath.jpg
   homePage: https://inf.mit.bme.hu/members/rath
   scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10030433
+  linkedInPage: https://www.linkedin.com/in/istvanrath/
 - firstName: Oszkár
   lastName: Semeráth
   title: PhD
@@ -90,6 +93,7 @@
   avatar: ../images/members/szatmari.jpg
   homePage: https://inf.mit.bme.hu/members/szatmari
   scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10041937
+  linkedInPage: https://www.linkedin.com/in/zszatmari/
 - firstName: Gábor
   lastName: Huszerl
   position: about.members.position.masterLecturer
