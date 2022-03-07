@@ -1,13 +1,16 @@
 name: Gatsby Publish
 on:
-  push:
-    branches: 
-    - master
+  workflow_run:
+    workflows: ["Gatsby Build"]
+    branches: [master]
+    types:
+      - completed
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
       - uses: actions/checkout@v2
       - name: Log current commit hash
@@ -17,4 +20,3 @@ jobs:
         with:
           access-token: x-access-token:${{ secrets.GITHUB_TOKEN }}
           deploy-branch: gh-pages
-          skip-publish: ${{ !(github.event_name == 'push' && github.ref == 'refs/heads/master') }}
