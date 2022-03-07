@@ -16,6 +16,7 @@ import indexHu from '../locales/hu/home.translation.json'
 import navHu from '../locales/hu/nav.translation.json'
 import researchHu from '../locales/hu/research.translation.json'
 import hu from '../locales/hu/translation.json'
+import { getCookieConsent } from './cookieConsent'
 
 const resources = {
   en: { translation: { ...en, ...navEn, ...educationEn, ...aboutEn, ...contactEn, ...indexEn, ...researchEn } },
@@ -39,14 +40,19 @@ i18next
    * Pass i18n instance to react-i18next.
    */
   .use(initReactI18next)
+
+export function initializeI18Next(cookiesEnabled: boolean): void {
   /**
    * Initialize i18next configuration.
    * @see Docs {@link https://react.i18next.com/latest/i18next-instance}
    * @see Options {@link https://www.i18next.com/overview/configuration-options}
    */
-  .init({
+  i18next.init({
     detection: {
-      lookupQuerystring: 'locale'
+      order: ['querystring', 'cookie', 'navigator'],
+      lookupQuerystring: 'locale',
+      lookupCookie: 'locale',
+      caches: cookiesEnabled ? ['cookie'] : []
     },
     fallbackLng: 'en',
     debug: false,
@@ -59,5 +65,7 @@ i18next
     },
     resources
   })
+}
+initializeI18Next(getCookieConsent())
 
 export default i18next
