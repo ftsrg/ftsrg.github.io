@@ -7,7 +7,7 @@
   "commons.cookiePolicy.text": "This website uses cookies to enhance the user experience.",
   "commons.cookiePolicy.accept": "Accept",
   "commons.cookiePolicy.decline": "Decline",
-  "commons.cookiePolicy.socialBlocked": "The news are shared via social media. Consent to cookies to see them!",
+  "commons.cookiePolicy.socialBlocked": "The news are shared via social media. Consent to cookies to see them.",
   "commons.cookiePolicy.consentCookies": "Consent to cookies",
   "footer.contactHero.haveQuestion": "Questions not answered?",
   "footer.contactHero.askMe": "Contact <0>{{firstName}} {{lastName}}</0> with questions related to our research group",
