@@ -2,9 +2,11 @@ import { Link } from 'gatsby'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { Trans, useTranslation } from 'react-i18next'
+import { resetCookieConsent } from '~lib/cookieConsent'
 import FooterNav from './FooterNav'
 
 type Props = {
+  // eslint-disable-next-line react/require-default-props
   hasContact?: boolean
 }
 
@@ -81,6 +83,16 @@ const Footer: React.FC<Props> = ({ hasContact }) => {
               <Trans
                 i18nKey="footer.rightsAndSources"
                 components={[
+                  // eslint-disable-next-line max-len
+                  // eslint-disable-next-line jsx-a11y/interactive-supports-focus,jsx-a11y/anchor-is-valid,jsx-a11y/click-events-have-key-events
+                  <a
+                    role="button"
+                    onClick={() => {
+                      resetCookieConsent()
+                    }}
+                  >
+                    Cookie consent
+                  </a>,
                   <a href="https://colorlib.com" target="_blank" rel="noopener noreferrer">
                     Colorlib
                   </a>,
