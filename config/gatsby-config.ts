@@ -115,6 +115,12 @@ export default {
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-tsconfig-paths`
+    `gatsby-plugin-tsconfig-paths`,
+    {
+      resolve: `gatsby-plugin-gdpr-cookies`,
+      options: {
+        environments: ['production', 'development']
+      }
+    }
   ]
 }

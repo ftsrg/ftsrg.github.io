@@ -1,10 +1,12 @@
 import React from 'react'
+import CookieBanner from '~components/CookieBanner'
 import Footer from '~components/footer/Footer'
 import NavBar from '~components/navbar/NavBar'
 import SEO from '~components/SEO'
 import { SEOProps } from '~utils/props'
 
 interface Props {
+  // eslint-disable-next-line react/require-default-props
   seo?: SEOProps
   href: string
 }
@@ -20,6 +22,7 @@ const Layout: React.FC<Props> = ({ href, seo, children }) => {
         <Footer hasContact />
         <div className="d-none">Current version: GITHUB_COMMIT_URL_HERE</div>
       </div>
+      <CookieBanner />
     </>
   )
 }
