@@ -20,6 +20,7 @@
     "max-len": ["error", { "code": 140, "ignoreUrls": true }],
     "import/prefer-default-export": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
+    "react/require-default-props": "off",
     "react/no-unescaped-entities": [
       "error",
       {
