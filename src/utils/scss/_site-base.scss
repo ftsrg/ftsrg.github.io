@@ -36,10 +36,7 @@ h5,
 }
 
 .site-wrapper {
-  @include media-breakpoint-up(lg) {
-    margin-top: 6rem;
-  }
-  margin-top: 4.5rem;
+  background-color: white;
 }
 
 .text-black {
