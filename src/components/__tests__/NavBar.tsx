@@ -35,20 +35,8 @@ beforeAll(() => {
 })
 
 describe('<NavBar />', () => {
-  it('displays expected site title in heading', () => {
-    render(<NavBar />)
-    expect(screen.getByText('Sample Title')).toBeTruthy()
-    expect(screen.queryByText('Jmupuri')).toBeNull()
-    expect(screen.getByText('Sample Title')).toContainHTML('h1')
-  })
-
   it('has button to toggle language', () => {
     render(<NavBar />)
     expect(screen.queryByRole('button', { name: 'Toggle language' })).toBeTruthy()
-  })
-
-  it('has button to toggle brightness', () => {
-    render(<NavBar />)
-    expect(screen.queryByRole('button', { name: 'Toggle brightness' })).toBeTruthy()
   })
 })

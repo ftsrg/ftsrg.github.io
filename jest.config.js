@@ -17,13 +17,22 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
+const { pathsToModuleNameMapper } = require('ts-jest/utils')
+const { compilerOptions } = require('./tsconfig.json')
+
+const paths = pathsToModuleNameMapper(compilerOptions.paths, { prefix: '<rootDir>/' })
+
 module.exports = {
   transform: {
     '^.+\\.[jt]sx?$': `<rootDir>/config/jest-preprocess.js`
   },
   moduleNameMapper: {
     '.+\\.(css|styl|less|sass|scss)$': `identity-obj-proxy`,
-    '.+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$': `<rootDir>/__mocks__/file-mock.js`
+    '.+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$': `<rootDir>/__mocks__/file-mock.js`,
+    '^gatsby-core-utils/(.*)$': `gatsby-core-utils/dist/$1`, // Workaround for https://github.com/facebook/jest/issues/9771
+    '^gatsby-plugin-utils/(.*)$': [`gatsby-plugin-utils/dist/$1`, `gatsby-plugin-utils/$1`], // Workaround for https://github.com/facebook/jest/issues/9771
+    '^gatsby-page-utils/(.*)$': `gatsby-page-utils/dist/$1`, // Workaround for https://github.com/facebook/jest/issues/9771
+    ...paths
   },
   moduleDirectories: ['node_modules', 'utils', __dirname],
   testPathIgnorePatterns: [`node_modules`, `.cache`, `public`],
