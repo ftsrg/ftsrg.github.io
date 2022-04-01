@@ -51,7 +51,6 @@ describe('<Layout />', () => {
   it('has accessible page header', () => {
     render(<Layout />)
     expect(screen.getAllByRole('banner')).toHaveLength(1)
-    expect(screen.getAllByRole('banner')[0]).toHaveTextContent('Sample Title')
   })
 
   it('has accessible page content', () => {

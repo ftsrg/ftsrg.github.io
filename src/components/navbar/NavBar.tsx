@@ -53,7 +53,7 @@ const NavBar: React.FC<Props> = ({ href }) => {
         <Container className={`site-navcontainer align-items-center ${isShrinked ? 'shrinked' : ''}`}>
           <Navbar.Brand className="pr-4" as="div">
             <Link to="/">
-              <img src="/images/ftsrg.png" alt="..." className="img-fluid" style={{ height: '3rem' }} />
+              <img role="banner" src="/images/ftsrg.png" alt="..." className="img-fluid" style={{ height: '3rem' }} />
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
