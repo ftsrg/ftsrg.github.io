@@ -67,7 +67,6 @@
     "i18next-browser-languagedetector": "6.1.4",
     "i18next-http-backend": "1.4.0",
     "jquery": "3.6.0",
-    "node-sass": "7.0.1",
     "popper.js": "1.16.1",
     "react": "17.0.2",
     "react-anchor-link-smooth-scroll": "1.0.12",
@@ -104,6 +103,7 @@
     "identity-obj-proxy": "3.0.0",
     "jest": "27.1.0",
     "prettier": "2.6.1",
+    "sass": "1.49.10",
     "source-map-explorer": "2.5.2"
   }
 }
