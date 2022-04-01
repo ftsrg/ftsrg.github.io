@@ -105,6 +105,6 @@
     "prettier": "2.6.1",
     "sass": "1.49.10",
     "source-map-explorer": "2.5.2",
-    "ts-jest": "^27.1.4"
+    "ts-jest": "27.1.4"
   }
 }
