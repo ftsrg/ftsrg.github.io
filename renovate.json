@@ -1,7 +1,7 @@
 {
-  "schedule": ["before 5am on the first day of the month"],
+  "schedule": ["before 3am on the first day of the month"],
   "extends": ["config:base", "group:allNonMajor", ":onlyNpm", "config:js-app", ":automergeMinor", "helpers:pinGitHubActionDigests"],
-  "reviewers": ["micskeiz", "marci543"],
+  "assignees": ["as3810t"],
   "labels": ["dependencies"],
   "dependencyDashboard": true,
   "lockFileMaintenance": {
