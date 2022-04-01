@@ -21,8 +21,20 @@ jobs:
           node-version: 16.x
       - name: Install dependencies
         run: yarn install --prod --pure-lockfile
-#      This should be added in the long run
-#      - name: Lint
-#        run: yarn run lint
       - name: Build
         run: yarn run build
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@a12a3943b4bdde767164f792f33f40b04645d846 # tag=v3
+      - name: Log current commit hash
+        run: |
+          sed -i "s|GITHUB_COMMIT_URL_HERE|https://github.com/$GITHUB_REPOSITORY/commit/$GITHUB_SHA|" src/layout/Layout.tsx
+      - name: Set Node.js
+        uses: actions/setup-node@master
+        with:
+          node-version: 16.x
+      - name: Install dependencies
+        run: yarn install --prod --pure-lockfile
+      - name: Lint
+        run: yarn run lint

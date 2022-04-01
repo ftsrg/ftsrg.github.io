@@ -25,8 +25,8 @@ const counterData = [
     isGatsbyLink: true,
     url: '/education#achievements',
     count: 80
-    /* Until 2021-12: UNKP (2016-2021): 18; Rektori: 4; PP thesis: 8; NFÖD: 25+; ACM-W: 1; CERN: 9+; Huawei: 7+; IBM: 4; Siemens: 2; OTDT: 2;
-       KBME: did not count... */
+    /* Until 2021-12: UNKP (2016-2021): 18; Rektori: 4; PP thesis: 8; NFÖD: 25+; ACM-W: 1; CERN: 9+; Huawei: 7+; IBM: 4;
+    Siemens: 2; OTDT: 2; KBME: did not count... */
   }
 ]
 
