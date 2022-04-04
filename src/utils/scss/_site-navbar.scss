@@ -1,6 +1,6 @@
 .topheader {
   transition: all 0.2s ease-in-out;
-  z-index: 1100;
+  z-index: 910;
   height: 0;
 
   @include media-breakpoint-up(lg) {
@@ -20,7 +20,7 @@
 
 .site-navbar {
   transition: all 0.2s ease-in;
-  z-index: 1000;
+  z-index: 900;
   padding: 0 !important;
 
   position: sticky;

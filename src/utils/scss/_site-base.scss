@@ -39,6 +39,10 @@ h5,
   background-color: white;
 }
 
+.site-overlay {
+  background-color: rgba($black, 0.7) !important;
+}
+
 .text-black {
   color: $black !important;
 }
