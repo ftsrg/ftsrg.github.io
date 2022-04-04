@@ -16,7 +16,7 @@ const Layout: React.FC<Props> = ({ href, seo, children }) => {
     <>
       {/* eslint-disable-next-line react/jsx-props-no-spreading */}
       <SEO {...seo} />
-      <div className="d-flex flex-column">
+      <div className="d-flex flex-column bg-light">
         <NavBar href={href} />
         <main className="flex-grow-1 site-wrapper">{children}</main>
         <Footer hasContact />

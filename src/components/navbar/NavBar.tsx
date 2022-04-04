@@ -1,5 +1,5 @@
 import { Link } from 'gatsby'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { Button, Col, Container, Nav, Navbar, NavDropdown, Row } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
@@ -14,20 +14,6 @@ type Props = {
 const NavBar: React.FC<Props> = ({ href }) => {
   const { t } = useTranslation()
   const socialStyle = { width: '2.5rem', height: '2.5rem' }
-
-  const [isShrinked, setShrinked] = useState(false)
-  const [fromTop, setFromTop] = useState(0)
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const onScroll = (event: any) => {
-    setFromTop(event.target.scrollingElement.scrollTop)
-    setShrinked(fromTop > 50)
-  }
-  useEffect(() => {
-    window.addEventListener('scroll', onScroll)
-    return () => {
-      window.removeEventListener('scroll', onScroll)
-    }
-  })
 
   return (
     <>
@@ -49,8 +35,8 @@ const NavBar: React.FC<Props> = ({ href }) => {
         </Container>
       </div>
 
-      <Navbar id="navbar" bg="light" className="fixed-top site-navbar" expand="lg">
-        <Container className={`site-navcontainer align-items-center ${isShrinked ? 'shrinked' : ''}`}>
+      <Navbar id="navbar" bg="light" className="site-navbar" expand="lg">
+        <Container className="site-navcontainer align-items-center">
           <Navbar.Brand className="pr-4" as="div">
             <Link to="/">
               <img role="banner" src="/images/ftsrg.png" alt="..." className="img-fluid" style={{ height: '3rem' }} />
