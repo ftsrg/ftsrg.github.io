@@ -2,7 +2,8 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
-import { FaFileAlt, FaGithub, FaGraduationCap, FaHome, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { FaGithub, FaHome, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { AiCV, AiDblp, AiGoogleScholar, AiMtmt, AiOrcid } from '~components/Academicons'
 import { MemberProps } from '~utils/props'
 
 type Props = {
@@ -41,12 +42,27 @@ const MembersSection: React.FC<Props> = ({ nodes }) => {
                       )}
                       {member.cvPage && (
                         <a target="_blank" rel="noopener noreferrer" href={member.cvPage}>
-                          <FaFileAlt style={{ marginRight: '0.5rem' }} size="1.25rem" />
+                          <AiCV style={{ marginRight: '0.5rem' }} size="1.25rem" />
+                        </a>
+                      )}
+                      {member.mtmtPage && (
+                        <a target="_blank" rel="noopener noreferrer" href={member.mtmtPage}>
+                          <AiMtmt style={{ marginRight: '0.5rem' }} size="1.25rem" />
+                        </a>
+                      )}
+                      {member.dblpPage && (
+                        <a target="_blank" rel="noopener noreferrer" href={member.dblpPage}>
+                          <AiDblp style={{ marginRight: '0.5rem' }} size="1.25rem" />
                         </a>
                       )}
                       {member.scholarPage && (
                         <a target="_blank" rel="noopener noreferrer" href={member.scholarPage}>
-                          <FaGraduationCap style={{ marginRight: '0.5rem' }} size="1.25rem" />
+                          <AiGoogleScholar style={{ marginRight: '0.5rem' }} size="1.25rem" />
+                        </a>
+                      )}
+                      {member.orcidPage && (
+                        <a target="_blank" rel="noopener noreferrer" href={member.orcidPage}>
+                          <AiOrcid style={{ marginRight: '0.5rem' }} size="1.25rem" />
                         </a>
                       )}
                       {member.githubPage && (

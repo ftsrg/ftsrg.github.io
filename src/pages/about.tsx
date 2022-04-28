@@ -42,10 +42,13 @@ export const query = graphql`
         position
         linkedInPage
         homePage
-        scholarPage
+        mtmtPage
         githubPage
         twitterPage
         cvPage
+        dblpPage
+        orcidPage
+        scholarPage
         avatar {
           childImageSharp {
             gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
