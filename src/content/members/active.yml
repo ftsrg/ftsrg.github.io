@@ -107,6 +107,13 @@
   avatar: ../images/members/klenik.jpg
   homePage: https://inf.mit.bme.hu/members/klenika
   scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10056599
+- firstName: Mihály
+  lastName: Dobos-Kovács
+  position: about.members.position.phdStudent
+  avatar: ../images/members/dobos-kovacs.jpg
+  homePage: https://www.mit.bme.hu/general/phd/dobos
+  scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10073065
+  linkedInPage: https://www.linkedin.com/in/mih%C3%A1ly-dobos-kov%C3%A1cs/
 - firstName: Márton
   lastName: Elekes
   position: about.members.position.phdStudent
@@ -123,8 +130,8 @@
 - firstName: András
   lastName: Földvári
   position: about.members.position.phdStudent
-  avatar: ../images/members/foldvari.png
-  homePage: null
+  avatar: ../images/members/foldvari.jpg
+  homePage: https://www.mit.bme.hu/general/phd/foldvari
   scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10068408
 - firstName: Bence
   lastName: Graics
@@ -134,14 +141,15 @@
   homePage: https://inf.mit.bme.hu/members/graicsb
   scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10068239
   githubPage: https://github.com/grbeni
-- firstName: András
-  lastName: Kövi
+- firstName: Richárd
+  lastName: Szabó
   position: about.members.position.phdStudent
-  avatar: ../images/members/kovi.jpg
-  linkedInPage: https://hu.linkedin.com/in/andr%C3%A1s-k%C3%B6vi-89a9bb3
-- firstName: Kristóf
-  lastName: Marussy
+  avatar: ../images/members/szabo.jpg
+  homePage: https://www.mit.bme.hu/general/phd/szabo
+  scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10068607
+- firstName: Dániel
+  lastName: Szekeres
   position: about.members.position.phdStudent
-  avatar: ../images/members/marussy.jpg
-  homePage: https://inf.mit.bme.hu/members/marussyk
-  scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10062709
+  avatar: ../images/members/szekeres.png
+  homePage: https://www.mit.bme.hu/general/phd/szekeres
+  scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10078570
