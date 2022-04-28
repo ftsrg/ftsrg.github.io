@@ -33,6 +33,13 @@
   homePage: http://mit.bme.hu/~micskeiz
   scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10041151
   twitterPage: https://twitter.com/micskeiz
+- firstName: László
+  lastName: Gönczy
+  title: PhD
+  position: about.members.position.assocProf
+  avatar: ../images/members/gonczy.jpg
+  homePage: https://inf.mit.bme.hu/members/gonczy
+  scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10041117
 - firstName: András
   lastName: Vörös
   title: PhD
@@ -40,21 +47,22 @@
   avatar: ../images/members/voros.jpg
   homePage: https://inf.mit.bme.hu/members/vorosa
   scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10042280
-- firstName: László
-  lastName: Gönczy
-  title: PhD
-  position: about.members.position.assistProf
-  avatar: ../images/members/gonczy.jpg
-  homePage: https://inf.mit.bme.hu/members/gonczy
-  scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10041117
 - firstName: Ákos
   lastName: Horváth
   title: PhD
-  position: about.members.position.assistProf
+  position: about.members.position.honAssocProf
   avatar: ../images/members/horvath.jpg
   homePage: https://inf.mit.bme.hu/members/ahorvath
   scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10030432
   linkedInPage: https://www.linkedin.com/in/akoshorvathincquerylabs/
+- firstName: István
+  lastName: Ráth
+  title: PhD
+  position: about.members.position.honAssocProf
+  avatar: ../images/members/rath.jpg
+  homePage: https://inf.mit.bme.hu/members/rath
+  scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10030433
+  linkedInPage: https://www.linkedin.com/in/istvanrath/
 - firstName: Imre
   lastName: Kocsis
   title: PhD
@@ -71,18 +79,10 @@
   homePage: https://inf.mit.bme.hu/members/molnarv
   scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10049620
   githubPage: https://github.com/vincemolnar
-- firstName: István
-  lastName: Ráth
-  title: PhD
-  position: about.members.position.assistProf
-  avatar: ../images/members/rath.jpg
-  homePage: https://inf.mit.bme.hu/members/rath
-  scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10030433
-  linkedInPage: https://www.linkedin.com/in/istvanrath/
 - firstName: Oszkár
   lastName: Semeráth
   title: PhD
-  position: about.members.position.resFellow
+  position: about.members.position.assistProf
   avatar: ../images/members/semerath.jpg
   homePage: https://inf.mit.bme.hu/members/semeratho
   scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10045161
@@ -107,6 +107,12 @@
   avatar: ../images/members/klenik.jpg
   homePage: https://inf.mit.bme.hu/members/klenika
   scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10056599
+- firstName: Kristóf
+  lastName: Marussy
+  position: about.members.position.assistResFellow
+  avatar: ../images/members/marussy.jpg
+  homePage: https://inf.mit.bme.hu/members/marussyk
+  scholarPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10062709
 - firstName: Mihály
   lastName: Dobos-Kovács
   position: about.members.position.phdStudent
