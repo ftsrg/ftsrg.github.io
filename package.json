@@ -37,6 +37,7 @@
     "@testing-library/jest-dom": "5.16.4",
     "@testing-library/react": "13.2.0",
     "@testing-library/react-hooks": "8.0.0",
+    "academicons": "https://github.com/jpswalsh/academicons#1.9.2",
     "babel-jest": "28.0.3",
     "bootstrap": "4.6.1",
     "classnames": "2.3.1",

@@ -8,8 +8,11 @@ export default interface MemberProps {
   avatar?: ImageDataLike
   linkedInPage?: string
   homePage?: string
-  scholarPage?: string
+  mtmtPage?: string
   githubPage?: string
   twitterPage?: string
   cvPage?: string
+  dblpPage?: string
+  orcidPage?: string
+  scholarPage?: string
 }
