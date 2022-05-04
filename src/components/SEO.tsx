@@ -121,6 +121,10 @@ const SEO: FC<SEOProps> = ({ title, description, image, author, lang, robots, ke
               }
             : []
         )
+        .concat({
+          name: 'google-site-verification',
+          content: 'HXeflujPkCsrNrZgSmSD0FW-Uvu19ODiotwVrER3a1o'
+        })
         .concat(meta)}
     />
   )
