@@ -16,7 +16,7 @@ const Footer: React.FC<Props> = ({ hasContact }) => {
   return (
     <>
       {hasContact && (
-        <div className="site-section pagehero" style={{ backgroundImage: `url('/images/bg_2.png')` }}>
+        <div className="site-section pagehero" style={{ backgroundImage: `url('/images/bg_2.jpg')` }}>
           <Container>
             <div className="d-flex align-items-center justify-content-center">
               <div className="d-flex align-items-center">

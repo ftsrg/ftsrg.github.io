@@ -7,7 +7,7 @@ const AboutSection: React.FC = () => {
   const { t } = useTranslation()
 
   return (
-    <Hero id="about" bgImageUrl="/images/hero_3.png">
+    <Hero id="about" bgImageUrl="/images/hero_3.jpg">
       <Row>
         <Col lg={4}>
           <h2 className="section-title-underline style-2">
