@@ -8,7 +8,7 @@ const BannerSection: React.FC = () => {
   return (
     <div id="banner">
       <div className="overlay" />
-      <video playsInline autoPlay muted loop>
+      <video playsInline autoPlay muted loop preload="none" poster="/images/drone-banner-poster.jpg">
         <source src="/images/drone-banner.mp4" type="video/mp4" />
       </video>
       <div className="intro intro-section background-4">
