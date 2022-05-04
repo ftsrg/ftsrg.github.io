@@ -1,17 +1,14 @@
 import React from 'react'
 import { Button } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
-import { useSiteMetadata } from '~hooks/useSiteMetadata'
 import Locale from '~utils/language'
 
 const LanguageToggle: React.FC = () => {
-  const { translations } = useSiteMetadata() as {
-    translations: Array<keyof typeof Locale>
-  }
   const { i18n } = useTranslation()
+  const translations = i18n.languages
   const locale = i18n.language as keyof typeof Locale
   const otherLocale = locale === 'hu' ? 'en' : 'hu'
-  const toggleLanguage = () => (locale === 'hu' ? i18n.changeLanguage('en') : i18n.changeLanguage('hu'))
+  const toggleLanguage = () => i18n.changeLanguage(otherLocale)
 
   return (
     <Button

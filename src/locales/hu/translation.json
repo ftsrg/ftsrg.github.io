@@ -12,5 +12,9 @@
   "footer.contactHero.haveQuestion": "Kérdésed van?",
   "footer.contactHero.askMe": "A kutatócsoporttal kapcsolatos kérdésekkel keresd <0>Dr. {{lastName}} {{firstName}}t</0>!",
   "footer.collabWithKirdev": "A weboldal a <1>Kir-Dev</1><0 />együttműködésével készült.",
-  "footer.rightsAndSources": "Minden jog fenntartva | <0>Hozzájárulás kezelése</0> | Sablont a <1>Colorlib</1> biztosítja<2 />Fotók forrásai: <3>Hajdu Ákos</3>, <4>Pexels</4>, <5>Pixabay</5>, <6>SPOT</6> és <7>CERN</7>."
+  "footer.rightsAndSources": "Minden jog fenntartva | <0>Hozzájárulás kezelése</0> | Sablont a <1>Colorlib</1> biztosítja<2 />Fotók forrásai: <3>Hajdu Ákos</3>, <4>Pexels</4>, <5>Pixabay</5>, <6>SPOT</6> és <7>CERN</7>.",
+  "meta.title": "ftsrg — Kritikus Rendszerek Kutatócsoport",
+  "meta.titleTemplate": "%s | ftsrg — Kritikus Rendszerek Kutatócsoport",
+  "meta.description": "A Kritikus Rendszerek Kutatócsoport célja olyan új módszerek és szoftverek kidolgozása, amiknek a segítségével a mérnökök jobb rendszereket készíthetnek.",
+  "meta.keywords": "kutatás, rendszerek, analízis, verifikáció, modellezés"
 }

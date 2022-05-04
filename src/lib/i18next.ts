@@ -54,7 +54,7 @@ export function initializeI18Next(cookiesEnabled: boolean): void {
       lookupCookie: 'locale',
       caches: cookiesEnabled ? ['cookie'] : []
     },
-    fallbackLng: 'en',
+    fallbackLng: ['en', 'hu'],
     debug: false,
     keySeparator: false,
     interpolation: {

@@ -10,13 +10,9 @@ const baseUrl = 'https://ftsrg.mit.bme.hu/'
 export default {
   siteMetadata: {
     baseUrl,
-    translations: ['en'],
-    lang: 'hu',
-    title: 'ftsrg — Kritikus Rendszerek Kutatócsoport',
-    titleTemplate: '%s | ftsrg — Kritikus Rendszerek Kutatócsoport',
-    description:
-      'A Kritikus Rendszerek Kutatócsoport célja olyan új módszerek és szoftverek kidolgozása, amiknek a segítségével a ' +
-      'mérnökök jobb rendszereket készíthetnek.',
+    title: 'meta.title',
+    titleTemplate: 'meta.titleTemplate',
+    description: 'meta.description',
     author: 'ftsrg',
     image: '/images/ftsrg-large.png',
     favicons: {
@@ -27,7 +23,7 @@ export default {
       twitterUsername: '@ftsrg_bme',
       facebookAppId: 'FB_APP_ID'
     },
-    keywords: ['research', 'system', 'verification', 'analysis', 'model-based'],
+    keywords: 'meta.keywords',
     robots: 'index, follow'
   },
   plugins: [
