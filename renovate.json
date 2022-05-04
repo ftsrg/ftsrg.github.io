@@ -1,12 +1,11 @@
 {
   "schedule": ["before 3am on the first day of the month"],
   "extends": [
-    "group:allNonMajor", 
-    "group:monorepos",
-    "group:definitelyTyped",
-    "group:recommended",
+    "config:base",
     ":onlyNpm",
     "config:js-app", 
+    "group:definitelyTyped",
+    "group:allNonMajor", 
     ":automergeMinor",
     "helpers:pinGitHubActionDigests"
   ],
