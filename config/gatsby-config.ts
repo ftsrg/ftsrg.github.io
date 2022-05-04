@@ -5,9 +5,11 @@ dotenv.config({
   path: `.env.${process.env.NODE_ENV}`
 })
 
+const baseUrl = 'https://ftsrg.mit.bme.hu/'
+
 export default {
   siteMetadata: {
-    baseUrl: 'https://ftsrg.mit.bme.hu/',
+    baseUrl,
     translations: ['en'],
     lang: 'hu',
     title: 'ftsrg — Kritikus Rendszerek Kutatócsoport',
@@ -120,6 +122,48 @@ export default {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
         environments: ['production', 'development']
+      }
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: '/',
+        query: `
+          {
+            site {
+              siteMetadata {
+                baseUrl
+              }
+            }
+
+            allSitePage {
+              nodes {
+                path
+              }
+            }
+          }
+        `,
+        resolveSiteUrl: (query: { site: { siteMetadata: { baseUrl: string } } }) => query.site.siteMetadata.baseUrl,
+        excludes: ['/404.html'],
+        // eslint-disable-next-line no-shadow
+        serialize: ({ path }: { path: string }) => {
+          return {
+            url: path,
+            links: [
+              { lang: 'en', url: `${path}?locale=en` },
+              { lang: 'hu', url: `${path}?locale=hu` },
+              { lang: 'x-default', url: `${path}?locale=en` }
+            ]
+          }
+        }
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: baseUrl,
+        sitemap: `${baseUrl}sitemap-index.xml`,
+        policy: [{ userAgent: '*', allow: '/' }]
       }
     }
   ]
