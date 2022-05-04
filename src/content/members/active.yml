@@ -33,9 +33,9 @@
   homePage: http://mit.bme.hu/~micskeiz
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10041151
   twitterPage: https://twitter.com/micskeiz
-  orcidPage: https://orcid.org/0000-0003-1846-261X
-  scholarPage: https://scholar.google.hu/citations?user=nrCFKxUAAAAJ
-  dblpPage: https://dblp.org/pid/69/4812.html
+  orcidPage: ""
+  scholarPage: ""
+  dblpPage: ""
 - firstName: László
   lastName: Gönczy
   title: PhD
