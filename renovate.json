@@ -1,6 +1,14 @@
 {
   "schedule": ["before 3am on the first day of the month"],
-  "extends": ["config:base", "group:allNonMajor", ":onlyNpm", "config:js-app", ":automergeMinor", "helpers:pinGitHubActionDigests"],
+  "extends": [
+    "config:base",
+    ":onlyNpm",
+    "config:js-app", 
+    "group:definitelyTyped",
+    "group:allNonMajor", 
+    ":automergeMinor",
+    "helpers:pinGitHubActionDigests"
+  ],
   "assignees": ["as3810t"],
   "labels": ["dependencies"],
   "dependencyDashboard": true,

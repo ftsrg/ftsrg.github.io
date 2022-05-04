@@ -36,6 +36,13 @@
   orcidPage: https://orcid.org/0000-0003-1846-261X
   scholarPage: https://scholar.google.hu/citations?user=nrCFKxUAAAAJ
   dblpPage: https://dblp.org/pid/69/4812.html
+- firstName: László
+  lastName: Gönczy
+  title: PhD
+  position: about.members.position.assocProf
+  avatar: ../images/members/gonczy.jpg
+  homePage: https://inf.mit.bme.hu/members/gonczy
+  mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10041117
 - firstName: András
   lastName: Vörös
   title: PhD
@@ -43,21 +50,22 @@
   avatar: ../images/members/voros.jpg
   homePage: https://inf.mit.bme.hu/members/vorosa
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10042280
-- firstName: László
-  lastName: Gönczy
-  title: PhD
-  position: about.members.position.assistProf
-  avatar: ../images/members/gonczy.jpg
-  homePage: https://inf.mit.bme.hu/members/gonczy
-  mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10041117
 - firstName: Ákos
   lastName: Horváth
   title: PhD
-  position: about.members.position.assistProf
+  position: about.members.position.honAssocProf
   avatar: ../images/members/horvath.jpg
   homePage: https://inf.mit.bme.hu/members/ahorvath
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10030432
   linkedInPage: https://www.linkedin.com/in/akoshorvathincquerylabs/
+- firstName: István
+  lastName: Ráth
+  title: PhD
+  position: about.members.position.honAssocProf
+  avatar: ../images/members/rath.jpg
+  homePage: https://inf.mit.bme.hu/members/rath
+  mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10030433
+  linkedInPage: https://www.linkedin.com/in/istvanrath/
 - firstName: Imre
   lastName: Kocsis
   title: PhD
@@ -74,18 +82,10 @@
   homePage: https://inf.mit.bme.hu/members/molnarv
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10049620
   githubPage: https://github.com/vincemolnar
-- firstName: István
-  lastName: Ráth
-  title: PhD
-  position: about.members.position.assistProf
-  avatar: ../images/members/rath.jpg
-  homePage: https://inf.mit.bme.hu/members/rath
-  mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10030433
-  linkedInPage: https://www.linkedin.com/in/istvanrath/
 - firstName: Oszkár
   lastName: Semeráth
   title: PhD
-  position: about.members.position.resFellow
+  position: about.members.position.assistProf
   avatar: ../images/members/semerath.jpg
   homePage: https://inf.mit.bme.hu/members/semeratho
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10045161
@@ -110,6 +110,19 @@
   avatar: ../images/members/klenik.jpg
   homePage: https://inf.mit.bme.hu/members/klenika
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10056599
+- firstName: Kristóf
+  lastName: Marussy
+  position: about.members.position.assistResFellow
+  avatar: ../images/members/marussy.jpg
+  homePage: https://inf.mit.bme.hu/members/marussyk
+  mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10062709
+- firstName: Mihály
+  lastName: Dobos-Kovács
+  position: about.members.position.phdStudent
+  avatar: ../images/members/dobos-kovacs.jpg
+  homePage: https://www.mit.bme.hu/general/phd/dobos
+  mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10073065
+  linkedInPage: https://www.linkedin.com/in/mih%C3%A1ly-dobos-kov%C3%A1cs/
 - firstName: Márton
   lastName: Elekes
   position: about.members.position.phdStudent
@@ -126,8 +139,8 @@
 - firstName: András
   lastName: Földvári
   position: about.members.position.phdStudent
-  avatar: ../images/members/foldvari.png
-  homePage: null
+  avatar: ../images/members/foldvari.jpg
+  homePage: https://www.mit.bme.hu/general/phd/foldvari
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10068408
 - firstName: Bence
   lastName: Graics
@@ -137,14 +150,15 @@
   homePage: https://inf.mit.bme.hu/members/graicsb
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10068239
   githubPage: https://github.com/grbeni
-- firstName: András
-  lastName: Kövi
+- firstName: Richárd
+  lastName: Szabó
   position: about.members.position.phdStudent
-  avatar: ../images/members/kovi.jpg
-  linkedInPage: https://hu.linkedin.com/in/andr%C3%A1s-k%C3%B6vi-89a9bb3
-- firstName: Kristóf
-  lastName: Marussy
+  avatar: ../images/members/szabo.jpg
+  homePage: https://www.mit.bme.hu/general/phd/szabo
+  mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10068607
+- firstName: Dániel
+  lastName: Szekeres
   position: about.members.position.phdStudent
-  avatar: ../images/members/marussy.jpg
-  homePage: https://inf.mit.bme.hu/members/marussyk
-  mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10062709
+  avatar: ../images/members/szekeres.png
+  homePage: https://www.mit.bme.hu/general/phd/szekeres
+  mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10078570
