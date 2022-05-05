@@ -1,3 +1,9 @@
+- translationPrefix: research.events.fka2022
+  url: https://hu.linkedin.com/company/hungarian-young-academy
+  featuredImage: ../images/events/fka.jpg
+- translationPrefix: research.events.mta2022
+  url: https://mta.hu/dijak-kituntetesek/akademiai-ifjusagi-dij-105794
+  featuredImage: ../images/events/mta.jpg
 - translationPrefix: research.events.sosym2021
   url: https://www.sosym.org/awards/
   featuredImage: ../images/events/sosym2021.png
