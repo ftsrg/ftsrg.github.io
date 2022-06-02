@@ -182,26 +182,45 @@ export default {
                 baseUrl
               }
             }
-
             allSitePage {
               nodes {
+                pageContext
                 path
               }
             }
           }
         `,
-        resolveSiteUrl: (query: { site: { siteMetadata: { baseUrl: string } } }) => query.site.siteMetadata.baseUrl,
-        excludes: ['/404.html'],
-        // eslint-disable-next-line no-shadow
-        serialize: ({ path }: { path: string }) => {
-          return {
-            url: path,
-            links: [
-              { lang: 'en', url: `${path}?locale=en` },
-              { lang: 'hu', url: `${path}?locale=hu` },
-              { lang: 'x-default', url: `${path}?locale=en` }
-            ]
+        resolveSiteUrl: ({ site }: { site: { siteMetadata: { baseUrl: string } } }) => site.siteMetadata.baseUrl,
+        resolvePages: ({
+          allSitePage
+        }: {
+          allSitePage: {
+            nodes: {
+              pageContext: { i18n: { defaultLanguage: string; languages: string[]; originalPath: string; routed: boolean } }
+              path: string
+            }[]
           }
+        }) => allSitePage.nodes,
+        excludes: ['/**/404', '/**/404.html'],
+        filterPages: (node: {
+          pageContext: { i18n: { defaultLanguage: string; languages: string[]; originalPath: string; routed: boolean } }
+          path: string
+        }) => {
+          return node.pageContext.i18n.routed === false
+        },
+        serialize: (node: {
+          pageContext: { i18n: { language: string; defaultLanguage: string; languages: string[]; originalPath: string; routed: boolean } }
+          path: string
+        }) => {
+          const { language, languages, originalPath, defaultLanguage } = node.pageContext.i18n
+
+          const links = [{ lang: 'x-default', url: `${baseUrl}${defaultLanguage}${originalPath}` }]
+          languages.forEach((lang) => {
+            if (lang === language) return
+            links.push({ lang, url: `${baseUrl}${lang}${originalPath}` })
+          })
+
+          return { url: `${baseUrl}${node.path.slice(1)}`, links }
         }
       }
     },

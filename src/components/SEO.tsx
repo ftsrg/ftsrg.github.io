@@ -1,4 +1,3 @@
-import { useLocation } from '@reach/router'
 import { useI18next } from 'gatsby-plugin-react-i18next'
 import React, { FC } from 'react'
 import { Helmet } from 'react-helmet'
@@ -6,8 +5,7 @@ import { useSiteMetadata } from '~hooks/useSiteMetadata'
 import { SEOProps } from '~utils/props'
 
 const SEO: FC<SEOProps> = ({ title, description, image, author, lang, robots, meta = [], links = [] }) => {
-  const { pathname } = useLocation()
-  const { t, i18n } = useI18next()
+  const { t, defaultLanguage, language, languages, originalPath, routed } = useI18next()
 
   const {
     baseUrl,
@@ -29,12 +27,12 @@ const SEO: FC<SEOProps> = ({ title, description, image, author, lang, robots, me
   })()
 
   const seo = {
-    lang: lang || i18n.language,
+    lang: lang || language,
     title: title || defaultTitle,
     description: description || defaultDescription,
     author: author || defaultAuthor,
     image: imageUrl,
-    url: pathname === '/' ? `${baseUrl}` : `${baseUrl}${pathname.slice(1)}`,
+    url: originalPath === '/' ? `${baseUrl}` : `${baseUrl}${language}${originalPath}`,
     keywords: defaultKeywords,
     robots: robots || defaultRobots
   }
@@ -49,10 +47,6 @@ const SEO: FC<SEOProps> = ({ title, description, image, author, lang, robots, me
       link={(
         [
           {
-            rel: 'canonical',
-            href: seo.url
-          },
-          {
             rel: 'icon',
             type: 'image/png',
             sizes: '32x32',
@@ -66,20 +60,30 @@ const SEO: FC<SEOProps> = ({ title, description, image, author, lang, robots, me
           }
         ] as Array<JSX.IntrinsicElements['link']>
       )
+        .concat({
+          rel: 'alternate',
+          href: `${baseUrl}${defaultLanguage}${originalPath}`,
+          hrefLang: 'x-default'
+        })
         .concat(
-          i18n.languages.map((l) => ({
-            rel: 'alternate',
-            href: `${seo.url}?locale=${l}`,
-            hrefLang: l
-          }))
+          languages
+            .filter((l) => l !== language)
+            .map((l) => ({
+              rel: 'alternate',
+              href: `${baseUrl}${l}${originalPath}`,
+              hrefLang: l
+            }))
         )
-        .concat([
-          {
-            rel: 'alternate',
-            href: `${seo.url}?locale=${(i18n.options.fallbackLng as string[])[0]}`,
-            hrefLang: 'x-default'
-          }
-        ])
+        .concat(
+          routed
+            ? [
+                {
+                  rel: 'canonical',
+                  href: `${baseUrl}${language}${originalPath}`
+                }
+              ]
+            : []
+        )
         .concat(links)}
       meta={[
         {
