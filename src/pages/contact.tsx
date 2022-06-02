@@ -1,13 +1,13 @@
-import { PageProps } from 'gatsby'
+import { graphql, PageProps } from 'gatsby'
+import { Trans, useI18next } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import { Trans, useTranslation } from 'react-i18next'
 import Breadcrumbs from '~components/Breadcrumbs'
 import TopHero from '~components/TopHero'
 import Layout from '~layout/Layout'
 
 const ContactPage: React.FC<PageProps> = () => {
-  const tr = useTranslation() // somehow destructuring didn't work
+  const tr = useI18next() // somehow destructuring didn't work
 
   return (
     <Layout href="/contact">
@@ -84,3 +84,17 @@ const ContactPage: React.FC<PageProps> = () => {
 }
 
 export default ContactPage
+
+export const query = graphql`
+  query ContactPageQueries($language: String!) {
+    locales: allLocale(filter: { ns: { in: ["contact.translation", "nav.translation", "translation"] }, language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`

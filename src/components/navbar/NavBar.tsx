@@ -1,8 +1,7 @@
-import { Link } from 'gatsby'
+import { Link, useI18next } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { Button, Col, Container, Nav, Navbar, NavDropdown, Row } from 'react-bootstrap'
-import { useTranslation } from 'react-i18next'
 import { FaFacebookF, FaGithub, FaTwitter } from 'react-icons/fa'
 import LanguageToggle from './LanguageToggle'
 import NAVBAR_ITEMS from './navbar-items'
@@ -12,7 +11,7 @@ type Props = {
 }
 
 const NavBar: React.FC<Props> = ({ href }) => {
-  const { t } = useTranslation()
+  const { t } = useI18next()
   const socialStyle = { width: '2.5rem', height: '2.5rem' }
 
   return (

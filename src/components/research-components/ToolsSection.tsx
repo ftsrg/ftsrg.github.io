@@ -1,6 +1,6 @@
+import { useI18next } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
-import { useTranslation } from 'react-i18next'
 import Hero from '~components/Hero'
 
 const toolsData = [
@@ -22,7 +22,7 @@ const toolsData = [
 ]
 
 const ToolsSection: React.FC = () => {
-  const { t } = useTranslation()
+  const { t } = useI18next()
 
   return (
     <Hero id="tools" bgImageUrl="/images/bg_4.jpg" heroTitle="research.tools.title" isHeroTitleCentered>

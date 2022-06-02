@@ -1,25 +1,21 @@
+import { Link, useI18next } from 'gatsby-plugin-react-i18next'
 import React from 'react'
-import { Button } from 'react-bootstrap'
-import { useTranslation } from 'react-i18next'
-import Locale from '~utils/language'
 
 const LanguageToggle: React.FC = () => {
-  const { i18n } = useTranslation()
-  const translations = i18n.languages
-  const locale = i18n.language as keyof typeof Locale
+  const { language, originalPath } = useI18next()
+  const locale = language
   const otherLocale = locale === 'hu' ? 'en' : 'hu'
-  const toggleLanguage = () => i18n.changeLanguage(otherLocale)
 
   return (
-    <Button
-      className="rounded-0 p-0"
-      style={{ width: '2.5rem', height: '2.5rem' }}
-      disabled={!translations.some((loc) => loc === 'en')}
+    <Link
+      className="rounded-0 p-0 mr-1 btn btn-primary"
+      style={{ width: '2.5rem', height: '2.5rem', lineHeight: '2.4rem' }}
       aria-label="Toggle language"
-      onClick={toggleLanguage}
+      to={originalPath}
+      language={otherLocale}
     >
       {otherLocale.toUpperCase()}
-    </Button>
+    </Link>
   )
 }
 

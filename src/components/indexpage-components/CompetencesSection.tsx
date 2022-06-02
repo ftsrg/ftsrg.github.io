@@ -1,6 +1,6 @@
+import { useI18next } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
-import { useTranslation } from 'react-i18next'
 import { CgPerformance } from 'react-icons/cg'
 import { FaBug } from 'react-icons/fa'
 import { VscRocket } from 'react-icons/vsc'
@@ -25,7 +25,7 @@ const compentencesData = [
 ]
 
 const CompetencesSection: React.FC = () => {
-  const { t } = useTranslation()
+  const { t } = useI18next()
 
   return (
     <Hero id="competences" heroTitle="home.competences.title" isHeroTitleCentered>

@@ -109,6 +109,57 @@ export default {
         ]
       }
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `locale`,
+        path: `${path.join(__dirname, '../src/locales')}`
+      }
+    },
+    {
+      resolve: `gatsby-plugin-react-i18next`,
+      options: {
+        localeJsonSourceName: `locale`,
+        languages: [`en`, `hu`],
+        defaultLanguage: `en`,
+        generateDefaultLanguagePage: true,
+        redirect: true,
+        siteUrl: baseUrl,
+        i18nextOptions: {
+          interpolation: {
+            escapeValue: false
+          },
+          keySeparator: false,
+          nsSeparator: false
+        },
+        pages: [
+          {
+            matchPath: '/',
+            languages: ['en', 'hu']
+          },
+          {
+            matchPath: '/404',
+            languages: ['en', 'hu']
+          },
+          {
+            matchPath: '/about',
+            languages: ['en', 'hu']
+          },
+          {
+            matchPath: '/contact',
+            languages: ['en', 'hu']
+          },
+          {
+            matchPath: '/education',
+            languages: ['en', 'hu']
+          },
+          {
+            matchPath: '/research',
+            languages: ['en', 'hu']
+          }
+        ]
+      }
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,

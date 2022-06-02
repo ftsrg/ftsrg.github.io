@@ -1,6 +1,6 @@
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import { useI18next } from 'gatsby-plugin-react-i18next'
 import React from 'react'
-import { useTranslation } from 'react-i18next'
 import Slider from 'react-slick'
 import { ProjectProps } from '~utils/props'
 
@@ -9,7 +9,7 @@ type Props = {
 }
 
 const ProjectsCarousel: React.FC<Props> = ({ nodes }) => {
-  const { t } = useTranslation()
+  const { t } = useI18next()
 
   return (
     <Slider

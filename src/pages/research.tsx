@@ -1,7 +1,7 @@
 import { graphql, PageProps } from 'gatsby'
+import { useI18next } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import { useTranslation } from 'react-i18next'
 import { FaDatabase } from 'react-icons/fa'
 import { MdSchool } from 'react-icons/md'
 import Breadcrumbs from '~components/Breadcrumbs'
@@ -26,7 +26,7 @@ interface ResearchPageProps extends PageProps {
 }
 
 const ResearchPage: React.FC<ResearchPageProps> = ({ data }) => {
-  const { t } = useTranslation()
+  const { t } = useI18next()
 
   return (
     <Layout href="/research">
@@ -94,7 +94,7 @@ const ResearchPage: React.FC<ResearchPageProps> = ({ data }) => {
 export default ResearchPage
 
 export const query = graphql`
-  query ResearchPageQueries {
+  query ResearchPageQueries($language: String!) {
     projects: allProjectsYaml {
       nodes {
         title
@@ -130,6 +130,15 @@ export const query = graphql`
           childImageSharp {
             gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
           }
+        }
+      }
+    }
+    locales: allLocale(filter: { ns: { in: ["research.translation", "nav.translation", "translation"] }, language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
         }
       }
     }

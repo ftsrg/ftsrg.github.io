@@ -1,7 +1,6 @@
-import { Link } from 'gatsby'
+import { Link, Trans, useI18next } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import { Trans, useTranslation } from 'react-i18next'
 import { resetCookieConsent } from '~lib/cookieConsent'
 import FooterNav from './FooterNav'
 
@@ -11,7 +10,7 @@ type Props = {
 }
 
 const Footer: React.FC<Props> = ({ hasContact }) => {
-  const { t } = useTranslation()
+  const { t } = useI18next()
 
   return (
     <>

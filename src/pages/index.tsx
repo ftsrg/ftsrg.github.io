@@ -1,7 +1,7 @@
 import { graphql, PageProps } from 'gatsby'
+import { useI18next } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import { useTranslation } from 'react-i18next'
 import { ProjectsCarousel } from '~components/carousels'
 import { About, Banner, Competences, Education, News, Partners } from '~components/indexpage-components'
 import Layout from '~layout/Layout'
@@ -16,7 +16,7 @@ interface IndexPageProps extends PageProps {
 }
 
 const IndexPage: React.FC<IndexPageProps> = ({ data }) => {
-  const { t } = useTranslation()
+  const { t } = useI18next()
 
   return (
     <Layout href="/">
@@ -45,7 +45,7 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) => {
 export default IndexPage
 
 export const query = graphql`
-  query IndexPageQueries {
+  query IndexPageQueries($language: String!) {
     projects: allProjectsYaml {
       nodes {
         title
@@ -56,6 +56,15 @@ export const query = graphql`
           childImageSharp {
             gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
           }
+        }
+      }
+    }
+    locales: allLocale(filter: { ns: { in: ["home.translation", "nav.translation", "translation"] }, language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
         }
       }
     }

@@ -1,7 +1,7 @@
 import { graphql, PageProps } from 'gatsby'
+import { useI18next } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import { useTranslation } from 'react-i18next'
 import Breadcrumbs from '~components/Breadcrumbs'
 import { AchievementsCarousel, SpecializationsCarousel } from '~components/carousels'
 import { StudentWork, Subjects } from '~components/education-components'
@@ -25,7 +25,7 @@ interface EducationPageProps extends PageProps {
 }
 
 const EducationPage: React.FC<EducationPageProps> = ({ data }) => {
-  const { t } = useTranslation()
+  const { t } = useI18next()
 
   return (
     <Layout href="/education">
@@ -72,7 +72,7 @@ const EducationPage: React.FC<EducationPageProps> = ({ data }) => {
 export default EducationPage
 
 export const query = graphql`
-  query EducationPageQueries {
+  query EducationPageQueries($language: String!) {
     subjects: allSubjectsYaml {
       nodes {
         translationPrefix
@@ -105,6 +105,15 @@ export const query = graphql`
           childImageSharp {
             gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
           }
+        }
+      }
+    }
+    locales: allLocale(filter: { ns: { in: ["education.translation", "nav.translation", "translation"] }, language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
         }
       }
     }

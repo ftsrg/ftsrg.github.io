@@ -19,16 +19,10 @@
 
 import { LocationProvider } from '@reach/router'
 import { render, RenderResult } from '@testing-library/react'
-import React, { FC, ReactElement } from 'react'
-import { I18nextProvider } from 'react-i18next'
-import i18next from '../lib/i18next'
+import React, { PropsWithChildren, ReactElement } from 'react'
 
-const Providers: FC = ({ children }) => {
-  return (
-    <LocationProvider>
-      <I18nextProvider i18n={i18next}>{children}</I18nextProvider>
-    </LocationProvider>
-  )
+const Providers: React.FC<PropsWithChildren<Record<string, unknown>>> = ({ children }) => {
+  return <LocationProvider>{children}</LocationProvider>
 }
 
 const customRender = (ui: ReactElement, options: Record<string, unknown> = {}): RenderResult => {
@@ -37,3 +31,4 @@ const customRender = (ui: ReactElement, options: Record<string, unknown> = {}): 
 
 export * from '@testing-library/react'
 export { customRender as render }
+

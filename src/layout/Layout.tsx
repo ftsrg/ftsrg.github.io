@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { PropsWithChildren } from 'react'
 import CookieBanner from '~components/CookieBanner'
 import Footer from '~components/footer/Footer'
 import NavBar from '~components/navbar/NavBar'
@@ -11,7 +11,7 @@ interface Props {
   href: string
 }
 
-const Layout: React.FC<Props> = ({ href, seo, children }) => {
+const Layout: React.FC<PropsWithChildren<Props>> = ({ href, seo, children }) => {
   return (
     <>
       {/* eslint-disable-next-line react/jsx-props-no-spreading */}

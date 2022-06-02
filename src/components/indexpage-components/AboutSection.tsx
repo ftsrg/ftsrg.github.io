@@ -1,10 +1,10 @@
+import { Trans, useI18next } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
-import { Trans, useTranslation } from 'react-i18next'
 import Hero from '~components/Hero'
 
 const AboutSection: React.FC = () => {
-  const { t } = useTranslation()
+  const { t } = useI18next()
 
   return (
     <Hero id="about" bgImageUrl="/images/hero_3.jpg">

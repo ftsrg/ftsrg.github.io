@@ -1,13 +1,13 @@
 import { useLocation } from '@reach/router'
+import { useI18next } from 'gatsby-plugin-react-i18next'
 import React, { FC } from 'react'
 import { Helmet } from 'react-helmet'
-import { useTranslation } from 'react-i18next'
 import { useSiteMetadata } from '~hooks/useSiteMetadata'
 import { SEOProps } from '~utils/props'
 
 const SEO: FC<SEOProps> = ({ title, description, image, author, lang, robots, meta = [], links = [] }) => {
   const { pathname } = useLocation()
-  const { t, i18n } = useTranslation()
+  const { t, i18n } = useI18next()
 
   const {
     baseUrl,

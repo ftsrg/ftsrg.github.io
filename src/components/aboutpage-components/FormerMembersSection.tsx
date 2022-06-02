@@ -1,5 +1,5 @@
+import { useI18next } from 'gatsby-plugin-react-i18next'
 import React from 'react'
-import { useTranslation } from 'react-i18next'
 import { FaLinkedin } from 'react-icons/fa'
 import Hero from '~components/Hero'
 import { MemberProps } from '~utils/props'
@@ -9,7 +9,7 @@ type Props = {
 }
 
 const FormerMembersSection: React.FC<Props> = ({ nodes }) => {
-  const { t } = useTranslation()
+  const { t } = useI18next()
 
   function memberName(props: MemberProps) {
     return t('about.members.name', { firstName: props.firstName, lastName: props.lastName })

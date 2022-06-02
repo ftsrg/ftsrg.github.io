@@ -1,7 +1,7 @@
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import { useI18next } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import { useTranslation } from 'react-i18next'
 import { SubjectProps } from '~utils/props'
 
 type Props = {
@@ -9,7 +9,7 @@ type Props = {
 }
 
 const SubjectsSection: React.FC<Props> = ({ nodes }) => {
-  const { t } = useTranslation()
+  const { t } = useI18next()
 
   return (
     <div id="courses" className="section-bg style-1">

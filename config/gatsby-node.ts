@@ -21,6 +21,26 @@ export const onCreateNode: GatsbyNode['onCreateNode'] = ({ node, getNode, action
   }
 }
 
+export const onCreatePage: GatsbyNode['onCreatePage'] = ({ actions, page }) => {
+  const { createPage, deletePage } = actions
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const i18nData = page.context.i18n as any
+  if (i18nData && i18nData.routed === false && i18nData.originalPath === i18nData.path) {
+    deletePage(page)
+    createPage({
+      path: page.path,
+      context: {
+        ...page.context,
+        redirect: {
+          from: page.path,
+          to: `/${i18nData.defaultLanguage}${page.path}`
+        }
+      },
+      component: path.join(__dirname, '../src/utils/redirect.tsx')
+    })
+  }
+}
+
 /*
  * UNCOMMENT THIS PART IF BLOG POSTS IN MARKDOWN ARE AVAILABLE
  *

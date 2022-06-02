@@ -33,7 +33,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ data }) => {
 export default AboutPage
 
 export const query = graphql`
-  query AboutPageQueries {
+  query AboutPageQueries($language: String!) {
     members: allActiveYaml {
       nodes {
         firstName
@@ -62,6 +62,15 @@ export const query = graphql`
         lastName
         title
         linkedInPage
+      }
+    }
+    locales: allLocale(filter: { ns: { in: ["about.translation", "nav.translation", "translation"] }, language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
       }
     }
   }

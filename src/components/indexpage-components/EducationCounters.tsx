@@ -1,8 +1,7 @@
-import { Link } from 'gatsby'
+import { Link, useI18next } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
 import CountUp from 'react-countup'
-import { useTranslation } from 'react-i18next'
 import VisibilitySensor from 'react-visibility-sensor'
 
 const counterData = [
@@ -35,7 +34,7 @@ const EducationCounters: React.FC = () => {
   const reactToScroll = (isVisible: boolean) => {
     if (!showCounter && isVisible) setShowCounter(true)
   }
-  const { t } = useTranslation()
+  const { t } = useI18next()
 
   return (
     <VisibilitySensor partialVisibility onChange={reactToScroll}>

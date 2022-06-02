@@ -1,6 +1,6 @@
-import React from 'react'
+import { useI18next } from 'gatsby-plugin-react-i18next'
+import React, { PropsWithChildren } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import { useTranslation } from 'react-i18next'
 
 type Props = {
   heroTitle?: string
@@ -9,8 +9,8 @@ type Props = {
   id?: string
 }
 
-const Hero: React.FC<Props> = ({ heroTitle, isHeroTitleCentered, bgImageUrl, id, children }) => {
-  const { t } = useTranslation()
+const Hero: React.FC<PropsWithChildren<Props>> = ({ heroTitle, isHeroTitleCentered, bgImageUrl, id, children }) => {
+  const { t } = useI18next()
 
   return (
     <div id={id} className="section-bg style-1 pb-5" style={{ backgroundImage: bgImageUrl ? `url('${bgImageUrl}')` : '' }}>

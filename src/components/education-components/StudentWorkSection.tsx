@@ -1,6 +1,6 @@
+import { Trans, useI18next } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import { Trans, useTranslation } from 'react-i18next'
 import Slider from 'react-slick'
 
 const cardsData = [
@@ -21,7 +21,7 @@ const cardsData = [
 ]
 
 const StudentWorkSection: React.FC = () => {
-  const { t } = useTranslation()
+  const { t } = useI18next()
 
   return (
     <div id="student-work" className="site-section">

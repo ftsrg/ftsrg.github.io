@@ -1,7 +1,6 @@
-import { Link } from 'gatsby'
+import { Link, useI18next } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import { Container } from 'react-bootstrap'
-import { useTranslation } from 'react-i18next'
 import { FaChevronRight } from 'react-icons/fa'
 
 type Props = {
@@ -9,7 +8,7 @@ type Props = {
 }
 
 const Breadcrumbs: React.FC<Props> = ({ title }) => {
-  const { t } = useTranslation()
+  const { t } = useI18next()
 
   return (
     <div className="custom-breadcrumbs py-3 border-bottom">

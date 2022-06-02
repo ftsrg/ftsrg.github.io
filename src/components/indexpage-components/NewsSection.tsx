@@ -1,15 +1,19 @@
+import { useI18next } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { Helmet } from 'react-helmet'
-import { useTranslation } from 'react-i18next'
+import useIsClient from '~hooks/useIsClient'
 import { getCookieConsent, resetCookieConsent } from '~lib/cookieConsent'
 
 const NewsSection: React.FC = () => {
-  const { t } = useTranslation()
+  const { t } = useI18next()
+  const { isClient, key } = useIsClient()
+
+  if (!isClient) return null
 
   if (getCookieConsent()) {
     return (
-      <div id="news" className="news-updates">
+      <div id="news" className="news-updates" key={key}>
         <Helmet>
           <script defer crossOrigin="anonymous" src="https://connect.facebook.net/hu_HU/sdk.js#xfbml=1&version=v7.0" nonce="SRkXDokT" />
           <script defer crossOrigin="anonymous" src="https://platform.twitter.com/widgets.js" />
@@ -48,7 +52,7 @@ const NewsSection: React.FC = () => {
   }
 
   return (
-    <div id="news" className="news-updates">
+    <div id="news" className="news-updates" key={key}>
       <Container>
         <h2 className="section-title-underline text-center mb-5">
           <span>{t('home.news.title')}</span>
