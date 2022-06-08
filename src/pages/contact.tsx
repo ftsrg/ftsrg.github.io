@@ -1,4 +1,5 @@
 import { graphql, PageProps } from 'gatsby'
+import { ImageDataLike, StaticImage } from 'gatsby-plugin-image'
 import { Trans, useI18next } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
@@ -18,7 +19,7 @@ const ContactPage: React.FC<PageProps> = () => {
         <Container>
           <Row className="mb-6">
             <Col lg={6} className="order-1 order-lg-2 mb-4 mb-lg-0">
-              <img src="/images/bme-i-building.jpg" alt="..." className="img-fluid" />
+              <StaticImage src="../../static/images/bme-i-building.jpg" alt="..." className="img-fluid" layout="fullWidth" />
             </Col>
             <Col lg={5} className="mr-auto align-self-center order-2 order-lg-1">
               <h2 className="section-title-underline mb-5">
@@ -45,7 +46,7 @@ const ContactPage: React.FC<PageProps> = () => {
           </Row>
           <Row className="mb-6">
             <Col lg={6} className="mb-lg-0 mb-4">
-              <img src="/images/ftsrg-rooms.jpg" alt="..." className="img-fluid" />
+              <StaticImage src="../../static/images/ftsrg-rooms.jpg" alt="..." className="img-fluid" layout="fullWidth" />
             </Col>
             <Col lg={5} className="ml-auto align-self-center">
               <h2 className="section-title-underline mb-5">
@@ -57,7 +58,7 @@ const ContactPage: React.FC<PageProps> = () => {
           </Row>
           <Row>
             <Col lg={5} className="order-1 order-lg-2 mb-4 mb-lg-0">
-              <img src="/images/ftsrg-4th-floor.jpg" alt="Hallgatói folyosó" className="img-fluid" />
+              <StaticImage src="../../static/images/ftsrg-4th-floor.jpg" alt="..." className="img-fluid" layout="fullWidth" />
             </Col>
             <Col lg={5} className="mr-auto align-self-center order-2 order-lg-1">
               <h2 className="section-title-underline mb-5">

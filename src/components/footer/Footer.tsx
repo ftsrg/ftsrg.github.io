@@ -1,3 +1,4 @@
+import { StaticImage } from 'gatsby-plugin-image'
 import { Link, Trans, useI18next } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
@@ -20,7 +21,7 @@ const Footer: React.FC<Props> = ({ hasContact }) => {
             <div className="d-flex align-items-center justify-content-center">
               <div className="d-flex align-items-center">
                 <a href="http://mit.bme.hu/~micskeiz" target="_blank" rel="noopener noreferrer">
-                  <img src="/images/members/micskei-small.png" alt="Micskei Zoltán" width="100px" className="mr-4" />
+                  <StaticImage src="../../../static/images/members/micskei-small.png" alt="Micskei Zoltán" className="mr-4" width={100} />
                 </a>
                 <div>
                   <h2>{t('footer.contactHero.haveQuestion')}</h2>
@@ -45,7 +46,7 @@ const Footer: React.FC<Props> = ({ hasContact }) => {
         <Container>
           <Row className="justify-content-center pb-5">
             <Col lg={4} className="text-center px-5">
-              <img src="/images/ftsrg-small-white.png" alt="..." width="120px" className="mb-4" />
+              <StaticImage src="../../../static/images/ftsrg-small-white.png" alt="ftsrg" className="mr-4" width={120} />
               <p>
                 {t('contact.address.line1')}
                 <br />
@@ -64,7 +65,7 @@ const Footer: React.FC<Props> = ({ hasContact }) => {
 
           <Row className="pt-5 justify-content-center">
             <Col xs="auto">
-              <img src="/images/logos/kirdev.png" alt="Kir-Dev" height="46" />
+              <StaticImage src="../../../static/images/logos/kirdev.png" alt="Kir-Dev" height={46} />
             </Col>
             <Col xs="auto">
               <Trans

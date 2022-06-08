@@ -163,7 +163,15 @@ export default {
     `gatsby-plugin-sass`,
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          formats: [`auto`, `avif`, `webp`],
+          placeholder: `blurred`
+        }
+      }
+    },
     `gatsby-plugin-tsconfig-paths`,
     {
       resolve: `gatsby-plugin-gdpr-cookies`,

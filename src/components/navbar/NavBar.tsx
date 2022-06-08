@@ -1,3 +1,4 @@
+import { StaticImage } from 'gatsby-plugin-image'
 import { Link, useI18next } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
@@ -21,13 +22,31 @@ const NavBar: React.FC<Props> = ({ href }) => {
           <Row>
             <Col>
               <a href="https://www.bme.hu" className="small mr-3">
-                <img src="/images/logos/bme.png" height="20" alt="Budapesti Műszaki és Gazdaságtudományi Egyetem" /> | bme.hu
+                <StaticImage
+                  src="../../../static/images/logos/bme.png"
+                  alt="Budapesti Műszaki és Gazdaságtudományi Egyetem"
+                  height={20}
+                  style={{ verticalAlign: 'middle' }}
+                />
+                {' | bme.hu'}
               </a>
               <a href="https://www.vik.bme.hu" className="small mr-3">
-                <img src="/images/logos/vik.png" height="20" alt="Villamosmérnöki és Informatikai Kar" /> | vik.bme.hu
+                <StaticImage
+                  src="../../../static/images/logos/vik.png"
+                  alt="Villamosmérnöki és Informatikai Kar"
+                  height={20}
+                  style={{ verticalAlign: 'middle' }}
+                />
+                {' | vik.bme.hu'}
               </a>
               <a href="https://www.mit.bme.hu" className="small mr-3">
-                <img src="/images/logos/mit.png" height="20" alt="Méréstechnika és Információs Rendszerek Tanszék" /> | mit.bme.hu
+                <StaticImage
+                  src="../../../static/images/logos/mit.png"
+                  alt="Méréstechnika és Információs Rendszerek Tanszék"
+                  height={20}
+                  style={{ verticalAlign: 'middle' }}
+                />
+                {' | mit.bme.hu'}
               </a>
             </Col>
           </Row>
@@ -38,7 +57,14 @@ const NavBar: React.FC<Props> = ({ href }) => {
         <Container className="site-navcontainer align-items-center">
           <Navbar.Brand className="pr-4" as="div">
             <Link to="/">
-              <img role="banner" src="/images/ftsrg.png" alt="..." className="img-fluid" style={{ height: '3rem' }} />
+              <StaticImage
+                src="../../../static/images/ftsrg.png"
+                alt={t('nav.home.title')}
+                className="img-fluid"
+                height={48}
+                placeholder="none"
+                role="banner"
+              />
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">

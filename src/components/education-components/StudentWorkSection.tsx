@@ -1,3 +1,4 @@
+import { StaticImage } from 'gatsby-plugin-image'
 import { Trans, useI18next } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
@@ -44,7 +45,12 @@ const StudentWorkSection: React.FC = () => {
           </Col>
           <Col md={9}>
             <p>
-              <img src="/images/students/thesis-topics.jpg" alt="Szakdolgozat és diplomaterv témák" className="img-fluid" />
+              <StaticImage
+                src="../../../static/images/students/thesis-topics.jpg"
+                alt={t('education.studentwork.title')}
+                className="img-fluid"
+                layout="fullWidth"
+              />
             </p>
           </Col>
         </Row>
