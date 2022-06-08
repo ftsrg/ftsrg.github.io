@@ -512,13 +512,24 @@
     bottom: 0;
   }
 
-  > .container {
-    position: relative;
-    z-index: 2;
+  > .gatsby-image-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    max-height: 100%;
+    user-select: none;
+  }
 
-    h2,
-    p {
-      color: $white;
+  > .site-section,
+  &.site-section {
+    > .container {
+      position: relative;
+      z-index: 2;
+
+      h2,
+      p {
+        color: $white;
+      }
     }
   }
 }

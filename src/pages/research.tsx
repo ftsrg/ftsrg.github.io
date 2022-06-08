@@ -1,4 +1,5 @@
 import { graphql, PageProps } from 'gatsby'
+import { ImageDataLike } from 'gatsby-plugin-image'
 import { useI18next } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
@@ -22,6 +23,7 @@ interface ResearchPageProps extends PageProps {
     events: {
       nodes: Array<EventProps>
     }
+    researchHero: ImageDataLike
   }
 }
 
@@ -30,7 +32,7 @@ const ResearchPage: React.FC<ResearchPageProps> = ({ data }) => {
 
   return (
     <Layout href="/research">
-      <TopHero heroTitle="research.heroTitle" heroDesc="research.heroDesc" bgImageUrl="/images/bg_5.jpg" />
+      <TopHero heroTitle="research.heroTitle" heroDesc="research.heroDesc" bgImage={data.researchHero} />
       <Breadcrumbs title="nav.research.title" />
 
       <div id="projects" className="site-section">
@@ -140,6 +142,11 @@ export const query = graphql`
           data
           language
         }
+      }
+    }
+    researchHero: file(relativePath: { eq: "bg_5.jpg" }, sourceInstanceName: { eq: "staticImages" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
   }

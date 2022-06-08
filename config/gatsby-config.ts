@@ -53,6 +53,13 @@ export default {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `staticImages`,
+        path: `${path.join(__dirname, '../static/images')}`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `member`,
         path: `${path.join(__dirname, '../src/content/members')}`
       }

@@ -1,4 +1,5 @@
 import { graphql, PageProps } from 'gatsby'
+import { ImageDataLike } from 'gatsby-plugin-image'
 import { useI18next } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
@@ -21,6 +22,7 @@ interface EducationPageProps extends PageProps {
     achievements: {
       nodes: Array<AchievementProps>
     }
+    educationHero: ImageDataLike
   }
 }
 
@@ -29,7 +31,7 @@ const EducationPage: React.FC<EducationPageProps> = ({ data }) => {
 
   return (
     <Layout href="/education">
-      <TopHero heroTitle="education.heroTitle" heroDesc="education.heroDesc" bgImageUrl="/images/bg_1.jpg" />
+      <TopHero heroTitle="education.heroTitle" heroDesc="education.heroDesc" bgImage={data.educationHero} />
       <Breadcrumbs title="nav.education.title" />
 
       <div id="specializations" className="site-section">
@@ -115,6 +117,11 @@ export const query = graphql`
           data
           language
         }
+      }
+    }
+    educationHero: file(relativePath: { eq: "bg_1.jpg" }, sourceInstanceName: { eq: "staticImages" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
   }

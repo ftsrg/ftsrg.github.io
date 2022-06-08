@@ -7,12 +7,18 @@ import Breadcrumbs from '~components/Breadcrumbs'
 import TopHero from '~components/TopHero'
 import Layout from '~layout/Layout'
 
-const ContactPage: React.FC<PageProps> = () => {
-  const tr = useI18next() // somehow destructuring didn't work
+interface ContactPageProps extends PageProps {
+  data: {
+    contactHero: ImageDataLike
+  }
+}
+
+const ContactPage: React.FC<ContactPageProps> = ({ data }) => {
+  const tr = useI18next()
 
   return (
     <Layout href="/contact">
-      <TopHero heroTitle="contact.heroTitle" heroDesc="contact.heroDesc" bgImageUrl="/images/bg_3.jpg" />
+      <TopHero heroTitle="contact.heroTitle" heroDesc="contact.heroDesc" bgImage={data.contactHero} />
       <Breadcrumbs title="nav.contact.title" />
 
       <div className="site-section">
@@ -95,6 +101,11 @@ export const query = graphql`
           data
           language
         }
+      }
+    }
+    contactHero: file(relativePath: { eq: "bg_3.jpg" }, sourceInstanceName: { eq: "staticImages" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
   }
