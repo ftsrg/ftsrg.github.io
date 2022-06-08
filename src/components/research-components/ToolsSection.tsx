@@ -1,7 +1,12 @@
+import { ImageDataLike } from 'gatsby-plugin-image'
 import { useI18next } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
 import Hero from '~components/Hero'
+
+type Props = {
+  heroBackgroundImage: ImageDataLike
+}
 
 const toolsData = [
   {
@@ -21,11 +26,11 @@ const toolsData = [
   }
 ]
 
-const ToolsSection: React.FC = () => {
+const ToolsSection: React.FC<Props> = ({ heroBackgroundImage }) => {
   const { t } = useI18next()
 
   return (
-    <Hero id="tools" bgImageUrl="/images/bg_4.jpg" heroTitle="research.tools.title" isHeroTitleCentered>
+    <Hero id="tools" bgImage={heroBackgroundImage} heroTitle="research.tools.title" isHeroTitleCentered>
       <Row>
         {toolsData.map((data) => (
           <Col key={data.title} lg={4} md={6} className="mb-5 mb-lg-0">

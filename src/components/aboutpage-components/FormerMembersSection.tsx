@@ -1,3 +1,4 @@
+import { ImageDataLike } from 'gatsby-plugin-image'
 import { useI18next } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import { FaLinkedin } from 'react-icons/fa'
@@ -6,9 +7,10 @@ import { MemberProps } from '~utils/props'
 
 type Props = {
   nodes: Array<MemberProps>
+  heroBackgroundImage: ImageDataLike
 }
 
-const FormerMembersSection: React.FC<Props> = ({ nodes }) => {
+const FormerMembersSection: React.FC<Props> = ({ nodes, heroBackgroundImage }) => {
   const { t } = useI18next()
 
   function memberName(props: MemberProps) {
@@ -16,7 +18,7 @@ const FormerMembersSection: React.FC<Props> = ({ nodes }) => {
   }
 
   return (
-    <Hero id="formermembers" bgImageUrl="/images/panorama.jpg" heroTitle="about.formermembers.heroTitle">
+    <Hero id="formermembers" bgImage={heroBackgroundImage} heroTitle="about.formermembers.heroTitle">
       <div className="card-columns alumni-list">
         {nodes
           .sort((member1, member2) => memberName(member1).localeCompare(memberName(member2)))

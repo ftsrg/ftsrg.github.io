@@ -1,4 +1,5 @@
 import { graphql, PageProps } from 'gatsby'
+import { ImageDataLike } from 'gatsby-plugin-image'
 import { useI18next } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
@@ -12,6 +13,8 @@ interface IndexPageProps extends PageProps {
     projects: {
       nodes: Array<ProjectProps>
     }
+    aboutHero: ImageDataLike
+    partnerHero: ImageDataLike
   }
 }
 
@@ -23,7 +26,7 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) => {
       <Banner />
       <Competences />
       <Education />
-      <About />
+      <About heroBackgroundImage={data.aboutHero} />
       <div id="projects" className="site-section">
         <Container>
           <Row className="mb-5">
@@ -36,7 +39,7 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) => {
           <ProjectsCarousel nodes={data.projects.nodes} />
         </Container>
       </div>
-      <Partners />
+      <Partners heroBackgroundImage={data.partnerHero} />
       <News />
     </Layout>
   )
@@ -66,6 +69,16 @@ export const query = graphql`
           data
           language
         }
+      }
+    }
+    aboutHero: file(relativePath: { eq: "hero_3.jpg" }, sourceInstanceName: { eq: "staticImages" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
+      }
+    }
+    partnerHero: file(relativePath: { eq: "hero_1.jpg" }, sourceInstanceName: { eq: "staticImages" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
   }

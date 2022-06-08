@@ -16,6 +16,7 @@ interface AboutPageProps extends PageProps {
       nodes: Array<MemberProps>
     }
     aboutHero: ImageDataLike
+    formerMembersHero: ImageDataLike
   }
 }
 
@@ -26,7 +27,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ data }) => {
       <Breadcrumbs title="nav.about.title" />
       <Intro />
       <Members nodes={data.members.nodes} />
-      <FormerMembers nodes={data.formermembers.nodes} />
+      <FormerMembers nodes={data.formermembers.nodes} heroBackgroundImage={data.formerMembersHero} />
       <Students />
     </Layout>
   )
@@ -76,6 +77,11 @@ export const query = graphql`
       }
     }
     aboutHero: file(relativePath: { eq: "bg_6.jpg" }, sourceInstanceName: { eq: "staticImages" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
+      }
+    }
+    formerMembersHero: file(relativePath: { eq: "panorama.jpg" }, sourceInstanceName: { eq: "staticImages" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH)
       }

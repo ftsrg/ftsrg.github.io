@@ -1,5 +1,10 @@
+import { ImageDataLike } from 'gatsby-plugin-image'
 import React from 'react'
 import Hero from '~components/Hero'
+
+type Props = {
+  heroBackgroundImage: ImageDataLike
+}
 
 const logos = [
   '1-incquery-labs-logo.png',
@@ -14,8 +19,8 @@ const logos = [
   '9-resiltech-logo.png'
 ]
 
-const PartnersSection: React.FC = () => (
-  <Hero id="partners" bgImageUrl="/images/hero_1.jpg" heroTitle="home.partners.title" isHeroTitleCentered>
+const PartnersSection: React.FC<Props> = ({ heroBackgroundImage }) => (
+  <Hero id="partners" bgImage={heroBackgroundImage} heroTitle="home.partners.title" isHeroTitleCentered>
     <div id="partners-container" className="d-flex justify-content-center">
       {logos.map((logo) => (
         <div key={logo.toUpperCase()} className="partner">

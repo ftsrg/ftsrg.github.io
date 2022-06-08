@@ -24,6 +24,7 @@ interface ResearchPageProps extends PageProps {
       nodes: Array<EventProps>
     }
     researchHero: ImageDataLike
+    toolsHero: ImageDataLike
   }
 }
 
@@ -79,7 +80,7 @@ const ResearchPage: React.FC<ResearchPageProps> = ({ data }) => {
         </Container>
       </div>
 
-      <Tools />
+      <Tools heroBackgroundImage={data.toolsHero} />
 
       <div id="events" className="site-section">
         <Container>
@@ -145,6 +146,11 @@ export const query = graphql`
       }
     }
     researchHero: file(relativePath: { eq: "bg_5.jpg" }, sourceInstanceName: { eq: "staticImages" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
+      }
+    }
+    toolsHero: file(relativePath: { eq: "bg_4.jpg" }, sourceInstanceName: { eq: "staticImages" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH)
       }
