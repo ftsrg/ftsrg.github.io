@@ -1,9 +1,11 @@
+import { StaticImage } from 'gatsby-plugin-image'
 import { Link, useI18next } from 'gatsby-plugin-react-i18next'
-import React from 'react'
+import React, { PropsWithChildren } from 'react'
 import { Container } from 'react-bootstrap'
 import Slider from 'react-slick'
 import EducationCounters from './EducationCounters'
 
+/*
 const cardsData = [
   {
     category: 'home.education.card1.category',
@@ -27,6 +29,38 @@ const cardsData = [
     thumbnail: '/images/awards.jpg'
   }
 ]
+
+*/
+
+type CardProps = {
+  category: string
+  title: string
+  desc: string
+  path: string
+}
+
+const Card: React.FC<PropsWithChildren<CardProps>> = ({ category, title, desc, path, children }) => {
+  const { t } = useI18next()
+  return (
+    <div key={category} className="p-2">
+      <div className="education-1-item">
+        <figure className="thumbnail">
+          {children}
+          <div className="category bg-secondary">
+            <h3>{t(category)}</h3>
+          </div>
+        </figure>
+        <div className="education-1-content pb-4">
+          <h2>{t(title)}</h2>
+          <p className="desc mb-4">{t(desc)}</p>
+          <Link to={path} className="btn btn-primary rounded-0 px-4">
+            {t('commons.readMore')}
+          </Link>
+        </div>
+      </div>
+    </div>
+  )
+}
 
 const EducationSection: React.FC = () => {
   const { t } = useI18next()
@@ -61,25 +95,50 @@ const EducationSection: React.FC = () => {
             }
           ]}
         >
-          {cardsData.map((data) => (
-            <div key={data.category} className="p-2">
-              <div className="education-1-item">
-                <figure className="thumbnail">
-                  <img src={data.thumbnail} alt="..." className="img-fluid" />
-                  <div className="category bg-secondary">
-                    <h3>{t(data.category)}</h3>
-                  </div>
-                </figure>
-                <div className="education-1-content pb-4">
-                  <h2>{t(data.title)}</h2>
-                  <p className="desc mb-4">{t(data.desc)}</p>
-                  <Link to={data.path} className="btn btn-primary rounded-0 px-4">
-                    {t('commons.readMore')}
-                  </Link>
-                </div>
-              </div>
-            </div>
-          ))}
+          {/* Card 1 */}
+          <Card
+            category="home.education.card1.category"
+            title="home.education.card1.title"
+            desc="home.education.card1.desc"
+            path="/education"
+          >
+            <StaticImage
+              src="../../../static/images/education.png"
+              alt={t('home.education.card1.title')}
+              className="img-fluid"
+              layout="constrained"
+            />
+          </Card>
+
+          {/* Card 2 */}
+          <Card
+            category="home.education.card2.category"
+            title="home.education.card2.title"
+            desc="home.education.card2.desc"
+            path="/education#talentcare"
+          >
+            <StaticImage
+              src="../../../static/images/student-project.jpg"
+              alt={t('home.education.card2.title')}
+              className="img-fluid"
+              layout="constrained"
+            />
+          </Card>
+
+          {/* Card 3 */}
+          <Card
+            category="home.education.card3.category"
+            title="home.education.card3.title"
+            desc="home.education.card3.desc"
+            path="/education#achievements"
+          >
+            <StaticImage
+              src="../../../static/images/awards.jpg"
+              alt={t('home.education.card3.title')}
+              className="img-fluid"
+              layout="constrained"
+            />
+          </Card>
         </Slider>
       </Container>
     </div>
