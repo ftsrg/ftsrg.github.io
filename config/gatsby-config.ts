@@ -39,6 +39,13 @@ export default {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `partner`,
+        path: `${path.join(__dirname, '../src/content/partners')}`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `publication`,
         path: `${path.join(__dirname, '../src/content/publications')}`
       }

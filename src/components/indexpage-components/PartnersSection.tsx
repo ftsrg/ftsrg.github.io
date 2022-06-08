@@ -1,30 +1,24 @@
-import { ImageDataLike } from 'gatsby-plugin-image'
+import { GatsbyImage, getImage, ImageDataLike } from 'gatsby-plugin-image'
 import React from 'react'
 import Hero from '~components/Hero'
+import PartnerProps from '~utils/props/partner.props'
 
 type Props = {
+  nodes: Array<PartnerProps>
   heroBackgroundImage: ImageDataLike
 }
 
-const logos = [
-  '1-incquery-labs-logo.png',
-  '2-quanopt-logo.png',
-  '3-firenze-logo.png',
-  'mcgill-logo.png',
-  '4-coimbra-logo.png',
-  '5-thyssen-logo.png',
-  '6-ericsson-logo.png',
-  '7-cern-logo.png',
-  '8-prolan-logo.png',
-  '9-resiltech-logo.png'
-]
-
-const PartnersSection: React.FC<Props> = ({ heroBackgroundImage }) => (
+const PartnersSection: React.FC<Props> = ({ nodes, heroBackgroundImage }) => (
   <Hero id="partners" bgImage={heroBackgroundImage} heroTitle="home.partners.title" isHeroTitleCentered>
     <div id="partners-container" className="d-flex justify-content-center">
-      {logos.map((logo) => (
-        <div key={logo.toUpperCase()} className="partner">
-          <img src={`/images/partners/${logo}`} className="white-logo" alt="..." />
+      {nodes.map((partner) => (
+        <div key={partner.name} className="partner">
+          <GatsbyImage
+            image={getImage(partner.logo)!}
+            className="white-logo"
+            alt={partner.name}
+            imgStyle={{ objectFit: 'contain', padding: 20 }}
+          />
         </div>
       ))}
     </div>

@@ -7,11 +7,15 @@ import { ProjectsCarousel } from '~components/carousels'
 import { About, Banner, Competences, Education, News, Partners } from '~components/indexpage-components'
 import Layout from '~layout/Layout'
 import { ProjectProps } from '~utils/props'
+import PartnerProps from '~utils/props/partner.props'
 
 interface IndexPageProps extends PageProps {
   data: {
     projects: {
       nodes: Array<ProjectProps>
+    }
+    partners: {
+      nodes: Array<PartnerProps>
     }
     aboutHero: ImageDataLike
     partnerHero: ImageDataLike
@@ -39,7 +43,7 @@ const IndexPage: React.FC<IndexPageProps> = ({ data }) => {
           <ProjectsCarousel nodes={data.projects.nodes} />
         </Container>
       </div>
-      <Partners heroBackgroundImage={data.partnerHero} />
+      <Partners nodes={data.partners.nodes} heroBackgroundImage={data.partnerHero} />
       <News />
     </Layout>
   )
@@ -58,6 +62,16 @@ export const query = graphql`
         featuredImage {
           childImageSharp {
             gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+          }
+        }
+      }
+    }
+    partners: allPartnersYaml {
+      nodes {
+        name
+        logo {
+          childImageSharp {
+            gatsbyImageData(layout: CONSTRAINED)
           }
         }
       }
