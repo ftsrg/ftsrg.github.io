@@ -75,8 +75,9 @@ const EducationSection: React.FC = () => {
         </div>
         <EducationCounters />
         <Slider
-          arrows={false}
+          arrows
           dots
+          infinite
           slidesToShow={3}
           slidesToScroll={1}
           className="py-3"
@@ -94,6 +95,8 @@ const EducationSection: React.FC = () => {
               }
             }
           ]}
+          autoplay
+          autoplaySpeed={4000}
         >
           {/* Card 1 */}
           <Card

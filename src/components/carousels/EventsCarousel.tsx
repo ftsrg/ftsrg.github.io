@@ -13,8 +13,9 @@ const EventsCarousel: React.FC<Props> = ({ nodes }) => {
 
   return (
     <Slider
-      arrows={false}
+      arrows
       dots
+      infinite
       slidesToShow={2}
       slidesToScroll={1}
       className="py-3"
@@ -26,6 +27,8 @@ const EventsCarousel: React.FC<Props> = ({ nodes }) => {
           }
         }
       ]}
+      autoplay
+      autoplaySpeed={4000}
     >
       {nodes.map((event) => {
         const image = getImage(event.featuredImage)

@@ -13,8 +13,9 @@ const ProjectsCarousel: React.FC<Props> = ({ nodes }) => {
 
   return (
     <Slider
-      arrows={false}
+      arrows
       dots
+      infinite
       slidesToShow={2}
       slidesToScroll={1}
       className="py-3"

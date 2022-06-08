@@ -13,7 +13,9 @@ const PublicationsCarousel: React.FC<Props> = ({ nodes }) => {
 
   return (
     <Slider
-      infinite={false}
+      arrows
+      dots
+      infinite
       slidesToShow={3}
       slidesToScroll={1}
       className="py-3"
@@ -31,6 +33,8 @@ const PublicationsCarousel: React.FC<Props> = ({ nodes }) => {
           }
         }
       ]}
+      autoplay
+      autoplaySpeed={4000}
     >
       {nodes.map((publication) => {
         const featuredImage = getImage(publication.featuredImage)

@@ -13,8 +13,9 @@ const SpecializationsCarousel: React.FC<Props> = ({ nodes }) => {
 
   return (
     <Slider
-      arrows={false}
+      arrows
       dots
+      infinite
       slidesToShow={2}
       slidesToScroll={1}
       className="py-3"
@@ -44,6 +45,8 @@ const SpecializationsCarousel: React.FC<Props> = ({ nodes }) => {
               <div>
                 <p>{t(`${spec.translationPrefix}.p1`)}</p>
                 <p>{t(`${spec.translationPrefix}.p2`)}</p>
+              </div>
+              <div>
                 <p>
                   <a target="_blank" rel="noopener noreferrer" href={spec.url}>
                     {t('commons.readMore')}
