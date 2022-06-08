@@ -16,30 +16,33 @@ const Footer: React.FC<Props> = ({ hasContact }) => {
   return (
     <>
       {hasContact && (
-        <div className="site-section pagehero" style={{ backgroundImage: `url('/images/bg_2.jpg')` }}>
-          <Container>
-            <div className="d-flex align-items-center justify-content-center">
-              <div className="d-flex align-items-center">
-                <a href="http://mit.bme.hu/~micskeiz" target="_blank" rel="noopener noreferrer">
-                  <StaticImage src="../../../static/images/members/micskei-small.png" alt="Micskei Zoltán" className="mr-4" width={100} />
-                </a>
-                <div>
-                  <h2>{t('footer.contactHero.haveQuestion')}</h2>
-                  <p className="mb-0">
-                    <Trans
-                      i18nKey="footer.contactHero.askMe"
-                      values={{ firstName: 'Zoltán', lastName: 'Micskei' }}
-                      components={[
-                        <a href="http://mit.bme.hu/~micskeiz" target="_blank" rel="noopener noreferrer">
-                          Dr. Micskei Zoltán
-                        </a>
-                      ]}
-                    />
-                  </p>
+        <div className="pagehero">
+          <StaticImage src="../../../static/images/bg_2.jpg" alt={t('footer.contactHero.askMe')} />
+          <div className="site-section">
+            <Container>
+              <div className="d-flex align-items-center justify-content-center">
+                <div className="d-flex align-items-center">
+                  <a href="http://mit.bme.hu/~micskeiz" target="_blank" rel="noopener noreferrer">
+                    <StaticImage src="../../../static/images/members/micskei-small.png" alt="Micskei Zoltán" className="mr-4" width={100} />
+                  </a>
+                  <div>
+                    <h2>{t('footer.contactHero.haveQuestion')}</h2>
+                    <p className="mb-0">
+                      <Trans
+                        i18nKey="footer.contactHero.askMe"
+                        values={{ firstName: 'Zoltán', lastName: 'Micskei' }}
+                        components={[
+                          <a href="http://mit.bme.hu/~micskeiz" target="_blank" rel="noopener noreferrer">
+                            Dr. Micskei Zoltán
+                          </a>
+                        ]}
+                      />
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </Container>
+            </Container>
+          </div>
         </div>
       )}
       <div className="footer text-white bg-secondary">
