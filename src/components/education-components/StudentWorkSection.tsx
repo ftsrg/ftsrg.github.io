@@ -44,14 +44,12 @@ const StudentWorkSection: React.FC = () => {
             </p>
           </Col>
           <Col md={9}>
-            <p>
-              <StaticImage
-                src="../../../static/images/students/thesis-topics.jpg"
-                alt={t('education.studentwork.title')}
-                className="img-fluid"
-                layout="fullWidth"
-              />
-            </p>
+            <StaticImage
+              src="../../../static/images/students/thesis-topics.jpg"
+              alt={t('education.studentwork.title')}
+              className="img-fluid"
+              layout="fullWidth"
+            />
           </Col>
         </Row>
         <Slider
