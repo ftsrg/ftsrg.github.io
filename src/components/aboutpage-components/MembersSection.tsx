@@ -10,8 +10,33 @@ type Props = {
   nodes: Array<MemberProps>
 }
 
+const positionOrder = [
+  'prof',
+  'assocProfHabil',
+  'assocProf',
+  'honAssocProf',
+  'assistProf',
+  'masterLecturer',
+  'assistResFellow',
+  'phdStudent'
+]
+
 const MembersSection: React.FC<Props> = ({ nodes }) => {
   const { t } = useI18next()
+
+  function memberName(props: MemberProps) {
+    return t('about.members.name', { firstName: props.firstName, lastName: props.lastName })
+  }
+
+  function memberSort(member1: MemberProps, member2: MemberProps) {
+    const pos1 = positionOrder.indexOf(member1.position || '')
+    const pos2 = positionOrder.indexOf(member2.position || '')
+
+    if (pos1 === pos2) {
+      return memberName(member1).localeCompare(memberName(member2))
+    }
+    return pos1 - pos2
+  }
 
   return (
     <div id="members" className="site-section">
@@ -22,7 +47,7 @@ const MembersSection: React.FC<Props> = ({ nodes }) => {
           </h2>
         </div>
         <Row className="mt-5">
-          {nodes.map((member) => {
+          {nodes.sort(memberSort).map((member) => {
             const avatar = member.avatar ? getImage(member.avatar) : null
             return (
               <Col lg={3} md={4} key={member.firstName + member.lastName} className="mb-5 mb-lg-5">
@@ -33,7 +58,9 @@ const MembersSection: React.FC<Props> = ({ nodes }) => {
                       {t('about.members.name', { firstName: member.firstName, lastName: member.lastName })}
                       {member.title && `, ${member.title}`}
                     </h2>
-                    <span className="position mb-3 d-block">{member.position && t(member.position)}</span>
+                    <span className="position mb-3 d-block">{member.position && t(`about.members.position.${member.position}`)}</span>
+                  </div>
+                  <div className="links">
                     <p>
                       {member.homePage && (
                         <a target="_blank" rel="noopener noreferrer" href={member.homePage}>
