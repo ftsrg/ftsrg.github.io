@@ -67,7 +67,7 @@ export const query = graphql`
         linkedInPage
       }
     }
-    locales: allLocale(filter: { ns: { in: ["about.translation", "nav.translation", "translation"] }, language: { eq: $language } }) {
+    locales: allLocale(filter: { ns: { in: ["about", "commons"] }, language: { eq: $language } }) {
       edges {
         node {
           ns

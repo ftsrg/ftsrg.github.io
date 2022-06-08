@@ -94,7 +94,7 @@ export default ContactPage
 
 export const query = graphql`
   query ContactPageQueries($language: String!) {
-    locales: allLocale(filter: { ns: { in: ["contact.translation", "nav.translation", "translation"] }, language: { eq: $language } }) {
+    locales: allLocale(filter: { ns: { in: ["contact", "commons"] }, language: { eq: $language } }) {
       edges {
         node {
           ns

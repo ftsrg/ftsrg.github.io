@@ -110,7 +110,7 @@ export const query = graphql`
         }
       }
     }
-    locales: allLocale(filter: { ns: { in: ["education.translation", "nav.translation", "translation"] }, language: { eq: $language } }) {
+    locales: allLocale(filter: { ns: { in: ["education", "commons"] }, language: { eq: $language } }) {
       edges {
         node {
           ns

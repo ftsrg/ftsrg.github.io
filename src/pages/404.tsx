@@ -20,7 +20,7 @@ export default NotFoundPage
 
 export const query = graphql`
   query NotFoundPageQueries($language: String!) {
-    locales: allLocale(filter: { ns: { in: ["nav.translation", "translation"] }, language: { eq: $language } }) {
+    locales: allLocale(filter: { ns: { in: ["commons"] }, language: { eq: $language } }) {
       edges {
         node {
           ns

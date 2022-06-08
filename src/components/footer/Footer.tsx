@@ -49,13 +49,13 @@ const Footer: React.FC<Props> = ({ hasContact }) => {
         <Container>
           <Row className="justify-content-center pb-5">
             <Col lg={4} className="text-center px-5">
-              <StaticImage src="../../../static/images/ftsrg-small-white.png" alt="ftsrg" className="mr-4" width={120} />
+              <StaticImage src="../../../static/images/ftsrg-small-white.png" alt="ftsrg" className="mb-4" width={120} />
               <p>
-                {t('contact.address.line1')}
+                {t('footer.address.line1')}
                 <br />
-                {t('contact.address.line2')}
+                {t('footer.address.line2')}
                 <br />
-                {t('contact.address.line3')}
+                {t('footer.address.line3')}
               </p>
               <p>
                 <Link to="/contact">{t('nav.contact.title')}</Link>

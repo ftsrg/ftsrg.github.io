@@ -136,7 +136,7 @@ export const query = graphql`
         }
       }
     }
-    locales: allLocale(filter: { ns: { in: ["research.translation", "nav.translation", "translation"] }, language: { eq: $language } }) {
+    locales: allLocale(filter: { ns: { in: ["research", "commons"] }, language: { eq: $language } }) {
       edges {
         node {
           ns

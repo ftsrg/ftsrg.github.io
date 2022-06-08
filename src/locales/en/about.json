@@ -1,5 +1,5 @@
 {
-  "about.heroTitle": "$t(home.about.title)",
+  "about.heroTitle": "$t(nav.home.about)",
   "about.heroDesc": "Introducing our members and students",
   "about.formermembers.heroTitle": "$t(nav.about.formermembers)",
   "about.intro.title": "$t(nav.about.about)",
