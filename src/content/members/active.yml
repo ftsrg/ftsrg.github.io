@@ -27,6 +27,7 @@
   lastName: Micskei
   title: PhD
   position: assocProf
+  order: 10
   avatar: ../images/members/micskei.jpg
   linkedInPage: https://www.linkedin.com/in/zoltanmicskei
   cvPage: http://mit.bme.hu/~micskeiz/pages/cv-micskei-en.pdf

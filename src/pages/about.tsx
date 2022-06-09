@@ -43,6 +43,7 @@ export const query = graphql`
         lastName
         title
         position
+        order
         linkedInPage
         homePage
         mtmtPage

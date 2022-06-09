@@ -33,7 +33,10 @@ const MembersSection: React.FC<Props> = ({ nodes }) => {
     const pos2 = positionOrder.indexOf(member2.position || '')
 
     if (pos1 === pos2) {
-      return memberName(member1).localeCompare(memberName(member2))
+      if (member1.order === member2.order) {
+        return memberName(member1).localeCompare(memberName(member2))
+      }
+      return (member2.order || 0) - (member1.order || 0)
     }
     return pos1 - pos2
   }
