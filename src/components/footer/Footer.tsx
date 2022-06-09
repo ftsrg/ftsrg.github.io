@@ -2,7 +2,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import { Link, Trans, useI18next } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import { resetCookieConsent } from '~lib/cookieConsent'
+import { resetCookieConsent } from '~components/CookieBanner'
 import FooterNav from './FooterNav'
 
 type Props = {

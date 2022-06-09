@@ -1,5 +1,6 @@
 import { Link, useI18next } from 'gatsby-plugin-react-i18next'
-import React, { useEffect } from 'react'
+import React, { useContext, useEffect } from 'react'
+import { CookieContext } from '~components/CookieBanner'
 
 const SCROLL_KEY = '@@scroll'
 
@@ -7,6 +8,8 @@ const LanguageToggle: React.FC = () => {
   const { language, originalPath } = useI18next()
   const locale = language
   const otherLocale = locale === 'hu' ? 'en' : 'hu'
+
+  const cookieConsent = useContext(CookieContext)
 
   useEffect(() => {
     const scroll = localStorage.getItem(SCROLL_KEY)
@@ -26,7 +29,9 @@ const LanguageToggle: React.FC = () => {
       to={originalPath}
       language={otherLocale}
       onClick={() => {
-        localStorage.setItem(SCROLL_KEY, (document.scrollingElement?.scrollTop || 0).toString())
+        if (cookieConsent) {
+          localStorage.setItem(SCROLL_KEY, (document.scrollingElement?.scrollTop || 0).toString())
+        }
       }}
     >
       {otherLocale.toUpperCase()}

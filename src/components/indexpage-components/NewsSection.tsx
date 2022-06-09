@@ -1,17 +1,19 @@
 import { useI18next } from 'gatsby-plugin-react-i18next'
-import React from 'react'
+import React, { useContext } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { Helmet } from 'react-helmet'
+import { CookieContext, resetCookieConsent } from '~components/CookieBanner'
 import useIsClient from '~hooks/useIsClient'
-import { getCookieConsent, resetCookieConsent } from '~lib/cookieConsent'
 
 const NewsSection: React.FC = () => {
   const { t } = useI18next()
   const { isClient, key } = useIsClient()
 
+  const cookieConsent = useContext(CookieContext)
+
   if (!isClient) return null
 
-  if (getCookieConsent()) {
+  if (cookieConsent) {
     return (
       <div id="news" className="news-updates" key={key}>
         <Helmet>
