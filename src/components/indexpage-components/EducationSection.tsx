@@ -42,18 +42,18 @@ type CardProps = {
 const Card: React.FC<PropsWithChildren<CardProps>> = ({ category, title, desc, path, children }) => {
   const { t } = useI18next()
   return (
-    <div key={category} className="p-2">
-      <div className="education-1-item">
+    <div key={category} className="p-2 h-100">
+      <div className="education-1-item h-100 d-flex flex-column justify-content-between align-items-stretch">
         <figure className="thumbnail">
           {children}
           <div className="category bg-secondary">
             <h3>{t(category)}</h3>
           </div>
         </figure>
-        <div className="education-1-content pb-4">
+        <div className="education-1-content pb-4 d-flex flex-column align-items-center flex-grow-1">
           <h2>{t(title)}</h2>
           <p className="desc mb-4">{t(desc)}</p>
-          <Link to={path} className="btn btn-primary rounded-0 px-4">
+          <Link to={path} className="btn btn-primary rounded-0 px-4 mt-auto">
             {t('commons.readMore')}
           </Link>
         </div>
@@ -89,7 +89,7 @@ const EducationSection: React.FC = () => {
               }
             },
             {
-              breakpoint: 512,
+              breakpoint: 768,
               settings: {
                 slidesToShow: 1
               }

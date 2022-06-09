@@ -31,7 +31,7 @@ const ToolsSection: React.FC<Props> = ({ heroBackgroundImage }) => {
 
   return (
     <Hero id="tools" bgImage={heroBackgroundImage} heroTitle="research.tools.title" isHeroTitleCentered>
-      <Row>
+      <Row className=" justify-content-center">
         {toolsData.map((data) => (
           <Col key={data.title} lg={4} md={6} className="mb-5 mb-lg-0">
             <h3>{t(data.title)}</h3>

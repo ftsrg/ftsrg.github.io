@@ -51,7 +51,7 @@ const MembersSection: React.FC<Props> = ({ nodes }) => {
             const avatar = member.avatar ? getImage(member.avatar) : null
             return (
               <Col lg={3} md={4} key={member.firstName + member.lastName} className="mb-5 mb-lg-5">
-                <div className="feature-1 border person text-center">
+                <div className="feature-1 border person text-center d-flex flex-column justify-content-between">
                   {avatar && <GatsbyImage image={avatar} className="img-fluid" alt={member.firstName + member.lastName} />}
                   <div className="feature-1-content">
                     <h2>
@@ -60,7 +60,7 @@ const MembersSection: React.FC<Props> = ({ nodes }) => {
                     </h2>
                     <span className="position mb-3 d-block">{member.position && t(`about.members.position.${member.position}`)}</span>
                   </div>
-                  <div className="links">
+                  <div className="mt-auto">
                     <p>
                       {member.homePage && (
                         <a target="_blank" rel="noopener noreferrer" href={member.homePage}>

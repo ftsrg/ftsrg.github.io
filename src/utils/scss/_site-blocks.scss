@@ -183,13 +183,6 @@
 
 // 05 - Block
 .ftco-testimonial-1 {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: stretch;
-  height: 100%;
-
   .ftco-testimonial-vcard {
 
     img {
@@ -269,14 +262,6 @@
 .person {
   margin-bottom: 50px !important;
   height: calc(100% - 50px);
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-
-  .links {
-    margin-top: auto;
-  }
 
   .img-fluid {
     width: 100px;
@@ -289,20 +274,9 @@
 }
 
 .course-1-container {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-
   .course-1-item {
     box-shadow: 0 2px 10px 0 rgba($black, 0.1);
     background-color: $white;
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-    -ms-flex-direction: column !important;
-    flex-direction: column !important;
 
     figure {
       position: relative;
@@ -310,6 +284,7 @@
 
     .category {
       background: $primary;
+      position: relative;
 
       padding: 20px;
       h3 {
@@ -323,9 +298,8 @@
     // If the image in course-item has bigger height, this class breaks the look and feel
     .price {
       position: absolute;
-      top: 0;
+      top: calc(-20px - 1em);
       right: 0;
-      transform: translatey(375%);
       padding: 10px 20px;
       background: $secondary;
       color: $white;
@@ -365,13 +339,6 @@
 .education-1-item {
   box-shadow: 0 2px 10px 0 rgba($black, 0.1);
   background-color: $white;
-  height: 100%;
-
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
 
   figure {
     position: relative;
@@ -413,13 +380,6 @@
   .education-1-content {
     padding: 20px 30px;
     text-align: center;
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
 
     .header-left {
       position: absolute;
@@ -637,8 +597,7 @@
   > .slick-slide {
     height: inherit;
 
-    > div,
-    > div > div {
+    > div {
       height: 100%;
     }
   }

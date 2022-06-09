@@ -34,10 +34,10 @@ const CompetencesSection: React.FC = () => {
           <p className="text-center mb-5">{t('home.competences.description')}</p>
         </Col>
       </Row>
-      <Row>
+      <Row className="justify-content-center align-items-stretch">
         {compentencesData.map((data) => (
           <Col key={data.title} lg={4} md={6} className="mb-4 mb-lg-0">
-            <div className="feature-1 border">
+            <div className="feature-1 border h-100">
               <div className="icon-wrapper bg-primary text-white d-flex align-items-center justify-content-center">{data.icon}</div>
               <div className="feature-1-content">
                 <h2>{t(data.title)}</h2>

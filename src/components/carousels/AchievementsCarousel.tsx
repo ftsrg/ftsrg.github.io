@@ -27,7 +27,7 @@ const AchievementsCarousel: React.FC<Props> = ({ nodes }) => {
           }
         },
         {
-          breakpoint: 512,
+          breakpoint: 768,
           settings: {
             slidesToShow: 1
           }
@@ -39,15 +39,15 @@ const AchievementsCarousel: React.FC<Props> = ({ nodes }) => {
       {nodes.map((achievement) => {
         const image = getImage(achievement.featuredImage)
         return (
-          <div key={achievement.translationPrefix} className="px-3 py-3">
-            <div className="education-1-item">
+          <div key={achievement.translationPrefix} className="px-3 py-3 h-100">
+            <div className="education-1-item h-100 d-flex flex-column">
               <figure className="thumbnail">
                 {image && <GatsbyImage image={image} alt={achievement.translationPrefix} className="img-fluid" />}
                 <div className="category bg-secondary">
                   <h3>{t(`${achievement.translationPrefix}.title`)}</h3>
                 </div>
               </figure>
-              <div className="education-1-content pb-4">
+              <div className="education-1-content pb-4 d-flex flex-column align-items-center flex-grow-0">
                 <p className="desc mb-4">
                   <Trans
                     i18nKey={`${achievement.translationPrefix}.desc`}

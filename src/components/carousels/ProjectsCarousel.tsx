@@ -21,7 +21,7 @@ const ProjectsCarousel: React.FC<Props> = ({ nodes }) => {
       className="py-3"
       responsive={[
         {
-          breakpoint: 512,
+          breakpoint: 768,
           settings: {
             slidesToShow: 1
           }
@@ -33,10 +33,10 @@ const ProjectsCarousel: React.FC<Props> = ({ nodes }) => {
       {nodes.map((project) => {
         const image = getImage(project.featuredImage)
         return (
-          <div key={project.title} className="px-3">
-            <div className="ftco-testimonial-1">
+          <div key={project.title} className="px-3 h-100">
+            <div className="ftco-testimonial-1 d-flex flex-column justify-content-between align-items-stretch h-100">
               <div className="ftco-testimonial-vcard d-flex align-items-center mb-4">
-                {image && <GatsbyImage image={image} alt="..." className="img-fluid mr-3" />}
+                {image && <GatsbyImage image={image} alt="..." className="img-fluid mr-3 flex-shrink-0 align-self-start mt-0" />}
                 <div>
                   <h3>{t(project.title)}</h3>
                   <span>{t(project.subtitle)}</span>
@@ -44,6 +44,8 @@ const ProjectsCarousel: React.FC<Props> = ({ nodes }) => {
               </div>
               <div>
                 <p>{t(project.description)}</p>
+              </div>
+              <div>
                 <p>
                   <a target="_blank" rel="noopener noreferrer" href={project.url}>
                     {t('commons.readMore')}
