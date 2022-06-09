@@ -42,7 +42,7 @@ const BannerSection: React.FC = () => {
                 className="intro-img mx-auto"
               />
               <h1>{t('commons.ftsrgFullName')}</h1>
-              <hr className="ml-5 mr-5" />
+              <hr className="mx-5" />
               <h2 className="font-italic">{t('commons.ftsrgQuote')}</h2>
             </Col>
           </Row>

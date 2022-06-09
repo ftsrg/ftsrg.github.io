@@ -40,7 +40,7 @@ const SpecializationsCarousel: React.FC<Props> = ({ nodes }) => {
                   <GatsbyImage
                     image={image}
                     alt={spec.translationPrefix}
-                    className="img-fluid img-rounded mr-3 flex-shrink-0 align-self-start mt-0"
+                    className="img-fluid img-rounded me-3 flex-shrink-0 align-self-start mt-0"
                   />
                 )}
                 <div>

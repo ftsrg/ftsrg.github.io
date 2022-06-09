@@ -27,7 +27,7 @@ const ContactPage: React.FC<ContactPageProps> = ({ data }) => {
             <Col lg={6} className="order-1 order-lg-2 mb-4 mb-lg-0">
               <StaticImage src="../../static/images/bme-i-building.jpg" alt="..." className="img-fluid" layout="fullWidth" />
             </Col>
-            <Col lg={5} className="mr-auto align-self-center order-2 order-lg-1">
+            <Col lg={5} className="me-auto align-self-center order-2 order-lg-1">
               <h2 className="section-title-underline mb-5">
                 <span>{tr.t('contact.address.title')}</span>
               </h2>
@@ -54,7 +54,7 @@ const ContactPage: React.FC<ContactPageProps> = ({ data }) => {
             <Col lg={6} className="mb-lg-0 mb-4">
               <StaticImage src="../../static/images/ftsrg-rooms.jpg" alt="..." className="img-fluid" layout="fullWidth" />
             </Col>
-            <Col lg={5} className="ml-auto align-self-center">
+            <Col lg={5} className="ms-auto align-self-center">
               <h2 className="section-title-underline mb-5">
                 <span>{tr.t('contact.inBuilding.title')}</span>
               </h2>
@@ -66,7 +66,7 @@ const ContactPage: React.FC<ContactPageProps> = ({ data }) => {
             <Col lg={5} className="order-1 order-lg-2 mb-4 mb-lg-0">
               <StaticImage src="../../static/images/ftsrg-4th-floor.jpg" alt="..." className="img-fluid" layout="fullWidth" />
             </Col>
-            <Col lg={5} className="mr-auto align-self-center order-2 order-lg-1">
+            <Col lg={5} className="me-auto align-self-center order-2 order-lg-1">
               <h2 className="section-title-underline mb-5">
                 <span>{tr.t('contact.studentFloor.title')}</span>
               </h2>

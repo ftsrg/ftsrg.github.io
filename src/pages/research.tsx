@@ -59,7 +59,7 @@ const ResearchPage: React.FC<ResearchPageProps> = ({ data }) => {
                 <span>{t('research.publications.title')}</span>
               </h2>
               <p>
-                <span className="pr-1">{t('research.publications.fullPubList')}</span>
+                <span className="pe-1">{t('research.publications.fullPubList')}</span>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
@@ -68,7 +68,7 @@ const ResearchPage: React.FC<ResearchPageProps> = ({ data }) => {
                   <MdSchool />
                 </a>{' '}
                 <span className="px-2">|</span>
-                <span className="pr-1">{t('research.publications.dataSets')}</span>
+                <span className="pe-1">{t('research.publications.dataSets')}</span>
                 <a href="https://zenodo.org/communities/ftsrg" target="_blank" rel="noopener noreferrer">
                   <FaDatabase />
                 </a>

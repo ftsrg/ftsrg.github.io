@@ -21,7 +21,7 @@ const NavBar: React.FC<Props> = ({ href }) => {
         <Container>
           <Row>
             <Col>
-              <a href="https://www.bme.hu" className="small mr-3">
+              <a href="https://www.bme.hu" className="small me-3">
                 <StaticImage
                   src="../../../static/images/logos/bme.png"
                   alt="Budapesti Műszaki és Gazdaságtudományi Egyetem"
@@ -30,7 +30,7 @@ const NavBar: React.FC<Props> = ({ href }) => {
                 />
                 {' | bme.hu'}
               </a>
-              <a href="https://www.vik.bme.hu" className="small mr-3">
+              <a href="https://www.vik.bme.hu" className="small me-3">
                 <StaticImage
                   src="../../../static/images/logos/vik.png"
                   alt="Villamosmérnöki és Informatikai Kar"
@@ -39,7 +39,7 @@ const NavBar: React.FC<Props> = ({ href }) => {
                 />
                 {' | vik.bme.hu'}
               </a>
-              <a href="https://www.mit.bme.hu" className="small mr-3">
+              <a href="https://www.mit.bme.hu" className="small me-3">
                 <StaticImage
                   src="../../../static/images/logos/mit.png"
                   alt="Méréstechnika és Információs Rendszerek Tanszék"
@@ -55,7 +55,7 @@ const NavBar: React.FC<Props> = ({ href }) => {
 
       <Navbar id="navbar" bg="light" className="site-navbar" expand="lg">
         <Container className="site-navcontainer align-items-center">
-          <Navbar.Brand className="pr-4" as="div">
+          <Navbar.Brand className="pe-4" as="div">
             <Link to="/">
               <StaticImage
                 src="../../../static/images/ftsrg.png"
@@ -73,7 +73,7 @@ const NavBar: React.FC<Props> = ({ href }) => {
             <span className="navbar-toggler-icon" />
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto site-menu">
+            <Nav className="me-auto site-menu">
               {NAVBAR_ITEMS.map((item) => {
                 if (href === item.href) {
                   if (item.children) {
@@ -102,9 +102,9 @@ const NavBar: React.FC<Props> = ({ href }) => {
                 )
               })}
             </Nav>
-            <div className="ml-auto d-flex align-items-center justify-content-end mt-4 mb-2 mt-lg-auto mb-lg-auto">
+            <div className="ms-auto d-flex align-items-center justify-content-end mt-4 mb-2 mt-lg-auto mb-lg-auto">
               <Button
-                className="rounded-0 mr-1"
+                className="rounded-0 me-1"
                 style={socialStyle}
                 as="a"
                 target="_blank"
@@ -114,7 +114,7 @@ const NavBar: React.FC<Props> = ({ href }) => {
                 <FaFacebookF />
               </Button>
               <Button
-                className="rounded-0 mr-1"
+                className="rounded-0 me-1"
                 style={socialStyle}
                 as="a"
                 target="_blank"
@@ -124,7 +124,7 @@ const NavBar: React.FC<Props> = ({ href }) => {
                 <FaTwitter />
               </Button>
               <Button
-                className="rounded-0 mr-1"
+                className="rounded-0 me-1"
                 style={socialStyle}
                 as="a"
                 target="_blank"

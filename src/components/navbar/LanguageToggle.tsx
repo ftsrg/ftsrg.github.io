@@ -23,7 +23,7 @@ const LanguageToggle: React.FC = () => {
 
   return (
     <Link
-      className="rounded-0 p-0 mr-1 btn btn-primary"
+      className="rounded-0 p-0 me-1 btn btn-primary"
       style={{ width: '2.5rem', height: '2.5rem', lineHeight: '2.4rem' }}
       aria-label="Toggle language"
       to={originalPath}

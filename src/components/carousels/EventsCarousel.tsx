@@ -36,7 +36,7 @@ const EventsCarousel: React.FC<Props> = ({ nodes }) => {
           <div key={event.translationPrefix} className="px-3 h-100">
             <div className="ftco-testimonial-1 d-flex flex-column justify-content-between align-items-stretch h-100">
               <div className="ftco-testimonial-vcard d-flex align-items-center mb-4">
-                {image && <GatsbyImage image={image} alt="..." className="img-fluid mr-3 align-self-start mt-0 flex-shrink-0" />}
+                {image && <GatsbyImage image={image} alt="..." className="img-fluid me-3 align-self-start mt-0 flex-shrink-0" />}
                 <div>
                   <h3>{t(`${event.translationPrefix}.title`)}</h3>
                   <span>{t(`${event.translationPrefix}.subtitle`)}</span>

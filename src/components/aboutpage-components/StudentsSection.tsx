@@ -18,7 +18,7 @@ const StudentsSection: React.FC = () => {
               layout="fullWidth"
             />
           </Col>
-          <Col lg={5} className="ml-auto align-self-center">
+          <Col lg={5} className="ms-auto align-self-center">
             <h2 className="section-title-underline mb-5">
               <span>{t('about.students.title')}</span>
             </h2>

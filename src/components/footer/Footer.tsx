@@ -23,7 +23,7 @@ const Footer: React.FC<Props> = ({ hasContact }) => {
               <div className="d-flex align-items-center justify-content-center">
                 <div className="d-flex align-items-center">
                   <a href="http://mit.bme.hu/~micskeiz" target="_blank" rel="noopener noreferrer">
-                    <StaticImage src="../../../static/images/members/micskei-small.png" alt="Micskei Zoltán" className="mr-4" width={100} />
+                    <StaticImage src="../../../static/images/members/micskei-small.png" alt="Micskei Zoltán" className="me-4" width={100} />
                   </a>
                   <div>
                     <h2>{t('footer.contactHero.haveQuestion')}</h2>

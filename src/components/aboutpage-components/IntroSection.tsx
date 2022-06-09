@@ -13,7 +13,7 @@ const IntroSection: React.FC = () => {
           <Col lg={6} className="order-1 order-lg-2 mb-4 mb-lg-0">
             <StaticImage src="../../../static/images/members.jpg" alt={t('about.members.title')} className="img-fluid" layout="fullWidth" />
           </Col>
-          <Col lg={5} className="mr-auto align-self-center order-2 order-lg-1">
+          <Col lg={5} className="me-auto align-self-center order-2 order-lg-1">
             <h2 className="section-title-underline mb-5">
               <span>{t('about.intro.title')}</span>
             </h2>
