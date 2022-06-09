@@ -1,6 +1,6 @@
 import { graphql, PageProps } from 'gatsby'
 import { ImageDataLike } from 'gatsby-plugin-image'
-import { useI18next } from 'gatsby-plugin-react-i18next'
+import { Trans, useI18next } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import Breadcrumbs from '~components/Breadcrumbs'
@@ -27,7 +27,7 @@ interface EducationPageProps extends PageProps {
 }
 
 const EducationPage: React.FC<EducationPageProps> = ({ data }) => {
-  const { t } = useI18next()
+  const { t, language } = useI18next()
 
   return (
     <Layout href="/education">
@@ -52,7 +52,19 @@ const EducationPage: React.FC<EducationPageProps> = ({ data }) => {
 
       <Hero id="talentcare" heroTitle="education.talentcare.title">
         <p>{t('education.talentcare.p1')}</p>
-        <p>{t('education.talentcare.p2')}</p>
+        <p>
+          <Trans
+            i18nKey="education.talentcare.p2"
+            components={[
+              // eslint-disable-next-line jsx-a11y/control-has-associated-label, jsx-a11y/anchor-has-content
+              <a
+                href="http://www.impulzus.com/blog/2021/11/16/tudomanyos-diakkori-konferencia/"
+                target="_blank"
+                rel="noopener noreferrer"
+              />
+            ]}
+          />
+        </p>
       </Hero>
 
       <div id="achievements" className="site-section">
