@@ -3,7 +3,7 @@ import { ImageDataLike } from 'gatsby-plugin-image'
 import { useI18next } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import { FaDatabase } from 'react-icons/fa'
+import { FaDatabase, FaTv } from 'react-icons/fa'
 import { MdSchool } from 'react-icons/md'
 import Breadcrumbs from '~components/Breadcrumbs'
 import { EventsCarousel, ProjectsCarousel, PublicationsCarousel } from '~components/carousels'
@@ -71,6 +71,11 @@ const ResearchPage: React.FC<ResearchPageProps> = ({ data }) => {
                 <span className="pe-1">{t('research.publications.dataSets')}</span>
                 <a href="https://zenodo.org/communities/ftsrg" target="_blank" rel="noopener noreferrer">
                   <FaDatabase />
+                </a>{' '}
+                <span className="px-2">|</span>
+                <span className="pe-1">{t('research.publications.slides')}</span>
+                <a href="https://speakerdeck.com/ftsrg/" target="_blank" rel="noopener noreferrer">
+                  <FaTv />
                 </a>
               </p>
               <p>{t('research.publications.description')}</p>

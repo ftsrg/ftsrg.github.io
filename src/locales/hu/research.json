@@ -11,6 +11,7 @@
   "research.projects.counter3.title": "Hazai és bilaterális projekt",
   "research.publications.fullPubList": "Teljes publikációs lista",
   "research.publications.dataSets": "Adathalmazok",
+  "research.publications.slides": "Diasorok",
   "research.publications.description": "Kutatócsoportunk rendszeresen publikál a szoftvertechnológia (TSE, IST, STTT), modellalapú fejlesztés (MODELS, SoSyM), a formális verifikáció (TACAS, JAR) és a szoftvertesztelés (ICST, STVR) vezető konferenciáin és folyóirataiban.",
   "research.tools.tool1.title": "A Gamma állapotgép-kompozíciós keretrendszer",
   "research.tools.tool1.desc": "A Gamma modellezőeszköz reaktív rendszerek komponensalapú tervezését, formális ellenőrzését, illetve implementációjának automatikus előállítását teszi lehetővé.",

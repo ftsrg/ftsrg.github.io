@@ -11,6 +11,7 @@
   "research.projects.counter3.title": "National and bilateral projects",
   "research.publications.fullPubList": "Full publication list",
   "research.publications.dataSets": "Datasets",
+  "research.publications.slides": "Slides",
   "research.publications.description": "Our research group regularly publishes papers in the leading venues of software engineering (TSE, IST, STTT), model-driven engineering (MODELS, SoSyM), formal verification (TACAS, JAR) and software testing (ICST, STVR).",
   "research.tools.tool1.title": "Gamma statechart composition framework",
   "research.tools.tool1.desc": "The Gamma modeling toolset helps to design and formally verify component-based reactive systems and can generate implementations automatically.",
