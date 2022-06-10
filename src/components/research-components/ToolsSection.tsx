@@ -65,7 +65,7 @@ const ToolsSection: React.FC<Props> = ({ heroBackgroundImage }) => {
               src="../../../static/images/logos/gamma.png"
               alt={t('research.tools.tool1.title')}
               width={58}
-              imgStyle={{ filter: 'brightness(0) invert(1)' }}
+              style={{ filter: 'brightness(0) invert(1)' }}
             />
           </Tool>
         </Col>
@@ -75,7 +75,7 @@ const ToolsSection: React.FC<Props> = ({ heroBackgroundImage }) => {
               src="../../../static/images/logos/theta.png"
               alt={t('research.tools.tool2.title')}
               width={58}
-              imgStyle={{ filter: 'brightness(0) invert(1)' }}
+              style={{ filter: 'brightness(0) invert(1)' }}
             />
           </Tool>
         </Col>
