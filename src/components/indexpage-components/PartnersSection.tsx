@@ -14,6 +14,7 @@ const PartnersSection: React.FC<Props> = ({ nodes, heroBackgroundImage }) => (
       {nodes.map((partner) => (
         <div key={partner.name} className="partner">
           <GatsbyImage
+            // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
             image={getImage(partner.logo)!}
             className="white-logo"
             alt={partner.name}

@@ -31,4 +31,3 @@ const customRender = (ui: ReactElement, options: Record<string, unknown> = {}): 
 
 export * from '@testing-library/react'
 export { customRender as render }
-

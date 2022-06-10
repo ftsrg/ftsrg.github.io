@@ -27,7 +27,7 @@ interface EducationPageProps extends PageProps {
 }
 
 const EducationPage: React.FC<EducationPageProps> = ({ data }) => {
-  const { t, language } = useI18next()
+  const { t } = useI18next()
 
   return (
     <Layout href="/education">
