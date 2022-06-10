@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet'
 import { useSiteMetadata } from '~hooks/useSiteMetadata'
 import { SEOProps } from '~utils/props'
 
-const SEO: FC<SEOProps> = ({ title, description, image, author, lang, robots, meta = [], links = [] }) => {
+const SEO: FC<SEOProps> = ({ title, description, image, author, lang, robots, keywords = [], meta = [], links = [] }) => {
   const { t, defaultLanguage, language, languages, originalPath, routed } = useI18next()
 
   const {
@@ -33,7 +33,7 @@ const SEO: FC<SEOProps> = ({ title, description, image, author, lang, robots, me
     author: author || defaultAuthor,
     image: imageUrl,
     url: originalPath === '/' ? `${baseUrl}` : `${baseUrl}${language}${originalPath}`,
-    keywords: defaultKeywords,
+    keywords: keywords.length ? keywords : defaultKeywords.split(', '),
     robots: robots || defaultRobots
   }
 
@@ -135,9 +135,17 @@ const SEO: FC<SEOProps> = ({ title, description, image, author, lang, robots, me
           content: seo.robots
         }
       ]
+        .concat(
+          seo.keywords.length
+            ? {
+                name: 'keywords',
+                content: seo.keywords.join(', ')
+              }
+            : []
+        )
         .concat({
-          name: 'keywords',
-          content: t(seo.keywords)
+          name: 'google-site-verification',
+          content: 'HXeflujPkCsrNrZgSmSD0FW-Uvu19ODiotwVrER3a1o'
         })
         .concat(meta)}
     />

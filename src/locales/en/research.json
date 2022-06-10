@@ -44,5 +44,11 @@
   "research.events.models2020.desc": "Our current and former colleagues received the „10-Year Most Influential Paper” award at MODELS, the leading conference on model-based software and systems engineering, for their paper „Incremental Evaluation of Model Queries over EMF Models” published at MODELS 2010.",
   "research.events.sosym2021.title": "SoSyM Most influential paper",
   "research.events.sosym2021.subtitle": "10-year most influential paper in SoSyM journal",
-  "research.events.sosym2021.desc": "Zoltán Micskei and Hélène Waeselynck received the „10-Year Most Influential Paper” award for their paper „The many meanings of UML 2 Sequence Diagrams: a survey”, published ten years ago in SoSyM, the leading journal on model-based software and systems engineering."
+  "research.events.sosym2021.desc": "Zoltán Micskei and Hélène Waeselynck received the „10-Year Most Influential Paper” award for their paper „The many meanings of UML 2 Sequence Diagrams: a survey”, published ten years ago in SoSyM, the leading journal on model-based software and systems engineering.",
+  "research.events.fka2022.title": "Hungarian Young Academy",
+  "research.events.fka2022.subtitle": "Zoltan Micskei was elected a member of the HYA",
+  "research.events.fka2022.desc": "The Hungarian Young Academy aims to support junior scientists and to get their voices heard by decision-makers. The Academy elects 12 members every year under the age of 40 based on scientific excellence and the activity planned.",
+  "research.events.mta2022.title": "Youth Award of the Hungarian Academy",
+  "research.events.mta2022.subtitle": "Academy Youth Award for Oszkár Semeráth",
+  "research.events.mta2022.desc": "Oszkár Semeráth received the Academy Youth Award from the Hungarian Academy of Sciences (MTA) in 2021 for his work on graph-based reasoning and verification. Every year 22 young researchers receive the award from all fields."
 }
