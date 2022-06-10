@@ -1,4 +1,3 @@
-import fs from 'fs-extra'
 import { GatsbyNode } from 'gatsby'
 import { createFilePath } from 'gatsby-source-filesystem'
 import path from 'path'
@@ -98,8 +97,9 @@ export const createPages: GatsbyNode['createPages'] = ({ graphql, actions }) => 
   })
 }
 */
-
+/*
 export const onPostBuild: GatsbyNode['onPostBuild'] = ({ reporter }) => {
   reporter.info('copy translation files')
   fs.copySync(path.join(__dirname, '../src/locales'), path.join(__dirname, '../public/locales'))
 }
+*/
