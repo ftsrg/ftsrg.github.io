@@ -1,13 +1,18 @@
+import { ImageDataLike } from 'gatsby-plugin-image'
+import { Trans, useI18next } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
-import { Trans, useTranslation } from 'react-i18next'
 import Hero from '~components/Hero'
 
-const AboutSection: React.FC = () => {
-  const { t } = useTranslation()
+type Props = {
+  heroBackgroundImage: ImageDataLike
+}
+
+const AboutSection: React.FC<Props> = ({ heroBackgroundImage }) => {
+  const { t } = useI18next()
 
   return (
-    <Hero id="about" bgImageUrl="/images/hero_3.png">
+    <Hero id="about" bgImage={heroBackgroundImage}>
       <Row>
         <Col lg={4}>
           <h2 className="section-title-underline style-2">

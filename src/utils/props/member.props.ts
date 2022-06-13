@@ -5,6 +5,7 @@ export default interface MemberProps {
   lastName: string
   title?: string
   position?: string
+  order?: number
   avatar?: ImageDataLike
   linkedInPage?: string
   homePage?: string

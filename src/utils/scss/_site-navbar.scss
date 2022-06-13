@@ -92,6 +92,10 @@
   font-size: medium;
   a {
     color: $black;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 
   .active {

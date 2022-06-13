@@ -5,16 +5,14 @@ dotenv.config({
   path: `.env.${process.env.NODE_ENV}`
 })
 
+const baseUrl = 'https://ftsrg.mit.bme.hu/'
+
 export default {
   siteMetadata: {
-    baseUrl: 'https://ftsrg.mit.bme.hu/',
-    translations: ['en'],
-    lang: 'hu',
-    title: 'ftsrg — Kritikus Rendszerek Kutatócsoport',
-    titleTemplate: '%s | ftsrg — Kritikus Rendszerek Kutatócsoport',
-    description:
-      'A Kritikus Rendszerek Kutatócsoport célja olyan új módszerek és szoftverek kidolgozása, amiknek a segítségével a ' +
-      'mérnökök jobb rendszereket készíthetnek.',
+    baseUrl,
+    title: 'meta.title',
+    titleTemplate: 'meta.titleTemplate',
+    description: 'meta.description',
     author: 'ftsrg',
     image: '/images/ftsrg-large.png',
     favicons: {
@@ -25,7 +23,7 @@ export default {
       twitterUsername: '@ftsrg_bme',
       facebookAppId: 'FB_APP_ID'
     },
-    keywords: ['research', 'system', 'verification', 'analysis', 'model-based'],
+    keywords: 'meta.keywords',
     robots: 'index, follow'
   },
   plugins: [
@@ -41,6 +39,13 @@ export default {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `partner`,
+        path: `${path.join(__dirname, '../src/content/partners')}`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `publication`,
         path: `${path.join(__dirname, '../src/content/publications')}`
       }
@@ -50,6 +55,13 @@ export default {
       options: {
         name: `images`,
         path: `${path.join(__dirname, '../src/content/images')}`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `staticImages`,
+        path: `${path.join(__dirname, '../static/images')}`
       }
     },
     {
@@ -111,15 +123,135 @@ export default {
         ]
       }
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `locale`,
+        path: `${path.join(__dirname, '../src/locales')}`
+      }
+    },
+    {
+      resolve: `gatsby-plugin-react-i18next`,
+      options: {
+        localeJsonSourceName: `locale`,
+        languages: [`en`, `hu`],
+        defaultLanguage: `en`,
+        generateDefaultLanguagePage: true,
+        redirect: true,
+        siteUrl: baseUrl,
+        i18nextOptions: {
+          interpolation: {
+            escapeValue: false
+          },
+          keySeparator: false,
+          nsSeparator: false
+        },
+        pages: [
+          {
+            matchPath: '/',
+            languages: ['en', 'hu']
+          },
+          {
+            matchPath: '/404',
+            languages: ['en', 'hu']
+          },
+          {
+            matchPath: '/about',
+            languages: ['en', 'hu']
+          },
+          {
+            matchPath: '/contact',
+            languages: ['en', 'hu']
+          },
+          {
+            matchPath: '/education',
+            languages: ['en', 'hu']
+          },
+          {
+            matchPath: '/research',
+            languages: ['en', 'hu']
+          }
+        ]
+      }
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          formats: [`auto`, `avif`, `webp`],
+          placeholder: `blurred`
+        }
+      }
+    },
     `gatsby-plugin-tsconfig-paths`,
     {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
         environments: ['production', 'development']
+      }
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: '/',
+        query: `
+          {
+            site {
+              siteMetadata {
+                baseUrl
+              }
+            }
+            allSitePage {
+              nodes {
+                pageContext
+                path
+              }
+            }
+          }
+        `,
+        resolveSiteUrl: ({ site }: { site: { siteMetadata: { baseUrl: string } } }) => site.siteMetadata.baseUrl,
+        resolvePages: ({
+          allSitePage
+        }: {
+          allSitePage: {
+            nodes: {
+              pageContext: { i18n: { defaultLanguage: string; languages: string[]; originalPath: string; routed: boolean } }
+              path: string
+            }[]
+          }
+        }) => allSitePage.nodes,
+        excludes: ['/**/404', '/**/404.html'],
+        filterPages: (node: {
+          pageContext: { i18n: { defaultLanguage: string; languages: string[]; originalPath: string; routed: boolean } }
+          path: string
+        }) => {
+          return node.pageContext.i18n.routed === false
+        },
+        serialize: (node: {
+          pageContext: { i18n: { language: string; defaultLanguage: string; languages: string[]; originalPath: string; routed: boolean } }
+          path: string
+        }) => {
+          const { language, languages, originalPath, defaultLanguage } = node.pageContext.i18n
+
+          const links = [{ lang: 'x-default', url: `${baseUrl}${defaultLanguage}${originalPath}` }]
+          languages.forEach((lang) => {
+            if (lang === language) return
+            links.push({ lang, url: `${baseUrl}${lang}${originalPath}` })
+          })
+
+          return { url: `${baseUrl}${node.path.slice(1)}`, links }
+        }
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: baseUrl,
+        sitemap: `${baseUrl}sitemap-index.xml`,
+        policy: [{ userAgent: '*', allow: '/' }]
       }
     }
   ]

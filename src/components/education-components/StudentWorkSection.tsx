@@ -1,6 +1,7 @@
+import { StaticImage } from 'gatsby-plugin-image'
+import { Trans, useI18next } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import { Trans, useTranslation } from 'react-i18next'
 import Slider from 'react-slick'
 
 const cardsData = [
@@ -21,7 +22,7 @@ const cardsData = [
 ]
 
 const StudentWorkSection: React.FC = () => {
-  const { t } = useTranslation()
+  const { t } = useI18next()
 
   return (
     <div id="student-work" className="site-section">
@@ -43,9 +44,12 @@ const StudentWorkSection: React.FC = () => {
             </p>
           </Col>
           <Col md={9}>
-            <p>
-              <img src="/images/students/thesis-topics.jpg" alt="Szakdolgozat és diplomaterv témák" className="img-fluid" />
-            </p>
+            <StaticImage
+              src="../../../static/images/students/thesis-topics.jpg"
+              alt={t('education.studentwork.title')}
+              className="img-fluid"
+              layout="fullWidth"
+            />
           </Col>
         </Row>
         <Slider

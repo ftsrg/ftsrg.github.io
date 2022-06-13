@@ -1,7 +1,7 @@
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import { useI18next } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import { useTranslation } from 'react-i18next'
 import { FaGithub, FaHome, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import { AiCV, AiDblp, AiGoogleScholar, AiMtmt, AiOrcid } from '~components/Academicons'
 import { MemberProps } from '~utils/props'
@@ -10,8 +10,36 @@ type Props = {
   nodes: Array<MemberProps>
 }
 
+const positionOrder = [
+  'prof',
+  'assocProfHabil',
+  'assocProf',
+  'honAssocProf',
+  'assistProf',
+  'masterLecturer',
+  'assistResFellow',
+  'phdStudent'
+]
+
 const MembersSection: React.FC<Props> = ({ nodes }) => {
-  const { t } = useTranslation()
+  const { t } = useI18next()
+
+  function memberName(props: MemberProps) {
+    return t('about.members.name', { firstName: props.firstName, lastName: props.lastName })
+  }
+
+  function memberSort(member1: MemberProps, member2: MemberProps) {
+    const pos1 = positionOrder.indexOf(member1.position || '')
+    const pos2 = positionOrder.indexOf(member2.position || '')
+
+    if (pos1 === pos2) {
+      if (member1.order === member2.order) {
+        return memberName(member1).localeCompare(memberName(member2))
+      }
+      return (member2.order || 0) - (member1.order || 0)
+    }
+    return pos1 - pos2
+  }
 
   return (
     <div id="members" className="site-section">
@@ -22,18 +50,20 @@ const MembersSection: React.FC<Props> = ({ nodes }) => {
           </h2>
         </div>
         <Row className="mt-5">
-          {nodes.map((member) => {
+          {nodes.sort(memberSort).map((member) => {
             const avatar = member.avatar ? getImage(member.avatar) : null
             return (
               <Col lg={3} md={4} key={member.firstName + member.lastName} className="mb-5 mb-lg-5">
-                <div className="feature-1 border person text-center">
+                <div className="feature-1 border person text-center d-flex flex-column justify-content-between">
                   {avatar && <GatsbyImage image={avatar} className="img-fluid" alt={member.firstName + member.lastName} />}
                   <div className="feature-1-content">
                     <h2>
                       {t('about.members.name', { firstName: member.firstName, lastName: member.lastName })}
                       {member.title && `, ${member.title}`}
                     </h2>
-                    <span className="position mb-3 d-block">{member.position && t(member.position)}</span>
+                    <span className="position mb-3 d-block">{member.position && t(`about.members.position.${member.position}`)}</span>
+                  </div>
+                  <div className="mt-auto">
                     <p>
                       {member.homePage && (
                         <a target="_blank" rel="noopener noreferrer" href={member.homePage}>

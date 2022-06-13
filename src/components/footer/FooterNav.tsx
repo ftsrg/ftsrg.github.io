@@ -1,14 +1,13 @@
-import { Link } from 'gatsby'
+import { Link, useI18next } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import { Col } from 'react-bootstrap'
-import { useTranslation } from 'react-i18next'
 import NAVBAR_ITEMS from '../navbar/navbar-items'
 
 const columnIds = ['research', 'education', 'about']
 const FOOTER_ITEMS = NAVBAR_ITEMS.filter((i) => columnIds.includes(i.id))
 
 const FooterNav: React.FC = () => {
-  const { t } = useTranslation()
+  const { t } = useI18next()
 
   return (
     <>

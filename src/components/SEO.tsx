@@ -1,15 +1,14 @@
-import { useLocation } from '@reach/router'
+import { useI18next } from 'gatsby-plugin-react-i18next'
 import React, { FC } from 'react'
 import { Helmet } from 'react-helmet'
 import { useSiteMetadata } from '~hooks/useSiteMetadata'
 import { SEOProps } from '~utils/props'
 
 const SEO: FC<SEOProps> = ({ title, description, image, author, lang, robots, keywords = [], meta = [], links = [] }) => {
-  const { pathname } = useLocation()
+  const { t, defaultLanguage, language, languages, originalPath, routed } = useI18next()
 
   const {
     baseUrl,
-    lang: defaultLang,
     title: defaultTitle,
     titleTemplate,
     author: defaultAuthor,
@@ -28,13 +27,13 @@ const SEO: FC<SEOProps> = ({ title, description, image, author, lang, robots, ke
   })()
 
   const seo = {
-    lang: lang || defaultLang,
+    lang: lang || language,
     title: title || defaultTitle,
     description: description || defaultDescription,
     author: author || defaultAuthor,
     image: imageUrl,
-    url: pathname === '/' ? `${baseUrl}` : `${baseUrl}${pathname}`,
-    keywords: keywords.length ? keywords : defaultKeywords,
+    url: originalPath === '/' ? `${baseUrl}` : `${baseUrl}${language}${originalPath}`,
+    keywords: keywords.length ? keywords : defaultKeywords.split(', '),
     robots: robots || defaultRobots
   }
 
@@ -43,30 +42,53 @@ const SEO: FC<SEOProps> = ({ title, description, image, author, lang, robots, ke
       htmlAttributes={{
         lang: seo.lang
       }}
-      title={seo.title}
-      titleTemplate={seo.title === defaultTitle ? seo.title : titleTemplate}
-      link={[
-        {
-          rel: 'canonical',
-          href: seo.url
-        },
-        {
-          rel: 'icon',
-          type: 'image/png',
-          sizes: '32x32',
-          href: favicons?.favicon32
-        },
-        {
-          rel: 'icon',
-          type: 'image/png',
-          sizes: '16x16',
-          href: favicons?.favicon16
-        }
-      ].concat(links)}
+      title={t(seo.title)}
+      titleTemplate={seo.title === defaultTitle ? t(seo.title) : t(titleTemplate)}
+      link={(
+        [
+          {
+            rel: 'icon',
+            type: 'image/png',
+            sizes: '32x32',
+            href: favicons?.favicon32
+          },
+          {
+            rel: 'icon',
+            type: 'image/png',
+            sizes: '16x16',
+            href: favicons?.favicon16
+          }
+        ] as Array<JSX.IntrinsicElements['link']>
+      )
+        .concat({
+          rel: 'alternate',
+          href: `${baseUrl}${defaultLanguage}${originalPath}`,
+          hrefLang: 'x-default'
+        })
+        .concat(
+          languages
+            .filter((l) => l !== language)
+            .map((l) => ({
+              rel: 'alternate',
+              href: `${baseUrl}${l}${originalPath}`,
+              hrefLang: l
+            }))
+        )
+        .concat(
+          routed
+            ? [
+                {
+                  rel: 'canonical',
+                  href: `${baseUrl}${language}${originalPath}`
+                }
+              ]
+            : []
+        )
+        .concat(links)}
       meta={[
         {
           name: 'description',
-          content: seo.description
+          content: t(seo.description)
         },
         {
           name: 'author',
@@ -74,11 +96,11 @@ const SEO: FC<SEOProps> = ({ title, description, image, author, lang, robots, ke
         },
         {
           property: 'og:title',
-          content: seo.title
+          content: t(seo.title)
         },
         {
           property: 'og:description',
-          content: seo.description
+          content: t(seo.description)
         },
         {
           property: 'og:image',
@@ -98,11 +120,11 @@ const SEO: FC<SEOProps> = ({ title, description, image, author, lang, robots, ke
         },
         {
           name: 'twitter:title',
-          content: seo.title
+          content: t(seo.title)
         },
         {
           name: 'twitter:description',
-          content: seo.description
+          content: t(seo.description)
         },
         {
           name: 'twitter:image',

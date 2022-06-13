@@ -1,28 +1,41 @@
-import React from 'react'
-import { Button } from 'react-bootstrap'
-import { useTranslation } from 'react-i18next'
-import { useSiteMetadata } from '~hooks/useSiteMetadata'
-import Locale from '~utils/language'
+import { Link, useI18next } from 'gatsby-plugin-react-i18next'
+import React, { useContext, useEffect } from 'react'
+import { CookieContext } from '~components/CookieBanner'
+
+const SCROLL_KEY = '@@scroll'
 
 const LanguageToggle: React.FC = () => {
-  const { translations } = useSiteMetadata() as {
-    translations: Array<keyof typeof Locale>
-  }
-  const { i18n } = useTranslation()
-  const locale = i18n.language as keyof typeof Locale
+  const { language, originalPath } = useI18next()
+  const locale = language
   const otherLocale = locale === 'hu' ? 'en' : 'hu'
-  const toggleLanguage = () => (locale === 'hu' ? i18n.changeLanguage('en') : i18n.changeLanguage('hu'))
+
+  const cookieConsent = useContext(CookieContext)
+
+  useEffect(() => {
+    const scroll = localStorage.getItem(SCROLL_KEY)
+    const { scrollingElement } = document
+
+    if (scroll && scrollingElement) {
+      localStorage.removeItem(SCROLL_KEY)
+      scrollingElement.scrollTop = parseInt(scroll, 10)
+    }
+  }, [])
 
   return (
-    <Button
-      className="rounded-0 p-0"
-      style={{ width: '2.5rem', height: '2.5rem' }}
-      disabled={!translations.some((loc) => loc === 'en')}
+    <Link
+      className="rounded-0 p-0 me-1 btn btn-primary"
+      style={{ width: '2.5rem', height: '2.5rem', lineHeight: '2.4rem' }}
       aria-label="Toggle language"
-      onClick={toggleLanguage}
+      to={originalPath}
+      language={otherLocale}
+      onClick={() => {
+        if (cookieConsent) {
+          localStorage.setItem(SCROLL_KEY, (document.scrollingElement?.scrollTop || 0).toString())
+        }
+      }}
     >
       {otherLocale.toUpperCase()}
-    </Button>
+    </Link>
   )
 }
 

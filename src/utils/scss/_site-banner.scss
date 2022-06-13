@@ -19,7 +19,7 @@
   min-height: 100%;
   width: auto;
   height: auto;
-  z-index: 0;
+  z-index: 1;
   -ms-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
@@ -40,6 +40,7 @@
   z-index: 1;
 }
 
+/*
 @media (pointer: coarse) and (hover: none) {
   #banner video {
     display: none;
@@ -60,10 +61,20 @@
     background-image: url('/images/background_4.jpg');
   }
 }
+*/
 
 .intro-section {
   color: $white;
   position: relative;
+
+  > .bannerImage {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
   &,
   .container .row {
     height: calc(100vh - 4.5rem);
@@ -80,6 +91,7 @@
     width: 100%;
     background: #222;
     opacity: 0.5;
+    z-index: 1;
     border-bottom-right-radius: 0px;
     background-size: cover;
     background-position: center;

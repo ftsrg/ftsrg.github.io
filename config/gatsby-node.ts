@@ -1,4 +1,3 @@
-import fs from 'fs-extra'
 import { GatsbyNode } from 'gatsby'
 import { createFilePath } from 'gatsby-source-filesystem'
 import path from 'path'
@@ -17,6 +16,26 @@ export const onCreateNode: GatsbyNode['onCreateNode'] = ({ node, getNode, action
       node,
       name: `layout`,
       value: frontmatter.layout
+    })
+  }
+}
+
+export const onCreatePage: GatsbyNode['onCreatePage'] = ({ actions, page }) => {
+  const { createPage, deletePage } = actions
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const i18nData = page.context.i18n as any
+  if (i18nData && i18nData.routed === false && i18nData.originalPath === i18nData.path) {
+    deletePage(page)
+    createPage({
+      path: page.path,
+      context: {
+        ...page.context,
+        redirect: {
+          from: page.path,
+          to: `/${i18nData.defaultLanguage}${page.path}`
+        }
+      },
+      component: path.join(__dirname, '../src/utils/redirect.tsx')
     })
   }
 }
@@ -78,8 +97,9 @@ export const createPages: GatsbyNode['createPages'] = ({ graphql, actions }) => 
   })
 }
 */
-
+/*
 export const onPostBuild: GatsbyNode['onPostBuild'] = ({ reporter }) => {
   reporter.info('copy translation files')
   fs.copySync(path.join(__dirname, '../src/locales'), path.join(__dirname, '../public/locales'))
 }
+*/

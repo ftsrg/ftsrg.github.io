@@ -1,26 +1,32 @@
+import { GatsbyImage, getImage, ImageDataLike } from 'gatsby-plugin-image'
+import { useI18next } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import { useTranslation } from 'react-i18next'
 
 type Props = {
   heroTitle: string
   heroDesc: string
-  bgImageUrl?: string
+  bgImage?: ImageDataLike
 }
 
-const TopHero: React.FC<Props> = ({ heroTitle, heroDesc, bgImageUrl }) => {
-  const { t } = useTranslation()
+const TopHero: React.FC<Props> = ({ heroTitle, heroDesc, bgImage }) => {
+  const { t } = useI18next()
+
+  const heroBackgroundImage = bgImage ? getImage(bgImage) : null
 
   return (
-    <div className="site-section pagehero pb-5" style={{ backgroundImage: bgImageUrl ? `url('${bgImageUrl}')` : '' }}>
-      <Container>
-        <Row className="align-items-end">
-          <Col lg={7}>
-            <h2 className="mb-0">{t(heroTitle)}</h2>
-            <p>{t(heroDesc)}</p>
-          </Col>
-        </Row>
-      </Container>
+    <div className="pagehero">
+      {heroBackgroundImage && <GatsbyImage image={heroBackgroundImage} alt={heroTitle} />}
+      <div className="site-section pb-5">
+        <Container>
+          <Row className="align-items-end">
+            <Col lg={7}>
+              <h2 className="mb-0">{t(heroTitle)}</h2>
+              <p>{t(heroDesc)}</p>
+            </Col>
+          </Row>
+        </Container>
+      </div>
     </div>
   )
 }

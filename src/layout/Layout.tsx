@@ -1,5 +1,5 @@
-import React from 'react'
-import CookieBanner from '~components/CookieBanner'
+import React, { PropsWithChildren, useState } from 'react'
+import CookieBanner, { CookieContext } from '~components/CookieBanner'
 import Footer from '~components/footer/Footer'
 import NavBar from '~components/navbar/NavBar'
 import SEO from '~components/SEO'
@@ -11,9 +11,11 @@ interface Props {
   href: string
 }
 
-const Layout: React.FC<Props> = ({ href, seo, children }) => {
+const Layout: React.FC<PropsWithChildren<Props>> = ({ href, seo, children }) => {
+  const [cookieState, setCookieState] = useState(false)
+
   return (
-    <>
+    <CookieContext.Provider value={cookieState}>
       {/* eslint-disable-next-line react/jsx-props-no-spreading */}
       <SEO {...seo} />
       <div className="d-flex flex-column bg-light">
@@ -22,8 +24,8 @@ const Layout: React.FC<Props> = ({ href, seo, children }) => {
         <Footer hasContact />
         <div className="d-none">Current version: GITHUB_COMMIT_URL_HERE</div>
       </div>
-      <CookieBanner />
-    </>
+      <CookieBanner onAccept={() => setCookieState(true)} onReject={() => setCookieState(false)} />
+    </CookieContext.Provider>
   )
 }
 

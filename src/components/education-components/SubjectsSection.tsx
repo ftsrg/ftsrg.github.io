@@ -1,7 +1,7 @@
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import { useI18next } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import { useTranslation } from 'react-i18next'
 import { SubjectProps } from '~utils/props'
 
 type Props = {
@@ -9,7 +9,7 @@ type Props = {
 }
 
 const SubjectsSection: React.FC<Props> = ({ nodes }) => {
-  const { t } = useTranslation()
+  const { t } = useI18next()
 
   return (
     <div id="courses" className="section-bg style-1">
@@ -21,18 +21,18 @@ const SubjectsSection: React.FC<Props> = ({ nodes }) => {
             </h2>
           </Col>
         </Row>
-        <Row>
+        <Row className="align-items-stretch">
           {nodes.map((subject) => {
             const featuredImage = subject.featuredImage ? getImage(subject.featuredImage) : null
             return (
               <Col lg={4} md={6} key={subject.translationPrefix} className="mb-4 course-1-container">
-                <div className="course-1-item">
+                <div className="course-1-item h-100 d-flex flex-column">
                   <div>
                     <figure className="thumbnail">
                       {featuredImage && <GatsbyImage image={featuredImage} className="img-fluid" alt={subject.translationPrefix} />}
-                      <div className="price">{t(subject.type)}</div>
                       <div className="category">
                         <h3>{t(`${subject.translationPrefix}.title`)}</h3>
+                        <div className="price">{t(subject.type)}</div>
                       </div>
                     </figure>
                     <div className="course-1-content">
@@ -41,12 +41,16 @@ const SubjectsSection: React.FC<Props> = ({ nodes }) => {
                     </div>
                   </div>
                   <div className="course-1-footer px-5">
-                    <a target="_blank" rel="noopener noreferrer" href={subject.portalPage} className="btn btn-secondary rounded-0 w-50">
-                      {t('education.subjects.portalPage')}
-                    </a>
-                    <a target="_blank" rel="noopener noreferrer" href={subject.webPage} className="btn btn-primary rounded-0 w-50">
-                      {t('education.subjects.webPage')}
-                    </a>
+                    {subject.portalPage && (
+                      <a target="_blank" rel="noopener noreferrer" href={subject.portalPage} className="btn btn-secondary rounded-0 w-50">
+                        {t('education.subjects.portalPage')}
+                      </a>
+                    )}
+                    {subject.webPage && (
+                      <a target="_blank" rel="noopener noreferrer" href={subject.webPage} className="btn btn-primary rounded-0 w-50">
+                        {t('education.subjects.webPage')}
+                      </a>
+                    )}
                   </div>
                 </div>
               </Col>

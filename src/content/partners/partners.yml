@@ -1,0 +1,20 @@
+- name: IncQuery Labs cPlc.
+  logo: ../images/partners/1-incquery-labs-logo.png
+- name: Quanopt
+  logo: ../images/partners/2-quanopt-logo.png
+- name: Università degli Studi di Firenze
+  logo: ../images/partners/3-firenze-logo.png
+- name: McGill University
+  logo: ../images/partners/mcgill-logo.png
+- name: Universidade de Coimbra
+  logo: ../images/partners/4-coimbra-logo.png
+- name: thyssenkrupp
+  logo: ../images/partners/5-thyssen-logo.png
+- name: Ericsson
+  logo: ../images/partners/6-ericsson-logo.png
+- name: CERN
+  logo: ../images/partners/7-cern-logo.png
+- name: Prolan
+  logo: ../images/partners/8-prolan-logo.png
+- name: ResilTech
+  logo: ../images/partners/9-resiltech-logo.png

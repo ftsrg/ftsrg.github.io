@@ -1,4 +1,5 @@
 import { graphql, PageProps } from 'gatsby'
+import { ImageDataLike } from 'gatsby-plugin-image'
 import React from 'react'
 import { FormerMembers, Intro, Members, Students } from '~components/aboutpage-components'
 import Breadcrumbs from '~components/Breadcrumbs'
@@ -14,17 +15,19 @@ interface AboutPageProps extends PageProps {
     formermembers: {
       nodes: Array<MemberProps>
     }
+    aboutHero: ImageDataLike
+    formerMembersHero: ImageDataLike
   }
 }
 
 const AboutPage: React.FC<AboutPageProps> = ({ data }) => {
   return (
     <Layout href="/about">
-      <TopHero heroTitle="about.heroTitle" heroDesc="about.heroDesc" bgImageUrl="/images/bg_6.jpg" />
+      <TopHero heroTitle="about.heroTitle" heroDesc="about.heroDesc" bgImage={data.aboutHero} />
       <Breadcrumbs title="nav.about.title" />
       <Intro />
       <Members nodes={data.members.nodes} />
-      <FormerMembers nodes={data.formermembers.nodes} />
+      <FormerMembers nodes={data.formermembers.nodes} heroBackgroundImage={data.formerMembersHero} />
       <Students />
     </Layout>
   )
@@ -33,13 +36,14 @@ const AboutPage: React.FC<AboutPageProps> = ({ data }) => {
 export default AboutPage
 
 export const query = graphql`
-  query AboutPageQueries {
+  query AboutPageQueries($language: String!) {
     members: allActiveYaml {
       nodes {
         firstName
         lastName
         title
         position
+        order
         linkedInPage
         homePage
         mtmtPage
@@ -62,6 +66,25 @@ export const query = graphql`
         lastName
         title
         linkedInPage
+      }
+    }
+    locales: allLocale(filter: { ns: { in: ["about", "commons"] }, language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+    aboutHero: file(relativePath: { eq: "bg_6.jpg" }, sourceInstanceName: { eq: "staticImages" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
+      }
+    }
+    formerMembersHero: file(relativePath: { eq: "panorama.jpg" }, sourceInstanceName: { eq: "staticImages" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
   }

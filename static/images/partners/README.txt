@@ -1,1 +1,0 @@
-Run the bat file to enumerate all the logos in the folder, then copy the contents of logo-data.txt into the relevant part of index.html (and remove the last comma).

@@ -2,8 +2,6 @@ import { graphql, useStaticQuery } from 'gatsby'
 
 interface SiteMetadata {
   baseUrl: string
-  translations: string[]
-  lang: string
   title: string
   titleTemplate: string
   description: string
@@ -18,7 +16,7 @@ interface SiteMetadata {
     facebookPage: string
   }
   robots: string
-  keywords: string[]
+  keywords: string
 }
 
 export const useSiteMetadata = (): SiteMetadata => {
@@ -28,8 +26,6 @@ export const useSiteMetadata = (): SiteMetadata => {
         site {
           siteMetadata {
             baseUrl
-            translations
-            lang
             title
             titleTemplate
             description

@@ -18,22 +18,37 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 4rem 0;
+  position: relative;
 
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $secondary;
+    opacity: 0.9;
+    z-index: 1;
+  }
+
+  > .gatsby-image-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    user-select: none;
+  }
+
+  > .style-1,
   &.style-1 {
     position: relative;
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: $secondary;
-      opacity: 0.9;
-      z-index: 0;
-    }
+    padding: 4rem 0;
+
     > .container {
+      position: relative;
       z-index: 2;
     }
     .icon {
@@ -169,6 +184,7 @@
 // 05 - Block
 .ftco-testimonial-1 {
   .ftco-testimonial-vcard {
+
     img {
       width: 50px;
       height: 50px;
@@ -245,6 +261,8 @@
 
 .person {
   margin-bottom: 50px !important;
+  height: calc(100% - 50px);
+
   .img-fluid {
     width: 100px;
     height: 100px;
@@ -256,20 +274,9 @@
 }
 
 .course-1-container {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-
   .course-1-item {
     box-shadow: 0 2px 10px 0 rgba($black, 0.1);
     background-color: $white;
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-    -ms-flex-direction: column !important;
-    flex-direction: column !important;
 
     figure {
       position: relative;
@@ -277,6 +284,7 @@
 
     .category {
       background: $primary;
+      position: relative;
 
       padding: 20px;
       h3 {
@@ -290,9 +298,8 @@
     // If the image in course-item has bigger height, this class breaks the look and feel
     .price {
       position: absolute;
-      top: 0;
+      top: calc(-20px - 1em);
       right: 0;
-      transform: translatey(375%);
       padding: 10px 20px;
       background: $secondary;
       color: $white;
@@ -436,7 +443,7 @@
   @include media-breakpoint-only(lg) {
     column-count: 4;
   }
-  @include media-breakpoint-only(xl) {
+  @include media-breakpoint-up(xl) {
     column-count: 5;
   }
 }
@@ -489,7 +496,7 @@
   @include media-breakpoint-only(lg) {
     column-count: 4;
   }
-  @include media-breakpoint-only(xl) {
+  @include media-breakpoint-up(xl) {
     column-count: 5;
   }
 }
@@ -512,13 +519,26 @@
     bottom: 0;
   }
 
-  > .container {
-    position: relative;
-    z-index: 2;
+  > .gatsby-image-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    user-select: none;
+  }
 
-    h2,
-    p {
-      color: $white;
+  > .site-section,
+  &.site-section {
+    > .container {
+      position: relative;
+      z-index: 2;
+
+      h2,
+      p {
+        color: $white;
+      }
     }
   }
 }
@@ -568,5 +588,17 @@
 
   &:hover {
     box-shadow: 0 5px 30px -10px rgba($black, 0.3);
+  }
+}
+
+.slick-track {
+  display: flex;
+
+  > .slick-slide {
+    height: inherit;
+
+    > div {
+      height: 100%;
+    }
   }
 }

@@ -1,7 +1,8 @@
 import { graphql, PageProps } from 'gatsby'
+import { ImageDataLike } from 'gatsby-plugin-image'
+import { Trans, useI18next } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import { useTranslation } from 'react-i18next'
 import Breadcrumbs from '~components/Breadcrumbs'
 import { AchievementsCarousel, SpecializationsCarousel } from '~components/carousels'
 import { StudentWork, Subjects } from '~components/education-components'
@@ -21,15 +22,16 @@ interface EducationPageProps extends PageProps {
     achievements: {
       nodes: Array<AchievementProps>
     }
+    educationHero: ImageDataLike
   }
 }
 
 const EducationPage: React.FC<EducationPageProps> = ({ data }) => {
-  const { t } = useTranslation()
+  const { t } = useI18next()
 
   return (
     <Layout href="/education">
-      <TopHero heroTitle="education.heroTitle" heroDesc="education.heroDesc" bgImageUrl="/images/bg_1.jpg" />
+      <TopHero heroTitle="education.heroTitle" heroDesc="education.heroDesc" bgImage={data.educationHero} />
       <Breadcrumbs title="nav.education.title" />
 
       <div id="specializations" className="site-section">
@@ -50,7 +52,19 @@ const EducationPage: React.FC<EducationPageProps> = ({ data }) => {
 
       <Hero id="talentcare" heroTitle="education.talentcare.title">
         <p>{t('education.talentcare.p1')}</p>
-        <p>{t('education.talentcare.p2')}</p>
+        <p>
+          <Trans
+            i18nKey="education.talentcare.p2"
+            components={[
+              // eslint-disable-next-line jsx-a11y/control-has-associated-label, jsx-a11y/anchor-has-content
+              <a
+                href="http://www.impulzus.com/blog/2021/11/16/tudomanyos-diakkori-konferencia/"
+                target="_blank"
+                rel="noopener noreferrer"
+              />
+            ]}
+          />
+        </p>
       </Hero>
 
       <div id="achievements" className="site-section">
@@ -72,7 +86,7 @@ const EducationPage: React.FC<EducationPageProps> = ({ data }) => {
 export default EducationPage
 
 export const query = graphql`
-  query EducationPageQueries {
+  query EducationPageQueries($language: String!) {
     subjects: allSubjectsYaml {
       nodes {
         translationPrefix
@@ -106,6 +120,20 @@ export const query = graphql`
             gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
           }
         }
+      }
+    }
+    locales: allLocale(filter: { ns: { in: ["education", "commons"] }, language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+    educationHero: file(relativePath: { eq: "bg_1.jpg" }, sourceInstanceName: { eq: "staticImages" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
   }

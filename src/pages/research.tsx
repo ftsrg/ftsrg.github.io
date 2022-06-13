@@ -1,8 +1,9 @@
 import { graphql, PageProps } from 'gatsby'
+import { ImageDataLike } from 'gatsby-plugin-image'
+import { useI18next } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import { useTranslation } from 'react-i18next'
-import { FaDatabase } from 'react-icons/fa'
+import { FaDatabase, FaTv } from 'react-icons/fa'
 import { MdSchool } from 'react-icons/md'
 import Breadcrumbs from '~components/Breadcrumbs'
 import { EventsCarousel, ProjectsCarousel, PublicationsCarousel } from '~components/carousels'
@@ -22,15 +23,17 @@ interface ResearchPageProps extends PageProps {
     events: {
       nodes: Array<EventProps>
     }
+    researchHero: ImageDataLike
+    toolsHero: ImageDataLike
   }
 }
 
 const ResearchPage: React.FC<ResearchPageProps> = ({ data }) => {
-  const { t } = useTranslation()
+  const { t } = useI18next()
 
   return (
     <Layout href="/research">
-      <TopHero heroTitle="research.heroTitle" heroDesc="research.heroDesc" bgImageUrl="/images/bg_5.jpg" />
+      <TopHero heroTitle="research.heroTitle" heroDesc="research.heroDesc" bgImage={data.researchHero} />
       <Breadcrumbs title="nav.research.title" />
 
       <div id="projects" className="site-section">
@@ -56,7 +59,7 @@ const ResearchPage: React.FC<ResearchPageProps> = ({ data }) => {
                 <span>{t('research.publications.title')}</span>
               </h2>
               <p>
-                <span className="pr-1">{t('research.publications.fullPubList')}</span>
+                <span className="pe-1">{t('research.publications.fullPubList')}</span>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
@@ -65,9 +68,14 @@ const ResearchPage: React.FC<ResearchPageProps> = ({ data }) => {
                   <MdSchool />
                 </a>{' '}
                 <span className="px-2">|</span>
-                <span className="pr-1">{t('research.publications.dataSets')}</span>
+                <span className="pe-1">{t('research.publications.dataSets')}</span>
                 <a href="https://zenodo.org/communities/ftsrg" target="_blank" rel="noopener noreferrer">
                   <FaDatabase />
+                </a>{' '}
+                <span className="px-2">|</span>
+                <span className="pe-1">{t('research.publications.slides')}</span>
+                <a href="https://speakerdeck.com/ftsrg/" target="_blank" rel="noopener noreferrer">
+                  <FaTv />
                 </a>
               </p>
               <p>{t('research.publications.description')}</p>
@@ -77,7 +85,7 @@ const ResearchPage: React.FC<ResearchPageProps> = ({ data }) => {
         </Container>
       </div>
 
-      <Tools />
+      <Tools heroBackgroundImage={data.toolsHero} />
 
       <div id="events" className="site-section">
         <Container>
@@ -94,7 +102,7 @@ const ResearchPage: React.FC<ResearchPageProps> = ({ data }) => {
 export default ResearchPage
 
 export const query = graphql`
-  query ResearchPageQueries {
+  query ResearchPageQueries($language: String!) {
     projects: allProjectsYaml {
       nodes {
         title
@@ -131,6 +139,25 @@ export const query = graphql`
             gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
           }
         }
+      }
+    }
+    locales: allLocale(filter: { ns: { in: ["research", "commons"] }, language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+    researchHero: file(relativePath: { eq: "bg_5.jpg" }, sourceInstanceName: { eq: "staticImages" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
+      }
+    }
+    toolsHero: file(relativePath: { eq: "bg_4.jpg" }, sourceInstanceName: { eq: "staticImages" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
   }
