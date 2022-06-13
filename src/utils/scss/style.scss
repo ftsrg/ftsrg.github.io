@@ -1,6 +1,11 @@
 /* Overrides */
 @import 'overrides';
 /* Import bootstrap */
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+$grid-breakpoints: map-remove($grid-breakpoints, "xxl"); /* Bootstrap 5 regression */
+$container-max-widths: map-remove($container-max-widths, "xxl"); /* Bootstrap 5 regression */
 @import '~bootstrap/scss/bootstrap';
 /* Import academicons */
 @import '~academicons/css/academicons.css';
