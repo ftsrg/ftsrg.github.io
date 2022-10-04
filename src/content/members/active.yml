@@ -13,6 +13,7 @@
   position: prof
   avatar: ../images/members/varro.jpg
   linkedInPage: https://www.linkedin.com/in/daniel-varro-3854bb49/
+  dblpPage: https://dblp.org/pid/53/1883.html
   homePage: https://varrodan.github.io/
   mtmtPage: https://scholar.google.ca/citations?hl=en&user=4Ya6dVoAAAAJ
 - firstName: István
@@ -23,6 +24,7 @@
   linkedInPage: https://hu.linkedin.com/in/istvan-majzik-a2033387
   homePage: https://inf.mit.bme.hu/members/majzik
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10001448
+  scholarPage: https://scholar.google.com/citations?user=z8LwwiAAAAAJ
 - firstName: Zoltán
   lastName: Micskei
   title: PhD
@@ -34,9 +36,9 @@
   homePage: http://mit.bme.hu/~micskeiz
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10041151
   twitterPage: https://twitter.com/micskeiz
-  orcidPage: ""
-  scholarPage: ""
-  dblpPage: ""
+  orcidPage: ''
+  scholarPage: ''
+  dblpPage: ''
 - firstName: László
   lastName: Gönczy
   title: PhD
@@ -44,6 +46,7 @@
   avatar: ../images/members/gonczy.jpg
   homePage: https://inf.mit.bme.hu/members/gonczy
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10041117
+  linkedInPage: https://www.linkedin.com/in/laszlo-gonczy-80684411/
 - firstName: András
   lastName: Vörös
   title: PhD
@@ -51,6 +54,7 @@
   avatar: ../images/members/voros.jpg
   homePage: https://inf.mit.bme.hu/members/vorosa
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10042280
+  cvPage: https://share.mit.bme.hu/index.php/s/x6zj2cKzA5TxieJ
 - firstName: Ákos
   lastName: Horváth
   title: PhD
@@ -74,6 +78,8 @@
   avatar: ../images/members/kocsis.png
   homePage: https://inf.mit.bme.hu/members/ikocsis
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10040986
+  cvPage: http://mit.bme.hu/~ikocsis/Kocsis_Imre_CV_eng.pdf
+  linkedInPage: https://www.linkedin.com/in/imre-kocsis/
 - firstName: Vince
   lastName: Molnár
   title: PhD
@@ -89,15 +95,9 @@
   position: assistProf
   avatar: ../images/members/semerath.jpg
   homePage: https://inf.mit.bme.hu/members/semeratho
+  cvPage: https://oszkarsemerath.github.io/content/SemerathCV-en.pdf
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10045161
-- firstName: Zoltán
-  lastName: Szatmári
-  title: PhD
-  position: assistProf
-  avatar: ../images/members/szatmari.jpg
-  homePage: https://inf.mit.bme.hu/members/szatmari
-  mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10041937
-  linkedInPage: https://www.linkedin.com/in/zszatmari/
+  scholarPage: https://scholar.google.com/citations?user=eURCwRYAAAAJ
 - firstName: Gábor
   lastName: Huszerl
   position: masterLecturer
