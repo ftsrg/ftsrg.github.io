@@ -68,7 +68,7 @@
     "gatsby-transformer-remark": "5.24.0",
     "gatsby-transformer-sharp": "4.24.0",
     "gatsby-transformer-yaml": "4.24.0",
-    "i18next": "21.10.0",
+    "i18next": "22.0.4",
     "react": "18.2.0",
     "react-anchor-link-smooth-scroll": "1.0.12",
     "react-bootstrap": "2.5.0",
