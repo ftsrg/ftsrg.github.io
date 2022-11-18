@@ -16,8 +16,8 @@ const counterData = [
     title: 'home.counters.c2.title',
     isGatsbyLink: false,
     url: 'http://tdk.bme.hu/Browse/Papers?f=VIK&d=MIT',
-    count: 117
-    /* Until 2021-12: 38 OTDK (2001-) and 79 TDK (2009-) */
+    count: 135
+    /* Until 2022-12: 38 OTDK (2001-) and 97 TDK (2009-) */
   },
   {
     title: 'home.counters.c3.title',
