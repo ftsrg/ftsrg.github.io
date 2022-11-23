@@ -168,6 +168,7 @@
   position: phdStudent
   avatar: ../images/members/bajczi.jpg
   homePage: https://www.mit.bme.hu/general/phd/bajczi
+  cvPage: https://leventebajczi.github.io/leventebajczi-cv/leventebajczi_cv_en.pdf
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10073070
 - firstName: Attila
   lastName: Ficsor
