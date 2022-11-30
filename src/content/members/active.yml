@@ -147,8 +147,9 @@
   lastName: Graics
   position: phdStudent
   avatar: ../images/members/graics.jpg
-  linkedInPage: https://www.linkedin.com/in/bence-graics-9085a6125/
   homePage: https://inf.mit.bme.hu/members/graicsb
+  cvPage: http://mit.bme.hu/~graics/cv-graics-en.pdf
+  linkedInPage: https://www.linkedin.com/in/bence-graics-9085a6125/
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10068239
   githubPage: https://github.com/grbeni
 - firstName: Richárd
