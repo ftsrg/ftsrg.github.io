@@ -107,7 +107,7 @@
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10041041
 - firstName: Attila
   lastName: Klenik
-  position: assistResFellow
+  position: resFellow
   avatar: ../images/members/klenik.jpg
   homePage: https://inf.mit.bme.hu/members/klenika
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10056599
@@ -145,7 +145,7 @@
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10068408
 - firstName: Bence
   lastName: Graics
-  position: phdStudent
+  position: assistResFellow
   avatar: ../images/members/graics.jpg
   homePage: https://inf.mit.bme.hu/members/graicsb
   cvPage: http://mit.bme.hu/~graics/cv-graics-en.pdf

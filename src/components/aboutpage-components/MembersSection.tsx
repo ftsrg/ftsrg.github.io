@@ -17,6 +17,7 @@ const positionOrder = [
   'honAssocProf',
   'assistProf',
   'masterLecturer',
+  'resFellow',
   'assistResFellow',
   'phdStudent'
 ]
