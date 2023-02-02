@@ -183,3 +183,15 @@
   avatar: ../images/members/nagy.jpg
   homePage: https://www.mit.bme.hu/general/phd/nagy
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10073486
+- firstName: Bertalan Zoltán
+  lastName: Péter
+  position: phdStudent
+  avatar: ../images/members/peter.jpg
+  homePage: https://www.mit.bme.hu/general/phd/peter
+  mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10083082
+- firstName: Milán
+  lastName: Mondok
+  position: phdStudent
+  avatar: ../images/members/mondok.jpg
+  homePage: https://www.mit.bme.hu/general/phd/mondok
+  mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10073063
