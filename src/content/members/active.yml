@@ -189,6 +189,9 @@
   avatar: ../images/members/peter.jpg
   homePage: https://www.mit.bme.hu/general/phd/peter
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10083082
+  cvPage: http://mit.bme.hu/~bpeter/cve.pdf
+  scholarPage: https://scholar.google.com/citations?user=mo8l6mQAAAAJ
+  githubPage: https://github.com/bzp99
 - firstName: Milán
   lastName: Mondok
   position: phdStudent
