@@ -21,6 +21,7 @@
   "research.tools.tool3.desc": "VIATRA Solver is a framework, which can automatically and efficiently generate consistent and diverse graphs from domain-specific models.",
 
   "research.publications.autoGenGraphModel": "We designed a new method to solve optimization problems during graph generations according to various object functions.",
+  "research.publications.autoGenQualitative": "We designed new algorithms to combine various solvers for synthesizing test scenarios represented as graph models.",
   "research.publications.autoIsoWhitebox": "We developed a tool and a method to automatically generate mock environments to isolate the tested model during code-based test generation.",
   "research.publications.faultInjectBlockchain": "In a collaboration with University of Coimbra, we recommended a method to assess the dependability of blockchain systems.",
   "research.publications.stratForCEGAR": "We developed efficient algorithms to improve CEGAR-based model checking, which were successfully evaluated on verifying embedded and C code.",
