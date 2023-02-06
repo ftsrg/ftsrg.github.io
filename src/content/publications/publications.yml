@@ -1,5 +1,11 @@
+- journalTitle: Softw Syst Model
+  year: 2022
+  title: Automated generation of consistent models using qualitative abstractions
+  url: https://doi.org/10.1007/s10270-021-00918-6
+  featuredImage: ../images/publications/sosym2022.png
+  description: research.publications.autoGenQualitative
 - journalTitle: IEEE T Software Eng
-  year: 2020
+  year: 2022
   title: Automated Generation of Consistent Graph Models with Multiplicity Reasoning
   url: https://doi.org/10.1109/TSE.2020.3025732
   featuredImage: ../images/publications/tse2020.png
