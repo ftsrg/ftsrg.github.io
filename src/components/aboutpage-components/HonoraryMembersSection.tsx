@@ -9,15 +9,15 @@ type Props = {
   nodes: Array<MemberProps>
 }
 
-const MembersSection: React.FC<Props> = ({ nodes }) => {
+const HonoraryMembersSection: React.FC<Props> = ({ nodes }) => {
   const { t } = useI18next()
 
   return (
-    <div id="members" className="site-section" style={{ paddingBottom: 0 }}>
+    <div id="honorary-members" className="site-section" style={{ paddingTop: 0 }}>
       <Container>
         <div className="pb-5">
           <h2 className="section-title-underline pb-5 text-center">
-            <span>{t('about.members.title')}</span>
+            <span>{t('about.honoraryMembers.title')}</span>
           </h2>
         </div>
         <Row className="mt-5">
@@ -35,4 +35,4 @@ const MembersSection: React.FC<Props> = ({ nodes }) => {
   )
 }
 
-export default MembersSection
+export default HonoraryMembersSection

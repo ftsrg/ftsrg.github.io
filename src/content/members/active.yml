@@ -55,22 +55,6 @@
   homePage: https://inf.mit.bme.hu/members/vorosa
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10042280
   cvPage: https://share.mit.bme.hu/index.php/s/x6zj2cKzA5TxieJ
-- firstName: Ákos
-  lastName: Horváth
-  title: PhD
-  position: honAssocProf
-  avatar: ../images/members/horvath.jpg
-  homePage: https://inf.mit.bme.hu/members/ahorvath
-  mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10030432
-  linkedInPage: https://www.linkedin.com/in/akoshorvathincquerylabs/
-- firstName: István
-  lastName: Ráth
-  title: PhD
-  position: honAssocProf
-  avatar: ../images/members/rath.jpg
-  homePage: https://inf.mit.bme.hu/members/rath
-  mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10030433
-  linkedInPage: https://www.linkedin.com/in/istvanrath/
 - firstName: Imre
   lastName: Kocsis
   title: PhD

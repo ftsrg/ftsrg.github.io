@@ -48,6 +48,7 @@
   "nav.about.shortTitle": "$t(nav.about.title)",
   "nav.about.about": "$t(nav.home.about)",
   "nav.about.members": "A kutatócsoport tagjai",
+  "nav.about.honoraryMembers": "Tiszteletbeli tagjaink",
   "nav.about.formermembers": "Korábbi munkatársaink",
   "nav.about.students": "Hallgatóink",
   "nav.contact.title": "Kapcsolat",
