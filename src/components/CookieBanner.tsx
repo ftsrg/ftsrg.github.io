@@ -40,7 +40,7 @@ const CookieBanner: React.FC<Props> = ({ onAccept, onReject }) => {
       style={{}}
       containerClasses="cookie-banner"
       disableButtonStyles
-      overlayClasses="site-overlay"
+      overlayClasses="cookie-overlay"
       buttonClasses="btn btn-primary"
       declineButtonClasses="btn btn-secondary"
       onAccept={() => {
