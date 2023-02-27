@@ -31,7 +31,7 @@ const CookieBanner: React.FC<Props> = ({ onAccept, onReject }) => {
   return (
     <CookieConsent
       overlay
-      location="top"
+      location="bottom"
       enableDeclineButton
       buttonText={t('commons.cookiePolicy.accept')}
       declineButtonText={t('commons.cookiePolicy.decline')}
