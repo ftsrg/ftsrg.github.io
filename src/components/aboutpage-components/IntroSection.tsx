@@ -3,7 +3,12 @@ import { useI18next } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 
-const IntroSection: React.FC = () => {
+type Props = {
+  numOfMembers: number
+  numOfPhD: number
+}
+
+const IntroSection: React.FC<Props> = ({ numOfMembers, numOfPhD }) => {
   const { t } = useI18next()
 
   return (
@@ -17,7 +22,7 @@ const IntroSection: React.FC = () => {
             <h2 className="section-title-underline mb-5">
               <span>{t('about.intro.title')}</span>
             </h2>
-            <p>{t('about.intro.description')}</p>
+            <p>{t('about.intro.description', { numOfMembers, numOfPhD })}</p>
           </Col>
         </Row>
       </Container>

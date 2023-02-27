@@ -55,6 +55,7 @@ const NAVBAR_ITEMS: Array<INavbarItem> = [
     children: [
       { title: 'nav.about.about', href: '#about' },
       { title: 'nav.about.members', href: '#members' },
+      { title: 'nav.about.honoraryMembers', href: '#honorary-members' },
       { title: 'nav.about.formermembers', href: '#formermembers' },
       { title: 'nav.about.students', href: '#students' }
     ]

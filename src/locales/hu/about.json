@@ -4,8 +4,9 @@
   "about.formermembers.heroTitle": "$t(nav.about.formermembers)",
   "about.intro.title": "$t(nav.about.about)",
   "about.members.title": "$t(nav.about.members)",
+  "about.honoraryMembers.title": "$t(nav.about.honoraryMembers)",
   "about.students.title": "$t(nav.about.students)",
-  "about.intro.description": "A kutatócsoportnak jelenleg 26 tagja van, akik közül 12-en rendelkeznek PhD fokozattal. A csoport ezen kívül minden évben 30 tehetséges hallgatóval dolgozik együtt, akik bekapcsolódnak a csoport mindennapi életébe.",
+  "about.intro.description": "A kutatócsoportnak jelenleg {{numOfMembers}} tagja van, akik közül {{numOfPhD}} rendelkezik PhD fokozattal. A csoport ezen kívül minden évben 30 tehetséges hallgatóval dolgozik együtt, akik bekapcsolódnak a csoport mindennapi életébe.",
   "about.students.paragraph": "Rengeteg tehetséges hallgatóval dolgozunk együtt. Ők demonstrátorként bekapcsolódnak az általunk oktatott tárgyainkba, a kutatási projektjeinkben pedig saját módszerek és eszközök fejlesztésében vesznek részt.",
 
   "about.members.position.prof": "egyetemi tanár",
