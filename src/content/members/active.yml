@@ -4,7 +4,7 @@
   position: prof
   avatar: ../images/members/pataricza.jpg
   linkedInPage: https://hu.linkedin.com/in/andras-pataricza-6651345
-  homePage: https://inf.mit.bme.hu/members/pataric
+  homePage: http://inf.mit.bme.hu/members/pataric
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10004524
   cvPage: https://drive.google.com/file/d/0BwMh_IMLEYWRSVBENVdkSUc0SEE/edit?usp=sharing
 - firstName: Dániel
@@ -22,7 +22,7 @@
   position: assocProfHabil
   avatar: ../images/members/majzik.jpg
   linkedInPage: https://hu.linkedin.com/in/istvan-majzik-a2033387
-  homePage: https://inf.mit.bme.hu/members/majzik
+  homePage: http://inf.mit.bme.hu/members/majzik
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10001448
   scholarPage: https://scholar.google.com/citations?user=z8LwwiAAAAAJ
 - firstName: Zoltán
@@ -44,7 +44,7 @@
   title: PhD
   position: assocProf
   avatar: ../images/members/gonczy.jpg
-  homePage: https://inf.mit.bme.hu/members/gonczy
+  homePage: http://inf.mit.bme.hu/members/gonczy
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10041117
   linkedInPage: https://www.linkedin.com/in/laszlo-gonczy-80684411/
 - firstName: András
@@ -52,7 +52,7 @@
   title: PhD
   position: assocProf
   avatar: ../images/members/voros.jpg
-  homePage: https://inf.mit.bme.hu/members/vorosa
+  homePage: http://inf.mit.bme.hu/members/vorosa
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10042280
   cvPage: https://share.mit.bme.hu/index.php/s/x6zj2cKzA5TxieJ
 - firstName: Imre
@@ -60,7 +60,7 @@
   title: PhD
   position: assistProf
   avatar: ../images/members/kocsis.png
-  homePage: https://inf.mit.bme.hu/members/ikocsis
+  homePage: http://inf.mit.bme.hu/members/ikocsis
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10040986
   cvPage: http://mit.bme.hu/~ikocsis/Kocsis_Imre_CV_eng.pdf
   linkedInPage: https://www.linkedin.com/in/imre-kocsis/
@@ -70,7 +70,7 @@
   position: assistProf
   avatar: ../images/members/molnar.jpg
   linkedInPage: https://www.linkedin.com/in/molnarv
-  homePage: https://inf.mit.bme.hu/members/molnarv
+  homePage: http://inf.mit.bme.hu/members/molnarv
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10049620
   githubPage: https://github.com/vincemolnar
 - firstName: Oszkár
@@ -78,7 +78,7 @@
   title: PhD
   position: assistProf
   avatar: ../images/members/semerath.jpg
-  homePage: https://inf.mit.bme.hu/members/semeratho
+  homePage: http://inf.mit.bme.hu/members/semeratho
   cvPage: https://oszkarsemerath.github.io/content/SemerathCV-en.pdf
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10045161
   scholarPage: https://scholar.google.com/citations?user=eURCwRYAAAAJ
@@ -94,13 +94,13 @@
   title: PhD
   position: resFellow
   avatar: ../images/members/klenik.jpg
-  homePage: https://inf.mit.bme.hu/members/klenika
+  homePage: http://inf.mit.bme.hu/members/klenika
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10056599
 - firstName: Kristóf
   lastName: Marussy
   position: assistResFellow
   avatar: ../images/members/marussy.jpg
-  homePage: https://inf.mit.bme.hu/members/marussyk
+  homePage: http://inf.mit.bme.hu/members/marussyk
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10062709
 - firstName: Mihály
   lastName: Dobos-Kovács
@@ -113,14 +113,14 @@
   lastName: Elekes
   position: phdStudent
   avatar: ../images/members/elekes.jpg
-  homePage: https://inf.mit.bme.hu/members/elekesm
+  homePage: http://inf.mit.bme.hu/members/elekesm
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10071424
   githubPage: https://github.com/marci543
 - firstName: Rebeka
   lastName: Farkas
   position: phdStudent
   avatar: ../images/members/farkas.jpg
-  homePage: https://inf.mit.bme.hu/members/farkasr
+  homePage: http://inf.mit.bme.hu/members/farkasr
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10058544
 - firstName: András
   lastName: Földvári
@@ -132,7 +132,7 @@
   lastName: Graics
   position: assistResFellow
   avatar: ../images/members/graics.jpg
-  homePage: https://inf.mit.bme.hu/members/graicsb
+  homePage: http://inf.mit.bme.hu/members/graicsb
   cvPage: http://mit.bme.hu/~graics/cv-graics-en.pdf
   linkedInPage: https://www.linkedin.com/in/bence-graics-9085a6125/
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10068239

@@ -20,6 +20,6 @@
   description: research.projects.EMBrACE
 - title: research.projects.allPrevious.title
   subtitle: research.projects.allPrevious.subtitle
-  url: https://inf.mit.bme.hu/en/research/projects
+  url: http://inf.mit.bme.hu/en/research/projects
   featuredImage: ../images/projects/eu-flag.png
   description: research.projects.allPrevious.desc
