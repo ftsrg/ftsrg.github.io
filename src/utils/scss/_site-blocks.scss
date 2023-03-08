@@ -308,7 +308,7 @@
     .course-1-content {
       padding: 20px 40px 0px 40px;
       text-align: center;
-      h2 {
+      .desc {
         margin: 0 0 30px 0;
         font-size: 18px;
         color: $black;
@@ -322,10 +322,10 @@
         }
       }
 
-      .desc {
+      /*.desc {
         font-size: 15px;
         color: gray;
-      }
+      }*/
     }
 
     .course-1-footer {
@@ -535,6 +535,7 @@
       position: relative;
       z-index: 2;
 
+      h1,
       h2,
       p {
         color: $white;
@@ -601,4 +602,45 @@
       height: 100%;
     }
   }
+}
+
+.subject-page {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  @include media-breakpoint-up(md) {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+
+  .subject-datasheet {
+    td {
+      vertical-align: top;
+      line-height: 2em;
+
+      &:nth-child(1) span {
+        display: inline-block;
+        height: 2em;
+        line-height: 2em;
+      }
+    }
+  }
+
+  .coordinator {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    line-height: 2em;
+    padding-bottom: 0.2em;
+
+    .img-fluid {
+      width: 2em;
+      height: 2em;
+      border-radius: 50%;
+      margin-right: 0.2em;
+    }
+  }
+}
+
+.md-headinglink {
+  display: none;
 }

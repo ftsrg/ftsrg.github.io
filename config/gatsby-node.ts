@@ -1,102 +1,120 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
+
 import { GatsbyNode } from 'gatsby'
 import { createFilePath } from 'gatsby-source-filesystem'
 import path from 'path'
 
 export const onCreateNode: GatsbyNode['onCreateNode'] = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
-  if (node.internal.type === `MarkdownRemark`) {
-    const slug = createFilePath({ node, getNode, basePath: `pages` })
-    const frontmatter = node.frontmatter as { layout: string }
-    createNodeField({
-      node,
-      name: `slug`,
-      value: slug
-    })
-    createNodeField({
-      node,
-      name: `layout`,
-      value: frontmatter.layout
-    })
+  if (node.internal.type === `Mdx` && node.parent.sourceInstanceName === `subject`) {
+    const [subjectId, lang] = node.parent.name.split('.')
+
+    createNodeField({ node, name: `subjectId`, value: subjectId })
+    createNodeField({ node, name: `lang`, value: lang })
+    createNodeField({ node, name: `type`, value: `subject` })
   }
 }
 
 export const onCreatePage: GatsbyNode['onCreatePage'] = ({ actions, page }) => {
   const { createPage, deletePage } = actions
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const i18nData = page.context.i18n as any
+  const subject = page.context.subject as any
+
   if (i18nData && i18nData.routed === false && i18nData.originalPath === i18nData.path) {
+    const defaultLanguage = i18nData.languages.indexOf(i18nData.defaultLanguage) !== -1 ? i18nData.defaultLanguage : i18nData.languages[0]
     deletePage(page)
     createPage({
       path: page.path,
       context: {
-        ...page.context,
+        // ...page.context,
+        i18n: {
+          ...page.context.i18n,
+          language: defaultLanguage
+        },
+        language: defaultLanguage,
         redirect: {
           from: page.path,
-          to: `/${i18nData.defaultLanguage}${page.path}`
+          to: `/${defaultLanguage}${page.path}`
         }
       },
       component: path.join(__dirname, '../src/utils/redirect.tsx')
     })
+  } else if (subject) {
+    const lang = page.context.i18n.language
+    const localizedSubject = subject.localizedData.find((l) => l.lang === lang)
+
+    deletePage(page)
+    if (localizedSubject) {
+      createPage({
+        path: page.path,
+        context: {
+          ...page.context,
+          subject: undefined,
+          mdxId: localizedSubject.localizedId,
+          subjectId: subject.subjectId,
+          subjectShortName: subject.id
+        },
+        component: localizedSubject.contentFilePath
+          ? `${page.component}?__contentFilePath=${localizedSubject.contentFilePath}`
+          : page.component
+      })
+    }
   }
 }
 
-/*
- * UNCOMMENT THIS PART IF BLOG POSTS IN MARKDOWN ARE AVAILABLE
- *
-export const createPages: GatsbyNode['createPages'] = ({ graphql, actions }) => {
+export const createPages: GatsbyNode['createPages'] = async ({ graphql, actions }) => {
   const { createPage } = actions
 
-  // Query for markdown nodes to use in creating pages.
-  // You can query for whatever data you want to create pages for e.g.
-  // products, portfolio items, landing pages, etc.
-  // Variables can be added as the second function parameter
-  return graphql(
-    `
-      query loadPagesQuery($limit: Int!) {
-        allMarkdownRemark(limit: $limit) {
-          edges {
-            node {
-              fields {
-                slug
-                layout
-              }
+  const subjectsQuery = await graphql(`
+    query loadPagesQuery {
+      allFile(filter: { sourceInstanceName: { eq: "subject" } }) {
+        edges {
+          node {
+            id
+            name
+            extension
+            absolutePath
+            relativeDirectory
+            childMdx {
+              id
             }
           }
         }
       }
-    `,
-    { limit: 1000 }
-  ).then((result) => {
-    if (result.errors) {
-      throw result.errors
     }
+  `)
 
-    // Create blog post pages.
-    // eslint-disable-next-line dot-notation
-    result.data['allMarkdownRemark'].edges.forEach((edge) => {
-      const { slug } = edge.node.fields
-      const { layout } = edge.node.fields
-      createPage({
-        path: slug,
-        // This will automatically resolve the template to a corresponding
-        // `layout` frontmatter in the Markdown.
-        //
-        // Feel free to set any `layout` as you'd like in the frontmatter, as
-        // long as the corresponding template file exists in src/templates.
-        // If no template is set, it will fall back to the default `page`
-        // template.
-        //
-        // Note that the template has to exist first, or else the build will fail.
-        component: path.join(__dirname, `../src/templates/${layout || 'page'}.tsx`),
-        context: {
-          // Data passed to context is available in page queries as GraphQL variables.
-          slug
-        }
-      })
+  if (subjectsQuery.errors) {
+    throw subjectsQuery.errors
+  }
+
+  const subjects = subjectsQuery.data.allFile.edges
+    .filter((edge) => edge.node.extension === 'yml')
+    .map((edge) => ({
+      id: edge.node.name,
+      subjectId: edge.node.id,
+      localizedData: subjectsQuery.data.allFile.edges
+        .filter((e) => e.node.extension === 'mdx')
+        .filter((e) => e.node.name.split('.')[0] === edge.node.name)
+        .map((e) => ({
+          lang: e.node.name.split('.')[1],
+          contentFilePath: e.node.absolutePath,
+          localizedId: e.node.id
+        }))
+    }))
+
+  subjects.forEach((subject) => {
+    createPage({
+      path: `/education/${subject.id}`,
+      component: path.join(__dirname, `../src/templates/subject.tsx`),
+      context: { subject }
     })
   })
 }
-*/
 /*
 export const onPostBuild: GatsbyNode['onPostBuild'] = ({ reporter }) => {
   reporter.info('copy translation files')

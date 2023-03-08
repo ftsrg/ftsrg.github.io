@@ -100,26 +100,29 @@ export default {
       }
     },
     {
-      resolve: 'gatsby-transformer-remark',
+      resolve: 'gatsby-plugin-mdx',
       options: {
-        plugins: [
+        extensions: [`.mdx`],
+
+        gatsbyRemarkPlugins: [
           {
-            resolve: `gatsby-remark-autolink-headers`,
+            resolve: `gatsby-remark-images`,
             options: {
-              className: `md-headinglink`,
-              isIconAfterHeader: true,
-              elements: [`h1`, `h2`, `h3`, `h4`]
+              maxWidth: 4096,
+              linkImagesToOriginal: false,
+              withWebp: true,
+              withAvif: true,
+              loading: 'lazy'
             }
           },
-          'gatsby-remark-smartypants',
           {
-            resolve: 'gatsby-remark-images',
+            resolve: `gatsby-remark-copy-linked-files`,
             options: {
-              maxWidth: 1140,
-              quality: 90,
-              linkImagesToOriginal: false
+              destinationDir: (f: { hash: string; name: string }) => `downloads/${f.hash}/${f.name}`,
+              ignoreFileExtensions: [`png`, `jpg`, `jpeg`, `bmp`, `tiff`]
             }
-          }
+          },
+          'gatsby-remark-smartypants'
         ]
       }
     },
@@ -168,10 +171,20 @@ export default {
             languages: ['en', 'hu']
           },
           {
+            matchPath: '/education/:uid',
+            languages: ['en', 'hu']
+          },
+          {
             matchPath: '/research',
             languages: ['en', 'hu']
           }
         ]
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-anchor-links',
+      options: {
+        offset: -200
       }
     },
     `gatsby-plugin-sass`,

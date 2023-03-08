@@ -63,6 +63,13 @@
   "education.subjects.maviz.heading": "Hogyan lesz az adatból információ? Hogyan találjuk meg a tűt a szénakazalban?",
   "education.subjects.maviz.desc": "Megismertetjük a hallgatókat a vizuális adatelemzés alkalmazási lehetőségeivel, elsődlegesen informatikai rendszerek tervezésében és kiértékelésében.",
 
+  "education.subjects.datasheet.title": "A tárgy adatai",
+  "education.subjects.datasheet.name": "A tárgy neve:",
+  "education.subjects.datasheet.type": "Típus:",
+  "education.subjects.datasheet.code": "Tárgykód:",
+  "education.subjects.datasheet.seniorLecturer": "Tárgyfelelős:",
+  "education.subjects.datasheet.instructors": "További oktatók:",
+
   "education.specializations.rete.title": "Rendszertervezés (BSc)",
   "education.specializations.rete.subtitle": "Tervezés és integráció a szoftveren innen és túl",
   "education.specializations.rete.p1": "Egy modern kiber-fizikai rendszer olyan megbízható és intelligens komponensekbol és szolgáltatásokból álló, döntően szoftveralapú nyílt rendszer, amely az Interneten keresztül közvetlen összeköttetésben áll a különféle mobil- és okoseszközökkel, a külvilágot érzékelő szenzorokkal és beavatkozókkal, a szinte korlátlan kapacitású számítási felhővel – és azokkal a kritikus alrendszerekkel is, amelyek helyes működésén életek múlnak.",

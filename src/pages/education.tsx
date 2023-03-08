@@ -14,7 +14,10 @@ import { AchievementProps, SpecializationProps, SubjectProps } from '~utils/prop
 interface EducationPageProps extends PageProps {
   data: {
     subjects: {
-      nodes: Array<SubjectProps>
+      nodes: Array<SubjectProps & { parent: { name: string } }>
+    }
+    subjectPages: {
+      nodes: Array<{ pageContext: { language: string; subjectShortName: string } }>
     }
     specializations: {
       nodes: Array<SpecializationProps>
@@ -47,7 +50,7 @@ const EducationPage: React.FC<EducationPageProps> = ({ data }) => {
         </Container>
       </div>
 
-      <Subjects nodes={data.subjects.nodes} />
+      <Subjects nodes={data.subjects.nodes} subjectPages={data.subjectPages.nodes.map((n) => n.pageContext)} />
       <StudentWork />
 
       <Hero id="talentcare" heroTitle="education.talentcare.title">
@@ -89,15 +92,25 @@ export const query = graphql`
   query EducationPageQueries($language: String!) {
     subjects: allSubjectsYaml {
       nodes {
-        translationPrefix
+        subjectName
+        subjectDescription
+        subjectCode
         type
-        portalPage
-        webPage
-        featuredImage {
+        thumbnailImage {
           childImageSharp {
             gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
           }
         }
+        parent {
+          ... on File {
+            name
+          }
+        }
+      }
+    }
+    subjectPages: allSitePage(filter: { path: { regex: "/^/[a-zA-Z0-9]+/education/[a-zA-Z0-9]+/$/" } }) {
+      nodes {
+        pageContext
       }
     }
     specializations: allSpecializationsYaml {

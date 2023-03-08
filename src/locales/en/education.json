@@ -63,6 +63,13 @@
   "education.subjects.maviz.heading": "How to turn data into information using visual methods?",
   "education.subjects.maviz.desc": "",
 
+  "education.subjects.datasheet.title": "Course details",
+  "education.subjects.datasheet.name": "Course name:",
+  "education.subjects.datasheet.type": "Type:",
+  "education.subjects.datasheet.code": "Code:",
+  "education.subjects.datasheet.seniorLecturer": "Senior lecturer:",
+  "education.subjects.datasheet.instructors": "Instructors:",
+
   "education.specializations.rete.title": "Systems Engineering (BSc)",
   "education.specializations.rete.subtitle": "Design and integration of software and more",
   "education.specializations.rete.p1": "The goal of the specialization is to introduce students to modern, model-based design methodologies prevalent in critical application domain (e.g., automotive, railway or aeronautics) for specifying, designing and implementing complex systems.",
