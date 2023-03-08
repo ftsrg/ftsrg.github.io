@@ -19,7 +19,8 @@ const Member: React.FC<MemberProps> = ({
   dblpPage,
   scholarPage,
   twitterPage,
-  linkedInPage
+  linkedInPage,
+  mitId
 }) => {
   const { t } = useI18next()
   const avatarImage = avatar ? getImage(avatar) : null
@@ -28,10 +29,13 @@ const Member: React.FC<MemberProps> = ({
     <div className="feature-1 border person text-center d-flex flex-column justify-content-between">
       {avatarImage && <GatsbyImage image={avatarImage} className="img-fluid" alt={firstName + lastName} />}
       <div className="feature-1-content">
-        <h2>
-          {t('about.members.name', { firstName, lastName })}
-          {title && `, ${title}`}
-        </h2>
+        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+        <a id={mitId}>
+          <h2>
+            {t('commons.members.name', { firstName, lastName })}
+            {title && `, ${title}`}
+          </h2>
+        </a>
         <span className="position mb-3 d-block">{position && t(`about.members.position.${position}`)}</span>
       </div>
       <div className="mt-auto">

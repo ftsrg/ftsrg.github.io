@@ -60,6 +60,7 @@ export const query = graphql`
         dblpPage
         orcidPage
         scholarPage
+        mitId
         avatar {
           childImageSharp {
             gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])

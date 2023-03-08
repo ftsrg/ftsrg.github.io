@@ -9,6 +9,7 @@
   "commons.cookiePolicy.decline": "Elutasítom",
   "commons.cookiePolicy.socialBlocked": "A híreket közösségi média segítségével szolgáljuk ki. Engedélyezd a sütik használatát a megtekintésükhöz!",
   "commons.cookiePolicy.consentCookies": "Sütik engedélyezése",
+  "commons.members.name": "{{lastName}} {{firstName}}",
 
   "footer.address.line1": "BME I épület, B szárny 4. emelet",
   "footer.address.line2": "Magyar tudósok körútja 2.",

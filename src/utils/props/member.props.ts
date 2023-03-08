@@ -16,4 +16,6 @@ export default interface MemberProps {
   dblpPage?: string
   orcidPage?: string
   scholarPage?: string
+
+  mitId?: string
 }

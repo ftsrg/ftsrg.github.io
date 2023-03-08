@@ -7,6 +7,7 @@
   homePage: https://inf.mit.bme.hu/members/pataric
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10004524
   cvPage: https://drive.google.com/file/d/0BwMh_IMLEYWRSVBENVdkSUc0SEE/edit?usp=sharing
+  mitId: pataric
 - firstName: Dániel
   lastName: Varró
   title: DSc
@@ -16,6 +17,7 @@
   dblpPage: https://dblp.org/pid/53/1883.html
   homePage: https://varrodan.github.io/
   mtmtPage: https://scholar.google.ca/citations?hl=en&user=4Ya6dVoAAAAJ
+  mitId: varro
 - firstName: István
   lastName: Majzik
   title: PhD
@@ -25,6 +27,7 @@
   homePage: https://inf.mit.bme.hu/members/majzik
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10001448
   scholarPage: https://scholar.google.com/citations?user=z8LwwiAAAAAJ
+  mitId: majzik
 - firstName: Zoltán
   lastName: Micskei
   title: PhD
@@ -39,6 +42,7 @@
   orcidPage: ''
   scholarPage: ''
   dblpPage: ''
+  mitId: micskeiz
 - firstName: László
   lastName: Gönczy
   title: PhD
@@ -47,6 +51,7 @@
   homePage: https://inf.mit.bme.hu/members/gonczy
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10041117
   linkedInPage: https://www.linkedin.com/in/laszlo-gonczy-80684411/
+  mitId: gonczy
 - firstName: András
   lastName: Vörös
   title: PhD
@@ -55,6 +60,7 @@
   homePage: https://inf.mit.bme.hu/members/vorosa
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10042280
   cvPage: https://share.mit.bme.hu/index.php/s/x6zj2cKzA5TxieJ
+  mitId: vori
 - firstName: Imre
   lastName: Kocsis
   title: PhD
@@ -64,6 +70,7 @@
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10040986
   cvPage: http://mit.bme.hu/~ikocsis/Kocsis_Imre_CV_eng.pdf
   linkedInPage: https://www.linkedin.com/in/imre-kocsis/
+  mitId: kocsis
 - firstName: Vince
   lastName: Molnár
   title: PhD
@@ -73,6 +80,7 @@
   homePage: https://inf.mit.bme.hu/members/molnarv
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10049620
   githubPage: https://github.com/vincemolnar
+  mitId: molnarv
 - firstName: Oszkár
   lastName: Semeráth
   title: PhD
@@ -82,6 +90,7 @@
   cvPage: https://oszkarsemerath.github.io/content/SemerathCV-en.pdf
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10045161
   scholarPage: https://scholar.google.com/citations?user=eURCwRYAAAAJ
+  mitId: semerath
 - firstName: Gábor
   lastName: Huszerl
   position: masterLecturer
@@ -89,6 +98,7 @@
   linkedInPage: https://www.linkedin.com/in/huszerl
   homePage: https://www.mit.bme.hu/~huszerl
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10041041
+  mitId: huszerl
 - firstName: Attila
   lastName: Klenik
   title: PhD
@@ -96,12 +106,14 @@
   avatar: ../images/members/klenik.jpg
   homePage: https://inf.mit.bme.hu/members/klenika
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10056599
+  mitId: klenik
 - firstName: Kristóf
   lastName: Marussy
   position: assistResFellow
   avatar: ../images/members/marussy.jpg
   homePage: https://inf.mit.bme.hu/members/marussyk
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10062709
+  mitId: marussy
 - firstName: Mihály
   lastName: Dobos-Kovács
   position: phdStudent
@@ -109,6 +121,7 @@
   homePage: https://www.mit.bme.hu/general/phd/dobos
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10073065
   linkedInPage: https://www.linkedin.com/in/mih%C3%A1ly-dobos-kov%C3%A1cs/
+  mitId: dobos
 - firstName: Márton
   lastName: Elekes
   position: phdStudent
@@ -116,6 +129,7 @@
   homePage: https://inf.mit.bme.hu/members/elekesm
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10071424
   githubPage: https://github.com/marci543
+  mitId: elekes
 - firstName: Rebeka
   lastName: Farkas
   position: phdStudent
@@ -128,6 +142,7 @@
   avatar: ../images/members/foldvari.jpg
   homePage: https://www.mit.bme.hu/general/phd/foldvari
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10068408
+  mitId: foldvari
 - firstName: Bence
   lastName: Graics
   position: assistResFellow
@@ -137,18 +152,21 @@
   linkedInPage: https://www.linkedin.com/in/bence-graics-9085a6125/
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10068239
   githubPage: https://github.com/grbeni
+  mitId: graics
 - firstName: Richárd
   lastName: Szabó
   position: phdStudent
   avatar: ../images/members/szabo.jpg
   homePage: https://www.mit.bme.hu/general/phd/szabo
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10068607
+  mitId: szabor
 - firstName: Dániel
   lastName: Szekeres
   position: phdStudent
   avatar: ../images/members/szekeres.png
   homePage: https://www.mit.bme.hu/general/phd/szekeres
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10078570
+  mitId: szekeres
 - firstName: Levente
   lastName: Bajczi
   position: phdStudent
@@ -156,18 +174,21 @@
   homePage: https://www.mit.bme.hu/general/phd/bajczi
   cvPage: https://leventebajczi.github.io/leventebajczi-cv/leventebajczi_cv_en.pdf
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10073070
+  mitId: bajczi
 - firstName: Attila
   lastName: Ficsor
   position: phdStudent
   avatar: ../images/members/ficsor.jpg
   homePage: https://www.mit.bme.hu/general/phd/ficsor
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10083601
+  mitId: ficsor
 - firstName: Simon József
   lastName: Nagy
   position: phdStudent
   avatar: ../images/members/nagy.jpg
   homePage: https://www.mit.bme.hu/general/phd/nagy
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10073486
+  mitId: simonjozsefnagy
 - firstName: Bertalan Zoltán
   lastName: Péter
   position: phdStudent
@@ -177,9 +198,11 @@
   cvPage: http://mit.bme.hu/~bpeter/cve.pdf
   scholarPage: https://scholar.google.com/citations?user=mo8l6mQAAAAJ
   githubPage: https://github.com/bzp99
+  mitId: peter
 - firstName: Milán
   lastName: Mondok
   position: phdStudent
   avatar: ../images/members/mondok.jpg
   homePage: https://www.mit.bme.hu/general/phd/mondok
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10073063
+  mitId: mondok

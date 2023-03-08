@@ -9,6 +9,7 @@
   "commons.cookiePolicy.decline": "Decline",
   "commons.cookiePolicy.socialBlocked": "The news are shared via social media. Consent to cookies to see them.",
   "commons.cookiePolicy.consentCookies": "Consent to cookies",
+  "commons.members.name": "{{firstName}} {{lastName}}",
 
   "footer.address.line1": "BME Building I, B wing, 4th floor",
   "footer.address.line2": "Magyar tudósok krt. 2.",

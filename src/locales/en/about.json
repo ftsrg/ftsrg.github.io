@@ -17,6 +17,5 @@
   "about.members.position.resFellow": "research fellow",
   "about.members.position.masterLecturer": "master lecturer",
   "about.members.position.assistResFellow": "assistant research fellow",
-  "about.members.position.phdStudent": "PhD student",
-  "about.members.name": "{{firstName}} {{lastName}}"
+  "about.members.position.phdStudent": "PhD student"
 }

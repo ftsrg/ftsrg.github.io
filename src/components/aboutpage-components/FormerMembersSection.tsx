@@ -14,7 +14,7 @@ const FormerMembersSection: React.FC<Props> = ({ nodes, heroBackgroundImage }) =
   const { t } = useI18next()
 
   function memberName(props: MemberProps) {
-    return t('about.members.name', { firstName: props.firstName, lastName: props.lastName })
+    return t('commons.members.name', { firstName: props.firstName, lastName: props.lastName })
   }
 
   return (

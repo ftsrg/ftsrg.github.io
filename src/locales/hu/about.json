@@ -17,6 +17,5 @@
   "about.members.position.resFellow": "tudományos munkatárs",
   "about.members.position.masterLecturer": "mestertanár",
   "about.members.position.assistResFellow": "tud. segédmunkatárs",
-  "about.members.position.phdStudent": "doktorandusz",
-  "about.members.name": "{{lastName}} {{firstName}}"
+  "about.members.position.phdStudent": "doktorandusz"
 }
