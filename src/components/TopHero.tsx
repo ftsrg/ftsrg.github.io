@@ -21,7 +21,7 @@ const TopHero: React.FC<Props> = ({ heroTitle, heroDesc, bgImage }) => {
         <Container>
           <Row className="align-items-end">
             <Col lg={7}>
-              <h2 className="mb-0">{t(heroTitle)}</h2>
+              <h1 className="mb-0">{t(heroTitle)}</h1>
               <p>{t(heroDesc)}</p>
             </Col>
           </Row>
