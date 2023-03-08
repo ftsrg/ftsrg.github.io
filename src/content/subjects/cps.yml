@@ -1,0 +1,18 @@
+subjectName: education.subjects.cps.title
+subjectCode: VIMIMA02
+subjectDescription: education.subjects.cps.heading
+thumbnailImage: ../images/subjects/course_5.jpg
+coverImage: ../images/subjects/course_5.jpg
+type: education.subjects.types.mscSpec
+seniorLecturer:
+  type: ftsrg
+  mitId: vori
+instructors:
+  - type: ftsrg
+    mitId: dobos
+  - type: ftsrg
+    mitId: huszerl
+  - type: ftsrg
+    mitId: kocsis
+  - type: ftsrg
+    mitId: szekeres

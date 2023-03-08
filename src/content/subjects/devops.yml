@@ -1,0 +1,10 @@
+subjectName: education.subjects.devops.title
+subjectCode: VIMIAV21
+subjectDescription: education.subjects.devops.heading
+thumbnailImage: ../images/subjects/course_11.jpg
+coverImage: ../images/subjects/course_11.jpg
+type: education.subjects.types.elective
+seniorLecturer:
+  type: external
+  firstName: Zoltán
+  lastName: Szatmári

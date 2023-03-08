@@ -1,0 +1,14 @@
+subjectName: education.subjects.remo.title
+subjectCode: VIMIAA00
+subjectDescription: education.subjects.remo.heading
+thumbnailImage: ../images/subjects/course_1.jpg
+coverImage: ../images/subjects/course_1.jpg
+type: education.subjects.types.bsc
+seniorLecturer:
+  type: ftsrg
+  mitId: gonczy
+instructors:
+  - type: ftsrg
+    mitId: molnarv
+  - type: ftsrg
+    mitId: huszerl

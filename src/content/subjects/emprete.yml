@@ -1,0 +1,14 @@
+subjectName: education.subjects.emprete.title
+subjectCode: VIMIMA02
+subjectDescription: education.subjects.emprete.heading
+thumbnailImage: ../images/subjects/course_8.jpg
+coverImage: ../images/subjects/course_8.jpg
+type: education.subjects.types.phd
+seniorLecturer:
+  type: ftsrg
+  mitId: pataric
+instructors:
+  - type: ftsrg
+    mitId: foldvari
+  - type: ftsrg
+    mitId: kocsis

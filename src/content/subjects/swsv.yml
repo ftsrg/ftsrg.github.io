@@ -1,0 +1,14 @@
+subjectName: education.subjects.swsv.title
+subjectCode: VIMIMA01
+subjectDescription: education.subjects.swsv.heading
+thumbnailImage: ../images/subjects/course_6.jpg
+coverImage: ../images/subjects/course_6.jpg
+type: education.subjects.types.mscSpec
+seniorLecturer:
+  type: ftsrg
+  mitId: micskeiz
+instructors:
+  - type: ftsrg
+    mitId: majzik
+  - type: ftsrg
+    mitId: marussy

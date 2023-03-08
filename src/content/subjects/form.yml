@@ -1,0 +1,9 @@
+subjectName: education.subjects.form.title
+subjectCode: VIMIMA07
+subjectDescription: education.subjects.form.heading
+thumbnailImage: ../images/subjects/course_3.jpg
+coverImage: ../images/subjects/course_3.jpg
+type: education.subjects.types.msc
+seniorLecturer:
+  type: ftsrg
+  mitId: majzik

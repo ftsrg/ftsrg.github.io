@@ -1,0 +1,9 @@
+subjectName: education.subjects.mdsd.title
+subjectCode: VIMIMA00
+subjectDescription: education.subjects.mdsd.heading
+thumbnailImage: ../images/subjects/course_4.jpg
+coverImage: ../images/subjects/course_4.jpg
+type: education.subjects.types.mscSpec
+seniorLecturer:
+  type: ftsrg
+  mitId: semerath

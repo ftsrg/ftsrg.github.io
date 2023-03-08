@@ -1,0 +1,9 @@
+subjectName: education.subjects.swvv.title
+subjectCode: VIMMD052
+subjectDescription: education.subjects.swvv.heading
+thumbnailImage: ../images/subjects/course_7.jpg
+coverImage: ../images/subjects/course_7.jpg
+type: education.subjects.types.phd
+seniorLecturer:
+  type: ftsrg
+  mitId: majzik

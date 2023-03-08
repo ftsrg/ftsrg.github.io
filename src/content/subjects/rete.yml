@@ -1,0 +1,9 @@
+subjectName: education.subjects.rete.title
+subjectCode: VIMIAC01
+subjectDescription: education.subjects.rete.heading
+thumbnailImage: ../images/subjects/course_2.jpg
+coverImage: ../images/subjects/course_2.jpg
+type: education.subjects.types.bscSpec
+seniorLecturer:
+  type: ftsrg
+  mitId: molnarv
