@@ -602,3 +602,14 @@
     }
   }
 }
+
+#publications {
+  .publication-links {
+    a {
+      text-decoration-color: gray;
+      span {
+        color: gray;
+      }
+    }
+  }
+}

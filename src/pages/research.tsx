@@ -58,23 +58,23 @@ const ResearchPage: React.FC<ResearchPageProps> = ({ data }) => {
               <h2 className="section-title-underline mb-3">
                 <span>{t('research.publications.title')}</span>
               </h2>
-              <p>
-                <span className="pe-1">{t('research.publications.fullPubList')}</span>
+              <p className="publication-links">
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://m2.mtmt.hu/gui2/?type=institutes&mode=browse&sel=institutes22230"
                 >
+                  <span className="pe-1">{t('research.publications.fullPubList')}</span>
                   <MdSchool />
                 </a>{' '}
                 <span className="px-2">|</span>
-                <span className="pe-1">{t('research.publications.dataSets')}</span>
                 <a href="https://zenodo.org/communities/ftsrg" target="_blank" rel="noopener noreferrer">
+                  <span className="pe-1">{t('research.publications.dataSets')}</span>
                   <FaDatabase />
                 </a>{' '}
                 <span className="px-2">|</span>
-                <span className="pe-1">{t('research.publications.slides')}</span>
                 <a href="https://speakerdeck.com/ftsrg/" target="_blank" rel="noopener noreferrer">
+                  <span className="pe-1">{t('research.publications.slides')}</span>
                   <FaTv />
                 </a>
               </p>
