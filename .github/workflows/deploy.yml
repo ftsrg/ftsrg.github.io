@@ -19,7 +19,7 @@ jobs:
       - uses: actions/setup-node@64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c # v3
         with:
           node-version: 18
-      - uses: enriikke/gatsby-gh-pages-action@fbe063b0cfaa8c16ec4e346cc3c48e9b154cce87 # renovate: tag=v2
+      - uses: enriikke/gatsby-gh-pages-action@6293db9dd9d25701c5220c26a8716ac8322b6588 # v2
         with:
           access-token: x-access-token:${{ secrets.GITHUB_TOKEN }}
           deploy-branch: gh-pages
