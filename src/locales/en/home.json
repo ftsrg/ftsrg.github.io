@@ -5,7 +5,7 @@
   "home.projects.title": "$t(nav.home.projects)",
   "home.partners.title": "$t(nav.home.partners)",
   "home.news.title": "$t(nav.home.news)",
-  "home.competences.description": "Our main area is the resilient design of critical software systems, processes and platforms, including cyber-physical systems. Our main competencies are model-based design, analysis and verification.",
+  "home.competences.description": "Our main area is the design and development of critical software systems, including smart embedded and cyber-physical systems, business, distributed and blockchain-based applications. Our main goal is to provide tools, algoritmhs and methods for the development of high-quality systems. Our competencies include model-based software and system design, automatized software development, analysis and verification.",
   "home.competences.c1.title": "Developing critical systems",
   "home.competences.c1.desc": "Methods, techniques and tools to develop model-based critical software and cyber-physical systems and application.",
   "home.competences.c2.title": "Verification and testing",
