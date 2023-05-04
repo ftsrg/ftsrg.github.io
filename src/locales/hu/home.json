@@ -5,7 +5,7 @@
   "home.projects.title": "$t(nav.home.projects)",
   "home.partners.title": "$t(nav.home.partners)",
   "home.news.title": "$t(nav.home.news)",
-  "home.competences.description": "Fő területünk a kritikus informatikai rendszerek, folyamatok és platformok szolgáltatásbiztonságra tervezése, ideértve a kiberfizikai és informatikai infrastruktúrákat, alkalmazásokat. Alapvető metodikánk a modellalapú tervezés, analízis és helyességbizonyítás.",
+  "home.competences.description": "Fő területünk a kritikus informatikai rendszerek, folyamatok és platformok szolgáltatásbiztonságra tervezése, ideértve a kiberfizikai és informatikai infrastruktúrákat, valamint az elosztott és blokkláncalapú alkalmazásokat. Célunk olyan eszközök, algoritmusok és módszerek fejlesztése, amik segítik a magas minőségű rendszerek fejlesztését. Alapvető metodikánk a modellalapú  szoftver- és rendszertervezés, automatizált szoftverfejlesztés, analízis és helyességbizonyítás.",
   "home.competences.c1.title": "Kritikus rendszerek fejlesztése",
   "home.competences.c1.desc": "Módszertanok, fejlesztési környezetek, technikák és technológiák a modellalapú kritikus informatikai és kiberfizikai rendszerek és alkalmazások tervezésére.",
   "home.competences.c2.title": "Ellenőrzés és tesztelés",
