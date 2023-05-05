@@ -27,7 +27,7 @@
   featuredImage: ../images/subjects/course_6.jpg
   type: education.subjects.types.mscSpec
   portalPage: https://portal.vik.bme.hu/kepzes/targyak/VIMIMA01
-  webPage: http://inf.mit.bme.hu/edu/courses/swsv
+  webPage: http://inf.mit.bme.hu/en/edu/courses/swsv
 - translationPrefix: education.subjects.swvv
   featuredImage: ../images/subjects/course_7.jpg
   type: education.subjects.types.phd
