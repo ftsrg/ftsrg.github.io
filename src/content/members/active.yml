@@ -94,8 +94,10 @@
   title: PhD
   position: resFellow
   avatar: ../images/members/klenik.jpg
-  homePage: http://inf.mit.bme.hu/members/klenika
+  homePage: http://mit.bme.hu/~klenik
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10056599
+  cvPage: https://aklenik.github.io/klenik-cv-en.pdf
+  linkedInPage: https://www.linkedin.com/in/attila-klenik/
 - firstName: Kristóf
   lastName: Marussy
   position: assistResFellow
