@@ -144,6 +144,7 @@
   position: phdStudent
   avatar: ../images/members/szabo.jpg
   homePage: https://www.mit.bme.hu/general/phd/szabo
+  cvPage: https://rorck.github.io/files/richard_szabo_cv.pdf
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10068607
 - firstName: Dániel
   lastName: Szekeres
