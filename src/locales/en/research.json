@@ -25,6 +25,8 @@
   "research.publications.autoIsoWhitebox": "We developed a tool and a method to automatically generate mock environments to isolate the tested model during code-based test generation.",
   "research.publications.faultInjectBlockchain": "In a collaboration with University of Coimbra, we recommended a method to assess the dependability of blockchain systems.",
   "research.publications.stratForCEGAR": "We developed efficient algorithms to improve CEGAR-based model checking, which were successfully evaluated on verifying embedded and C code.",
+  "research.publications.assessingModLanguage": "We recommended methods and processes for assessing the semantics of modeling languages for model users, tool and language designers.",
+  "research.publications.pragmatingVerification": "Together with IncQuery Labs and NASA JPL we developed a workflow for applying formal verification to industrial executable SysML models.",
 
   "research.projects.ADVANCE": "The “Addressing Verification and Validation Challenges in Future Cyber-Physical Systems” (ADVANCE) H2020 RISE research project has started this year with the participation of researchers from our research group working on the challenges of future cyber-physical systems. The project runs for 4 years, and its total budget is € 657 800.",
   "research.projects.arrowheadtools": "With the participation of BME TMIT and ftsrg, the „Arrowhead Tools” H2020 ECSEL project has started, which is the largest European industrial digitalization and automation R&D project. The project has more than 80 partners including AITIA, evopro Innovation and IncQuery Labs.",

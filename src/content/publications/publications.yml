@@ -1,3 +1,15 @@
+- journalTitle: Systems Engineering
+  year: 2023
+  title: Pragmatic verification and validation of industrial executable SysML models
+  url: https://doi.org/10.1002/sys.21679
+  featuredImage: ../images/publications/se2023.png
+  description: research.publications.pragmatingVerification
+- journalTitle: Software Quality J
+  year: 2023
+  title: Assessing the specification of modelling language semantics - a study on UML PSSM
+  url: https://doi.org/10.1007/s11219-023-09617-5
+  featuredImage: ../images/publications/sqj2023.png
+  description: research.publications.assessingModLanguage
 - journalTitle: Softw Syst Model
   year: 2022
   title: Automated generation of consistent models using qualitative abstractions
