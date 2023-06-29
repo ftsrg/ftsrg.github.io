@@ -1,23 +1,23 @@
+- title: SME4DD
+  subtitle: Training SMEs for the Digital Decade
+  url: https://www.eitdigital.eu/eu-collaborations/sme4dd/
+  featuredImage: ../images/projects/sme4dd.png
+  description: research.projects.SME4DD
+- title: Competence Center
+  subtitle: Safety Science and Technology Competence Center
+  url: https://kompetenciakozpont.bme.hu/
+  featuredImage: ../images/projects/KK.png
+  description: research.projects.KK
 - title: ADVANCE
   subtitle: Addressing V&V Challenges in Future CPS
   url: http://advance-rise.eu/
   featuredImage: ../images/projects/advance.png
   description: research.projects.ADVANCE
-- title: Arrowhead Tools
-  subtitle: European investment for Digitalisation Leadership
-  url: https://www.arrowhead.eu/arrowheadtools
-  featuredImage: ../images/projects/arrowhead-tools.png
-  description: research.projects.arrowheadtools
-- title: Blockchain
-  subtitle: Blockchain for the Decision Maker
-  url: https://professionalschool.eitdigital.eu/professional-courses/blockchain-decision-maker/
-  featuredImage: ../images/projects/eit-digital.png
-  description: research.projects.blockchain
-- title: EMBrACE
-  subtitle: Environment for model-based co-design of CPS
-  url: https://itea3.org/project/embrace.html
-  featuredImage: ../images/projects/embrace.png
-  description: research.projects.EMBrACE
+- title: AWS
+  subtitle: Graph Solver as a Service
+  url: https://www.amazon.science/research-awards/program-updates/74-amazon-research-awards-recipients-announced
+  featuredImage: ../images/projects/aws.jpg
+  description: research.projects.ADVANCE
 - title: research.projects.allPrevious.title
   subtitle: research.projects.allPrevious.subtitle
   url: http://inf.mit.bme.hu/en/research/projects
