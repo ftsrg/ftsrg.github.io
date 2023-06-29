@@ -25,6 +25,8 @@
   "research.publications.autoIsoWhitebox": "Olyan módszert és eszközt készítettünk, ami forráskód-alapú tesztgenerálás során a tesztelt modul izolációja érdekében automatikusan mock környezeteket generál.",
   "research.publications.faultInjectBlockchain": "A Coimbrai Egyetem kutatóival együttműködve olyan módszert javasoltunk, amivel blockchain rendszerek megbízhatósága vizsgálható.",
   "research.publications.stratForCEGAR": "Hatékony algoritmusokat javasoltunk a CEGAR-alapú modellellenőrzés továbbfejlesztéséhez, amik beágyazott szoftver és PLC kódok ellenőrzését segítik.",
+  "research.publications.assessingModLanguage": "Módszereket javasoltunk, amivel modellezési nyelvek tervezése és felhasználása során a nyelv szemantikáját lehet ellenőrizni.",
+  "research.publications.pragmatingVerification": "Az IncQuery Labs és NASA JPL munkatársaival közösen kidolgoztunk egy módszert ipari méretű végrehajtható SysML modellek formális ellenőrzésére.",
 
   "research.projects.ADVANCE": "A BME részvételével 2019 januárjában elindult az „Addressing Verification and Validation Challenges in Future Cyber-Physical Systems” (ADVANCE) nevű H2020 RISE kutatási projekt, ami a jövő kiberfizikai rendszereinek ellenőrzési kihívásait fogja vizsgálni. A projekt futamideje 4 év és teljes költségvetése € 657 800.",
   "research.projects.arrowheadtools": "A BME TMIT és MIT részvételével 2019 májusában elindult az „Arrowhead Tools” H2020 ECSEL projekt, ami Európa legnagyobb, ipari digitalizációs és automatizálási megoldásokat fejlesztő K+F+I projektje. A projektben több mint 80 partner vesz részt, köztük az AITIA, evopro Innovation és az IncQuery Labs.",
