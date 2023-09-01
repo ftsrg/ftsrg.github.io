@@ -16,7 +16,7 @@ jobs:
       - name: Log current commit hash
         run: |
           sed -i "s|GITHUB_COMMIT_URL_HERE|https://github.com/$GITHUB_REPOSITORY/commit/$GITHUB_SHA|" src/layout/Layout.tsx
-      - uses: actions/setup-node@64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c # v3
+      - uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d # v3
         with:
           node-version: 18
       - uses: enriikke/gatsby-gh-pages-action@6293db9dd9d25701c5220c26a8716ac8322b6588 # v2
