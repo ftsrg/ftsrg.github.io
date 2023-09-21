@@ -203,3 +203,14 @@
   lastName: Kangogo Damaris Jepkurui
   position: phdStudent
   avatar: ../images/members/damaris.jpg
+  linkedInPage: https://www.linkedin.com/in/damaris-kangogo-3009aa76/
+  githubPage: https://github.com/KangogoDamarisKE
+- firstName:
+  lastName: Nada Akel
+  position: phdStudent
+  avatar: ../images/members/nada.jpg
+  linkedInPage: https://www.linkedin.com/in/nada-akel-3623a1109
+- firstName:
+  lastName: Noor Mohammed Al-Gburi
+  position: phdStudent
+  avatar: ../images/members/noor.jpg
