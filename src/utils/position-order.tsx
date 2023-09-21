@@ -24,7 +24,7 @@ export function memberSort(t: TFunction<'translation', undefined, 'translation'>
 
     if (pos1 === pos2) {
       if (member1.order === member2.order) {
-        return memberName(member1).localeCompare(memberName(member2))
+        return memberName(member1).trim().localeCompare(memberName(member2).trim())
       }
       return (member2.order || 0) - (member1.order || 0)
     }

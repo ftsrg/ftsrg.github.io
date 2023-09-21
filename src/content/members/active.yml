@@ -199,3 +199,19 @@
   scholarPage: https://scholar.google.com/citations?hl=en&user=8lSh8hYAAAAJ
   linkedInPage: www.linkedin.com/in/zsofiaadam4224
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10077295
+- firstName: 
+  lastName: Kangogo Damaris Jepkurui
+  position: phdStudent
+  avatar: ../images/members/damaris.jpg
+  linkedInPage: https://www.linkedin.com/in/damaris-kangogo-3009aa76/
+  githubPage: https://github.com/KangogoDamarisKE
+- firstName:
+  lastName: Nada Akel
+  position: phdStudent
+  avatar: ../images/members/nada.jpg
+  linkedInPage: https://www.linkedin.com/in/nada-akel-3623a1109
+- firstName:
+  lastName: Noor Mohammed Al-Gburi
+  position: phdStudent
+  avatar: ../images/members/noor.jpg
+  mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10087286
