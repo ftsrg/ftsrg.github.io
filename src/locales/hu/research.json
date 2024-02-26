@@ -24,6 +24,7 @@
   "research.publications.autoGenQualitative": "Olyan új algoritmusokat javasoltunk, amik többféle megoldó kombinálásával képesek teszt forgatókönyvek automatikus generálására.",
   "research.publications.autoIsoWhitebox": "Olyan módszert és eszközt készítettünk, ami forráskód-alapú tesztgenerálás során a tesztelt modul izolációja érdekében automatikusan mock környezeteket generál.",
   "research.publications.faultInjectBlockchain": "A Coimbrai Egyetem kutatóival együttműködve olyan módszert javasoltunk, amivel blockchain rendszerek megbízhatósága vizsgálható.",
+  "research.publications.transactionBlockchain": "A cikkben rávilágítjuk a figyelmet arra, hogy hogyan alkalmazhatók modellvezérelt módszerek a szervezetközi blokkláncok teljesítményoptimalizásában.",
   "research.publications.stratForCEGAR": "Hatékony algoritmusokat javasoltunk a CEGAR-alapú modellellenőrzés továbbfejlesztéséhez, amik beágyazott szoftver és PLC kódok ellenőrzését segítik.",
   "research.publications.assessingModLanguage": "Módszereket javasoltunk, amivel modellezési nyelvek tervezése és felhasználása során a nyelv szemantikáját lehet ellenőrizni.",
   "research.publications.pragmatingVerification": "Az IncQuery Labs és NASA JPL munkatársaival közösen kidolgoztunk egy módszert ipari méretű végrehajtható SysML modellek formális ellenőrzésére.",
