@@ -8,9 +8,9 @@ const counterData = [
   {
     /* EEMCN, FUTEG, HIDE, DECOS, RESIST, Sensoria, Deserec, Diana, Hidenets, SafeDMI, Amber, Genesys, Mogentes,
       SecureChange, E-freight, R3-COP, CECRIS, Concerto, MONDO, R5-COP, ADVANCE, Arrowhead Tools, EMBrACE, ProtectME,
-      Urban Mobility ADA */
+      Urban Mobility ADA, SME4DD, OpenSCALING, EDGE-Skills, DOSS */
     title: 'research.projects.counter1.title',
-    count: 25
+    count: 29
   },
   {
     title: 'research.projects.counter2.title',

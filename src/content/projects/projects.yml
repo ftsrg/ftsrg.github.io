@@ -3,6 +3,16 @@
   url: https://www.eitdigital.eu/eu-collaborations/sme4dd/
   featuredImage: ../images/projects/sme4dd.png
   description: research.projects.SME4DD
+- title: EDGE-Skills
+  subtitle: European Dataspace for Growth and Education - Skills
+  url: https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/how-to-participate/org-details/999999999/project/101123471/program/43152860/details
+  featuredImage: ../images/projects/prometheus-x.jpg
+  description: research.projects.edgeskills
+- title: OpenSCALING
+  subtitle: Open Standards for SCALable virtual engineerING and operation
+  url: https://itea4.org/project/openscaling.html
+  featuredImage: ../images/projects/embrace.png
+  description: research.projects.openscaling
 - title: Competence Center
   subtitle: Safety Science and Technology Competence Center
   url: https://kompetenciakozpont.bme.hu/
