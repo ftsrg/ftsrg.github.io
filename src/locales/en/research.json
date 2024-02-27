@@ -24,6 +24,7 @@
   "research.publications.autoGenQualitative": "We designed new algorithms to combine various solvers for synthesizing test scenarios represented as graph models.",
   "research.publications.autoIsoWhitebox": "We developed a tool and a method to automatically generate mock environments to isolate the tested model during code-based test generation.",
   "research.publications.faultInjectBlockchain": "In a collaboration with University of Coimbra, we recommended a method to assess the dependability of blockchain systems.",
+  "research.publications.transactionBlockchain": "The paper highlights how model-based methods can be used in the performance optimization of cross-organizational blockchains.",
   "research.publications.stratForCEGAR": "We developed efficient algorithms to improve CEGAR-based model checking, which were successfully evaluated on verifying embedded and C code.",
   "research.publications.assessingModLanguage": "We recommended methods and processes for assessing the semantics of modeling languages for model users, tool and language designers.",
   "research.publications.pragmatingVerification": "Together with IncQuery Labs and NASA JPL we developed a workflow for applying formal verification to industrial executable SysML models.",

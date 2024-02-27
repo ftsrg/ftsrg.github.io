@@ -1,3 +1,9 @@
+- journalTitle: IEEE Access
+  year: 2024
+  title: Transaction Conflict Control in Hyperledger Fabric - A Taxonomy, Gaps, and Design for Conflict Prevention
+  url: https://doi.org/10.1109/ACCESS.2024.3361318
+  featuredImage: ../images/publications/access2024.png
+  description: research.publications.transactionBlockchain
 - journalTitle: Systems Engineering
   year: 2023
   title: Pragmatic verification and validation of industrial executable SysML models
