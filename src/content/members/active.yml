@@ -103,8 +103,10 @@
   title: PhD
   position: resFellow
   avatar: ../images/members/marussy.jpg
-  homePage: http://inf.mit.bme.hu/members/marussyk
+  homePage: https://marussy.com
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10062709
+  cvPage: https://marussy.com/cv.pdf
+  linkedInPage: https://www.linkedin.com/in/k-marussy
 - firstName: Mihály
   lastName: Dobos-Kovács
   position: phdStudent
