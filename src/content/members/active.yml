@@ -168,6 +168,7 @@
   position: phdStudent
   avatar: ../images/members/ficsor.jpg
   homePage: https://www.mit.bme.hu/general/phd/ficsor
+  cvPage: https://nagilooh.github.io/nagilooh-cv/attilaficsor_cv_en.pdf
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10083601
 - firstName: Simon József
   lastName: Nagy
