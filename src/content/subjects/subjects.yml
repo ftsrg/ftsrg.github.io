@@ -1,38 +1,48 @@
-- translationPrefix: education.subjects.remo
+- translationPrefix: education.subjects.softeng
   featuredImage: ../images/subjects/course_1.jpg
   type: education.subjects.types.bsc
-  portalPage: https://portal.vik.bme.hu/kepzes/targyak/VIMIAA00
-  webPage: http://inf.mit.bme.hu/edu/courses/remo
-- translationPrefix: education.subjects.rete
-  featuredImage: ../images/subjects/course_2.jpg
+  portalPage: https://portal.vik.bme.hu/kepzes/targyak/VIMIAB04
+  webPage: https://www.mit.bme.hu/oktatas/targyak/vimiab04
+- translationPrefix: education.subjects.ase
+  featuredImage: ../images/subjects/course_6.jpg
   type: education.subjects.types.bscSpec
-  portalPage: https://portal.vik.bme.hu/kepzes/targyak/VIMIAC01
-  webPage: http://inf.mit.bme.hu/edu/courses/rete
+  portalPage: https://portal.vik.bme.hu/kepzes/targyak/VIMIAC20
+  webPage: https://www.mit.bme.hu/oktatas/targyak/vimiac20
+- translationPrefix: education.subjects.remo
+  featuredImage: ../images/subjects/course_2.jpg
+  type: education.subjects.types.bscElective
+  portalPage: https://portal.vik.bme.hu/kepzes/targyak/VIMIAD03
+  webPage: https://www.mit.bme.hu/oktatas/targyak/vimiad03
 - translationPrefix: education.subjects.form
   featuredImage: ../images/subjects/course_3.jpg
   type: education.subjects.types.msc
-  portalPage: https://portal.vik.bme.hu/kepzes/targyak/VIMIMA07
-  webPage: http://inf.mit.bme.hu/edu/courses/form
+  portalPage: https://portal.vik.bme.hu/kepzes/targyak/VIMIMA26
+  webPage: https://www.mit.bme.hu/oktatas/targyak/vimima26
+- translationPrefix: education.subjects.thrustAI
+  featuredImage: ../images/subjects/course_9.jpg
+  type: education.subjects.types.msc
+  portalPage: https://portal.vik.bme.hu/kepzes/targyak/VIMIMB10
+  webPage: https://www.mit.bme.hu/oktatas/targyak/vimimb10
 - translationPrefix: education.subjects.mdsd
   featuredImage: ../images/subjects/course_4.jpg
   type: education.subjects.types.mscSpec
-  portalPage: https://portal.vik.bme.hu/kepzes/targyak/VIMIMA00
-  webPage: http://inf.mit.bme.hu/edu/courses/mdsd
-- translationPrefix: education.subjects.cps
+  portalPage: https://portal.vik.bme.hu/kepzes/targyak/VIAUMA22/
+  webPage: null
+- translationPrefix: education.subjects.rdds
   featuredImage: ../images/subjects/course_5.jpg
   type: education.subjects.types.mscSpec
-  portalPage: https://portal.vik.bme.hu/kepzes/targyak/VIMIMA02
-  webPage: http://inf.mit.bme.hu/edu/courses/cps
-- translationPrefix: education.subjects.swsv
+  portalPage: https://portal.vik.bme.hu/kepzes/targyak/VIMIMA28
+  webPage: https://www.mit.bme.hu/oktatas/targyak/vimima28
+- translationPrefix: education.subjects.avt
   featuredImage: ../images/subjects/course_6.jpg
   type: education.subjects.types.mscSpec
-  portalPage: https://portal.vik.bme.hu/kepzes/targyak/VIMIMA01
-  webPage: http://inf.mit.bme.hu/en/edu/courses/swsv
+  portalPage: https://portal.vik.bme.hu/kepzes/targyak/VIMIMA29
+  webPage: https://www.mit.bme.hu/oktatas/targyak/vimima29
 - translationPrefix: education.subjects.swvv
   featuredImage: ../images/subjects/course_7.jpg
   type: education.subjects.types.phd
   portalPage: https://portal.vik.bme.hu/kepzes/targyak/VIMMD052
-  webPage: http://inf.mit.bme.hu/edu/courses/swvv
+  webPage: https://www.mit.bme.hu/oktatas/targyak/vimmd052
 - translationPrefix: education.subjects.emprete
   featuredImage: ../images/subjects/course_8.jpg
   type: education.subjects.types.phd
@@ -42,19 +52,9 @@
   featuredImage: ../images/subjects/course_10.jpg
   type: education.subjects.types.elective
   portalPage: https://portal.vik.bme.hu/kepzes/targyak/VIMIAV17
-  webPage: http://inf.mit.bme.hu/edu/courses/blockchain
-- translationPrefix: education.subjects.bigdata
-  featuredImage: ../images/subjects/course_9.jpg
-  type: education.subjects.types.elective
-  portalPage: https://portal.vik.bme.hu/kepzes/targyak/VIMIAV02
-  webPage: http://inf.mit.bme.hu/edu/courses/bigdata
-- translationPrefix: education.subjects.devops
-  featuredImage: ../images/subjects/course_11.jpg
-  type: education.subjects.types.elective
-  portalPage: https://portal.vik.bme.hu/kepzes/targyak/VIMIAV21
-  webPage: http://inf.mit.bme.hu/edu/courses/devops
+  webPage: https://www.mit.bme.hu/oktatas/targyak/vimiav17
 - translationPrefix: education.subjects.maviz
   featuredImage: ../images/subjects/course_12.jpg
   type: education.subjects.types.elective
-  portalPage: https://portal.vik.bme.hu/kepzes/targyak/VIMIAV16
-  webPage: http://inf.mit.bme.hu/edu/courses/maviz
+  portalPage: https://portal.vik.bme.hu/kepzes/targyak/VIMIAV28
+  webPage: https://www.mit.bme.hu/oktatas/targyak/vimiav28

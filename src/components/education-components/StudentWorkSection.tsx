@@ -36,7 +36,7 @@ const StudentWorkSection: React.FC = () => {
               <Trans
                 i18nKey="education.studentwork.description"
                 components={[
-                  <a href="http://inf.mit.bme.hu/edu/individual/taskgroups" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.mit.bme.hu/oktatas/temakiirasok/info" target="_blank" rel="noopener noreferrer">
                     témalabortól
                   </a>
                 ]}

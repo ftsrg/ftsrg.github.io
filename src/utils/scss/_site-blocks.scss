@@ -286,7 +286,12 @@
       background: $primary;
       position: relative;
 
+      display: flex;
+      align-items: center;
+
       padding: 20px;
+      min-height: calc(40px + 1.7 * 2em);
+
       h3 {
         color: $white;
         font-size: 20px;
