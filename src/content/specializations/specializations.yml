@@ -1,6 +1,3 @@
-- translationPrefix: education.specializations.rete
-  url: https://www.mit.bme.hu/oktatas/kepzesek/bsc/info/rendszertervezes
-  featuredImage: ../images/specializations/spec_1.jpg
 - translationPrefix: education.specializations.swdev
   url: https://www.mit.bme.hu/oktatas/kepzesek/bsc/info/szoftverfejlesztes
   featuredImage: ../images/specializations/spec_2.jpg
