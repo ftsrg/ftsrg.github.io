@@ -18,3 +18,15 @@
 .mb-6 {
   margin-bottom: 10rem;
 }
+
+.dark-slick .slick-dots li button:before {
+  color: white;
+}
+
+.dark-slick .slick-dots li.slick-active button:before {
+  color: white;
+}
+
+.dark-slick .slick-arrow:before {
+  color: white;
+}
