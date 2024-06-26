@@ -2,7 +2,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import { Link, useI18next } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-import { Button, Col, Container, Nav, Navbar, NavDropdown, Row } from 'react-bootstrap'
+import { Button, Col, Container, Nav, NavDropdown, Navbar, Row } from 'react-bootstrap'
 import { FaFacebookF, FaGithub, FaTwitter } from 'react-icons/fa'
 import LanguageToggle from './LanguageToggle'
 import NAVBAR_ITEMS from './navbar-items'
@@ -42,7 +42,7 @@ const NavBar: React.FC<Props> = ({ href }) => {
               <a href="https://www.mit.bme.hu" className="small me-3">
                 <StaticImage
                   src="../../../static/images/logos/mit.png"
-                  alt="Méréstechnika és Információs Rendszerek Tanszék"
+                  alt="Mesterséges Intelligencia és Rendszertervezés Tanszék"
                   height={20}
                   style={{ verticalAlign: 'middle' }}
                 />
