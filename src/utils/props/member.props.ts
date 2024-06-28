@@ -16,4 +16,5 @@ export default interface MemberProps {
   dblpPage?: string
   orcidPage?: string
   scholarPage?: string
+  inMemoriam?: boolean
 }

@@ -1,7 +1,7 @@
 import { ImageDataLike } from 'gatsby-plugin-image'
 import { useI18next } from 'gatsby-plugin-react-i18next'
-import React from 'react'
-import { FaLinkedin } from 'react-icons/fa'
+import React, { useEffect } from 'react'
+import { FaCross, FaLinkedin } from 'react-icons/fa'
 import Hero from '~components/Hero'
 import { MemberProps } from '~utils/props'
 
@@ -26,6 +26,7 @@ const FormerMembersSection: React.FC<Props> = ({ nodes, heroBackgroundImage }) =
             <div key={formermember.firstName + formermember.lastName} className="alumni">
               {memberName(formermember)}
               {formermember.title ? `, ${formermember.title}` : ''}
+              {formermember.inMemoriam && <FaCross title="In memoriam" style={{ marginLeft: '0.25rem' }} />}
               {formermember.linkedInPage && (
                 <a target="_blank" rel="noopener noreferrer" href={formermember.linkedInPage}>
                   <FaLinkedin style={{ marginLeft: '0.25rem', marginBottom: '0.25rem' }} />

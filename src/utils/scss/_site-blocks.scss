@@ -478,6 +478,8 @@
 .alumni {
   width: 14rem;
   color: $white;
+  display: flex;
+  align-items: center;
 
   & a {
     color: $primary-medium;

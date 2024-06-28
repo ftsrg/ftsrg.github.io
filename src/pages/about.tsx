@@ -96,6 +96,7 @@ export const query = graphql`
         lastName
         title
         linkedInPage
+        inMemoriam
       }
     }
     locales: allLocale(filter: { ns: { in: ["about", "commons"] }, language: { eq: $language } }) {
