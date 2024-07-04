@@ -30,6 +30,11 @@ const Member: React.FC<MemberProps> = ({
   return (
     <div className="feature-1 border person text-center d-flex flex-column justify-content-between">
       {avatarImage && <GatsbyImage image={avatarImage} className="img-fluid" alt={firstName + lastName} />}
+      {!avatarImage && (
+        <div className="img-fluid">
+          <FaUser />
+        </div>
+      )}
       <div className="feature-1-content">
         <h2>
           {memberName(t, { firstName, lastName, namePrefix, nameSuffix })}
