@@ -7,6 +7,8 @@
   homePage: http://inf.mit.bme.hu/members/pataric
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10004524
   cvPage: https://drive.google.com/file/d/0BwMh_IMLEYWRSVBENVdkSUc0SEE/edit?usp=sharing
+  namePrefix: ''
+  nameSuffix: ''
 - firstName: Dániel
   lastName: Varró
   title: DSc
@@ -203,7 +205,7 @@
   scholarPage: https://scholar.google.com/citations?hl=en&user=8lSh8hYAAAAJ
   linkedInPage: www.linkedin.com/in/zsofiaadam4224
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10077295
-- firstName: 
+- firstName:
   lastName: Kangogo Damaris Jepkurui
   position: phdStudent
   avatar: ../images/members/damaris.jpg

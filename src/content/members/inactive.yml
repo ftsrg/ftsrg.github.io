@@ -2,6 +2,8 @@
   lastName: Balogh
   title: PhD
   linkedInPage: https://hu.linkedin.com/in/andr%C3%A1s-balogh-0758b562
+  namePrefix: ''
+  nameSuffix: ''
 - firstName: Tamás
   lastName: Bartha
   title: PhD
@@ -124,6 +126,7 @@
 - firstName: Balázs
   lastName: Benyó
   linkedInPage: https://www.linkedin.com/in/dr-bal%C3%A1zs-beny%C3%B3-9405389/
+  title: PhD
 - firstName: Nikol
   lastName: Biró
   linkedInPage: https://www.linkedin.com/in/nikol-bir%C3%B3-b10b7974/
@@ -143,9 +146,6 @@
 - firstName: Viktória
   lastName: Keresztély
   linkedInPage: https://www.linkedin.com/in/viktoria-keresztely-0a068b4/
-- firstName: Zsolt
-  lastName: Kocsis
-  linkedInPage: https://www.linkedin.com/in/zsoltkocsis/
 - firstName: Dániel
   lastName: Petri
   linkedInPage: https://www.linkedin.com/in/d%C3%A1niel-petri-b8a32a3/
@@ -162,5 +162,5 @@
   lastName: Kovács
 - firstName: András
   lastName: Petri
-  title: ifj.
+  namePrefix: ifj.
 

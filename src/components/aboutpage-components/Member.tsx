@@ -1,14 +1,17 @@
 import { MemberProps } from '~utils/props'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
-import { FaGithub, FaHome, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { FaGithub, FaHome, FaLinkedin, FaTwitter, FaUser } from 'react-icons/fa'
 import { AiCV, AiDblp, AiGoogleScholar, AiMtmt, AiOrcid } from '~components/Academicons'
 import React from 'react'
 import { useI18next } from 'gatsby-plugin-react-i18next'
+import { memberName } from '~utils/member-name'
 
 const Member: React.FC<MemberProps> = ({
   avatar,
   firstName,
   lastName,
+  namePrefix,
+  nameSuffix,
   title,
   position,
   homePage,
@@ -29,7 +32,7 @@ const Member: React.FC<MemberProps> = ({
       {avatarImage && <GatsbyImage image={avatarImage} className="img-fluid" alt={firstName + lastName} />}
       <div className="feature-1-content">
         <h2>
-          {t('about.members.name', { firstName, lastName })}
+          {memberName(t, { firstName, lastName, namePrefix, nameSuffix })}
           {title && `, ${title}`}
         </h2>
         <span className="position mb-3 d-block">{position && t(`about.members.position.${position}`)}</span>

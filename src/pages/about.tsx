@@ -48,6 +48,8 @@ export const query = graphql`
       nodes {
         firstName
         lastName
+        namePrefix
+        nameSuffix
         title
         position
         order
@@ -71,6 +73,8 @@ export const query = graphql`
       nodes {
         firstName
         lastName
+        namePrefix
+        nameSuffix
         title
         position
         order
@@ -94,6 +98,8 @@ export const query = graphql`
       nodes {
         firstName
         lastName
+        namePrefix
+        nameSuffix
         title
         linkedInPage
         inMemoriam
