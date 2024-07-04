@@ -57,6 +57,7 @@
   homePage: http://inf.mit.bme.hu/members/vorosa
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10042280
   cvPage: https://share.mit.bme.hu/index.php/s/x6zj2cKzA5TxieJ
+  linkedInPage: https://www.linkedin.com/in/andr%C3%A1s-v%C3%B6r%C3%B6s-665b0818a/
 - firstName: Imre
   lastName: Kocsis
   title: PhD
@@ -84,6 +85,7 @@
   cvPage: https://oszkarsemerath.github.io/content/SemerathCV-en.pdf
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10045161
   scholarPage: https://scholar.google.com/citations?user=eURCwRYAAAAJ
+  linkedInPage: https://www.linkedin.com/in/oszk%C3%A1r-semer%C3%A1th-a05a0074/
 - firstName: Gábor
   lastName: Huszerl
   position: masterLecturer
@@ -151,6 +153,7 @@
   homePage: https://www.mit.bme.hu/general/phd/szabo
   cvPage: https://rorck.github.io/files/richard_szabo_cv.pdf
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10068607
+  linkedInPage: https://www.linkedin.com/in/rich%C3%A1rd-szab%C3%B3-037450230/
 - firstName: Dániel
   lastName: Szekeres
   position: phdStudent
@@ -158,6 +161,7 @@
   homePage: https://www.mit.bme.hu/general/phd/szekeres
   cvPage: https://szdan97.github.io/cv_szekeres.pdf
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10078570
+  linkedInPage: https://www.linkedin.com/in/d%C3%A1niel-szekeres-0619b8178/
 - firstName: Levente
   lastName: Bajczi
   position: phdStudent
@@ -165,6 +169,7 @@
   homePage: https://www.mit.bme.hu/general/phd/bajczi
   cvPage: https://leventebajczi.github.io/leventebajczi-cv/leventebajczi_cv_en.pdf
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10073070
+  linkedInPage: https://www.linkedin.com/in/leventebajczi/
 - firstName: Attila
   lastName: Ficsor
   position: phdStudent
@@ -187,6 +192,7 @@
   cvPage: http://mit.bme.hu/~bpeter/cve.pdf
   scholarPage: https://scholar.google.com/citations?user=mo8l6mQAAAAJ
   githubPage: https://github.com/bzp99
+  linkedInPage: https://www.linkedin.com/in/bertalan-zolt%C3%A1n-p%C3%A9ter-2204732b2/
 - firstName: Milán
   lastName: Mondok
   position: phdStudent
