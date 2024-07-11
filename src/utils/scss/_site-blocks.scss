@@ -270,6 +270,13 @@
     border-radius: 50%;
     margin-left: auto;
     margin-right: auto;
+    background-color: $secondary-light;
+
+    > svg {
+      width: 70%;
+      height: 70%;
+      margin: 10% 15% 20% 15%;
+    }
   }
 }
 
@@ -478,6 +485,8 @@
 .alumni {
   width: 14rem;
   color: $white;
+  display: flex;
+  align-items: center;
 
   & a {
     color: $primary-medium;

@@ -3,6 +3,8 @@ import { ImageDataLike } from 'gatsby-plugin-image'
 export default interface MemberProps {
   firstName: string
   lastName: string
+  namePrefix?: string
+  nameSuffix?: string
   title?: string
   position?: string
   order?: number
@@ -16,4 +18,5 @@ export default interface MemberProps {
   dblpPage?: string
   orcidPage?: string
   scholarPage?: string
+  inMemoriam?: boolean
 }

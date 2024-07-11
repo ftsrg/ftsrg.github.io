@@ -2,6 +2,8 @@
   lastName: Balogh
   title: PhD
   linkedInPage: https://hu.linkedin.com/in/andr%C3%A1s-balogh-0758b562
+  namePrefix: ''
+  nameSuffix: ''
 - firstName: Tamás
   lastName: Bartha
   title: PhD
@@ -28,6 +30,7 @@
 - firstName: Csaba
   lastName: Debreceni
   title: PhD
+  linkedInPage: https://www.linkedin.com/in/debrecenics/
 - firstName: Szilvia
   lastName: Gyapay
   title: PhD
@@ -74,8 +77,10 @@
   linkedInPage: https://www.linkedin.com/in/ujhelyiz/
 - firstName: Szilárd
   lastName: Bozóki
+  linkedInPage: https://www.linkedin.com/in/szilard-bozoki/
 - firstName: Tamás
   lastName: Demián
+  linkedInPage: https://www.linkedin.com/in/tam%C3%A1s-demi%C3%A1n-618b4936/
 - firstName: Orsolya
   lastName: Dobán
 - firstName: Benedek
@@ -118,3 +123,44 @@
 - firstName: Gábor
   lastName: Urbanics
   linkedInPage: https://www.linkedin.com/in/gaborurbanics/
+- firstName: Balázs
+  lastName: Benyó
+  linkedInPage: https://www.linkedin.com/in/dr-bal%C3%A1zs-beny%C3%B3-9405389/
+  title: PhD
+- firstName: Nikol
+  lastName: Biró
+  linkedInPage: https://www.linkedin.com/in/nikol-bir%C3%B3-b10b7974/
+  inMemoriam: true
+- firstName: Péter
+  lastName: Domokos
+  linkedInPage: https://www.linkedin.com/in/pdomokos/
+- firstName: Zoltán
+  lastName: Égel
+  linkedInPage: https://www.linkedin.com/in/zoltan-egel-258a5a2b/
+- firstName: Zoltán
+  lastName: Hornák
+  linkedInPage: https://www.linkedin.com/in/zoltanhornak/
+- firstName: Judit
+  lastName: Jávorszky
+  linkedInPage: https://www.linkedin.com/in/judit-javorszky-8713801/
+- firstName: Viktória
+  lastName: Keresztély
+  linkedInPage: https://www.linkedin.com/in/viktoria-keresztely-0a068b4/
+- firstName: Dániel
+  lastName: Petri
+  linkedInPage: https://www.linkedin.com/in/d%C3%A1niel-petri-b8a32a3/
+- firstName: Balázs
+  lastName: Sallay
+  linkedInPage: https://www.linkedin.com/in/balazs-sallay-203ab03/
+- firstName: Judit
+  lastName: Spanics
+  linkedInPage: https://www.linkedin.com/in/judit-spanics-77017694/
+- firstName: Béla
+  lastName: Tolvaj
+  linkedInPage: https://www.linkedin.com/in/b%C3%A9la-tolvaj-b8092464/
+- firstName: Péter Tamás
+  lastName: Kovács
+- firstName: András
+  lastName: Petri
+  namePrefix: ifj.
+
