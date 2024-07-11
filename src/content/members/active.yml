@@ -4,7 +4,7 @@
   position: prof
   avatar: ../images/members/pataricza.jpg
   linkedInPage: https://hu.linkedin.com/in/andras-pataricza-6651345
-  homePage: http://inf.mit.bme.hu/members/pataric
+  homePage: https://www.mit.bme.hu/general/staff/pataric
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10004524
   cvPage: https://drive.google.com/file/d/0BwMh_IMLEYWRSVBENVdkSUc0SEE/edit?usp=sharing
   namePrefix: ''
@@ -24,7 +24,7 @@
   position: assocProfHabil
   avatar: ../images/members/majzik.jpg
   linkedInPage: https://hu.linkedin.com/in/istvan-majzik-a2033387
-  homePage: http://inf.mit.bme.hu/members/majzik
+  homePage: https://www.mit.bme.hu/general/staff/majzik
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10001448
   scholarPage: https://scholar.google.com/citations?user=z8LwwiAAAAAJ
 - firstName: Zoltán
@@ -46,7 +46,7 @@
   title: PhD
   position: assocProf
   avatar: ../images/members/gonczy.jpg
-  homePage: http://inf.mit.bme.hu/members/gonczy
+  homePage: https://www.mit.bme.hu/general/staff/gonczy
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10041117
   linkedInPage: https://www.linkedin.com/in/laszlo-gonczy-80684411/
 - firstName: András
@@ -54,7 +54,7 @@
   title: PhD
   position: assocProf
   avatar: ../images/members/voros.jpg
-  homePage: http://inf.mit.bme.hu/members/vorosa
+  homePage: https://www.mit.bme.hu/general/staff/vori
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10042280
   cvPage: https://share.mit.bme.hu/index.php/s/x6zj2cKzA5TxieJ
   linkedInPage: https://www.linkedin.com/in/andr%C3%A1s-v%C3%B6r%C3%B6s-665b0818a/
@@ -63,7 +63,7 @@
   title: PhD
   position: assistProf
   avatar: ../images/members/kocsis.png
-  homePage: http://inf.mit.bme.hu/members/ikocsis
+  homePage: https://www.mit.bme.hu/general/staff/ikocsis
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10040986
   cvPage: http://mit.bme.hu/~ikocsis/Kocsis_Imre_CV_eng.pdf
   linkedInPage: https://www.linkedin.com/in/imre-kocsis/
@@ -73,7 +73,7 @@
   position: assistProf
   avatar: ../images/members/molnar.jpg
   linkedInPage: https://www.linkedin.com/in/molnarv
-  homePage: http://inf.mit.bme.hu/members/molnarv
+  homePage: https://www.mit.bme.hu/general/staff/molnarv
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10049620
   githubPage: https://github.com/vincemolnar
 - firstName: Oszkár
@@ -129,7 +129,7 @@
   lastName: Farkas
   position: assistResFellow
   avatar: ../images/members/farkas.jpg
-  homePage: http://inf.mit.bme.hu/members/farkasr
+  homePage: https://www.mit.bme.hu/general/staff/farkasr
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10058544
 - firstName: András
   lastName: Földvári
@@ -141,7 +141,7 @@
   lastName: Graics
   position: assistResFellow
   avatar: ../images/members/graics.jpg
-  homePage: http://inf.mit.bme.hu/members/graicsb
+  homePage: https://www.mit.bme.hu/node/12022
   cvPage: http://mit.bme.hu/~graics/cv-graics-en.pdf
   linkedInPage: https://www.linkedin.com/in/bence-graics-9085a6125/
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10068239
