@@ -34,12 +34,11 @@
   order: 10
   avatar: ../images/members/micskei.jpg
   linkedInPage: https://www.linkedin.com/in/zoltanmicskei
-  cvPage: http://mit.bme.hu/~micskeiz/pages/cv-micskei-en.pdf
-  homePage: http://mit.bme.hu/~micskeiz
-  mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10041151
-  twitterPage: https://twitter.com/micskeiz
+  cvPage: https://home.mit.bme.hu/~micskeiz/pages/cv-micskei-en.pdf
+  homePage: https://home.mit.bme.hu/~micskeiz
+  mtmtPage: https://m2.mtmt.hu/api/author/10041151?&labelLang=eng
   orcidPage: ''
-  scholarPage: ''
+  scholarPage: https://scholar.google.com/citations?user=nrCFKxUAAAAJ&hl=en&oi=ao
   dblpPage: ''
 - firstName: László
   lastName: Gönczy
