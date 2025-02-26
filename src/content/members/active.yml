@@ -105,7 +105,7 @@
 - firstName: Kristóf
   lastName: Marussy
   title: PhD
-  position: resFellow
+  position: assistProf
   avatar: ../images/members/marussy.jpg
   homePage: https://marussy.com
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10062709
@@ -133,16 +133,17 @@
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10058544
 - firstName: András
   lastName: Földvári
-  position: phdStudent
+  position: assistResFellow
   avatar: ../images/members/foldvari.jpg
   homePage: https://www.mit.bme.hu/general/phd/foldvari
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10068408
 - firstName: Bence
   lastName: Graics
+  title: PhD
   position: assistResFellow
   avatar: ../images/members/graics.jpg
   homePage: https://www.mit.bme.hu/node/12022
-  cvPage: http://mit.bme.hu/~graics/cv-graics-en.pdf
+  cvPage: https://home.mit.bme.hu/~graics/cv-graics-en.pdf
   linkedInPage: https://www.linkedin.com/in/bence-graics-9085a6125/
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10068239
   githubPage: https://github.com/grbeni
@@ -189,7 +190,7 @@
   avatar: ../images/members/peter.jpg
   homePage: https://www.mit.bme.hu/general/phd/peter
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10083082
-  cvPage: http://mit.bme.hu/~bpeter/cve.pdf
+  cvPage: https://home.mit.bme.hu/~bpeter/cve.pdf
   scholarPage: https://scholar.google.com/citations?user=mo8l6mQAAAAJ
   githubPage: https://github.com/bzp99
   linkedInPage: https://www.linkedin.com/in/bertalan-zolt%C3%A1n-p%C3%A9ter-2204732b2/
@@ -216,17 +217,20 @@
   lastName: Kangogo Damaris Jepkurui
   position: phdStudent
   avatar: ../images/members/damaris.jpg
+  homePage: https://www.mit.bme.hu/general/phd/dkangogo
   linkedInPage: https://www.linkedin.com/in/damaris-kangogo-3009aa76/
   githubPage: https://github.com/KangogoDamarisKE
 - firstName:
   lastName: Nada Akel
   position: phdStudent
   avatar: ../images/members/nada.jpg
+  homePage: https://www.mit.bme.hu/general/phd/nadaakel
   linkedInPage: https://www.linkedin.com/in/nada-akel-3623a1109
 - firstName:
   lastName: Noor Mohammed Al-Gburi
   position: phdStudent
   avatar: ../images/members/noor.jpg
+  homePage: https://www.mit.bme.hu/general/phd/noor
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10087286
 - firstName: Dóra
   lastName: Cziborová
