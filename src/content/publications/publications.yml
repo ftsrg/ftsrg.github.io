@@ -1,6 +1,6 @@
 - journalTitle: Softw Syst Model
   year: 2025
-  title: Networcat: applying analysis techniques of shared memory software on message-passing distributed systems.
+  title: "Networcat: applying analysis techniques of shared memory software on message-passing distributed systems."
   url: https://doi.org/10.1007/s10270-024-01258-x
   featuredImage: ../images/publications/sosym2025.png
   description: research.publications.networcat
