@@ -239,3 +239,11 @@
   homePage: https://www.mit.bme.hu/general/phd/cziborova
   cvPage: https://DoriCz.github.io/DoraCziborova_CV.pdf
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10094011
+- firstName: Ármin
+  lastName: Zavada
+  position: phdStudent
+  avatar: ../images/members/arminzavada.JPG
+  githubPage: https://github.com/arminzavada
+  homePage: https://www.mit.bme.hu/general/phd/zavada
+  cvPage: https://arminzavada.github.io/
+  mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10095295
