@@ -28,13 +28,14 @@
   url: https://www.amazon.science/research-awards/program-updates/74-amazon-research-awards-recipients-announced
   featuredImage: ../images/projects/aws.jpg
   description: research.projects.AWS
-- title: research.projects.allPrevious.title
-  subtitle: research.projects.allPrevious.subtitle
-  url: http://inf.mit.bme.hu/en/research/projects
-  featuredImage: ../images/projects/eu-flag.png
-  description: research.projects.allPrevious.desc
 - title: DOSS
   subtitle:  Secure-By-Design IoT Operation With Supply Chain Control
   url: https://dossproject.eu
   featuredImage: ../images/projects/doss.png
   description: research.projects.doss
+- title: research.projects.allPrevious.title
+  subtitle: research.projects.allPrevious.subtitle
+  url: http://inf.mit.bme.hu/en/research/projects
+  featuredImage: ../images/projects/eu-flag.png
+  description: research.projects.allPrevious.desc
+
