@@ -33,3 +33,8 @@
   url: http://inf.mit.bme.hu/en/research/projects
   featuredImage: ../images/projects/eu-flag.png
   description: research.projects.allPrevious.desc
+- title: DOSS
+  subtitle:  Secure-By-Design IoT Operation With Supply Chain Control
+  url: https://dossproject.eu
+  featuredImage: ../images/projects/doss.png
+  description: research.projects.doss

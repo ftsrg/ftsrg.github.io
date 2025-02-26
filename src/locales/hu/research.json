@@ -41,6 +41,7 @@
   "research.projects.allPrevious.title": "Korábbi projektjeink",
   "research.projects.allPrevious.subtitle": "FP4-től H2020-ig",
   "research.projects.allPrevious.desc": "EU keretprogramok (EEMCN, FUTEG, HIDE, DECOS, RESIST, Sensoria, Deserec, Diana, Hidenets, SafeDMI, Amber, Genesys, Mogentes, SecureChange, E-freight, R3-COP, CECRIS, Concerto, MONDO, R5-COP...) és hazai kutatási pályázatok (MTA Lendület, ERC_HU, OTKA...)",
+  "research.projects.doss": "A DOSS projekt célja egy secure-by-design módszertan kidolgozása az IoT-műveletek biztonságának és megbízhatóságának növelésére. Ennek érdekében egy integrált monitorozási és validálási keretrendszert vezet be az IoT-ellátási láncokban. Az FTSGR egy hatáselemzési megoldáson dolgozik, amely a rendszer megbízhatóságának szempontjából határozza meg a biztonsági tesztcélokat.",
 
   "research.events.disc2019.title": "DISC 2019",
   "research.events.disc2019.subtitle": "33rd Int. Symposium on Distributed Computing",
