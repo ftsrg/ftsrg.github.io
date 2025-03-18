@@ -23,7 +23,7 @@
   "research.publications.autoGenGraphModel": "Olyan módszereket javasoltunk, amivel gráfok generálása során adott célfüggvény szerinti optimalizációs problémákat tudunk megoldani.",
   "research.publications.autoGenQualitative": "Olyan új algoritmusokat javasoltunk, amik többféle megoldó kombinálásával képesek teszt forgatókönyvek automatikus generálására.",
   "research.publications.autoIsoWhitebox": "Olyan módszert és eszközt készítettünk, ami forráskód-alapú tesztgenerálás során a tesztelt modul izolációja érdekében automatikusan mock környezeteket generál.",
-  "research.publications.doActivity": "Az UML állapotgépek és doActivity-k szemantikáját elemeztük, valamint olyan gyakorlati mintákat javasoltunk, amelyek felfedik a modellekben rejlő hibákat.",
+  "research.publications.doActivity": "Az UML állapotgépek és doActivity‑k szemantikáját elemeztük, valamint olyan gyakorlati mintákat javasoltunk, amelyek felfedik a modellekben rejlő hibákat.",
   "research.publications.faultInjectBlockchain": "A Coimbrai Egyetem kutatóival együttműködve olyan módszert javasoltunk, amivel blockchain rendszerek megbízhatósága vizsgálható.",
   "research.publications.transactionBlockchain": "A cikkben rávilágítjuk a figyelmet arra, hogy hogyan alkalmazhatók modellvezérelt módszerek a szervezetközi blokkláncok teljesítményoptimalizásában.",
   "research.publications.stratForCEGAR": "Hatékony algoritmusokat javasoltunk a CEGAR-alapú modellellenőrzés továbbfejlesztéséhez, amik beágyazott szoftver és PLC kódok ellenőrzését segítik.",
