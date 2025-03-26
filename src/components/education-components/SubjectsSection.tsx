@@ -9,7 +9,7 @@ type Props = {
 }
 
 const SubjectsSection: React.FC<Props> = ({ nodes }) => {
-  const { t } = useI18next()
+  const { t, language } = useI18next()
 
   return (
     <div id="courses" className="section-bg style-1">
@@ -42,11 +42,16 @@ const SubjectsSection: React.FC<Props> = ({ nodes }) => {
                   </div>
                   <div className="course-1-footer px-5">
                     {subject.portalPage && (
-                      <a target="_blank" rel="noopener noreferrer" href={subject.portalPage} className="btn btn-secondary rounded-0 w-50">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href={language === 'en' ? `${subject.portalPage}/en` : subject.portalPage}
+                        className="btn btn-secondary rounded-0 w-50"
+                      >
                         {t('education.subjects.portalPage')}
                       </a>
                     )}
-                    {subject.webPage && (
+                    {subject.webPage && language === 'hu' && (
                       <a target="_blank" rel="noopener noreferrer" href={subject.webPage} className="btn btn-primary rounded-0 w-50">
                         {t('education.subjects.webPage')}
                       </a>

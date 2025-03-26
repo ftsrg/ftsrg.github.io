@@ -27,7 +27,7 @@ interface EducationPageProps extends PageProps {
 }
 
 const EducationPage: React.FC<EducationPageProps> = ({ data }) => {
-  const { t } = useI18next()
+  const { t, language } = useI18next()
 
   return (
     <Layout href="/education">
@@ -65,6 +65,12 @@ const EducationPage: React.FC<EducationPageProps> = ({ data }) => {
             ]}
           />
         </p>
+        <p>{t('education.talentcare.p3')}</p>
+        {language === 'hu' && (
+          <a href="https://forms.office.com/e/kg6yZyBqte" target="_blank" className="btn btn-primary rounded-0" rel="noopener noreferrer">
+            {t('education.talentcare.apply')}
+          </a>
+        )}
       </Hero>
 
       <div id="achievements" className="site-section">
