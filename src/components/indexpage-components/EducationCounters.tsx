@@ -27,7 +27,7 @@ const counterData = [
     url: '/education#achievements',
     count: 115,
     suffix: '+'
-    /* Until 2024-12: DKOP: 7; UNKP/EKOP/KDP (2016-2024): 39; Rektori: 5; PP thesis: 8; NFÖD: 25+; ACM-W: 1; CERN: 13+; Huawei: 7+; IBM: 4;
+    /* Until 2024-12: DKOP: 7; UNKP/EKOP/KDP (2016-2024): 42; Rektori: 5; PP thesis: 8; NFÖD: 25+; ACM-W: 1; CERN: 13+; Huawei: 7+; IBM: 4;
     Siemens: 2; OTDT: 2; KBME: did not count... */
   }
 ]
