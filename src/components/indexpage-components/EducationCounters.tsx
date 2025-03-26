@@ -9,7 +9,7 @@ const counterData = [
     title: 'home.counters.c1.title',
     isGatsbyLink: false,
     url: 'https://diplomaterv.vik.bme.hu/hu/Browse.aspx?d=MIT',
-    count: 498,
+    count: 600,
     suffix: '+'
     /* From diplomaterv portal, 2010-2021 Summer */
   },
@@ -25,9 +25,9 @@ const counterData = [
     title: 'home.counters.c3.title',
     isGatsbyLink: true,
     url: '/education#achievements',
-    count: 80,
+    count: 115,
     suffix: '+'
-    /* Until 2021-12: UNKP (2016-2021): 18; Rektori: 4; PP thesis: 8; NFÖD: 25+; ACM-W: 1; CERN: 9+; Huawei: 7+; IBM: 4;
+    /* Until 2024-12: DKOP: 7; UNKP/EKOP/KDP (2016-2024): 39; Rektori: 5; PP thesis: 8; NFÖD: 25+; ACM-W: 1; CERN: 13+; Huawei: 7+; IBM: 4;
     Siemens: 2; OTDT: 2; KBME: did not count... */
   }
 ]
