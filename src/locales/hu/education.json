@@ -7,8 +7,10 @@
   "education.specializations.title": "$t(nav.education.specializations)",
   "education.subjects.title": "$t(nav.education.courses)",
 
-  "education.talentcare.p1": "A motivált, érdeklődő hallgatókat szívesen látjuk már a BSc tanulmányaik kezdetén. Ők később a közös munka során rendszeresen bekapcsolódnak nemzetközi kutatási és ipari projektjeinkbe, nyílt forráskódú szoftverfejlesztéseinkbe.",
-  "education.talentcare.p2": "Számukra tehetséggondozó programot, kiemelt konzultációs hátteret és egyéni mentorálást biztosítunk a <0>TDK konferenciától</0> kezdve egészen a doktori képzés végéig.",
+  "education.talentcare.p1": "Érdekel, hogy merrefelé halad az informatika? Mik azok a módszerek és technológiák, amiket a jövő mérnökei használnak? Fontos számodra a szoftver-alapú rendszerek helyes és megbízható működése? Érdekel, hogy a mesterséges intelligencia, a matematikai logika és a gráf algoritmusok hogyan tudja segíteni az informatikus mérnökök munkáját? Szeretnéd tudni, hogy a blockchain technológiák hogyan változtatják meg a világunkat? És részt szeretnél venni ebben a transzformációban?",
+  "education.talentcare.p2": "Nálunk a hallgatók megismerkedhetnek az informatika mérnöki oldalával, továbbá a legújabb, legizgalmasabb fejlesztésekkel. Készüljünk fel együtt az informatikusok előtt álló kihívásokra, vegyél részt az innovációban!",
+  "education.talentcare.p3": "Kérdésed van? Szívesen részt vennél a TDK-n, dolgoznál tudományos és ipari innovációs témákon? Jelezd érdeklődésedet az alábbi formon: ",
+  "education.talentcare.apply": "Érdeklődöm",
 
   "education.studentwork.pageNumber": "{{pageNumber}}. oldal",
   "education.studentwork.description": "Hallgatóink változatos témákon dolgozhatnak már a <0>önálló labortól</0> kezdődően: az ipari partnereink által inspirált gyakorlati fejlesztési feladatoktól kezdve az elméleti jellegű kutatási témákig széles spektrumon biztosítunk konzultációt. Célunk, hogy hallgatóink olyan témákat találjanak, amikben elmélyülnek és szakmailag fejlődnek.",
