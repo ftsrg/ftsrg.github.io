@@ -8,23 +8,26 @@ const counterData = [
   {
     title: 'home.counters.c1.title',
     isGatsbyLink: false,
-    url: 'https://diplomaterv.vik.bme.hu/hu/Browse.aspx?d=MIT',
-    count: 498
+    url: 'https://diplomaterv.vik.bme.hu/hu/Browse.aspx?d=MIT&e=SE',
+    count: 600,
+    suffix: '+'
     /* From diplomaterv portal, 2010-2021 Summer */
   },
   {
     title: 'home.counters.c2.title',
     isGatsbyLink: false,
-    url: 'http://tdk.bme.hu/Browse/Papers?f=VIK&d=MIT',
-    count: 135
-    /* Until 2022-12: 38 OTDK (2001-) and 97 TDK (2009-) */
+    url: 'https://tdk.bme.hu/browse',
+    count: 230,
+    suffix: '+'
+    /* Until 2024-12: 38 OTDK (2001-) and 191 TDK (2000-) */
   },
   {
     title: 'home.counters.c3.title',
     isGatsbyLink: true,
     url: '/education#achievements',
-    count: 80
-    /* Until 2021-12: UNKP (2016-2021): 18; Rektori: 4; PP thesis: 8; NFÖD: 25+; ACM-W: 1; CERN: 9+; Huawei: 7+; IBM: 4;
+    count: 115,
+    suffix: '+'
+    /* Until 2024-12: DKOP: 7; UNKP/EKOP/KDP (2016-2024): 42; Rektori: 5; PP thesis: 8; NFÖD: 25+; ACM-W: 1; CERN: 13+; Huawei: 7+; IBM: 4;
     Siemens: 2; OTDT: 2; KBME: did not count... */
   }
 ]
@@ -43,7 +46,11 @@ const EducationCounters: React.FC = () => {
           {counterData.map((data) => (
             <Col key={data.title} xs={12} md={4} className="text-center mb-4">
               <div className={`${showCounter ? 'counter-animated' : 'counter-unanimated'}`}>
-                <div>{showCounter && <CountUp end={data.count} duration={3} className="text-primary h1 font-weight-bold" />}</div>
+                <div>
+                  {showCounter && (
+                    <CountUp end={data.count} duration={3} suffix={data.suffix} className="text-primary h1 font-weight-bold" />
+                  )}
+                </div>
                 {data.isGatsbyLink ? (
                   <Link to={data.url}>{t(data.title)}</Link>
                 ) : (

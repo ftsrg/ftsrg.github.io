@@ -9,6 +9,7 @@
 
   "education.talentcare.p1": "Motivated students can start to work with us even in the beginning of their undergraduate studies, and later join our international research and innovation projects or one of our open source developments.",
   "education.talentcare.p2": "We offer special talent care opportunities and unique one-on-one mentoring for our talented students.",
+  "education.talentcare.p3": "",
 
   "education.studentwork.description": "Our students can start to work on engaging topics during their first <0>project work</0> course. We offer project and thesis topics ranging from practical developments inspired by our industrial partners to challenging research problems with strong theoretical background. Our goal is to find topics for students, where they can deepen their knowledge and improve their skills.",
   "education.studentwork.pageNumber": "page {{pageNumber}}",
@@ -76,7 +77,7 @@
   "education.subjects.maviz.desc": "We introduce students to the application possibilities of visual data analysis, primarily in the design and evaluation of computer systems.",
 
   "education.specializations.swdev.title": "Software Engineering (BSc and MSc)",
-  "education.specializations.swdev.subtitle": "Programming is easy, but high quality software is hard",
+  "education.specializations.swdev.subtitle": "Programming is easy, but high-quality software is hard",
   "education.specializations.swdev.p1": "The goal of the specialization is to teach contemporary development technologies and tools that can be used to design, code, and verify software.",
   "education.specializations.swdev.p2": "",
   "education.specializations.critsys.title": "Critical Systems (MSc)",
