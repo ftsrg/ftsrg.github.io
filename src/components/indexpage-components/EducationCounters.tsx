@@ -8,7 +8,7 @@ const counterData = [
   {
     title: 'home.counters.c1.title',
     isGatsbyLink: false,
-    url: 'https://diplomaterv.vik.bme.hu/hu/Browse.aspx?d=MIT',
+    url: 'https://diplomaterv.vik.bme.hu/hu/Browse.aspx?d=MIT&e=SE',
     count: 600,
     suffix: '+'
     /* From diplomaterv portal, 2010-2021 Summer */
@@ -16,7 +16,7 @@ const counterData = [
   {
     title: 'home.counters.c2.title',
     isGatsbyLink: false,
-    url: 'http://tdk.bme.hu/Browse/Papers?f=VIK&d=MIT',
+    url: 'https://tdk.bme.hu/browse',
     count: 230,
     suffix: '+'
     /* Until 2024-12: 38 OTDK (2001-) and 191 TDK (2000-) */
