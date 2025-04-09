@@ -30,7 +30,7 @@
 - firstName: Zoltán
   lastName: Micskei
   title: PhD
-  position: assocProf
+  position: assocProfHabil
   order: 10
   avatar: ../images/members/micskei.jpg
   linkedInPage: https://www.linkedin.com/in/zoltanmicskei
@@ -70,7 +70,7 @@
 - firstName: Vince
   lastName: Molnár
   title: PhD
-  position: assistProf
+  position: assocProf
   avatar: ../images/members/molnar.jpg
   linkedInPage: https://www.linkedin.com/in/molnarv
   homePage: https://www.mit.bme.hu/general/staff/molnarv
@@ -79,7 +79,7 @@
 - firstName: Oszkár
   lastName: Semeráth
   title: PhD
-  position: assistProf
+  position: assocProf
   avatar: ../images/members/semerath.jpg
   homePage: https://oszkarsemerath.github.io
   cvPage: https://oszkarsemerath.github.io/content/SemerathCV-en.pdf
@@ -141,7 +141,7 @@
 - firstName: Bence
   lastName: Graics
   title: PhD
-  position: assistResFellow
+  position: resFellow
   avatar: ../images/members/graics.jpg
   homePage: https://www.mit.bme.hu/node/12022
   cvPage: https://home.mit.bme.hu/~graics/cv-graics-en.pdf
@@ -248,3 +248,9 @@
   homePage: https://www.mit.bme.hu/general/phd/zavada
   cvPage: https://arminzavada.github.io/
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10095295
+- firstName: Martin
+  lastName: Farkas
+  position: phdStudent
+  avatar: ../images/members/farkasm.jpg
+  homePage: https://www.mit.bme.hu/general/phd/farkas
+  mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10098507
