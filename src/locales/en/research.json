@@ -5,7 +5,7 @@
   "research.events.title": "$t(nav.research.events)",
   "research.publications.title": "$t(nav.research.publications)",
   "research.tools.title": "$t(nav.research.tools)",
-  "research.projects.description": "In the last 25 years, our research group participated in more than 20 EU cooperative research projects (FP4-H2020) and more than 25 direct industry collaborations. In our R&D projects, we develop new, innovative software-based solutions that help engineers create better systems.",
+  "research.projects.description": "In the last 25 years, our research group participated in more than 30 EU cooperative research projects (FP4-Horizon) and more than 25 direct industry collaborations. In our R&D projects, we develop new, innovative software-based solutions that help engineers create better systems.",
   "research.projects.counter1.title": "EU collaborative projects",
   "research.projects.counter2.title": "Cooperation with industry",
   "research.projects.counter3.title": "National and bilateral projects",
@@ -13,12 +13,13 @@
   "research.publications.dataSets": "Datasets",
   "research.publications.slides": "Slides",
   "research.publications.description": "Our research group regularly publishes papers in the leading venues of software engineering (TSE, IST, STTT), model-driven engineering (MODELS, SoSyM), formal verification (TACAS, JAR) and software testing (ICST, STVR).",
+
   "research.tools.tool1.title": "Gamma statechart composition framework",
-  "research.tools.tool1.desc": "The Gamma modeling toolset helps to design and formally verify component-based reactive systems and can generate implementations automatically.",
+  "research.tools.tool1.desc": "The Gamma modeling toolset helps to design and formally verify component-based reactive systems and can generate implementations.",
   "research.tools.tool2.title": "Theta model checking framework",
   "research.tools.tool2.desc": "The Theta model checking framework is a collection of modern, abstraction refinement-based algorithms, which can be tailored to the give problem due to their configurability.",
-  "research.tools.tool3.title": "VIATRA Solver graphgenerator framework",
-  "research.tools.tool3.desc": "VIATRA Solver is a framework, which can automatically and efficiently generate consistent and diverse graphs from domain-specific models.",
+  "research.tools.tool3.title": "Refinery graph solver",
+  "research.tools.tool3.desc": "Refinery is an efficient graph solver for generating diverse, well-formed domain-specific models using partial modeling techniques.",
 
   "research.publications.autoGenGraphModel": "We designed a new method to solve optimization problems during graph generations according to various object functions.",
   "research.publications.autoGenQualitative": "We designed new algorithms to combine various solvers for synthesizing test scenarios represented as graph models.",
@@ -44,6 +45,7 @@
   "research.projects.allPrevious.subtitle": "From FP4 to H2020",
   "research.projects.allPrevious.desc": "EU collaborative projects (EEMCN, FUTEG, HIDE, DECOS, RESIST, Sensoria, Deserec, Diana, Hidenets, SafeDMI, Amber, Genesys, Mogentes, SecureChange, E-freight, R3-COP, CECRIS, Concerto, MONDO, R5-COP...) and national research grants (MTA Lendület, ERC_HU, OTKA...)",
   "research.projects.doss": "The DOSS project aims to create a secure-by-design methodology for improving the security and reliability of IoT operations by introducing an integrated monitoring and validation framework to IoT Supply Chains. FTSRG works on an impact assessment solution for generating security test targets from the aspect of system dependability.",
+  "research.projects.vampir": "The ESA-funded VAMPIR project develops a verification engine for AI-enhanced Positioning, Navigation, and Timing (PNT) application using graph reasoning. The verification engine is demonstrated on improving the performance of advanced driver assistance systems.",
 
   "research.events.disc2019.title": "DISC 2019",
   "research.events.disc2019.subtitle": "33rd Int. Symposium on Distributed Computing",

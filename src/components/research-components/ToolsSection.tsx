@@ -2,7 +2,6 @@ import { ImageDataLike, StaticImage } from 'gatsby-plugin-image'
 import { useI18next } from 'gatsby-plugin-react-i18next'
 import React, { PropsWithChildren } from 'react'
 import { Col, Row } from 'react-bootstrap'
-import { FaProjectDiagram } from 'react-icons/fa'
 import Hero from '~components/Hero'
 
 type Props = {
@@ -80,8 +79,13 @@ const ToolsSection: React.FC<Props> = ({ heroBackgroundImage }) => {
           </Tool>
         </Col>
         <Col lg={4} md={6} className="mb-5 mb-lg-0">
-          <Tool title="research.tools.tool3.title" desc="research.tools.tool3.desc" url="https://github.com/viatra/VIATRA-Generator">
-            <FaProjectDiagram size="3.65rem" />
+          <Tool title="research.tools.tool3.title" desc="research.tools.tool3.desc" url="https://refinery.tools/">
+            <StaticImage
+              src="../../../static/images/logos/refinery-logo.svg"
+              alt={t('research.tools.tool2.title')}
+              width={58}
+              style={{ filter: 'brightness(0) invert(1)' }}
+            />
           </Tool>
         </Col>
       </Row>
