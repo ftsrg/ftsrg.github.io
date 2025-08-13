@@ -1,3 +1,6 @@
+- translationPrefix: research.events.otdt
+  url: https://www.mit.bme.hu/awards/2025/07/09/mestertanari-aranyerem-molnar-vincenek
+  featuredImage: ../images/events/otdt-master-teacher.jpg
 - translationPrefix: research.events.fka2022
   url: https://hu.linkedin.com/company/hungarian-young-academy
   featuredImage: ../images/events/fka.jpg
