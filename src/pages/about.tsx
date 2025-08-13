@@ -119,7 +119,7 @@ export const query = graphql`
         gatsbyImageData(layout: FULL_WIDTH)
       }
     }
-    formerMembersHero: file(relativePath: { eq: "panorama.jpg" }, sourceInstanceName: { eq: "staticImages" }) {
+    formerMembersHero: file(relativePath: { eq: "panorama2024.jpg" }, sourceInstanceName: { eq: "staticImages" }) {
       childImageSharp {
         gatsbyImageData(layout: FULL_WIDTH)
       }
