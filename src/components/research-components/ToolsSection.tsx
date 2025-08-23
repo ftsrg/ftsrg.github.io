@@ -78,7 +78,7 @@ const ToolsSection: React.FC<Props> = ({ heroBackgroundImage }) => {
             />
           </Tool>
         </Col>
-    </Row>
+      </Row>
       <Row className="justify-content-center align-items-stretch" style={{ marginTop: '6rem' }}>
         <Col lg={4} md={6} className="mb-5 mb-lg-0">
           <Tool title="research.tools.tool3.title" desc="research.tools.tool3.desc" url="https://refinery.tools/">
