@@ -20,6 +20,8 @@
   "research.tools.tool2.desc": "The Theta model checking framework is a collection of modern, abstraction refinement-based algorithms, which can be tailored to the give problem due to their configurability.",
   "research.tools.tool3.title": "Refinery graph solver",
   "research.tools.tool3.desc": "Refinery is an efficient graph solver for generating diverse, well-formed domain-specific models using partial modeling techniques.",
+  "research.tools.tool4.title": "VIATRA",
+  "research.tools.tool4.desc": "Eclipse VIATRA is a model query and transformation framework, focusing on high-performance and incremental synchronization.",
 
   "research.publications.autoGenGraphModel": "We designed a new method to solve optimization problems during graph generations according to various object functions.",
   "research.publications.autoGenQualitative": "We designed new algorithms to combine various solvers for synthesizing test scenarios represented as graph models.",
