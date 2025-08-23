@@ -78,11 +78,23 @@ const ToolsSection: React.FC<Props> = ({ heroBackgroundImage }) => {
             />
           </Tool>
         </Col>
+    </Row>
+      <Row className="justify-content-center align-items-stretch" style={{ marginTop: '6rem' }}>
         <Col lg={4} md={6} className="mb-5 mb-lg-0">
           <Tool title="research.tools.tool3.title" desc="research.tools.tool3.desc" url="https://refinery.tools/">
             <StaticImage
               src="../../../static/images/logos/refinery-logo.svg"
               alt={t('research.tools.tool2.title')}
+              width={58}
+              style={{ filter: 'brightness(0) invert(1)' }}
+            />
+          </Tool>
+        </Col>
+        <Col lg={4} md={6} className="mb-5 mb-lg-0">
+          <Tool title="research.tools.tool4.title" desc="research.tools.tool4.desc" url="https://eclipse.dev/viatra">
+            <StaticImage
+              src="../../../static/images/logos/viatra.png"
+              alt={t('research.tools.tool4.title')}
               width={58}
               style={{ filter: 'brightness(0) invert(1)' }}
             />
