@@ -5,13 +5,13 @@
   avatar: ../images/members/horvath.jpg
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10030432
   linkedInPage: https://www.linkedin.com/in/akoshorvathincquerylabs/
-  homePage: ''
+  homePage: 'https://www.mit.bme.hu/en/staff/ahorvath'
   cvPage: ''
   twitterPage: ''
-  orcidPage: ''
-  scholarPage: ''
-  dblpPage: ''
-  githubPage: ''
+  orcidPage: 'http://orcid.org/0000-0003-3545-3694'
+  scholarPage: 'http://scholar.google.hu/citations?user=jAq33wUAAAAJ'
+  dblpPage: 'https://dblp.org/pid/17/531-1.html'
+  githubPage: 'https://github.com/g2k2c8'
   order: ''
   namePrefix: ''
   nameSuffix: ''
@@ -22,6 +22,16 @@
   avatar: ../images/members/rath.jpg
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10030433
   linkedInPage: https://www.linkedin.com/in/istvanrath/
+  homePage: 'https://www.mit.bme.hu/en/staff/rath'
+  cvPage: ''
+  twitterPage: ''
+  orcidPage: 'http://orcid.org/0000-0002-5516-696X'
+  scholarPage: 'http://scholar.google.hu/citations?user=F8-Egr4AAAAJ'
+  dblpPage: 'https://dblp.org/pid/07/4090.html'
+  githubPage: 'https://github.com/istvanrath'
+  order: ''
+  namePrefix: ''
+  nameSuffix: ''
 - firstName: Zsolt
   lastName: Kocsis
   position: honAssocProf
