@@ -3,7 +3,7 @@ import { Link, useI18next } from 'gatsby-plugin-react-i18next'
 import React from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { Button, Col, Container, Nav, NavDropdown, Navbar, Row } from 'react-bootstrap'
-import { FaFacebookF, FaGithub, FaTwitter } from 'react-icons/fa'
+import { FaFacebookF, FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import LanguageToggle from './LanguageToggle'
 import NAVBAR_ITEMS from './navbar-items'
 
@@ -119,9 +119,9 @@ const NavBar: React.FC<Props> = ({ href }) => {
                 as="a"
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://twitter.com/ftsrg_bme"
+                href="https://hu.linkedin.com/company/ftsrg"
               >
-                <FaTwitter />
+                <FaLinkedinIn />
               </Button>
               <Button
                 className="rounded-0 me-1"
