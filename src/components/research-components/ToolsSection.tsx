@@ -8,26 +8,6 @@ type Props = {
   heroBackgroundImage: ImageDataLike
 }
 
-/*
-const toolsData = [
-  {
-    title: 'research.tools.tool1.title',
-    desc: 'research.tools.tool1.desc',
-    url: 'https://github.com/ftsrg/gamma'
-  },
-  {
-    title: 'research.tools.tool2.title',
-    desc: 'research.tools.tool2.desc',
-    url: 'https://github.com/ftsrg/theta'
-  },
-  {
-    title: 'research.tools.tool3.title',
-    desc: 'research.tools.tool3.desc',
-    url: 'https://github.com/viatra/VIATRA-Generator'
-  }
-]
-*/
-
 type ToolProps = {
   title: string
   desc: string
@@ -57,9 +37,9 @@ const ToolsSection: React.FC<Props> = ({ heroBackgroundImage }) => {
 
   return (
     <Hero id="tools" bgImage={heroBackgroundImage} heroTitle="research.tools.title" isHeroTitleCentered>
-      <Row className="justify-content-center align-items-stretch" style={{ marginTop: '6rem' }}>
-        <Col lg={4} md={6} className="mb-5 mb-lg-0">
-          <Tool title="research.tools.tool1.title" desc="research.tools.tool1.desc" url="https://github.com/ftsrg/gamma">
+      <Row className="justify-content-center align-items-stretch" style={{ marginTop: '4rem' }}>
+        <Col lg={4} md={6} className="mb-5 mt-5">
+          <Tool title="research.tools.tool1.title" desc="research.tools.tool1.desc" url="">
             <StaticImage
               src="../../../static/images/logos/gamma.png"
               alt={t('research.tools.tool1.title')}
@@ -68,7 +48,7 @@ const ToolsSection: React.FC<Props> = ({ heroBackgroundImage }) => {
             />
           </Tool>
         </Col>
-        <Col lg={4} md={6} className="mb-5 mb-lg-0">
+        <Col lg={4} md={6} className="mb-5 mt-5">
           <Tool title="research.tools.tool2.title" desc="research.tools.tool2.desc" url="https://github.com/ftsrg/theta">
             <StaticImage
               src="../../../static/images/logos/theta.png"
@@ -78,9 +58,7 @@ const ToolsSection: React.FC<Props> = ({ heroBackgroundImage }) => {
             />
           </Tool>
         </Col>
-      </Row>
-      <Row className="justify-content-center align-items-stretch" style={{ marginTop: '6rem' }}>
-        <Col lg={4} md={6} className="mb-5 mb-lg-0">
+        <Col lg={4} md={6} className="mb-5 mt-5">
           <Tool title="research.tools.tool3.title" desc="research.tools.tool3.desc" url="https://refinery.tools/">
             <StaticImage
               src="../../../static/images/logos/refinery-logo.svg"
@@ -90,7 +68,7 @@ const ToolsSection: React.FC<Props> = ({ heroBackgroundImage }) => {
             />
           </Tool>
         </Col>
-        <Col lg={4} md={6} className="mb-5 mb-lg-0">
+        <Col lg={4} md={6} className="mb-5 mt-5">
           <Tool title="research.tools.tool4.title" desc="research.tools.tool4.desc" url="https://eclipse.dev/viatra">
             <StaticImage
               src="../../../static/images/logos/viatra.png"
