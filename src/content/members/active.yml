@@ -270,3 +270,14 @@
   linkedInPage: https://www.linkedin.com/in/csanadtelbisz/
   scholarPage: https://scholar.google.com/citations?user=lBI2BQMAAAAJ
   orcidPage: https://orcid.org/0000-0002-6260-5908
+- firstName: Balázs
+  lastName: Toldi
+  position: phdStudent
+  avatar: ../images/members/toldi.jpg
+  homePage: https://toldi.eu
+  mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10093922
+  githubPage: https://github.com/bazsalanszky
+  cvPage: https://toldi.eu/cv.pdf
+  linkedInPage: https://www.linkedin.com/in/balazs-%C3%A1d%C3%A1m-toldi-883077159/
+  scholarPage: https://scholar.google.com/citations?user=qfhp0e0AAAAJ
+  orcidPage: https://orcid.org/0009-0007-4751-5043
