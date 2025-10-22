@@ -27,13 +27,9 @@ const Member: React.FC<MemberProps> = ({
   const { t, language } = useI18next()
   const avatarImage = avatar ? getImage(avatar) : null
 
-  const homeUrl = homePage 
-    ? (homePage.startsWith('http') 
-       ? homePage 
-       : (language === 'hu' 
-          ? `https://www.mit.bme.hu/munkatarsak/${homePage}` 
-          : `https://www.mit.bme.hu/en/staff/${homePage}`))
-    : undefined
+  const homeUrl = language === 'hu'
+    ? `https://www.mit.bme.hu/munkatarsak/${homePage}`
+    : `https://www.mit.bme.hu/en/staff/${homePage}`
 
   return (
     <div className="feature-1 border person text-center d-flex flex-column justify-content-between">
@@ -52,8 +48,8 @@ const Member: React.FC<MemberProps> = ({
       </div>
       <div className="mt-auto">
         <p>
-          {homeUrl && (
-            <a target="_blank" rel="noopener noreferrer" href={homeUrl}>
+          {homePage && (
+            <a target="_blank" rel="noopener noreferrer" href={homePage.startsWith('http') ? homePage : homeUrl}>
               <FaHome style={{ marginRight: '0.5rem' }} size="1.25rem" />
             </a>
           )}
