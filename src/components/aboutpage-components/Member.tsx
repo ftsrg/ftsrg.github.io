@@ -27,8 +27,7 @@ const Member: React.FC<MemberProps> = ({
   const { t, language } = useI18next()
   const avatarImage = avatar ? getImage(avatar) : null
 
-  const homeUrl = language === 'hu' ? `https://www.mit.bme.hu/munkatarsak/${homePage}`
-    : `https://www.mit.bme.hu/en/staff/${homePage}`
+  const homeUrl = language === 'hu' ? `https://www.mit.bme.hu/munkatarsak/${homePage}` : `https://www.mit.bme.hu/en/staff/${homePage}`
 
   return (
     <div className="feature-1 border person text-center d-flex flex-column justify-content-between">
