@@ -4,7 +4,7 @@
   position: prof
   avatar: ../images/members/pataricza.jpg
   linkedInPage: https://hu.linkedin.com/in/andras-pataricza-6651345
-  homePage: https://www.mit.bme.hu/general/staff/pataric
+  homePage: pataric
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10004524
   cvPage: https://drive.google.com/file/d/0BwMh_IMLEYWRSVBENVdkSUc0SEE/edit?usp=sharing
   namePrefix: ''
@@ -24,7 +24,7 @@
   position: assocProfHabil
   avatar: ../images/members/majzik.jpg
   linkedInPage: https://hu.linkedin.com/in/istvan-majzik-a2033387
-  homePage: https://www.mit.bme.hu/general/staff/majzik
+  homePage: majzik
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10001448
   scholarPage: https://scholar.google.com/citations?user=z8LwwiAAAAAJ
 - firstName: Zoltán
@@ -46,7 +46,7 @@
   title: PhD
   position: assocProf
   avatar: ../images/members/gonczy.jpg
-  homePage: https://www.mit.bme.hu/general/staff/gonczy
+  homePage: gonczy
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10041117
   linkedInPage: https://www.linkedin.com/in/laszlo-gonczy-80684411/
 - firstName: András
@@ -54,7 +54,7 @@
   title: PhD
   position: assocProf
   avatar: ../images/members/voros.jpg
-  homePage: https://www.mit.bme.hu/general/staff/vori
+  homePage: vori
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10042280
   cvPage: https://share.mit.bme.hu/index.php/s/x6zj2cKzA5TxieJ
   linkedInPage: https://www.linkedin.com/in/andr%C3%A1s-v%C3%B6r%C3%B6s-665b0818a/
@@ -63,7 +63,7 @@
   title: PhD
   position: assocProf
   avatar: ../images/members/kocsis.png
-  homePage: https://www.mit.bme.hu/general/staff/ikocsis
+  homePage: ikocsis
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10040986
   cvPage: http://mit.bme.hu/~ikocsis/Kocsis_Imre_CV_eng.pdf
   linkedInPage: https://www.linkedin.com/in/imre-kocsis/
@@ -73,7 +73,7 @@
   position: assocProf
   avatar: ../images/members/molnar.jpg
   linkedInPage: https://www.linkedin.com/in/molnarv
-  homePage: https://www.mit.bme.hu/general/staff/molnarv
+  homePage: molnarv
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10049620
   githubPage: https://github.com/vincemolnar
 - firstName: Oszkár
@@ -115,14 +115,14 @@
   lastName: Dobos-Kovács
   position: phdStudent
   avatar: ../images/members/dobos-kovacs.jpg
-  homePage: https://www.mit.bme.hu/general/phd/dobos
+  homePage: dobos
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10073065
   linkedInPage: https://www.linkedin.com/in/mih%C3%A1ly-dobos-kov%C3%A1cs/
 - firstName: Márton
   lastName: Elekes
   position: assistResFellow
   avatar: ../images/members/elekes.jpg
-  homePage: https://www.mit.bme.hu/general/staff/elekes
+  homePage: elekes
   cvPage: https://home.mit.bme.hu/~elekes/cv/
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10071424
   githubPage: https://github.com/marci543
@@ -130,13 +130,13 @@
   lastName: Farkas
   position: assistResFellow
   avatar: ../images/members/farkas.jpg
-  homePage: https://www.mit.bme.hu/general/staff/farkasr
+  homePage: farkasr
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10058544
 - firstName: András
   lastName: Földvári
   position: assistResFellow
   avatar: ../images/members/foldvari.jpg
-  homePage: https://www.mit.bme.hu/general/phd/foldvari
+  homePage: foldvari
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10068408
 - firstName: Bence
   lastName: Graics
@@ -152,7 +152,7 @@
   lastName: Szabó
   position: phdStudent
   avatar: ../images/members/szabo.jpg
-  homePage: https://www.mit.bme.hu/general/phd/szabo
+  homePage: szabo
   cvPage: https://rorck.github.io/files/richard_szabo_cv.pdf
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10068607
   linkedInPage: https://www.linkedin.com/in/rich%C3%A1rd-szab%C3%B3-037450230/
@@ -160,7 +160,7 @@
   lastName: Szekeres
   position: phdStudent
   avatar: ../images/members/szekeres.png
-  homePage: https://www.mit.bme.hu/general/phd/szekeres
+  homePage: szekeres
   cvPage: https://szdan97.github.io/cv_szekeres.pdf
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10078570
   linkedInPage: https://www.linkedin.com/in/d%C3%A1niel-szekeres-0619b8178/
@@ -168,7 +168,7 @@
   lastName: Bajczi
   position: phdStudent
   avatar: ../images/members/bajczi.jpg
-  homePage: https://www.mit.bme.hu/general/phd/bajczi
+  homePage: bajczi
   cvPage: https://leventebajczi.github.io/leventebajczi-cv/leventebajczi_cv_en.pdf
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10073070
   linkedInPage: https://www.linkedin.com/in/leventebajczi/
@@ -176,20 +176,20 @@
   lastName: Ficsor
   position: phdStudent
   avatar: ../images/members/ficsor.jpg
-  homePage: https://www.mit.bme.hu/general/phd/ficsor
+  homePage: ficsor
   cvPage: https://nagilooh.github.io/nagilooh-cv/attilaficsor_cv_en.pdf
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10083601
 - firstName: Simon József
   lastName: Nagy
   position: phdStudent
   avatar: ../images/members/nagy.jpg
-  homePage: https://www.mit.bme.hu/general/phd/simonjozsefnagy
+  homePage: simonjozsefnagy
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10073486
 - firstName: Bertalan Zoltán
   lastName: Péter
   position: phdStudent
   avatar: ../images/members/peter.jpg
-  homePage: https://www.mit.bme.hu/general/phd/peter
+  homePage: peter
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10083082
   cvPage: https://home.mit.bme.hu/~bpeter/cve.pdf
   scholarPage: https://scholar.google.com/citations?user=mo8l6mQAAAAJ
@@ -218,26 +218,26 @@
   lastName: Kangogo Damaris Jepkurui
   position: phdStudent
   avatar: ../images/members/damaris.jpg
-  homePage: https://www.mit.bme.hu/general/phd/dkangogo
+  homePage: dkangogo
   linkedInPage: https://www.linkedin.com/in/damaris-kangogo-3009aa76/
   githubPage: https://github.com/KangogoDamarisKE
 - firstName:
   lastName: Nada Akel
   position: phdStudent
   avatar: ../images/members/nada.jpg
-  homePage: https://www.mit.bme.hu/general/phd/nadaakel
+  homePage: nadaakel
   linkedInPage: https://www.linkedin.com/in/nada-akel-3623a1109
 - firstName:
   lastName: Noor Mohammed Al-Gburi
   position: phdStudent
   avatar: ../images/members/noor.jpg
-  homePage: https://www.mit.bme.hu/general/phd/noor
+  homePage: noor
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10087286
 - firstName: Dóra
   lastName: Cziborová
   position: phdStudent
   avatar: ../images/members/cziborova.jpg
-  homePage: https://www.mit.bme.hu/general/phd/cziborova
+  homePage: cziborova
   cvPage: https://DoriCz.github.io/DoraCziborova_CV.pdf
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10094011
 - firstName: Ármin
@@ -245,14 +245,14 @@
   position: phdStudent
   avatar: ../images/members/arminzavada.JPG
   githubPage: https://github.com/arminzavada
-  homePage: https://www.mit.bme.hu/general/phd/zavada
+  homePage: zavada
   cvPage: https://arminzavada.github.io/
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10095295
 - firstName: Martin
   lastName: Farkas
   position: phdStudent
   avatar: ../images/members/farkasm.jpg
-  homePage: https://www.mit.bme.hu/general/phd/farkas
+  homePage: farkas
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10098507
   githubPage: https://github.com/BlackLight54
   cvPage: https://blacklight54.github.io/CV_Martin_Farkas.pdf
