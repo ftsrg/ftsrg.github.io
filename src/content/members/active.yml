@@ -65,7 +65,7 @@
   avatar: ../images/members/kocsis.png
   homePage: ikocsis
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10040986
-  cvPage: http://mit.bme.hu/~ikocsis/Kocsis_Imre_CV_eng.pdf
+  cvPage: https://home.mit.bme.hu/~ikocsis/Kocsis_Imre_CV_hun.pdf
   linkedInPage: https://www.linkedin.com/in/imre-kocsis/
 - firstName: Vince
   lastName: Molnár
@@ -91,14 +91,14 @@
   position: masterLecturer
   avatar: ../images/members/huszerl.jpg
   linkedInPage: https://www.linkedin.com/in/huszerl
-  homePage: https://www.mit.bme.hu/~huszerl
+  homePage: huszerl
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10041041
 - firstName: Attila
   lastName: Klenik
   title: PhD
   position: resFellow
   avatar: ../images/members/klenik.jpg
-  homePage: http://mit.bme.hu/~klenik
+  homePage: klenik
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10056599
   cvPage: https://aklenik.github.io/klenik-cv-en.pdf
   linkedInPage: https://www.linkedin.com/in/attila-klenik/
