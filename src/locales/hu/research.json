@@ -32,6 +32,7 @@
   "research.publications.assessingModLanguage": "Módszereket javasoltunk, amivel modellezési nyelvek tervezése és felhasználása során a nyelv szemantikáját lehet ellenőrizni.",
   "research.publications.pragmatingVerification": "Az IncQuery Labs és NASA JPL munkatársaival közösen kidolgoztunk egy módszert ipari méretű végrehajtható SysML modellek formális ellenőrzésére.",
   "research.publications.networcat": "Bemutattunk egy új módszert elosztott rendszerek kommunikációjának modellezésére, egy többszálú programok analízisére használt nyelv segítségével.",
+  "research.publications.violationScenarios": "Szisztematikus folyamatot dolgoztunk ki követelménysértési forgatókönyvek felderítésére hibatűrő rendszerek terveiben, és alkalmaztuk azt egy autóipari esettanulmányon.",  
 
   "research.projects.edgeskills": "Az EDGE-Skills project célja, hogy innovatív felhő- és peremszolgáltatásokat fejlesszen és telepítsen oktatási és képzési adatterekhez (data space), és az adattereket elérhetővé tegye privát és publikus szervezetek számára.",
   "research.projects.openscaling": "Az OpenSCALING projekt célja, hogy a nyílt szabványokat és meglévő modellezési és szimulációs eszközöket továbbfejlessze, hogy jobban támogassák az energiafelhasználás csökkentését lehetővé tevő nagyméretű rendszereket és elosztott vezérlőket.",
