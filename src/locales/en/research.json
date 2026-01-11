@@ -33,6 +33,7 @@
   "research.publications.assessingModLanguage": "We recommended methods and processes for assessing the semantics of modeling languages for model users, tool and language designers.",
   "research.publications.pragmatingVerification": "Together with IncQuery Labs and NASA JPL we developed a workflow for applying formal verification to industrial executable SysML models.",
   "research.publications.networcat": "We presented a novel way of modeling communication in distributed systems by using a language for shared-memory concurrency in software, thus bridging the two domains.",
+  "research.publications.violationScenarios": "We designed a process for systematic exploration of requirement violation scenarios in fault-tolerant system designs, and applied it to an automotive case-study.",
 
   "research.projects.edgeskills": "The EDGE-Skills project's objectives are to develop and deploy innovative cloud to edge services for the educations and skills data space, and make accessible the data space to public and private organisations.",
   "research.projects.openscaling": "The OpenSCALING project aims to enchance open standards and established modelling and simulation tools to better support large-scale systems and distributed controllers optimized to minimize energy consumption and greenhouse gas emissions.",

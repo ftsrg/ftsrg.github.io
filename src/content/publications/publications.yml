@@ -1,3 +1,9 @@
+- journalTitle: Empirical Software Eng
+  year: 2026
+  title: "Aiding the design of critical software systems by iterative exploration of distinct requirement violation scenarios"
+  url: https://doi.org/10.1007/s10664-025-10786-z
+  featuredImage: ../images/publications/emse2026.png
+  description: research.publications.violationScenarios
 - journalTitle: Softw Syst Model
   year: 2025
   title: "Networcat: applying analysis techniques of shared memory software on message-passing distributed systems"
