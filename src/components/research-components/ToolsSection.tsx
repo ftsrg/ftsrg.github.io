@@ -39,7 +39,7 @@ const ToolsSection: React.FC<Props> = ({ heroBackgroundImage }) => {
     <Hero id="tools" bgImage={heroBackgroundImage} heroTitle="research.tools.title" isHeroTitleCentered>
       <Row className="justify-content-center align-items-stretch" style={{ marginTop: '4rem' }}>
         <Col lg={4} md={6} className="mb-5 mt-5">
-          <Tool title="research.tools.tool1.title" desc="research.tools.tool1.desc" url="">
+          <Tool title="research.tools.tool1.title" desc="research.tools.tool1.desc" url="https://gamma.inf.mit.bme.hu/">
             <StaticImage
               src="../../../static/images/logos/gamma.png"
               alt={t('research.tools.tool1.title')}
