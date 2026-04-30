@@ -17,7 +17,7 @@ const IntroSection: React.FC<Props> = ({ numOfMembers, numOfPhD }) => {
         <Row>
           <Col lg={6} className="order-1 order-lg-2 mb-4 mb-lg-0">
             <StaticImage
-              src="../../../static/images/members2024.jpg"
+              src="../../../static/images/members2026.jpg"
               alt={t('about.members.title')}
               className="img-fluid"
               layout="fullWidth"
