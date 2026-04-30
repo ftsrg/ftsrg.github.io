@@ -17,9 +17,9 @@ const counterData = [
     title: 'home.counters.c2.title',
     isGatsbyLink: false,
     url: 'https://tdk.bme.hu/browse',
-    count: 245,
+    count: 260,
     suffix: '+'
-    /* Until 2025-07: 55 OTDK (2001-) and 190 TDK (2000-) */
+    /* Until 2026-04: 55 OTDK (1999-) and 205 TDK (2000-) */
   },
   {
     title: 'home.counters.c3.title',
