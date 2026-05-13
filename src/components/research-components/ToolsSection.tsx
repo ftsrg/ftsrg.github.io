@@ -62,17 +62,27 @@ const ToolsSection: React.FC<Props> = ({ heroBackgroundImage }) => {
           <Tool title="research.tools.tool3.title" desc="research.tools.tool3.desc" url="https://refinery.tools/">
             <StaticImage
               src="../../../static/images/logos/refinery-logo.svg"
-              alt={t('research.tools.tool2.title')}
+              alt={t('research.tools.tool3.title')}
               width={58}
               style={{ filter: 'brightness(0) invert(1)' }}
             />
           </Tool>
         </Col>
         <Col lg={4} md={6} className="mb-5 mt-5">
-          <Tool title="research.tools.tool4.title" desc="research.tools.tool4.desc" url="https://eclipse.dev/viatra">
+          <Tool title="research.tools.tool4.title" desc="research.tools.tool4.desc" url="https://ftsrg.mit.bme.hu/semantifyr">
+            <StaticImage
+              src="../../../static/images/logos/semantifyr-logo.svg"
+              alt={t('research.tools.tool4.title')}
+              width={58}
+              style={{ filter: 'brightness(0) invert(1)' }}
+            />
+          </Tool>
+        </Col>
+        <Col lg={4} md={6} className="mb-5 mt-5">
+          <Tool title="research.tools.tool5.title" desc="research.tools.tool5.desc" url="https://eclipse.dev/viatra">
             <StaticImage
               src="../../../static/images/logos/viatra.png"
-              alt={t('research.tools.tool4.title')}
+              alt={t('research.tools.tool5.title')}
               width={58}
               style={{ filter: 'brightness(0) invert(1)' }}
             />
