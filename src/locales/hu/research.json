@@ -19,8 +19,10 @@
   "research.tools.tool2.desc": "A Theta modellellenőrző keretrendszer absztrakció-finomítás alapú, korszerű algoritmusok kollekciója, amelyek kombinálhatóságuk révén mindig az adott problémához szabhatók.",
   "research.tools.tool3.title": "A Refinery gráfmegoldó keretrendszer",
   "research.tools.tool3.desc": "A Refinery egy keretrendszer, amely szakterület-specifikus nyelvek jólformált és változatos példánymodelljeinek automatikus és hatékony generálására szolgál.",
-  "research.tools.tool4.title": "VIATRA",
-  "research.tools.tool4.desc": "Az Eclipse VIATRA egy modell-transzformációs keretrendszer, amely hatékony mintaillesztést és inkrementális modell-szinkronizálási képességeket nyújt.",
+  "research.tools.tool4.title": "Semantifyr",
+  "research.tools.tool4.desc": "A Semantifyr egy keretrendszer, ami mérnöki modellek szemantikájának deklaratív definiálását teszi lehetővé.",
+  "research.tools.tool5.title": "VIATRA",
+  "research.tools.tool5.desc": "Az Eclipse VIATRA egy modell-transzformációs keretrendszer, amely hatékony mintaillesztést és inkrementális modell-szinkronizálási képességeket nyújt.",
 
   "research.publications.autoGenGraphModel": "Olyan módszereket javasoltunk, amivel gráfok generálása során adott célfüggvény szerinti optimalizációs problémákat tudunk megoldani.",
   "research.publications.autoGenQualitative": "Olyan új algoritmusokat javasoltunk, amik többféle megoldó kombinálásával képesek teszt forgatókönyvek automatikus generálására.",
