@@ -167,7 +167,7 @@
   linkedInPage: https://www.linkedin.com/in/d%C3%A1niel-szekeres-0619b8178/
 - firstName: Levente
   lastName: Bajczi
-  position: phdStudent
+  position: assistResFellow
   avatar: ../images/members/bajczi.jpg
   homePage: bajczi
   cvPage: https://leventebajczi.github.io/leventebajczi-cv/leventebajczi_cv_en.pdf
@@ -175,14 +175,14 @@
   linkedInPage: https://www.linkedin.com/in/leventebajczi/
 - firstName: Attila
   lastName: Ficsor
-  position: phdStudent
+  position: assistResFellow
   avatar: ../images/members/ficsor.jpg
   homePage: ficsor
   cvPage: https://nagilooh.github.io/nagilooh-cv/attilaficsor_cv_en.pdf
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10083601
 - firstName: Simon József
   lastName: Nagy
-  position: phdStudent
+  position: assistResFellow
   avatar: ../images/members/nagy.jpg
   homePage: simonjozsefnagy
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10073486
@@ -217,7 +217,7 @@
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10077295
 - firstName:
   lastName: Kangogo Damaris Jepkurui
-  position: phdStudent
+  position: assistResFellow
   avatar: ../images/members/damaris.jpg
   homePage: dkangogo
   linkedInPage: https://www.linkedin.com/in/damaris-kangogo-3009aa76/
@@ -230,7 +230,7 @@
   linkedInPage: https://www.linkedin.com/in/nada-akel-3623a1109
 - firstName:
   lastName: Noor Mohammed Al-Gburi
-  position: phdStudent
+  position: assistResFellow
   avatar: ../images/members/noor.jpg
   homePage: noor
   mtmtPage: https://m2.mtmt.hu/gui2/?type=authors&mode=browse&sel=10087286
